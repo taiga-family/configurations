@@ -7,6 +7,7 @@ on:
       forcePush:
         type: boolean
         required: false
+        default: "false"
         description: --force-publish package
       mode:
         type: choice
