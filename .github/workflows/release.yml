@@ -7,7 +7,6 @@ on:
       forcePush:
         type: boolean
         required: false
-        default: "false"
         description: --force-publish package
       mode:
         type: choice
@@ -43,7 +42,7 @@ jobs:
       - name: Lerna update version of packages
         if: always()
         run: |
-          if [[ ${{ github.event.inputs.forcePush }} == "true" ]]; then
+          if [[ "${{ github.event.inputs.forcePush }}" == "true" ]]; then
             npx lerna version ${{ github.event.inputs.mode }} --no-private --force-publish
           else
               npx lerna version --no-private
