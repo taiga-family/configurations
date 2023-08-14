@@ -1,0 +1,15 @@
+{
+    "name": "eslint-plugin",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "projects/eslint-plugin",
+    "projectType": "library",
+    "prefix": "tui",
+    "targets": {
+        "publish": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "npm publish ./projects/eslint-plugin --access=public --ignore-scripts || echo \"already published\""
+            }
+        }
+    }
+}

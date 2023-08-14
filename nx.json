@@ -1,0 +1,30 @@
+{
+    "implicitDependencies": {
+        "package.json": {
+            "dependencies": "*",
+            "devDependencies": "*"
+        },
+        "package-lock.json": "*",
+        "nx.json": "*",
+        "tsconfig.*.json": "*",
+        "tsconfig.json": "*",
+        "*.yml": "*",
+        "*.md": "*"
+    },
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "nx-cloud",
+            "options": {
+                "cacheableOperations": ["test", "build"],
+                "parallel": 1
+            }
+        }
+    },
+    "affected": {
+        "defaultBase": "origin/main"
+    },
+    "workspaceLayout": {
+        "libsDir": "projects",
+        "appsDir": "projects"
+    }
+}
