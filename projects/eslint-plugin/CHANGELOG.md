@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.40.3](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin@3.40.1...@taiga-ui/eslint-plugin@3.40.3) (2023-08-14)
+
+**Note:** Version bump only for package @taiga-ui/eslint-plugin
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## 3.40.1 (2023-08-14)
 
 ### Features
