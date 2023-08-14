@@ -1,16 +1,4 @@
 {
-    "implicitDependencies": {
-        "package.json": {
-            "dependencies": "*",
-            "devDependencies": "*"
-        },
-        "package-lock.json": "*",
-        "nx.json": "*",
-        "tsconfig.*.json": "*",
-        "tsconfig.json": "*",
-        "*.yml": "*",
-        "*.md": "*"
-    },
     "tasksRunnerOptions": {
         "default": {
             "runner": "nx-cloud",
@@ -26,5 +14,18 @@
     "workspaceLayout": {
         "libsDir": "projects",
         "appsDir": "projects"
+    },
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "namedInputs": {
+        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "sharedGlobals": [
+            "{workspaceRoot}/package-lock.json",
+            "{workspaceRoot}/nx.json",
+            "{workspaceRoot}/tsconfig.*.json",
+            "{workspaceRoot}/tsconfig.json",
+            "{workspaceRoot}/*.yml",
+            "{workspaceRoot}/*.md"
+        ],
+        "production": ["default"]
     }
 }
