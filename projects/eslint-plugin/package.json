@@ -3,7 +3,7 @@
     "version": "3.40.3",
     "description": "An ESLint plugin to enforce a consistent code styles across taiga-ui projects",
     "main": "index.js",
-    "devDependencies": {
+    "dependencies": {
         "@angular-eslint/eslint-plugin": "15.2.1",
         "@angular-eslint/eslint-plugin-template": "15.2.1",
         "@angular-eslint/template-parser": "15.2.1",
