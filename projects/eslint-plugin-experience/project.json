@@ -1,5 +1,5 @@
 {
-    "name": "eslint-plugin",
+    "name": "eslint-plugin-experience",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "projects/eslint-plugin",
     "projectType": "library",
@@ -8,7 +8,7 @@
         "publish": {
             "executor": "nx:run-commands",
             "options": {
-                "command": "npm publish ./projects/eslint-plugin --access=public --ignore-scripts || echo \"already published\""
+                "command": "npm publish ./projects/eslint-plugin-experience --access=public --ignore-scripts || echo \"already published\""
             }
         }
     }
