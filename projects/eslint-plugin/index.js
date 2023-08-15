@@ -3,6 +3,7 @@
  */
 module.exports = {
     configs: {
+        all: require('./all.js'),
         off: require('./configs/off.json'),
         ng: require('./configs/ng.json'),
         typescript: require('./configs/typescript.json'),
@@ -10,10 +11,6 @@ module.exports = {
         taiga: require('./configs/taiga.json'),
         'naming-convention': require('./configs/naming-convention.json'),
         'no-restricted-syntax': require('./configs/no-restricted-syntax.json'),
-        /**
-         * @deprecated, use taiga ruleset
-         */
-        all: require('./configs/taiga.json'),
         'eslint-config': require('./eslint-config/index.js'),
         'eslint-config-angular-recommended': require('./eslint-config-angular/recommended/index.js'),
         'eslint-config-angular-decorator-position': require('./eslint-config-angular/decorator-position/index.js'),
