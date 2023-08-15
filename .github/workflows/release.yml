@@ -2,6 +2,8 @@ name: ⚠️ Release
 on:
   push:
     branches: [main]
+    paths:
+      - 'projects/**'
   workflow_dispatch:
     inputs:
       forcePush:
