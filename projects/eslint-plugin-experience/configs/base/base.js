@@ -1,16 +1,11 @@
 module.exports = {
-    extends: [
-        'eslint-config-airbnb-base',
-        'plugin:eslint-comments/recommended',
-        './errors/index.js',
-    ],
+    extends: ['eslint-config-airbnb-base', 'plugin:eslint-comments/recommended'],
 
     parser: '@babel/eslint-parser',
 
     settings: {
         'import/parser': '@babel/eslint-parser',
     },
-
     plugins: ['@babel'],
 
     parserOptions: {
@@ -76,4 +71,16 @@ module.exports = {
         'no-bitwise': 'warn',
         'no-useless-escape': 'warn',
     },
+    overrides: [
+        {
+            files: ['*.js', '*.ts'],
+            parser: '@typescript-eslint/parser',
+            extends: ['eslint-config-airbnb-base/rules/errors'],
+            rules: {
+                // eslint-config-airbnb-base/errors
+                'no-empty': ['error', {allowEmptyCatch: true}],
+                'no-await-in-loop': 'off',
+            },
+        },
+    ],
 };
