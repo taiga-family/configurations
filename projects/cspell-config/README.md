@@ -1,5 +1,7 @@
 ### `@taiga-ui/cspell-config`
 
+Spell Checks Code – Able to spell check code by parsing it into words before checking against the dictionaries.
+
 `.cspell.json`
 
 ```json
