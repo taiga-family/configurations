@@ -1,3 +1,19 @@
+const attributeOptions = {
+    attributeGroups: [
+        '$ANGULAR_STRUCTURAL_DIRECTIVE',
+        '$ANGULAR_ELEMENT_REF',
+        '$ID',
+        '$DEFAULT',
+        '$CLASS',
+        '$ANGULAR_ANIMATION',
+        '$ANGULAR_ANIMATION_INPUT',
+        '$ANGULAR_INPUT',
+        '$ANGULAR_TWO_WAY_BINDING',
+        '$ANGULAR_OUTPUT',
+    ],
+    attributeSort: 'ASC',
+};
+
 module.exports = {
     $schema: 'https://json.schemastore.org/prettierrc',
     htmlWhitespaceSensitivity: 'ignore',
@@ -13,18 +29,6 @@ module.exports = {
     arrowParens: 'avoid',
     singleAttributePerLine: true,
     plugins: [require.resolve('prettier-plugin-organize-attributes')],
-    attributeGroups: [
-        '$ANGULAR_STRUCTURAL_DIRECTIVE',
-        '$ANGULAR_ELEMENT_REF',
-        '$ID',
-        '$DEFAULT',
-        '$CLASS',
-        '$ANGULAR_ANIMATION',
-        '$ANGULAR_ANIMATION_INPUT',
-        '$ANGULAR_INPUT',
-        '$ANGULAR_TWO_WAY_BINDING',
-        '$ANGULAR_OUTPUT',
-    ],
     overrides: [
         {
             files: ['*.json', '.prettierrc', '.stylelintrc'],
@@ -77,6 +81,13 @@ module.exports = {
             options: {
                 parser: 'angular',
                 printWidth: 120,
+                ...attributeOptions,
+            },
+        },
+        {
+            files: ['*.ts'],
+            options: {
+                ...attributeOptions,
             },
         },
         {

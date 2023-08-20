@@ -13,14 +13,14 @@
     },
     "prettier": "@taiga-ui/prettier-config",
     "devDependencies": {
-        "@nx/jest": "16.6.0",
-        "@nx/node": "16.6.0",
-        "@nx/workspace": "16.6.0",
+        "@nx/jest": "16.7.2",
+        "@nx/node": "16.7.2",
+        "@nx/workspace": "16.7.2",
         "eslint": "8.47.0",
         "lerna": "7.1.5",
-        "nx": "16.6.0",
+        "nx": "16.7.2",
         "nx-cloud": "16.3.0",
-        "prettier": "2.8.8",
-        "stylelint": "15.10.2"
+        "prettier": "3.0.2",
+        "stylelint": "15.10.3"
     }
 }
