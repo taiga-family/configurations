@@ -102,6 +102,7 @@
         "nofollow",
         "viewbox",
         "controlsList",
-        "nodownload"
+        "nodownload",
+        "textbox"
     ]
 }
