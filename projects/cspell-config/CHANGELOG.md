@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.4.0...@taiga-ui/cspell-config@0.5.0) (2023-08-26)
+
+### Features
+
+- **cspell-config:** add `serialiser` word
+  ([97aeb5c](https://github.com/taiga-family/taiga-ui/commit/97aeb5ca736af7481e3ef79d08c8f66868a22d78))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.4.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.3.0...@taiga-ui/cspell-config@0.4.0) (2023-08-25)
 
 ### Features
