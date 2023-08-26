@@ -103,6 +103,7 @@
         "viewbox",
         "controlsList",
         "nodownload",
-        "textbox"
+        "textbox",
+        "serialiser"
     ]
 }
