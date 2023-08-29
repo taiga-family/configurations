@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.3.0...@taiga-ui/eslint-plugin-experience@0.3.1) (2023-08-29)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** add `perfectionist` config
+  ([0db6ae1](https://github.com/taiga-family/linters/commit/0db6ae1b1cbb95d58c5cc74c2f178eed0a8973a2))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.3.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.2.0...@taiga-ui/eslint-plugin-experience@0.3.0) (2023-08-29)
 
 ### Features
