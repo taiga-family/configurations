@@ -25,6 +25,7 @@ module.exports = {
         promise: require('./configs/angular/promise/index.js'),
         rxjs: require('./configs/angular/rxjs/index.js'),
         unicorn: require('./configs/angular/unicorn/index.js'),
+        perfectionist: require('./configs/perfectionist.js'),
     },
     rules: {
         'injection-token-description': require('./rules/injection-token-description'),
