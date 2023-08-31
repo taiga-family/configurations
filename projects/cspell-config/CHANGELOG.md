@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.5.0...@taiga-ui/cspell-config@0.6.0) (2023-08-31)
+
+### Features
+
+- **cspell-config:** add `nocheck` work
+  ([91a67c7](https://github.com/taiga-family/taiga-ui/commit/91a67c7650fd722af836de5c5fb4e0693e51aa34))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.5.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.4.0...@taiga-ui/cspell-config@0.5.0) (2023-08-26)
 
 ### Features
