@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.6.0...@taiga-ui/cspell-config@0.7.0) (2023-08-31)
+
+### Features
+
+- **cspell-config:** add new words
+  ([12bbd0e](https://github.com/taiga-family/taiga-ui/commit/12bbd0e6741c0e1f448a67540cafbff9b2b1e953))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.6.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.5.0...@taiga-ui/cspell-config@0.6.0) (2023-08-31)
 
 ### Features
