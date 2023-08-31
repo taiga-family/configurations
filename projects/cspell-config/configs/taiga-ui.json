@@ -52,6 +52,8 @@
         "hilite",
         "starterKit",
         "tuiaction",
-        "blockstatus"
+        "blockstatus",
+        "piechart",
+        "barchart"
     ]
 }

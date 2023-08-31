@@ -104,6 +104,7 @@
         "controlsList",
         "nodownload",
         "textbox",
-        "serialiser"
+        "serialiser",
+        "selectednode"
     ]
 }
