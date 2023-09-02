@@ -2,7 +2,6 @@ module.exports = {
     overrides: [
         {
             files: ['*.spec.*', '*.test.*', '*.unit.*', '*/__tests__/*'],
-
             rules: {
                 '@typescript-eslint/no-empty-function': 'off',
                 'max-statements': 'off',

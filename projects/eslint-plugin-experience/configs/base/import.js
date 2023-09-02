@@ -1,6 +1,5 @@
 module.exports = {
     plugins: ['import'],
-
     settings: {
         'import/resolver': {
             node: {
@@ -10,7 +9,6 @@ module.exports = {
             webpack: {},
         },
     },
-
     rules: {
         'import/no-commonjs': 'off',
         'import/unambiguous': 'off',

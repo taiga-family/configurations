@@ -1,20 +1,11 @@
 module.exports = {
     extends: ['plugin:@typescript-eslint/eslint-recommended'],
-
     overrides: [
         {
-            extends: [
-                'plugin:@typescript-eslint/recommended',
-                'prettier/@typescript-eslint',
-                'plugin:import/typescript',
-            ],
-
+            extends: ['prettier'],
             parser: '@typescript-eslint/parser',
-
             plugins: ['@typescript-eslint'],
-
             files: ['*.ts', '*.tsx'],
-
             rules: {
                 // swears on cases like constructor(public c: C) {}
                 'no-useless-constructor': 'off',
