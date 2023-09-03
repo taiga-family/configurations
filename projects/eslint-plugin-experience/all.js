@@ -3,6 +3,13 @@
  */
 module.exports = {
     root: true,
+    env: {
+        es2024: true,
+    },
+    parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+    },
     extends: [
         'plugin:@taiga-ui/experience/base',
         'plugin:@taiga-ui/experience/recommended',
