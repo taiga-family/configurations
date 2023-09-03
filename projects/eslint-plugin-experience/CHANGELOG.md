@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.5.0...@taiga-ui/eslint-plugin-experience@0.6.0) (2023-09-03)
+
+### Features
+
+- upgrade typescript-eslint
+  ([1a75b2b](https://github.com/taiga-family/linters/commit/1a75b2bf4ce3b9e74d2272f11f9be113f577c180))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.5.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.4.1...@taiga-ui/eslint-plugin-experience@0.5.0) (2023-09-03)
 
 ### Features
