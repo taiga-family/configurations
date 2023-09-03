@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.6.0...@taiga-ui/eslint-plugin-experience@0.6.1) (2023-09-03)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** conflicts with typescript-eslint parser v6 and import plugin
+  ([24237b7](https://github.com/taiga-family/linters/commit/24237b7898787ddd16feda3fbecc923a4d95b624))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.6.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.5.0...@taiga-ui/eslint-plugin-experience@0.6.0) (2023-09-03)
 
 ### Features
