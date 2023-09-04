@@ -19,6 +19,9 @@
         "prettier-plugin-organize-attributes": "1.0.0",
         "sort-package-json": "2.5.1"
     },
+    "peerDependencies": {
+        "prettier": ">=3.0.0"
+    },
     "publishConfig": {
         "access": "public"
     }
