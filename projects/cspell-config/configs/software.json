@@ -34,6 +34,7 @@
         "switchmap",
         "plusplus",
         "camelcase",
-        "stylelintrc"
+        "stylelintrc",
+        "teardowns"
     ]
 }

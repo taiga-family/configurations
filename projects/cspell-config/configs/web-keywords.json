@@ -14,6 +14,7 @@
         "menuitemradio",
         "menuitemcheckbox",
         "selectall",
+        "onbeforeinput",
         "beforeinput",
         "boxshadow",
         "compositionend",
