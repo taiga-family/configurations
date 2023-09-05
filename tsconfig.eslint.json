@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "rootDir": "taiga-ui",
+        "baseUrl": "taiga-ui",
+        "strict": true,
+        "incremental": true
+    },
+    "include": ["taiga-ui/**/*.ts"],
+    "exclude": ["**/node_modules", "*.js"]
+}

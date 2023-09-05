@@ -8,11 +8,16 @@
     ],
     "scripts": {
         "lint": "eslint . --no-error-on-unmatched-pattern",
-        "prettier": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}'",
+        "prettier": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}' --ignore-path .prettierignore",
         "format": "npm run prettier -- --write",
         "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input"
     },
     "prettier": "@taiga-ui/prettier-config",
+    "eslintConfig": {
+        "extends": [
+            "plugin:@taiga-ui/experience/all"
+        ]
+    },
     "devDependencies": {
         "@nx/jest": "16.7.4",
         "@nx/node": "16.7.4",
