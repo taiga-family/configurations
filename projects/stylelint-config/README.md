@@ -27,30 +27,30 @@ More information about available at
 
 ```js
 {
-    "extends": ["@taiga-ui/stylelint-config/prettier"]
+    extends: ["@taiga-ui/stylelint-config/prettier"]
 }
 ```
 
 - **less** - includes prettier config
 
-```json
+```js
 {
-  "extends": ["@taiga-ui/stylelint-config/less"]
+  extends: ["@taiga-ui/stylelint-config/less"]
 }
 ```
 
 - **angular** - includes prettier config
 
-```json
+```js
 {
-  "extends": ["@taiga-ui/stylelint-config/angular"]
+  extends: ["@taiga-ui/stylelint-config/angular"]
 }
 ```
 
 - **angular-less** - combine angular and less configs
 
-```json
+```js
 {
-  "extends": ["@taiga-ui/stylelint-config/angular-less"]
+  extends: ["@taiga-ui/stylelint-config/angular-less"]
 }
 ```
