@@ -26,7 +26,6 @@
         "eslint-plugin-html": "7.1.0",
         "eslint-plugin-import": "2.28.1",
         "eslint-plugin-jest": "27.2.3",
-        "eslint-plugin-perfectionist": "1.5.1",
         "eslint-plugin-prettier": "5.0.0",
         "eslint-plugin-promise": "6.1.1",
         "eslint-plugin-rxjs": "5.0.3",
@@ -36,8 +35,7 @@
         "eslint-plugin-unicorn": "48.0.1"
     },
     "peerDependencies": {
-        "eslint": ">=8.0.0",
-        "tslib": ">=2.0.0"
+        "eslint": "*"
     },
     "publishConfig": {
         "access": "public"
