@@ -13,9 +13,9 @@
     "main": "cspell.config.js",
     "dependencies": {
         "@cspell/dict-ar": "1.1.0",
-        "@cspell/dict-lorem-ipsum": "3.0.0",
+        "@cspell/dict-lorem-ipsum": "4.0.0",
         "@cspell/dict-ru_ru": "2.1.0",
-        "@cspell/dict-scientific-terms-us": "2.0.0"
+        "@cspell/dict-scientific-terms-us": "3.0.0"
     },
     "peerDependencies": {
         "cspell": ">=6.31.3"
