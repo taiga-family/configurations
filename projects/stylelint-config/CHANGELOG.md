@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/stylelint-config@0.2.2...@taiga-ui/stylelint-config@0.3.0) (2023-09-05)
+
+### Features
+
+- **stylelint-config:** remove prettier deprecated config ([#33](https://github.com/taiga-family/taiga-ui/issues/33))
+  ([9247f20](https://github.com/taiga-family/taiga-ui/commit/9247f201f7c1c0b201fab4e42ae26ae148585867))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.2.2](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/stylelint-config@0.2.1...@taiga-ui/stylelint-config@0.2.2) (2023-09-05)
 
 **Note:** Version bump only for package @taiga-ui/stylelint-config
