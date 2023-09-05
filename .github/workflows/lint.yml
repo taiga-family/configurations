@@ -14,13 +14,16 @@ jobs:
 
       - name: prepare integration test
         run: |
-          git clone https://github.com/taiga-family/taiga-ui.git --single-branch
+          rm -rf taiga-ui && git clone https://github.com/taiga-family/taiga-ui.git
           cd taiga-ui && npm ci && cd ..
 
       - run: |
           npm run prettier -- --check
           npm run stylelint
           npm run lint
+
+      - name: cleanup
+        run: rm -rf taiga-ui
 
 concurrency:
   group: lint-${{ github.workflow }}-${{ github.ref }}
