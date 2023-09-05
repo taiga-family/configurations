@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['./stylelint.config.js', 'stylelint-config-prettier'],
+    extends: ['./stylelint.config.js'],
     plugins: ['stylelint-order', 'stylelint-no-px'],
     rules: {
         'order/properties-order': [
@@ -26,17 +26,6 @@ module.exports = {
             'rules',
             'at-rules',
         ],
-        indentation: null,
-        'color-named': null,
-        'at-rule-no-unknown': null,
-        'max-line-length': null,
-        'number-leading-zero': null,
-        'selector-class-pattern': null,
-        'number-max-precision': null,
-        'property-no-vendor-prefix': null,
-        'keyframes-name-pattern': null,
-        'value-keyword-case': null,
-        'media-feature-name-no-vendor-prefix': null,
         'color-function-notation': 'legacy',
         'alpha-value-notation': 'number',
         'selector-max-specificity': [

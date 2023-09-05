@@ -10,12 +10,23 @@
         "lint": "eslint . --no-error-on-unmatched-pattern",
         "prettier": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}' --ignore-path .prettierignore",
         "format": "npm run prettier -- --write",
-        "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input"
+        "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json"
     },
     "prettier": "@taiga-ui/prettier-config",
     "eslintConfig": {
         "extends": [
             "plugin:@taiga-ui/experience/all"
+        ]
+    },
+    "stylelint": {
+        "extends": [
+            "@taiga-ui/stylelint-config/taiga"
+        ],
+        "ignoreFiles": [
+            "**/demo/**",
+            "**/dist/**",
+            "**/coverage/**",
+            "**/node_modules/**"
         ]
     },
     "devDependencies": {

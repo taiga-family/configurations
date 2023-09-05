@@ -14,7 +14,7 @@ jobs:
 
       - name: prepare integration test
         run: |
-          rm -rf taiga-ui && git clone https://github.com/taiga-family/taiga-ui.git
+          rm -rf taiga-ui && git clone https://github.com/taiga-family/taiga-ui.git --single-branch
           cd taiga-ui && npm ci && cd ..
 
       - run: |
