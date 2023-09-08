@@ -80,5 +80,6 @@ module.exports = {
         'media-feature-name-no-vendor-prefix': null,
         'declaration-block-no-redundant-longhand-properties': null,
         'no-descending-specificity': null,
+        'selector-max-specificity': null,
     },
 };
