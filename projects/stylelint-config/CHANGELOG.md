@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/stylelint-config@0.3.0...@taiga-ui/stylelint-config@0.4.0) (2023-09-08)
+
+### Features
+
+- **stylelint-config:** ignore selector-max-specificity
+  ([37a64b5](https://github.com/taiga-family/taiga-ui/commit/37a64b54bd3c562f2d783adde6b00e4f610a10b4))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.3.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/stylelint-config@0.2.2...@taiga-ui/stylelint-config@0.3.0) (2023-09-05)
 
 ### Features
