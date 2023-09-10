@@ -10,7 +10,13 @@
         "lint": "eslint . --no-error-on-unmatched-pattern",
         "prettier": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}' --ignore-path .prettierignore",
         "format": "npm run prettier -- --write",
+        "commitlint": "npx commitlint --from=HEAD~1",
         "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json"
+    },
+    "commitlint": {
+        "extends": [
+            "@taiga-ui/commitlint-config"
+        ]
     },
     "prettier": "@taiga-ui/prettier-config",
     "eslintConfig": {
@@ -30,6 +36,7 @@
         ]
     },
     "devDependencies": {
+        "@commitlint/cli": "17.7.1",
         "@nx/jest": "16.8.1",
         "@nx/node": "16.8.1",
         "@nx/workspace": "16.8.1",
