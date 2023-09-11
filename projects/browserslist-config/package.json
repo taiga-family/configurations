@@ -3,8 +3,7 @@
     "version": "0.1.0",
     "description": "Taiga UI browserslist config",
     "keywords": [
-        "commitlint",
-        "prettier"
+        "browserslist"
     ],
     "repository": {
         "type": "git",
