@@ -1,7 +1,7 @@
 {
     "name": "@taiga-ui/browserslist-config",
-    "version": "0.2.0",
-    "description": "Taiga UI commitlint config",
+    "version": "0.1.0",
+    "description": "Taiga UI browserslist config",
     "keywords": [
         "commitlint",
         "prettier"
