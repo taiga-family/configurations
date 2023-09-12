@@ -18,7 +18,7 @@
         "@cspell/dict-scientific-terms-us": "3.0.0"
     },
     "peerDependencies": {
-        "cspell": ">=6.31.3"
+        "cspell": "*"
     },
     "publishConfig": {
         "access": "public"
