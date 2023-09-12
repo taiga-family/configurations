@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.8.2...@taiga-ui/cspell-config@0.9.0) (2023-09-12)
+
+### Features
+
+- update peer deps ([82cc2b2](https://github.com/taiga-family/taiga-ui/commit/82cc2b29e35173e797ffa4b5007477f5d4f38b1b))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.8.2](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.8.1...@taiga-ui/cspell-config@0.8.2) (2023-09-07)
 
 **Note:** Version bump only for package @taiga-ui/cspell-config
