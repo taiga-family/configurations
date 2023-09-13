@@ -41,7 +41,7 @@
         "@nx/node": "16.8.1",
         "@nx/workspace": "16.8.1",
         "eslint": "8.49.0",
-        "lerna": "7.2.0",
+        "lerna": "7.3.0",
         "nx": "16.8.1",
         "nx-cloud": "16.4.0",
         "prettier": "3.0.3",
