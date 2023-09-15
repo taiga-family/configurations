@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.6.6...@taiga-ui/eslint-plugin-experience@0.7.0) (2023-09-15)
+
+### Features
+
+- **eslint-plugin-experience:** remove taiga prefix ([#48](https://github.com/taiga-family/linters/issues/48))
+  ([bab083c](https://github.com/taiga-family/linters/commit/bab083c6a4faddbc5b9e0cbbde4c65abbe941b01))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.6.6](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.6.5...@taiga-ui/eslint-plugin-experience@0.6.6) (2023-09-12)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
