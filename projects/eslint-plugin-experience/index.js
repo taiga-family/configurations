@@ -9,6 +9,7 @@ module.exports = {
         typescript: require('./configs/typescript.js'),
         cypress: require('./configs/cypress.js'),
         taiga: require('./configs/taiga.js'),
+        'taiga-naming-convention': require('./configs/taiga-naming-convention.js'),
         'naming-convention': require('./configs/naming-convention.js'),
         'no-restricted-syntax': require('./configs/no-restricted-syntax.js'),
         base: require('./configs/base/index.js'),
