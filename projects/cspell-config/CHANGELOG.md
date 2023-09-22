@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.9.0...@taiga-ui/cspell-config@0.10.0) (2023-09-22)
+
+### Features
+
+- **cspell-config:** add retargeted word
+  ([7c30eb9](https://github.com/taiga-family/taiga-ui/commit/7c30eb91b52d4d63cdc72cb3c63ce856e53bbafa))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.9.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.8.2...@taiga-ui/cspell-config@0.9.0) (2023-09-12)
 
 ### Features
