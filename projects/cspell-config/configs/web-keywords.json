@@ -107,6 +107,7 @@
         "textbox",
         "serialiser",
         "selectednode",
-        "networkidle"
+        "networkidle",
+        "retargeted"
     ]
 }
