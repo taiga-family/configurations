@@ -81,5 +81,6 @@ module.exports = {
         'declaration-block-no-redundant-longhand-properties': null,
         'no-descending-specificity': null,
         'selector-max-specificity': null,
+        'order/order': null,
     },
 };
