@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/stylelint-config@0.4.1...@taiga-ui/stylelint-config@0.5.0) (2023-09-25)
+
+### Features
+
+- **stylelint-config:** disable order rules for taiga ([#58](https://github.com/taiga-family/taiga-ui/issues/58))
+  ([42c59d8](https://github.com/taiga-family/taiga-ui/commit/42c59d8aef2cd475e6a636b410be2ece5bd71b72))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.4.1](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/stylelint-config@0.4.0...@taiga-ui/stylelint-config@0.4.1) (2023-09-24)
 
 **Note:** Version bump only for package @taiga-ui/stylelint-config
