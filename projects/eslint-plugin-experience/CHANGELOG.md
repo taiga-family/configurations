@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.4](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.7.3...@taiga-ui/eslint-plugin-experience@0.7.4) (2023-09-30)
+
+**Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.7.3](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.7.2...@taiga-ui/eslint-plugin-experience@0.7.3) (2023-09-26)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
