@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.11.0...@taiga-ui/cspell-config@0.12.0) (2023-10-02)
+
+### Features
+
+- **cspell-config:** add `scrollbar` word
+  ([ecaaaf6](https://github.com/taiga-family/taiga-ui/commit/ecaaaf673a07f35ff69975a6d10af6af319fb451))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.11.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.10.0...@taiga-ui/cspell-config@0.11.0) (2023-10-02)
 
 ### Features
