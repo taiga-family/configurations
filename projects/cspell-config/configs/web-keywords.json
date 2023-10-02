@@ -108,6 +108,7 @@
         "serialiser",
         "selectednode",
         "networkidle",
+        "retarget",
         "retargeted"
     ]
 }
