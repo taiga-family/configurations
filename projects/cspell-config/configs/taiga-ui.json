@@ -55,6 +55,7 @@
         "blockstatus",
         "piechart",
         "barchart",
+        "scrollbar",
         "scrollbars"
     ]
 }
