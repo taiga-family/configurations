@@ -54,6 +54,7 @@
         "tuiaction",
         "blockstatus",
         "piechart",
-        "barchart"
+        "barchart",
+        "scrollbars"
     ]
 }
