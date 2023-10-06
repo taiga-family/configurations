@@ -36,6 +36,11 @@ module.exports = {
                         prefix: ['Tui'],
                     },
                     {
+                        selector: 'typeAlias',
+                        format: ['PascalCase'],
+                        prefix: ['Tui'],
+                    },
+                    {
                         selector: 'variable',
                         modifiers: ['destructured'],
                         format: null,
@@ -96,6 +101,10 @@ module.exports = {
                     {
                         selector: 'typeLike',
                         format: ['PascalCase', 'UPPER_CASE'],
+                    },
+                    {
+                        selector: 'typeAlias',
+                        format: ['PascalCase'],
                     },
                     {
                         selector: 'class',
