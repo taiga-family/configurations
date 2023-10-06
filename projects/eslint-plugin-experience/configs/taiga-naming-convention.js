@@ -37,6 +37,7 @@ module.exports = {
                     },
                     {
                         selector: 'typeAlias',
+                        modifiers: ['exported'],
                         format: ['PascalCase'],
                         prefix: ['Tui'],
                     },
@@ -104,6 +105,7 @@ module.exports = {
                     },
                     {
                         selector: 'typeAlias',
+                        modifiers: ['exported'],
                         format: ['PascalCase'],
                     },
                     {
