@@ -35,6 +35,7 @@
         "plusplus",
         "camelcase",
         "stylelintrc",
-        "teardowns"
+        "teardowns",
+        "sonarjs"
     ]
 }
