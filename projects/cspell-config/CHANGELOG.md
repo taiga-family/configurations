@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.13.0...@taiga-ui/cspell-config@0.14.0) (2023-10-08)
+
+### Features
+
+- **cspell-config:** add `sonarjs` word
+  ([958a8c5](https://github.com/taiga-family/taiga-ui/commit/958a8c5496b10f24e0a9d96c9acc3605864af0c5))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.13.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.12.0...@taiga-ui/cspell-config@0.13.0) (2023-10-02)
 
 ### Features
