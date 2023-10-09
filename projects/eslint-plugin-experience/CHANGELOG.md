@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.8.4...@taiga-ui/eslint-plugin-experience@0.9.0) (2023-10-09)
+
+### Features
+
+- add playwright, cypress
+  ([18116d5](https://github.com/taiga-family/linters/commit/18116d515d590e7474aedd6784b20b833218cd23))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.8.4](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.8.3...@taiga-ui/eslint-plugin-experience@0.8.4) (2023-10-09)
 
 ### Bug Fixes
