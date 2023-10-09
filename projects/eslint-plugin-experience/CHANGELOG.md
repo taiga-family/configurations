@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.8.3...@taiga-ui/eslint-plugin-experience@0.8.4) (2023-10-09)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** invalid jest config
+  ([55b00f8](https://github.com/taiga-family/linters/commit/55b00f8efc76806aad68fb637c5826518c8a2907))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.8.3](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.8.2...@taiga-ui/eslint-plugin-experience@0.8.3) (2023-10-09)
 
 ### Bug Fixes
