@@ -10,6 +10,8 @@ module.exports = {
         cypress: require('./configs/cypress.js'),
         taiga: require('./configs/taiga.js'),
         'taiga-naming-convention': require('./configs/taiga-naming-convention.js'),
+        jest: require('./configs/jest.js'),
+        sonar: require('./configs/sonar.js'),
         'naming-convention': require('./configs/naming-convention.js'),
         'no-restricted-syntax': require('./configs/no-restricted-syntax.js'),
         base: require('./configs/base/index.js'),

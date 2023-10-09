@@ -30,6 +30,7 @@ module.exports = {
         'plugin:@taiga-ui/experience/ng',
         'plugin:@taiga-ui/experience/cypress',
         'plugin:@taiga-ui/experience/naming-convention',
+        'plugin:@taiga-ui/experience/sonar',
         'plugin:@taiga-ui/experience/off',
     ],
     ignorePatterns: require('@taiga-ui/eslint-plugin-experience/configs/ignore-patterns'),
