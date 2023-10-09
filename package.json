@@ -22,7 +22,10 @@
     "eslintConfig": {
         "extends": [
             "plugin:@taiga-ui/experience/all",
-            "plugin:@taiga-ui/experience/taiga-naming-convention"
+            "plugin:@taiga-ui/experience/taiga-naming-convention",
+            "plugin:@taiga-ui/experience/jest",
+            "plugin:@taiga-ui/experience/cypress",
+            "plugin:@taiga-ui/experience/playwright"
         ]
     },
     "stylelint": {
