@@ -1,7 +1,7 @@
 module.exports = {
     overrides: [
         {
-            files: ['*.ts'],
+            files: ['*.spec.ts'],
             parser: '@typescript-eslint/parser',
             extends: ['plugin:jest/recommended'],
             rules: {
