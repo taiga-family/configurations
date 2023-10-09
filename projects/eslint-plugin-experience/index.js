@@ -11,6 +11,7 @@ module.exports = {
         taiga: require('./configs/taiga.js'),
         'taiga-naming-convention': require('./configs/taiga-naming-convention.js'),
         jest: require('./configs/jest.js'),
+        playwright: require('./configs/playwright.js'),
         sonar: require('./configs/sonar.js'),
         'naming-convention': require('./configs/naming-convention.js'),
         'no-restricted-syntax': require('./configs/no-restricted-syntax.js'),

@@ -28,7 +28,6 @@ module.exports = {
         'plugin:@taiga-ui/experience/no-restricted-syntax',
         'plugin:@taiga-ui/experience/typescript',
         'plugin:@taiga-ui/experience/ng',
-        'plugin:@taiga-ui/experience/cypress',
         'plugin:@taiga-ui/experience/naming-convention',
         'plugin:@taiga-ui/experience/sonar',
         'plugin:@taiga-ui/experience/off',

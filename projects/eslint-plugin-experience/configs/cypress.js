@@ -1,10 +1,13 @@
 module.exports = {
     overrides: [
         {
-            files: ['**/projects/demo-cypress/**/**.cy.ts'],
+            files: ['**/*.cy.ts'],
             parser: '@typescript-eslint/parser',
-            plugins: ['@typescript-eslint'],
+            plugins: ['@typescript-eslint', 'cypress'],
+            extends: ['plugin:cypress/recommended'],
             rules: {
+                'cypress/no-unnecessary-waiting': 'off',
+                'cypress/unsafe-to-chain-command': 'off',
                 'no-implicit-globals': 'error',
                 'no-restricted-properties': [
                     'error',
