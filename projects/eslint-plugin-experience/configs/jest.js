@@ -22,6 +22,7 @@ module.exports = {
                 'jest/prefer-hooks-on-top': 'off',
                 'jest/require-to-throw-message': 'off',
                 'jest/max-nested-describe': 'off',
+                'jest/prefer-expect-resolves': 'off',
             },
         },
     ],
