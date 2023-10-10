@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.10.0...@taiga-ui/eslint-plugin-experience@0.10.1) (2023-10-10)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** add `jest/prefer-lowercase-title`
+  ([0444d78](https://github.com/taiga-family/linters/commit/0444d78b4f5b16642932fdf7a79071bef53e5944))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.10.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.9.1...@taiga-ui/eslint-plugin-experience@0.10.0) (2023-10-10)
 
 ### Bug Fixes
