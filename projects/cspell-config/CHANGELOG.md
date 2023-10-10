@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.14.0...@taiga-ui/cspell-config@0.15.0) (2023-10-10)
+
+### Features
+
+- **cspell-config:** add `callout` word
+  ([3576425](https://github.com/taiga-family/taiga-ui/commit/3576425f5e14dfa22d0052b45861a7ad4b292cd6))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.14.0](https://github.com/taiga-family/taiga-ui/compare/@taiga-ui/cspell-config@0.13.0...@taiga-ui/cspell-config@0.14.0) (2023-10-08)
 
 ### Features
