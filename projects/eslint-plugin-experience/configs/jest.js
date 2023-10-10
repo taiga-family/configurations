@@ -23,6 +23,7 @@ module.exports = {
                 'jest/require-to-throw-message': 'off',
                 'jest/max-nested-describe': 'off',
                 'jest/prefer-expect-resolves': 'off',
+                'jest/prefer-lowercase-title': 'off',
             },
         },
     ],
