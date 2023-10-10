@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.9.1...@taiga-ui/eslint-plugin-experience@0.10.0) (2023-10-10)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** add `jest/prefer-expect-resolves`
+  ([0d763fa](https://github.com/taiga-family/linters/commit/0d763faf9fbb6d67921e3be8289c08e82216f82d))
+
+### Features
+
+- **eslint-plugin-experience:** enable jest all rules
+  ([be3cd3d](https://github.com/taiga-family/linters/commit/be3cd3d87f885176b1c0a2519a8719aceb53d7db))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.9.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.9.0...@taiga-ui/eslint-plugin-experience@0.9.1) (2023-10-10)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
