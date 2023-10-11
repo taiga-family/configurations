@@ -24,6 +24,8 @@ module.exports = {
                 'jest/max-nested-describe': 'off',
                 'jest/prefer-expect-resolves': 'off',
                 'jest/prefer-lowercase-title': 'off',
+                'jest/prefer-to-have-length': 'off',
+                'jest/prefer-to-be-null': 'off',
             },
         },
     ],
