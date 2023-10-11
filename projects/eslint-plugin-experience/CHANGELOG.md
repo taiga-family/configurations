@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.10.1...@taiga-ui/eslint-plugin-experience@0.10.2) (2023-10-11)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** add `jest/prefer-to-be-null`
+  ([41eb59d](https://github.com/taiga-family/linters/commit/41eb59d0a0d05218cf1eade906208b5a14761923))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.10.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.10.0...@taiga-ui/eslint-plugin-experience@0.10.1) (2023-10-10)
 
 ### Bug Fixes
