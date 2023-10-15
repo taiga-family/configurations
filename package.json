@@ -40,7 +40,7 @@
         ]
     },
     "devDependencies": {
-        "@commitlint/cli": "17.7.2",
+        "@commitlint/cli": "17.8.0",
         "@nx/jest": "16.10.0",
         "@nx/node": "16.10.0",
         "@nx/workspace": "16.10.0",
