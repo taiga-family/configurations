@@ -56,7 +56,7 @@
         "forceConsistentCasingInFileNames": true,
         "tsBuildInfoFile": null,
         "noImplicitOverride": true,
-        "preserveConstEnums": true,
+        "isolatedModules": false,
         "noEmitHelpers": true,
         "pretty": true,
         "stripInternal": false,
