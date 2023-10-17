@@ -59,7 +59,7 @@
         "preserveConstEnums": true,
         "noEmitHelpers": true,
         "pretty": true,
-        "stripInternal": true,
+        "stripInternal": false,
         "noUncheckedIndexedAccess": false,
         "importsNotUsedAsValues": "remove",
         "noPropertyAccessFromIndexSignature": false,
