@@ -5,6 +5,7 @@ module.exports = {
     caseSensitive: false,
     useGitignore: true,
     files: ['*/*.*'],
+    ignorePaths: ['CHANGELOG.md'],
     import: [
         './configs/locales/latin.json',
         './configs/locales/dutch.json',
