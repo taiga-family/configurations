@@ -1,0 +1,14 @@
+{
+    "name": "tsconfig",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "projects/tsconfig",
+    "projectType": "library",
+    "targets": {
+        "publish": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "npm publish ./projects/tsconfig --access=public --ignore-scripts || echo \"already published\""
+            }
+        }
+    }
+}
