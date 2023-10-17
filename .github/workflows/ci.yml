@@ -1,4 +1,4 @@
-name: ⚙️ Lint
+name: ⚙️ CI
 
 on:
   pull_request:
@@ -25,6 +25,9 @@ jobs:
           npm run prettier -- --check
           npm run stylelint
           npm run lint
+
+      - run: |
+          npx nx run-many --target build --all
 
       - name: cleanup
         run: rm -rf taiga-ui
