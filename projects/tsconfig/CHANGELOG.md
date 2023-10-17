@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.2.2...@taiga-ui/tsconfig@0.2.3) (2023-10-17)
+
+### Bug Fixes
+
+- **tsconfig:** ignore preserveConstEnums
+  ([8cd114a](https://github.com/taiga-family/linters/commit/8cd114a0168c863bfb8c42f90f42aa3b2962f902))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.2.2](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.2.1...@taiga-ui/tsconfig@0.2.2) (2023-10-17)
 
 ### Bug Fixes
