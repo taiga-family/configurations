@@ -84,6 +84,14 @@ module.exports = {
                             match: false,
                         },
                     },
+                    {
+                        selector: 'classProperty',
+                        format: ['strictCamelCase'],
+                        filter: {
+                            regex: '[API|CVC|HTML|axisX|axisY]',
+                            match: false,
+                        },
+                    },
                 ],
             },
         },
