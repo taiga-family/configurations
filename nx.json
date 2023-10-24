@@ -27,5 +27,7 @@
             "{workspaceRoot}/*.md"
         ],
         "production": ["default"]
-    }
+    },
+    "targetDefaults": {},
+    "nxCloudAccessToken": "ZmQxN2Q4MmQtNzQ3OC00MDQ0LTg2MTYtNGE3OGU5NDQwNTk3fHJlYWQtd3JpdGU="
 }
