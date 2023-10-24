@@ -8,10 +8,11 @@
     ],
     "scripts": {
         "lint": "eslint . --no-error-on-unmatched-pattern",
-        "prettier": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}' --ignore-path .prettierignore",
+        "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
         "format": "npm run prettier -- --write",
         "commitlint": "npx commitlint --from=HEAD~1",
-        "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json"
+        "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json",
+        "version": "npm run format"
     },
     "commitlint": {
         "extends": [

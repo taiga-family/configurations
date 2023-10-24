@@ -1,5 +1,0 @@
-.idea
-dist
-**/coverage/**
-package-lock.json
-CHANGELOG.md
