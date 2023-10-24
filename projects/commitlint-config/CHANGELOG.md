@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/taiga-family/linters/compare/@taiga-ui/commitlint-config@0.3.0...@taiga-ui/commitlint-config@0.3.1) (2023-10-24)
+
+**Note:** Version bump only for package @taiga-ui/commitlint-config
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.3.0](https://github.com/taiga-family/linters/compare/@taiga-ui/commitlint-config@0.2.2...@taiga-ui/commitlint-config@0.3.0) (2023-10-17)
 
 ### Features
