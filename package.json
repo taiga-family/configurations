@@ -42,12 +42,12 @@
     },
     "devDependencies": {
         "@commitlint/cli": "18.1.0",
-        "@nx/jest": "17.0.1",
-        "@nx/node": "17.0.1",
-        "@nx/workspace": "17.0.1",
+        "@nx/jest": "17.0.2",
+        "@nx/node": "17.0.2",
+        "@nx/workspace": "17.0.2",
         "eslint": "8.52.0",
         "lerna": "7.4.1",
-        "nx": "17.0.1",
+        "nx": "17.0.2",
         "nx-cloud": "16.5.2",
         "prettier": "3.0.3",
         "stylelint": "15.11.0"
