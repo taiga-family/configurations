@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.17.0...@taiga-ui/cspell-config@0.18.0) (2023-10-26)
+
+### Features
+
+- add word `replicants`
+  ([b99a086](https://github.com/taiga-family/linters/commit/b99a086f9d0ea5617bd1636aa966c8ff20619525))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.17.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.16.2...@taiga-ui/cspell-config@0.17.0) (2023-10-19)
 
 ### Features
