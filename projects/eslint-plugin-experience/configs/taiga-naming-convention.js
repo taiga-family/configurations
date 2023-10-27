@@ -57,16 +57,6 @@ module.exports = {
                     },
                     {
                         selector: 'variable',
-                        modifiers: ['const', 'global', 'exported'],
-                        format: ['UPPER_CASE'],
-                        prefix: ['TUI_'],
-                        filter: {
-                            regex: '(^[A-Z]{2,}$)|(^[A-Z_]{2,}$)',
-                            match: true,
-                        },
-                    },
-                    {
-                        selector: 'variable',
                         modifiers: ['exported'],
                         format: ['UPPER_CASE', 'camelCase', 'PascalCase'],
                     },
@@ -157,7 +147,7 @@ module.exports = {
                     },
                     {
                         selector: 'variable',
-                        modifiers: ['exported', 'const', 'global', 'exported'],
+                        modifiers: ['exported'],
                         format: ['UPPER_CASE', 'camelCase', 'PascalCase'],
                     },
                     {
