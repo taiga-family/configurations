@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.12.1...@taiga-ui/eslint-plugin-experience@0.12.2) (2023-10-27)
+
+### Bug Fixes
+
+- revert naming `TUI_`
+  ([6a03943](https://github.com/taiga-family/linters/commit/6a039431f905a67640eab8be21cbc941217fcb69))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.12.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.12.0...@taiga-ui/eslint-plugin-experience@0.12.1) (2023-10-26)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
