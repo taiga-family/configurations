@@ -33,5 +33,5 @@ jobs:
         run: rm -rf taiga-ui
 
 concurrency:
-  group: lint-${{ github.workflow }}-${{ github.ref }}
+  group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
