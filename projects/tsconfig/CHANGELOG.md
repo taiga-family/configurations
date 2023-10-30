@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.4](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.2.3...@taiga-ui/tsconfig@0.2.4) (2023-10-30)
+
+### Bug Fixes
+
+- **tsconfig:** disable `removeComments`
+  ([0ead22f](https://github.com/taiga-family/linters/commit/0ead22f85e94b06c47fe21b337ede9e93a5c8053))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.2.3](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.2.2...@taiga-ui/tsconfig@0.2.3) (2023-10-17)
 
 ### Bug Fixes
