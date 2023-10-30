@@ -63,7 +63,7 @@
         "noUncheckedIndexedAccess": false,
         "importsNotUsedAsValues": "remove",
         "noPropertyAccessFromIndexSignature": false,
-        "removeComments": true,
+        "removeComments": false,
         "noEmitOnError": true,
         "allowJs": true,
         "checkJs": true,
