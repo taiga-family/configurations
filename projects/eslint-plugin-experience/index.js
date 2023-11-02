@@ -36,6 +36,7 @@ module.exports = {
         'prefer-inject-decorator': require('./rules/prefer-inject-decorator'),
         'prefer-self-destroy-service': require('./rules/prefer-self-destroy-service'),
         'no-typeof': require('./rules/no-typeof'),
+        'no-private-esnext-fields': require('./rules/no-private-esnext-fields'),
         'strict-tui-doc-example': require('./rules/strict-tui-doc-example'),
         'no-assert-without-ng-dev-mode': require('./rules/no-assert-without-ng-dev-mode'),
     },

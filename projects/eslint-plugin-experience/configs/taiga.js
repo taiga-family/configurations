@@ -9,6 +9,7 @@ module.exports = {
                 '@taiga-ui/experience/prefer-inject-decorator': 'error',
                 '@taiga-ui/experience/prefer-self-destroy-service': 'error',
                 '@taiga-ui/experience/no-typeof': 'error',
+                '@taiga-ui/experience/no-private-esnext-fields': 'error',
                 '@taiga-ui/experience/no-deep-imports': [
                     'error',
                     {
