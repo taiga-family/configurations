@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.13.2...@taiga-ui/eslint-plugin-experience@0.14.0) (2023-11-02)
+
+### Features
+
+- **eslint-plugin-experience:** add no-private-esnext-fields rule
+  ([1ea8bad](https://github.com/taiga-family/linters/commit/1ea8bad37c729b3bb98a63eb475db01731917c20))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.13.2](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.13.1...@taiga-ui/eslint-plugin-experience@0.13.2) (2023-11-02)
 
 ### Bug Fixes
