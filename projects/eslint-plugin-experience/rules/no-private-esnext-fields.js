@@ -12,18 +12,12 @@ module.exports = {
                 const members = Array.from(node?.body?.body ?? []);
 
                 members.forEach(member => {
+                    console.log(member);
+
                     if (member?.key?.type === `PrivateIdentifier`) {
                         context.report({
                             node: node,
                             message: `Please don't use "#${member?.key?.name}" instead of "private ${member?.key?.name}"`,
-                            fix: fixer => {
-                                const [start] = member.range ?? [];
-
-                                return fixer.replaceTextRange(
-                                    [start, start + 1],
-                                    'private ',
-                                );
-                            },
                         });
                     }
                 });
