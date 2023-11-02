@@ -12,8 +12,6 @@ module.exports = {
                 const members = Array.from(node?.body?.body ?? []);
 
                 members.forEach(member => {
-                    console.log(member);
-
                     if (member?.key?.type === `PrivateIdentifier`) {
                         context.report({
                             node: node,
