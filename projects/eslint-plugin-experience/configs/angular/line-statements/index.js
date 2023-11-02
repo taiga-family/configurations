@@ -40,6 +40,8 @@ module.exports = {
                     {blankLine: 'always', prev: 'directive', next: '*'},
                     {blankLine: 'always', prev: '*', next: ['interface', 'type']},
                     {blankLine: 'always', prev: ['const', 'let', 'var'], next: '*'},
+                    {blankLine: 'always', prev: '*', next: 'class'},
+                    {blankLine: 'always', prev: 'class', next: '*'},
                     {
                         blankLine: 'any',
                         prev: ['const', 'let', 'var', 'export'],
@@ -47,8 +49,6 @@ module.exports = {
                     },
                     {blankLine: 'any', prev: '*', next: ['case', 'default']},
                     {blankLine: 'any', prev: ['case', 'default'], next: '*'},
-                    {blankLine: 'any', prev: '*', next: 'class'},
-                    {blankLine: 'any', prev: 'class', next: '*'},
                     {blankLine: 'any', prev: 'directive', next: 'directive'},
                 ],
             },
