@@ -13,13 +13,18 @@ module.exports = {
                     'error',
                     {
                         default: [
+                            // Index signature
                             'signature',
+                            'readonly-signature',
+
+                            // Fields
                             /**
                              * static fields
                              * [sort: public -> protected -> private]
                              **/
                             'public-static-field',
                             'protected-static-field',
+                            '#private-static-field',
                             'private-static-field',
 
                             /**
@@ -36,6 +41,7 @@ module.exports = {
                              **/
                             'private-decorated-field',
                             'private-instance-field',
+                            '#private-instance-field',
                             'protected-decorated-field',
                             'protected-instance-field',
                             'public-decorated-field',
@@ -97,6 +103,7 @@ module.exports = {
                             'public-static-method',
                             'protected-static-method',
                             'private-static-method',
+                            '#private-static-method',
 
                             /**
                              * abstract
@@ -120,6 +127,7 @@ module.exports = {
                             'protected-instance-method',
                             'private-decorated-method',
                             'private-instance-method',
+                            '#private-instance-method',
                         ],
                     },
                 ],
