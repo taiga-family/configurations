@@ -62,19 +62,11 @@ module.exports = {
                     },
                     {
                         selector: 'classMethod',
-                        format: ['strictCamelCase'],
-                        filter: {
-                            regex: '(HTML|CSS|TS|JSON|CVC|CVCChange|URI|URL|DOM)$',
-                            match: false,
-                        },
+                        format: ['strictCamelCase']
                     },
                     {
                         selector: 'classProperty',
-                        format: ['strictCamelCase'],
-                        filter: {
-                            regex: '[API|CVC|HTML|axisX|axisY]',
-                            match: false,
-                        },
+                        format: ['strictCamelCase']
                     },
                 ],
             },

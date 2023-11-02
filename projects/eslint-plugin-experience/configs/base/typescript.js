@@ -70,43 +70,6 @@ module.exports = {
                 '@typescript-eslint/no-explicit-any': 'off',
                 camelcase: 'off',
                 '@typescript-eslint/camelcase': 'off',
-                '@typescript-eslint/naming-convention': [
-                    'error',
-                    {
-                        selector: 'default',
-                        format: ['camelCase', 'PascalCase'],
-                        leadingUnderscore: 'allow',
-                        trailingUnderscore: 'allow',
-                    },
-                    {
-                        selector: 'variable',
-                        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-                        leadingUnderscore: 'allow',
-                        trailingUnderscore: 'allow',
-                    },
-                    {
-                        selector: 'typeLike',
-                        format: ['PascalCase', 'UPPER_CASE'],
-                    },
-                    {
-                        selector: 'property',
-                        format: ['camelCase', 'PascalCase'],
-                    },
-                    {
-                        selector: [
-                            'classProperty',
-                            'objectLiteralProperty',
-                            'typeProperty',
-                            'classMethod',
-                            'objectLiteralMethod',
-                            'typeMethod',
-                            'accessor',
-                            'enumMember',
-                        ],
-                        format: null,
-                        modifiers: ['requiresQuotes'],
-                    },
-                ],
                 '@typescript-eslint/ban-ts-comment': 'warn',
                 '@typescript-eslint/no-empty-function': 'warn',
                 // standard no-unused-expressions don't understand optional chaining from ts
