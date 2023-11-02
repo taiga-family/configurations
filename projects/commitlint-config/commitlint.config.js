@@ -17,6 +17,7 @@ module.exports = {
                 2,
                 'always',
                 [
+                    'release',
                     'deprecate',
                     'schematics',
                     'all',

@@ -80,7 +80,7 @@ module.exports = {
                         selector: 'classMethod',
                         format: ['strictCamelCase'],
                         filter: {
-                            regex: '(HTML|CSS|TS|JSON|CVC|CVCChange|URI|URL|DOM)$',
+                            regex: '(API|HTML|CSS|TS|JSON|CVC|CVCChange|URI|URL|DOM)$',
                             match: false,
                         },
                     },
@@ -88,7 +88,7 @@ module.exports = {
                         selector: 'classProperty',
                         format: ['strictCamelCase'],
                         filter: {
-                            regex: '[API|CVC|HTML|axisX|axisY]',
+                            regex: '(API|CVC|HTML|axisX|axisY)$',
                             match: false,
                         },
                     },
