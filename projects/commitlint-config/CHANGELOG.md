@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.3](https://github.com/taiga-family/linters/compare/@taiga-ui/commitlint-config@0.3.2...@taiga-ui/commitlint-config@0.3.3) (2023-11-02)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** invalid class property
+  ([40d9ad4](https://github.com/taiga-family/linters/commit/40d9ad4bf4dbd1e160130c87d7cffa77e0951b32))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.3.2](https://github.com/taiga-family/linters/compare/@taiga-ui/commitlint-config@0.3.1...@taiga-ui/commitlint-config@0.3.2) (2023-10-25)
 
 **Note:** Version bump only for package @taiga-ui/commitlint-config
