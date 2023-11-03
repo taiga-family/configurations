@@ -18,7 +18,6 @@ module.exports = {
                 'jest/max-expects': 'off',
                 'jest/prefer-called-with': 'off',
                 'jest/unbound-method': 'off',
-                'jest/require-top-level-describe': 'off',
                 'jest/prefer-hooks-on-top': 'off',
                 'jest/require-to-throw-message': 'off',
                 'jest/max-nested-describe': 'off',
@@ -26,6 +25,12 @@ module.exports = {
                 'jest/prefer-lowercase-title': 'off',
                 'jest/prefer-to-have-length': 'off',
                 'jest/prefer-to-be-null': 'off',
+                'jest/require-top-level-describe': [
+                    'error',
+                    {
+                        maxNumberOfTopLevelDescribes: 1,
+                    },
+                ],
             },
         },
     ],
