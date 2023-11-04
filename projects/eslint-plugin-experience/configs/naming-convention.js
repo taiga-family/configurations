@@ -62,11 +62,11 @@ module.exports = {
                     },
                     {
                         selector: 'classMethod',
-                        format: ['strictCamelCase']
+                        format: ['strictCamelCase'],
                     },
                     {
                         selector: 'classProperty',
-                        format: ['strictCamelCase']
+                        format: ['strictCamelCase'],
                     },
                 ],
             },
