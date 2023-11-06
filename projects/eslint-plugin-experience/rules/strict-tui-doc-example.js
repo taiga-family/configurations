@@ -1,4 +1,4 @@
-const getTypeName = require(`../utils/get-type-name`);
+const getTypeName = require(`./utils/get-type-name`);
 
 const INVALID_KEY_MESSAGE_ID = `strict-doc-example-extensions-invalid-key`;
 const INVALID_VALUE_MESSAGE_ID = `strict-doc-example-extensions-invalid-value`;
