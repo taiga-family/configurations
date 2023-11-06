@@ -1,7 +1,7 @@
-const getTypeName = require('../utils/get-type-name');
-const getDecorators = require('../utils/get-decorators');
-const hasDecorator = require('../utils/has-decorator');
-const getNgConstructor = require('../utils/get-ng-constructor');
+const getTypeName = require('./utils/get-type-name');
+const getDecorators = require('./utils/get-decorators');
+const hasDecorator = require('./utils/has-decorator');
+const getNgConstructor = require('./utils/get-ng-constructor');
 
 const MESSAGE_ID = `prefer-inject-self-destroy-service`;
 const ERROR_MESSAGE = `Use Self() decorator for TuiDestroyService`;

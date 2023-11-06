@@ -1,4 +1,4 @@
-const getNodeByNameFromLogicalExpression = require('../utils/get-node-by-name-from-logical-expression');
+const getNodeByNameFromLogicalExpression = require('./utils/get-node-by-name-from-logical-expression');
 
 const MESSAGE_ID = `no-assert-without-ng-dev-mode`;
 const ERROR_MESSAGE = `callee.assert must be used along with ngDevMode`;

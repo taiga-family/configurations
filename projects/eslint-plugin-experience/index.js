@@ -6,6 +6,7 @@ module.exports = {
         all: require('./all.js'),
         off: require('./configs/off.js'),
         ng: require('./configs/ng.js'),
+        functional: require('./configs/functional.js'),
         typescript: require('./configs/typescript.js'),
         cypress: require('./configs/cypress.js'),
         taiga: require('./configs/taiga.js'),
