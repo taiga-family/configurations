@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.18.1...@taiga-ui/cspell-config@0.19.0) (2023-11-07)
+
+### Features
+
+- **cspell-config:** add some words
+  ([21a8853](https://github.com/taiga-family/linters/commit/21a8853992b13470d4329a2fc6abbfc8f02d924a))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.18.1](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.18.0...@taiga-ui/cspell-config@0.18.1) (2023-11-07)
 
 **Note:** Version bump only for package @taiga-ui/cspell-config
