@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.16.3...@taiga-ui/eslint-plugin-experience@0.17.0) (2023-11-08)
+
+### Features
+
+- **eslint-plugin-experience:** add `@taiga-ui/experience/decorator-key-sort`
+  ([4ccf0d9](https://github.com/taiga-family/linters/commit/4ccf0d99034df0043c927247580907101dbf31d2))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.16.3](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.16.2...@taiga-ui/eslint-plugin-experience@0.16.3) (2023-11-08)
 
 ### Bug Fixes
