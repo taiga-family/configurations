@@ -1,7 +1,3 @@
-const DEFAULT_OPTIONS = {
-    decorators: {},
-};
-
 /**
  * @type {import(`eslint`).Rule.RuleModule}
  */
@@ -12,24 +8,13 @@ module.exports = {
         schema: [
             {
                 type: `object`,
-                properties: {
-                    decorators: {
-                        type: `object`,
-                        description: `Decorators names and his keys order`,
-                        properties: {
-                            additionalProperties: true,
-                        },
-                    },
-                },
-                additionalProperties: false,
+                description: `Decorators names and his keys order`,
+                additionalProperties: true,
             },
         ],
     },
     create(context) {
-        const {decorators: ORDER} = {
-            ...DEFAULT_OPTIONS,
-            ...(context.options[0] || {}),
-        };
+        const ORDER = context.options[0] || {};
 
         return {
             ClassDeclaration(node) {
