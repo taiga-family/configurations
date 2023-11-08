@@ -8,7 +8,7 @@ module.exports = {
         schema: [
             {
                 type: `object`,
-                description: `Decorators names and his keys order`,
+                description: `Decorators names and their keys order`,
                 additionalProperties: true,
             },
         ],
@@ -22,7 +22,8 @@ module.exports = {
 
                 for (const decorator of decorators) {
                     const expression = decorator.expression;
-                    const decoratorName = expression.callee.name;
+
+                    const decoratorName = expression.callee?.name ?? ``;
 
                     if (decoratorName in (ORDER || {})) {
                         const orderList = ORDER[decoratorName];
