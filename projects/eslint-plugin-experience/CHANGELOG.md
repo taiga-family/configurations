@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.17.2...@taiga-ui/eslint-plugin-experience@0.18.0) (2023-11-08)
+
+### Features
+
+- **eslint-plugin-experience:** update ignore patterns
+  ([ce79ff2](https://github.com/taiga-family/linters/commit/ce79ff250ac655534af608248f24265f16d12196))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.17.2](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.17.1...@taiga-ui/eslint-plugin-experience@0.17.2) (2023-11-08)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
