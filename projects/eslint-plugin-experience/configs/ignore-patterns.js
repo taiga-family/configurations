@@ -1,5 +1,8 @@
 module.exports = [
     '*/icons/all.ts',
+    '**/tests-report/**',
+    '**/snapshots/**',
+    '**/test-results/**',
     '404.html',
     '*.js',
     '*.json',
