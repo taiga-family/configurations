@@ -40,5 +40,6 @@ module.exports = {
         'no-private-esnext-fields': require('./rules/no-private-esnext-fields'),
         'strict-tui-doc-example': require('./rules/strict-tui-doc-example'),
         'no-assert-without-ng-dev-mode': require('./rules/no-assert-without-ng-dev-mode'),
+        'decorator-key-sort': require('./rules/decorator-key-sort'),
     },
 };
