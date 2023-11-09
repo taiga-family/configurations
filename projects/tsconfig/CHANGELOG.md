@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.2.4...@taiga-ui/tsconfig@0.3.0) (2023-11-09)
+
+### Features
+
+- **eslint-plugin-experience:** support vite and esbuild
+  ([36d69e1](https://github.com/taiga-family/linters/commit/36d69e1607b7b3060d848368445c13ea233e384b))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.2.4](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.2.3...@taiga-ui/tsconfig@0.2.4) (2023-10-30)
 
 ### Bug Fixes
