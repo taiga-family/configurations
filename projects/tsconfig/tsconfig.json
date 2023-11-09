@@ -45,7 +45,6 @@
         "noUnusedLocals": true,
         "noImplicitReturns": true,
         "noUnusedParameters": true,
-        "incremental": false,
         "newLine": "lf",
         "alwaysStrict": true,
         "allowUnreachableCode": false,
@@ -54,7 +53,6 @@
         "allowUmdGlobalAccess": true,
         "useDefineForClassFields": false,
         "forceConsistentCasingInFileNames": true,
-        "tsBuildInfoFile": null,
         "noImplicitOverride": true,
         "isolatedModules": false,
         "noEmitHelpers": true,
@@ -72,7 +70,9 @@
         "preserveSymlinks": true,
         "strictBindCallApply": true,
         "strictFunctionTypes": true,
-        "strictPropertyInitialization": true
+        "strictPropertyInitialization": true,
+        "incremental": true,
+        "tsBuildInfoFile": ".tsbuildinfo"
     },
     "ts-node": {
         "files": true,
