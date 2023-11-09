@@ -71,8 +71,7 @@
         "strictBindCallApply": true,
         "strictFunctionTypes": true,
         "strictPropertyInitialization": true,
-        "incremental": true,
-        "tsBuildInfoFile": ".tsbuildinfo"
+        "incremental": true
     },
     "ts-node": {
         "files": true,
