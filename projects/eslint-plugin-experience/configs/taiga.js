@@ -31,6 +31,7 @@ module.exports = {
                             'standalone',
                             'signal',
                             'selector',
+                            'imports',
                             'template',
                             'templateUrl',
                             'styleUrls',
