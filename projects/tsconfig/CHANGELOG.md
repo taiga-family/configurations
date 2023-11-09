@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.3.0...@taiga-ui/tsconfig@0.3.1) (2023-11-09)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** remove tsBuildInfoFile
+  ([2b7f253](https://github.com/taiga-family/linters/commit/2b7f253d53dc0e8afa78cb567eb92f1cb4b77f1b))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.3.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.2.4...@taiga-ui/tsconfig@0.3.0) (2023-11-09)
 
 ### Features
