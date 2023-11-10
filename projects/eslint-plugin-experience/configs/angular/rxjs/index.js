@@ -17,5 +17,14 @@ module.exports = {
                 'rxjs/throw-error': 'error',
             },
         },
+        {
+            files: ['**/schematics/**/*.spec.ts'],
+            parser: '@typescript-eslint/parser',
+            plugins: ['rxjs'],
+            extends: ['plugin:rxjs/recommended'],
+            rules: {
+                'rxjs/no-topromise': 'off',
+            },
+        },
     ],
 };
