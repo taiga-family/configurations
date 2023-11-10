@@ -1,10 +1,14 @@
+const base =
+    projectJsonExist('tsconfig.eslint.json') || projectJsonExist('tsconfig.json') || '';
+const project = base ? [base] : [];
+
 module.exports = {
     overrides: [
         {
             files: ['*.ts'],
             parserOptions: {
+                project: base ? [base] : [],
                 ecmaVersion: 'latest',
-                project: ['tsconfig.eslint.json'],
                 sourceType: 'module',
             },
             parser: '@typescript-eslint/parser',
@@ -106,3 +110,12 @@ module.exports = {
         },
     ],
 };
+
+function projectJsonExist(filename) {
+    try {
+        const path = require('path').resolve(filename);
+        return require('fs').existsSync(path) ? filename : undefined;
+    } catch {
+        return undefined;
+    }
+}
