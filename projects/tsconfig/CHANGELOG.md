@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.3.1...@taiga-ui/tsconfig@0.4.0) (2023-11-10)
+
+### Features
+
+- **tsconfig:** add schema
+  ([1b1c6ec](https://github.com/taiga-family/linters/commit/1b1c6ecabd92c528b5d5857853e662d7e2ad7e62))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.3.1](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.3.0...@taiga-ui/tsconfig@0.3.1) (2023-11-09)
 
 ### Bug Fixes
