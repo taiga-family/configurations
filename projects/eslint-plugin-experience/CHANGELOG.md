@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.3](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.19.2...@taiga-ui/eslint-plugin-experience@0.19.3) (2023-11-10)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** resolve tsconfig.json instead tsconfig.eslint.json if not found
+  ([ed05543](https://github.com/taiga-family/linters/commit/ed05543da34aacd1578d9b39a0bb111708252733))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.19.2](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.19.1...@taiga-ui/eslint-plugin-experience@0.19.2) (2023-11-09)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
