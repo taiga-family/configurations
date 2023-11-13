@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.20.0...@taiga-ui/eslint-plugin-experience@0.21.0) (2023-11-13)
+
+### Features
+
+- **eslint-plugin-experience:** add `@taiga-ui/experience/no-simple-for-of`
+  ([e4cf0b4](https://github.com/taiga-family/linters/commit/e4cf0b41e5aa3fb43ad855db9c5218ee5bd25130))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.20.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.19.4...@taiga-ui/eslint-plugin-experience@0.20.0) (2023-11-13)
 
 ### Features
