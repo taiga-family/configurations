@@ -1,6 +1,5 @@
 const base =
     projectJsonExist('tsconfig.eslint.json') || projectJsonExist('tsconfig.json') || '';
-const project = base ? [base] : [];
 
 module.exports = {
     overrides: [
@@ -15,6 +14,7 @@ module.exports = {
             plugins: ['@typescript-eslint'],
             rules: {
                 'unicorn/prefer-logical-operator-over-ternary': 'error',
+                '@angular-eslint/sort-lifecycle-methods': 'error',
                 '@typescript-eslint/require-array-sort-compare': 'error',
                 '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
                 '@typescript-eslint/no-unnecessary-type-constraint': 'error',
