@@ -17,6 +17,7 @@ module.exports = {
                     'AwaitExpression',
                     'BreakStatement',
                     'ContinueStatement',
+                    'ReturnStatement',
                 ]);
 
                 if (isSimpleForOf) {
