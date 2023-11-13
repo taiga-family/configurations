@@ -1,9 +1,9 @@
 module.exports = {
     overrides: [
         {
+            extends: ['plugin:sonarjs/recommended', 'plugin:sonar/recommended'],
             files: ['*.ts'],
             parser: '@typescript-eslint/parser',
-            extends: ['plugin:sonarjs/recommended', 'plugin:sonar/recommended'],
             rules: {
                 'sonar/for-in': 'off',
                 'sonar/function-name': 'off',

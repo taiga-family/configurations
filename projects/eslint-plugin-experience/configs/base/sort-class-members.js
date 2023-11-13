@@ -5,20 +5,8 @@ module.exports = {
         'sort-class-members/sort-class-members': [
             'error',
             {
-                order: [
-                    '[static-members]',
-                    '[properties]',
-                    '[conventional-private-properties]',
-                    'constructor',
-                    '[lifecycle]',
-                    '[handlers]',
-                    '[methods]',
-                    '[conventional-private-methods]',
-                    '[rendering]',
-                    '[everything-else]',
-                ],
+                accessorPairPositioning: 'getThenSet',
                 groups: {
-                    'static-members': [{static: true}],
                     handlers: [
                         {name: '/^on.+$/', type: 'method'},
                         {name: '/^on.+$/', type: 'property'},
@@ -50,8 +38,20 @@ module.exports = {
                         'componentDidCatch',
                     ],
                     rendering: ['/^render.+$/', 'render'],
+                    'static-members': [{static: true}],
                 },
-                accessorPairPositioning: 'getThenSet',
+                order: [
+                    '[static-members]',
+                    '[properties]',
+                    '[conventional-private-properties]',
+                    'constructor',
+                    '[lifecycle]',
+                    '[handlers]',
+                    '[methods]',
+                    '[conventional-private-methods]',
+                    '[rendering]',
+                    '[everything-else]',
+                ],
             },
         ],
     },

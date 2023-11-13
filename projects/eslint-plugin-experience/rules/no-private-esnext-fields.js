@@ -2,10 +2,6 @@
  * @type {import(`eslint`).Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: 'problem',
-        fixable: 'code',
-    },
     create(context) {
         return {
             ClassDeclaration: function reportUnwantedName(node) {
@@ -14,12 +10,16 @@ module.exports = {
                 members.forEach(member => {
                     if (member?.key?.type === `PrivateIdentifier`) {
                         context.report({
-                            node,
                             message: `Please don't use "#${member?.key?.name}" instead of "private ${member?.key?.name}"`,
+                            node,
                         });
                     }
                 });
             },
         };
+    },
+    meta: {
+        fixable: 'code',
+        type: 'problem',
     },
 };

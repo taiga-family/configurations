@@ -2,10 +2,6 @@
  * @type {import('eslint').Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: 'problem',
-        schema: [],
-    },
     create(context) {
         return {
             /**
@@ -19,6 +15,10 @@ module.exports = {
             },
         };
     },
+    meta: {
+        schema: [],
+        type: 'problem',
+    },
 };
 
 /**
@@ -28,8 +28,8 @@ module.exports = {
 function markTypeOfString(context, node) {
     if (checkRightOperandIs(node, `string`)) {
         context.report({
-            node,
             message: `Don't use "typeof value === 'string'" instead of tuiIsString(value)`,
+            node,
         });
     }
 }
@@ -41,8 +41,8 @@ function markTypeOfString(context, node) {
 function markTypeOfNumber(context, node) {
     if (checkRightOperandIs(node, `number`)) {
         context.report({
-            node,
             message: `Don't use "typeof value === 'number'" instead of tuiIsNumber(value)`,
+            node,
         });
     }
 }
@@ -54,8 +54,8 @@ function markTypeOfNumber(context, node) {
 function markTypeOfObject(context, node) {
     if (checkRightOperandIs(node, `object`)) {
         context.report({
-            node,
             message: `Don't use "typeof value === 'object'" instead of tuiIsObject(value)`,
+            node,
         });
     }
 }

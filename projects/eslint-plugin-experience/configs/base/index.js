@@ -1,4 +1,8 @@
 module.exports = {
+    env: {
+        browser: true,
+        node: true,
+    },
     extends: [
         './configs/base/base',
         './configs/base/sort-class-members',
@@ -7,8 +11,4 @@ module.exports = {
         './configs/base/typescript',
         './configs/base/prettier',
     ],
-    env: {
-        browser: true,
-        node: true,
-    },
 };

@@ -9,14 +9,6 @@ const ERROR_MESSAGE = `Use Inject() decorator for Dependency Injection`;
  * @type {import('eslint').Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: 'problem',
-        docs: {description: ERROR_MESSAGE},
-        messages: {
-            [MESSAGE_ID]: ERROR_MESSAGE,
-        },
-        fixable: 'code',
-    },
     create(context) {
         return {
             ClassDeclaration(node) {
@@ -29,8 +21,6 @@ module.exports = {
                 constructor.value.params.forEach(param => {
                     if (!hasDecorator(param, 'Inject', 'Attribute')) {
                         context.report({
-                            node: param,
-                            messageId: MESSAGE_ID,
                             fix: fixer => {
                                 const typeName = getTypeName(param);
 
@@ -46,10 +36,20 @@ module.exports = {
                                     `@Inject(${typeName}) `,
                                 );
                             },
+                            messageId: MESSAGE_ID,
+                            node: param,
                         });
                     }
                 });
             },
         };
+    },
+    meta: {
+        docs: {description: ERROR_MESSAGE},
+        fixable: 'code',
+        messages: {
+            [MESSAGE_ID]: ERROR_MESSAGE,
+        },
+        type: 'problem',
     },
 };

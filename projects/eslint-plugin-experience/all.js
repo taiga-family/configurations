@@ -2,13 +2,8 @@
  * @type {import('eslint').Linter.Config}
  */
 module.exports = {
-    root: true,
     env: {
         es2024: true,
-    },
-    parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
     },
     extends: [
         'plugin:@taiga-ui/experience/base',
@@ -33,4 +28,9 @@ module.exports = {
         'plugin:@taiga-ui/experience/off',
     ],
     ignorePatterns: require('@taiga-ui/eslint-plugin-experience/configs/ignore-patterns'),
+    parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+    },
+    root: true,
 };

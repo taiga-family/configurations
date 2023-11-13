@@ -5,14 +5,6 @@ const ERROR_MESSAGE = `InjectionToken's description should contain token's name`
  * @type {import('eslint').Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: 'problem',
-        docs: {description: ERROR_MESSAGE},
-        messages: {
-            [MESSAGE_ID]: ERROR_MESSAGE,
-        },
-        fixable: 'code',
-    },
     create(context) {
         return {
             'NewExpression[callee.name="InjectionToken"]': node => {
@@ -29,8 +21,6 @@ module.exports = {
 
                 if (hasReport) {
                     context.report({
-                        node: tokenDescriptionNode,
-                        messageId: MESSAGE_ID,
                         fix: fixer => {
                             const [start, end] = tokenDescriptionNode.range;
 
@@ -39,9 +29,19 @@ module.exports = {
                                 `[${tokenName}]: `,
                             );
                         },
+                        messageId: MESSAGE_ID,
+                        node: tokenDescriptionNode,
                     });
                 }
             },
         };
+    },
+    meta: {
+        docs: {description: ERROR_MESSAGE},
+        fixable: 'code',
+        messages: {
+            [MESSAGE_ID]: ERROR_MESSAGE,
+        },
+        type: 'problem',
     },
 };

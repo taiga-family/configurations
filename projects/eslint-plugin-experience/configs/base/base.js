@@ -1,13 +1,59 @@
 module.exports = {
     extends: ['eslint-config-airbnb-base', 'plugin:eslint-comments/recommended'],
-    plugins: ['@babel'],
+    overrides: [
+        {
+            extends: ['eslint-config-airbnb-base/rules/errors'],
+            files: ['*.js', '*.ts'],
+            parser: '@typescript-eslint/parser',
+            rules: {
+                'no-await-in-loop': 'off',
+                // eslint-config-airbnb-base/errors
+                'no-empty': ['error', {allowEmptyCatch: true}],
+            },
+        },
+    ],
     parserOptions: {
         ecmaFeatures: {
             legacyDecorators: true,
         },
         requireConfigFile: false,
     },
+    plugins: ['@babel'],
     rules: {
+        camelcase: [
+            'warn',
+            {
+                allow: ['^UNSAFE_'],
+                ignoreDestructuring: false,
+                properties: 'never',
+            },
+        ],
+        'class-methods-use-this': 'off',
+        complexity: 'off',
+        'consistent-return': 'warn',
+        'default-case': 'off',
+        'func-name-matching': 'off',
+        'func-names': 'off',
+        'func-style': [
+            'error',
+            'declaration',
+            {
+                allowArrowFunctions: true,
+            },
+        ],
+        'global-require': 'off',
+        'guard-for-in': 'off',
+        'lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true}],
+        'max-classes-per-file': ['error', 4],
+        'max-depth': 'off',
+        'max-nested-callbacks': ['error', 4],
+        'max-params': 'off',
+        'no-bitwise': 'warn',
+        'no-continue': 'off',
+        'no-plusplus': 'off',
+        'no-restricted-syntax': 'off',
+        'no-return-assign': ['error', 'except-parens'],
+        'no-underscore-dangle': 'off',
         'no-unused-expressions': [
             'error',
             {
@@ -18,60 +64,14 @@ module.exports = {
         'no-use-before-define': [
             'error',
             {
-                functions: false,
                 classes: false,
+                functions: false,
                 variables: true,
             },
         ],
-        'func-name-matching': 'off',
-        'global-require': 'off',
-        'class-methods-use-this': 'off',
-        'no-continue': 'off',
-        'no-restricted-syntax': 'off',
-        'guard-for-in': 'off',
-        'default-case': 'off',
-        'no-plusplus': 'off',
-        'func-names': 'off',
-        'consistent-return': 'warn',
-        'vars-on-top': 'warn',
-        'no-var': 'warn',
-        camelcase: [
-            'warn',
-            {
-                allow: ['^UNSAFE_'],
-                ignoreDestructuring: false,
-                properties: 'never',
-            },
-        ],
-        'func-style': [
-            'error',
-            'declaration',
-            {
-                allowArrowFunctions: true,
-            },
-        ],
-        'max-depth': 'off',
-        'max-params': 'off',
-        complexity: 'off',
-        'max-classes-per-file': ['error', 4],
-        'no-underscore-dangle': 'off',
-        'no-return-assign': ['error', 'except-parens'],
-        'lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true}],
-        'spaced-comment': ['error', 'always', {exceptions: ['*']}],
-        'max-nested-callbacks': ['error', 4],
-        'no-bitwise': 'warn',
         'no-useless-escape': 'warn',
+        'no-var': 'warn',
+        'spaced-comment': ['error', 'always', {exceptions: ['*']}],
+        'vars-on-top': 'warn',
     },
-    overrides: [
-        {
-            files: ['*.js', '*.ts'],
-            parser: '@typescript-eslint/parser',
-            extends: ['eslint-config-airbnb-base/rules/errors'],
-            rules: {
-                // eslint-config-airbnb-base/errors
-                'no-empty': ['error', {allowEmptyCatch: true}],
-                'no-await-in-loop': 'off',
-            },
-        },
-    ],
 };

@@ -1,10 +1,10 @@
 module.exports = {
     overrides: [
         {
+            extends: ['plugin:cypress/recommended'],
             files: ['**/*.cy.ts'],
             parser: '@typescript-eslint/parser',
             plugins: ['@typescript-eslint', 'cypress'],
-            extends: ['plugin:cypress/recommended'],
             rules: {
                 'cypress/no-unnecessary-waiting': 'off',
                 'cypress/unsafe-to-chain-command': 'off',
@@ -12,12 +12,12 @@ module.exports = {
                 'no-restricted-properties': [
                     'error',
                     {
-                        property: 'screenshot',
                         message: 'Please use matchImageSnapshot instead.',
+                        property: 'screenshot',
                     },
                     {
-                        property: 'visit',
                         message: 'Please use tuiVisit instead.',
+                        property: 'visit',
                     },
                 ],
             },

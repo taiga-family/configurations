@@ -2,17 +2,6 @@
  * @type {import(`eslint`).Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: 'problem',
-        fixable: 'code',
-        schema: [
-            {
-                type: `object`,
-                description: `Decorators names and their keys order`,
-                additionalProperties: true,
-            },
-        ],
-    },
     create(context) {
         const ORDER = context.options[0] || {};
 
@@ -36,10 +25,10 @@ module.exports = {
 
                             if (!isCorrectSortedAccording(correct, current)) {
                                 context.report({
-                                    node: expression,
                                     message: `Incorrect order keys in @${decoratorName} decorator, please sort by [${correct.join(
                                         ' -> ',
                                     )}]`,
+                                    node: expression,
                                 });
                             }
                         }
@@ -47,6 +36,17 @@ module.exports = {
                 }
             },
         };
+    },
+    meta: {
+        fixable: 'code',
+        schema: [
+            {
+                additionalProperties: true,
+                description: `Decorators names and their keys order`,
+                type: `object`,
+            },
+        ],
+        type: 'problem',
     },
 };
 

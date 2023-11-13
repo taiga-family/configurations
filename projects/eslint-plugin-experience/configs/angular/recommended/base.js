@@ -4,6 +4,7 @@ module.exports = {
         es6: true,
         node: true,
     },
+    extends: ['eslint:recommended'],
     ignorePatterns: [
         'dist',
         'node_modules',
@@ -19,32 +20,31 @@ module.exports = {
         '.git/**',
         '.idea/**',
     ],
-    extends: ['eslint:recommended'],
     /**
      * @note: use @typescript-eslint/parser instead @babel/parser
      */
     parser: '@typescript-eslint/parser',
     rules: {
+        curly: ['error', 'all'],
+        eqeqeq: ['error', 'always'],
+        'no-case-declarations': 'error',
+        'no-console': ['error', {allow: ['info', 'assert', 'warn', 'error']}],
+        'no-implicit-coercion': ['error', {allow: ['!!']}],
         /**
          * @note: [*.js, *.ts], exclude *.d.ts
          */
         'no-param-reassign': 'off',
-        'prefer-destructuring': 'off',
-        'no-case-declarations': 'error',
-        'no-console': ['error', {allow: ['info', 'assert', 'warn', 'error']}],
-        'no-implicit-coercion': ['error', {allow: ['!!']}],
         'no-return-assign': ['error', 'always'],
+        'no-useless-concat': 'error',
         'no-useless-rename': [
             'error',
             {
                 ignoreDestructuring: true,
-                ignoreImport: false,
                 ignoreExport: false,
+                ignoreImport: false,
             },
         ],
-        eqeqeq: ['error', 'always'],
-        'no-useless-concat': 'error',
+        'prefer-destructuring': 'off',
         'prefer-template': 'error',
-        curly: ['error', 'all'],
     },
 };

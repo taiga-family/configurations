@@ -86,29 +86,6 @@ const validateConditionalExpressions = ancestors => {
  * @type {import('eslint').Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: 'problem',
-        docs: {description: ERROR_MESSAGE},
-        messages: {
-            [MESSAGE_ID]: ERROR_MESSAGE,
-        },
-        fixable: 'code',
-        schema: [
-            {
-                type: 'object',
-                properties: {
-                    callee: {
-                        type: 'array',
-                        items: {
-                            type: 'string',
-                        },
-                        description: 'An array of callees that will be checked.',
-                    },
-                },
-                additionalProperties: false,
-            },
-        ],
-    },
     create(context) {
         const {callee} = {
             ...DEFAULT_OPTIONS,
@@ -148,8 +125,6 @@ module.exports = {
                 }
 
                 context.report({
-                    node,
-                    messageId: MESSAGE_ID,
                     /**
                      * This fixer is pretty straightforward.
                      * The best solution requires complicated logic,
@@ -159,8 +134,33 @@ module.exports = {
                         fixer.insertTextBefore(node, `(${requiredIdentifierName} && `),
                         fixer.insertTextAfter(node, `)`),
                     ],
+                    messageId: MESSAGE_ID,
+                    node,
                 });
             },
         };
+    },
+    meta: {
+        docs: {description: ERROR_MESSAGE},
+        fixable: 'code',
+        messages: {
+            [MESSAGE_ID]: ERROR_MESSAGE,
+        },
+        schema: [
+            {
+                additionalProperties: false,
+                properties: {
+                    callee: {
+                        description: 'An array of callees that will be checked.',
+                        items: {
+                            type: 'string',
+                        },
+                        type: 'array',
+                    },
+                },
+                type: 'object',
+            },
+        ],
+        type: 'problem',
     },
 };

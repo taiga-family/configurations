@@ -19,53 +19,35 @@ module.exports = {
         ],
         'no-duplicate-selectors': true,
         'number-leading-zero': 'never',
-        'rule-empty-line-before': [
-            'always',
-            {
-                except: ['first-nested'],
-                ignore: ['after-comment'],
-            },
-        ],
-        'selector-attribute-quotes': 'always',
-        'selector-max-specificity': '0,5,0',
-        'selector-pseudo-element-colon-notation': 'single',
-        'selector-type-no-unknown': [
-            true,
-            {
-                ignoreTypes: ['/^/deep/'],
-            },
-        ],
-        'value-keyword-case': 'lower',
-        'value-no-vendor-prefix': true,
         'order/order': [
             'at-variables',
             'less-mixins',
             'declarations',
             {
-                type: 'rule',
                 selector: '^&\\s\\+\\s\\S',
+                type: 'rule',
             },
             {
-                type: 'rule',
                 selector: '^&:\\w',
+                type: 'rule',
             },
             {
-                type: 'rule',
                 selector: '^&\\[\\w+\\]',
+                type: 'rule',
             },
             {
-                type: 'rule',
                 selector: '^&_[^\\W_]',
+                type: 'rule',
             },
             {
-                type: 'rule',
                 selector: '^&__\\w',
+                type: 'rule',
             },
             'rules',
             {
-                type: 'at-rule',
-                name: 'media',
                 hasBlock: true,
+                name: 'media',
+                type: 'at-rule',
             },
         ],
         'order/properties-order': [
@@ -84,5 +66,23 @@ module.exports = {
                 unspecified: 'bottom',
             },
         ],
+        'rule-empty-line-before': [
+            'always',
+            {
+                except: ['first-nested'],
+                ignore: ['after-comment'],
+            },
+        ],
+        'selector-attribute-quotes': 'always',
+        'selector-max-specificity': '0,5,0',
+        'selector-pseudo-element-colon-notation': 'single',
+        'selector-type-no-unknown': [
+            true,
+            {
+                ignoreTypes: ['/^/deep/'],
+            },
+        ],
+        'value-keyword-case': 'lower',
+        'value-no-vendor-prefix': true,
     },
 };

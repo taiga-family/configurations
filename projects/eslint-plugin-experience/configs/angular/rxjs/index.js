@@ -1,10 +1,10 @@
 module.exports = {
     overrides: [
         {
+            extends: ['plugin:rxjs/recommended'],
             files: ['*.ts'],
             parser: '@typescript-eslint/parser',
             plugins: ['rxjs'],
-            extends: ['plugin:rxjs/recommended'],
             rules: {
                 'rxjs/no-compat': 'error',
                 'rxjs/no-connectable': 'error',
@@ -18,10 +18,10 @@ module.exports = {
             },
         },
         {
+            extends: ['plugin:rxjs/recommended'],
             files: ['**/schematics/**/*.spec.ts'],
             parser: '@typescript-eslint/parser',
             plugins: ['rxjs'],
-            extends: ['plugin:rxjs/recommended'],
             rules: {
                 'rxjs/no-topromise': 'off',
             },

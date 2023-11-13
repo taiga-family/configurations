@@ -1,9 +1,7 @@
 module.exports = {
     $schema:
         'https://raw.githubusercontent.com/streetsidesoftware/master/cspell.schema.json',
-    language: 'en,ru,ar,lorem',
     caseSensitive: false,
-    useGitignore: true,
     files: ['*/*.*'],
     ignorePaths: ['CHANGELOG.md'],
     import: [
@@ -22,4 +20,6 @@ module.exports = {
         './configs/star-wars.json',
         './configs/ci-cd.json',
     ],
+    language: 'en,ru,ar,lorem',
+    useGitignore: true,
 };

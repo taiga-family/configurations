@@ -5,10 +5,6 @@ module.exports = {
             parser: '@typescript-eslint/parser',
             plugins: ['@typescript-eslint', 'sort-class-members'],
             rules: {
-                /**
-                 * @note(splincode): use @typescript-eslint/member-ordering instead
-                 */
-                'sort-class-members/sort-class-members': 'off',
                 '@typescript-eslint/member-ordering': [
                     'error',
                     {
@@ -131,6 +127,10 @@ module.exports = {
                         ],
                     },
                 ],
+                /**
+                 * @note(splincode): use @typescript-eslint/member-ordering instead
+                 */
+                'sort-class-members/sort-class-members': 'off',
             },
         },
     ],

@@ -2,51 +2,8 @@ module.exports = {
     extends: ['./stylelint.config.js'],
     plugins: ['stylelint-order', 'stylelint-no-px'],
     rules: {
-        'order/properties-order': [
-            [
-                'all',
-                'content',
-                'position',
-                {
-                    order: 'flexible',
-                    properties: ['top', 'left', 'right', 'bottom'],
-                },
-                'z-index',
-                'display',
-            ],
-            {
-                unspecified: 'bottom',
-            },
-        ],
-        'order/order': [
-            'less-mixins',
-            'custom-properties',
-            'dollar-variables',
-            'declarations',
-            'rules',
-            'at-rules',
-        ],
-        'color-function-notation': 'legacy',
         'alpha-value-notation': 'number',
-        'selector-max-specificity': [
-            '0,5,0',
-            {
-                ignoreSelectors: [':host-context', ':first-child'],
-            },
-        ],
-        'selector-type-no-unknown': [
-            true,
-            {
-                ignore: ['custom-elements'],
-                ignoreTypes: ['/^/deep/'],
-            },
-        ],
-        'selector-pseudo-element-no-unknown': [
-            true,
-            {
-                ignorePseudoElements: ['ng-deep'],
-            },
-        ],
+        'color-function-notation': 'legacy',
         'meowtec/no-px': [
             true,
             {
@@ -75,6 +32,49 @@ module.exports = {
                     '0.8px',
                     '0.9px',
                 ],
+            },
+        ],
+        'order/order': [
+            'less-mixins',
+            'custom-properties',
+            'dollar-variables',
+            'declarations',
+            'rules',
+            'at-rules',
+        ],
+        'order/properties-order': [
+            [
+                'all',
+                'content',
+                'position',
+                {
+                    order: 'flexible',
+                    properties: ['top', 'left', 'right', 'bottom'],
+                },
+                'z-index',
+                'display',
+            ],
+            {
+                unspecified: 'bottom',
+            },
+        ],
+        'selector-max-specificity': [
+            '0,5,0',
+            {
+                ignoreSelectors: [':host-context', ':first-child'],
+            },
+        ],
+        'selector-pseudo-element-no-unknown': [
+            true,
+            {
+                ignorePseudoElements: ['ng-deep'],
+            },
+        ],
+        'selector-type-no-unknown': [
+            true,
+            {
+                ignore: ['custom-elements'],
+                ignoreTypes: ['/^/deep/'],
             },
         ],
     },

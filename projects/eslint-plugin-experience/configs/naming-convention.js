@@ -8,65 +8,65 @@ module.exports = {
                 '@typescript-eslint/naming-convention': [
                     'error',
                     {
-                        selector: 'typeLike',
                         format: ['PascalCase', 'UPPER_CASE'],
+                        selector: 'typeLike',
                     },
                     {
-                        selector: 'class',
-                        modifiers: ['exported'],
                         format: ['PascalCase'],
+                        modifiers: ['exported'],
+                        selector: 'class',
                     },
                     {
+                        format: ['camelCase'],
+                        modifiers: ['exported'],
                         selector: 'function',
-                        modifiers: ['exported'],
-                        format: ['camelCase'],
                     },
                     {
+                        format: ['PascalCase'],
+                        modifiers: ['exported'],
                         selector: 'interface',
-                        modifiers: ['exported'],
-                        format: ['PascalCase'],
                     },
                     {
-                        selector: 'variable',
-                        modifiers: ['destructured'],
                         format: null,
+                        modifiers: ['destructured'],
+                        selector: 'variable',
                     },
                     {
-                        selector: 'variable',
                         format: ['camelCase'],
+                        selector: 'variable',
                     },
                     {
-                        selector: 'variable',
+                        format: ['UPPER_CASE', 'camelCase', 'PascalCase'],
                         modifiers: ['global'],
-                        format: ['UPPER_CASE', 'camelCase', 'PascalCase'],
-                    },
-                    {
                         selector: 'variable',
-                        modifiers: ['exported'],
+                    },
+                    {
                         format: ['UPPER_CASE', 'camelCase', 'PascalCase'],
-                    },
-                    {
-                        selector: 'class',
-                        modifiers: ['abstract'],
-                        format: ['PascalCase'],
-                        prefix: ['Abstract'],
-                    },
-                    {
-                        selector: 'enum',
                         modifiers: ['exported'],
-                        format: ['StrictPascalCase'],
+                        selector: 'variable',
                     },
                     {
-                        selector: 'enumMember',
                         format: ['PascalCase'],
+                        modifiers: ['abstract'],
+                        prefix: ['Abstract'],
+                        selector: 'class',
                     },
                     {
+                        format: ['StrictPascalCase'],
+                        modifiers: ['exported'],
+                        selector: 'enum',
+                    },
+                    {
+                        format: ['PascalCase'],
+                        selector: 'enumMember',
+                    },
+                    {
+                        format: ['strictCamelCase'],
                         selector: 'classMethod',
-                        format: ['strictCamelCase'],
                     },
                     {
-                        selector: 'classProperty',
                         format: ['strictCamelCase'],
+                        selector: 'classProperty',
                     },
                 ],
             },

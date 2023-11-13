@@ -9,11 +9,11 @@ const DOC_EXAMPLE_INTERFACE_NAME = `TuiDocExample`;
  * @type {TuiDocExample}
  */
 const fileNameToExtension = {
-    TypeScript: `.ts`,
-    HTML: `.html`,
-    LESS: `.less`,
     CSS: '.css',
+    HTML: `.html`,
     JavaScript: '.md',
+    LESS: `.less`,
+    TypeScript: `.ts`,
 };
 
 /**
@@ -33,17 +33,6 @@ const getPathGroups = path => path.match(/(.+)(\.(?:ts|less|scss|js|md|css|html)
  * @type {import(`eslint`).Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: `problem`,
-        docs: {
-            description: `Ensures that keys and values are valid in a ${DOC_EXAMPLE_INTERFACE_NAME} interface.`,
-        },
-        messages: {
-            [INVALID_KEY_MESSAGE_ID]: `The value must be either a valid path with an extension or an abstract file name.`,
-            [INVALID_VALUE_MESSAGE_ID]: `The import path extension must match the extension from the object key.`,
-        },
-        fixable: `code`,
-    },
     create(context) {
         return {
             /**
@@ -101,21 +90,32 @@ module.exports = {
                             : INVALID_KEY_MESSAGE_ID;
 
                         context.report({
-                            node: invalidNode,
-                            messageId,
+                            // eslint-disable-next-line consistent-return
                             fix: fixer => {
                                 if (expectedExtension && actualPathGroups.length) {
                                     // It`s safer to use groups instead of finding and replacing.
                                     const fixedValue = `'${beforeExtensionPart}${expectedExtension}${afterExtensionPart}'`;
 
-                                    // eslint-disable-next-line consistent-return
                                     return fixer.replaceText(source, fixedValue);
                                 }
                             },
+                            messageId,
+                            node: invalidNode,
                         });
                     }
                 });
             },
         };
+    },
+    meta: {
+        docs: {
+            description: `Ensures that keys and values are valid in a ${DOC_EXAMPLE_INTERFACE_NAME} interface.`,
+        },
+        fixable: `code`,
+        messages: {
+            [INVALID_KEY_MESSAGE_ID]: `The value must be either a valid path with an extension or an abstract file name.`,
+            [INVALID_VALUE_MESSAGE_ID]: `The import path extension must match the extension from the object key.`,
+        },
+        type: `problem`,
     },
 };

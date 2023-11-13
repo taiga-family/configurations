@@ -2,10 +2,6 @@
  * @type {import('eslint').Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: 'problem',
-        schema: [],
-    },
     create(context) {
         return {
             /**
@@ -22,12 +18,16 @@ module.exports = {
 
                 if (isSimpleForOf) {
                     context.report({
-                        node,
                         message: `Don't use simple "for-of" instead of "forEach"`,
+                        node,
                     });
                 }
             },
         };
+    },
+    meta: {
+        schema: [],
+        type: 'problem',
     },
 };
 

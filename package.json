@@ -33,7 +33,9 @@
                 "files": [
                     "./projects/**/*.js"
                 ],
-                "extends": []
+                "extends": [
+                    "plugin:perfectionist/recommended-natural"
+                ]
             }
         ]
     },

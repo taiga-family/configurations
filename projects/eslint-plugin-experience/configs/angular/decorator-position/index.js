@@ -8,9 +8,9 @@ module.exports = {
                 'decorator-position/decorator-position': [
                     'error',
                     {
+                        methods: 'above',
                         printWidth: 120,
                         properties: 'above',
-                        methods: 'above',
                     },
                 ],
             },

@@ -32,10 +32,10 @@ module.exports = function getDecorators(node, filterFn) {
         }
 
         return {
-            name,
             args,
-            rawArgs,
+            name,
             pretty: `@${name}(${rawArgs.join(`, `)})`,
+            rawArgs,
         };
     });
 };

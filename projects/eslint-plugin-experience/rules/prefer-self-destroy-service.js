@@ -10,14 +10,6 @@ const ERROR_MESSAGE = `Use Self() decorator for TuiDestroyService`;
  * @type {import('eslint').Rule.RuleModule}
  */
 module.exports = {
-    meta: {
-        type: 'problem',
-        docs: {description: ERROR_MESSAGE},
-        messages: {
-            [MESSAGE_ID]: ERROR_MESSAGE,
-        },
-        fixable: 'code',
-    },
     create(context) {
         return {
             /**
@@ -43,8 +35,6 @@ module.exports = {
 
                     if (isDestroyServiceWithoutSelf) {
                         context.report({
-                            node: param,
-                            messageId: MESSAGE_ID,
                             fix: fixer => {
                                 const [start, end] = param.range;
 
@@ -53,10 +43,20 @@ module.exports = {
                                     `@Self() `,
                                 );
                             },
+                            messageId: MESSAGE_ID,
+                            node: param,
                         });
                     }
                 });
             },
         };
+    },
+    meta: {
+        docs: {description: ERROR_MESSAGE},
+        fixable: 'code',
+        messages: {
+            [MESSAGE_ID]: ERROR_MESSAGE,
+        },
+        type: 'problem',
     },
 };

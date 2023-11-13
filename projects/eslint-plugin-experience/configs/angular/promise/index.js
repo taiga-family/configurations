@@ -5,9 +5,11 @@ module.exports = {
             parser: '@typescript-eslint/parser',
             plugins: ['@typescript-eslint'],
             rules: {
-                'require-await': 'off', // note you must disable the base rule as it can report incorrect errors
-                '@typescript-eslint/require-await': 'error',
                 '@typescript-eslint/await-thenable': 'error',
+                '@typescript-eslint/no-floating-promises': [
+                    'error',
+                    {ignoreIIFE: true, ignoreVoid: true},
+                ],
                 '@typescript-eslint/promise-function-async': [
                     'error',
                     {
@@ -18,11 +20,9 @@ module.exports = {
                         checkMethodDeclarations: true,
                     },
                 ],
-                '@typescript-eslint/no-floating-promises': [
-                    'error',
-                    {ignoreVoid: true, ignoreIIFE: true},
-                ],
+                '@typescript-eslint/require-await': 'error',
                 'no-void': ['error', {allowAsStatement: true}],
+                'require-await': 'off', // note you must disable the base rule as it can report incorrect errors
             },
         },
     ],
