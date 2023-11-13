@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.21.0...@taiga-ui/eslint-plugin-experience@0.22.0) (2023-11-13)
+
+### Features
+
+- **eslint-plugin-experience:** ignore ReturnStatement
+  ([26214be](https://github.com/taiga-family/linters/commit/26214becf271337a80b28921a24073e8b0b0eac4))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.21.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.20.0...@taiga-ui/eslint-plugin-experience@0.21.0) (2023-11-13)
 
 ### Features
