@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.19.4...@taiga-ui/eslint-plugin-experience@0.20.0) (2023-11-13)
+
+### Features
+
+- **eslint-plugin-experience:** add sort-lifecycle-methods
+  ([2eb6cda](https://github.com/taiga-family/linters/commit/2eb6cda52e4a1b40c717931045f61c41497ad25d))
+- **eslint-plugin-experience:** use `forEach` instead of `for-of`
+  ([3a44152](https://github.com/taiga-family/linters/commit/3a4415271fc92927574ce8c4aeae75ae50fec2e2))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.19.4](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.19.3...@taiga-ui/eslint-plugin-experience@0.19.4) (2023-11-10)
 
 ### Bug Fixes
