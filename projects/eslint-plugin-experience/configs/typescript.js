@@ -13,6 +13,7 @@ module.exports = {
             parser: '@typescript-eslint/parser',
             plugins: ['@typescript-eslint'],
             rules: {
+                'no-irregular-whitespace': 'error',
                 'unicorn/prefer-logical-operator-over-ternary': 'error',
                 '@angular-eslint/sort-lifecycle-methods': 'error',
                 '@typescript-eslint/require-array-sort-compare': 'error',

@@ -10,7 +10,6 @@ module.exports = {
                 'import/no-unresolved': 'off',
                 'import/extensions': 'off',
                 '@typescript-eslint/no-shadow': 'off',
-                'no-irregular-whitespace': 'off',
             },
         },
     ],
