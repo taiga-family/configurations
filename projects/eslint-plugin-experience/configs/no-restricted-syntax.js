@@ -44,10 +44,6 @@ module.exports = {
                         message:
                             "Use `map(x => x?.foo?.bar)` instead of `pluck('foo', 'bar')`",
                     },
-                    {
-                        selector: 'ForOfStatement',
-                        message: 'Use `forEach` instead of `for-of`',
-                    },
                 ],
             },
         },

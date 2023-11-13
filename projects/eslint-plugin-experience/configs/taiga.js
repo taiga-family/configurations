@@ -23,6 +23,7 @@ module.exports = {
                 ],
                 '@taiga-ui/experience/strict-tui-doc-example': 'error',
                 '@taiga-ui/experience/no-assert-without-ng-dev-mode': 'error',
+                '@taiga-ui/experience/no-simple-for-of': 'error',
                 '@taiga-ui/experience/decorator-key-sort': [
                     'error',
                     {
