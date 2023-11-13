@@ -43,8 +43,11 @@ function findExpressions(node, keys) {
     }
 
     return (
+        (node?.expression && findExpressions(node?.expression, keys)) ||
         (node?.consequent && findExpressions(node?.consequent, keys)) ||
         (node?.alternate && findExpressions(node?.alternate, keys)) ||
+        (node?.left && findExpressions(node?.left, keys)) ||
+        (node?.right && findExpressions(node?.right, keys)) ||
         false
     );
 }
