@@ -40,9 +40,11 @@ function findExpressions(node, keys) {
         return node?.body?.some?.(item => findExpressions(item, keys));
     } else if (!!node?.body) {
         return findExpressions(node?.body, keys);
-    } else if (!!node?.consequent) {
-        return findExpressions(node?.consequent, keys);
     }
 
-    return false;
+    return (
+        (node?.consequent && findExpressions(node?.consequent, keys)) ||
+        (node?.alternate && findExpressions(node?.alternate, keys)) ||
+        false
+    );
 }
