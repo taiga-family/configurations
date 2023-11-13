@@ -48,6 +48,7 @@ module.exports = {
                 'no-constructor-return': 'off',
                 'no-empty-function': 'off',
                 'import/no-relative-packages': 'off',
+                'max-statements': 'off',
             },
         },
     ],

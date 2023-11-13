@@ -73,5 +73,13 @@ module.exports = {
                 ],
             },
         },
+        {
+            files: ['*.spec.ts', '*.cy.ts'],
+            parser: '@typescript-eslint/parser',
+            plugins: ['@typescript-eslint', '@taiga-ui/experience'],
+            rules: {
+                '@taiga-ui/experience/no-deep-imports': 'off',
+            },
+        },
     ],
 };

@@ -54,7 +54,6 @@ module.exports = {
         'max-params': 'off',
         complexity: 'off',
         'max-classes-per-file': ['error', 4],
-        'max-statements': ['error', 25],
         'no-underscore-dangle': 'off',
         'no-return-assign': ['error', 'except-parens'],
         'lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true}],
