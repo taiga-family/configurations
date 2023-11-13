@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.6.0...@taiga-ui/stylelint-config@0.7.0) (2023-11-13)
+
+### Features
+
+- **stylelint-config:** extends `ignore` section of `meowtec/no-px` rule
+  ([#137](https://github.com/taiga-family/linters/issues/137))
+  ([af973d1](https://github.com/taiga-family/linters/commit/af973d18a8ff19a93f32165c3472f45e134acd64))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.6.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.5.1...@taiga-ui/stylelint-config@0.6.0) (2023-10-17)
 
 ### Features
