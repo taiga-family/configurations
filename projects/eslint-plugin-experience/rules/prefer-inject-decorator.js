@@ -40,6 +40,7 @@ module.exports = {
 
                                 const [start, end] = param.range;
 
+                                // eslint-disable-next-line consistent-return
                                 return fixer.insertTextBeforeRange(
                                     [start, end],
                                     `@Inject(${typeName}) `,

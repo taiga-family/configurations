@@ -10,6 +10,79 @@ const DEFAULT_OPTIONS = {
 const requiredIdentifierName = 'ngDevMode';
 
 /**
+ * Filters the provided ancestors by a LogicalExpression type.
+ * @param ancestors {import('@types/estree').Node[]}
+ * @returns {import('@types/estree').LogicalExpression[]}
+ */
+const getLogicalExpressions = ancestors =>
+    ancestors.filter(({type}) => type === 'LogicalExpression');
+
+/**
+ * Validates that a required identifier is presented in the provided expressions.
+ * Handles `required && callee.assert()` expression.
+ * @param expressions {import('@types/estree').LogicalExpression[]}
+ * @returns {boolean}
+ */
+const validateLogicalExpressions = expressions =>
+    expressions.some(expression =>
+        Boolean(getNodeByNameFromLogicalExpression(expression, requiredIdentifierName)),
+    );
+
+/**
+ * Validates that a required identifier is presented in the provided ancestors.
+ * Handles `if (required && isUser) { callee.assert() }` expression.
+ * @param ancestors {import('@types/estree').Node[]}
+ * @returns {boolean}
+ */
+const validateIfExpressions = ancestors => {
+    /**
+     * @param statement {import('@types/estree').IfStatement[]}
+     */
+    const statements = ancestors.filter(({type}) => type === 'IfStatement');
+
+    const logicalExpressions = [];
+
+    for (const {test} of statements) {
+        if (test.type === 'Identifier' && test.name === requiredIdentifierName) {
+            return true;
+        }
+
+        if (test.type === 'LogicalExpression') {
+            logicalExpressions.push(test);
+        }
+    }
+
+    return validateLogicalExpressions(logicalExpressions);
+};
+
+/**
+ * Validates that a required identifier is presented in the provided ancestors.
+ * Handles `required ? callee.assert() : null` expression.
+ * @param ancestors {import('@types/estree').Node[]}
+ * @returns {boolean}
+ */
+const validateConditionalExpressions = ancestors => {
+    /**
+     * @param statement {import('@types/estree').ConditionalExpression[]}
+     */
+    const statements = ancestors.filter(({type}) => type === 'ConditionalExpression');
+
+    const logicalExpressions = [];
+
+    for (const {test} of statements) {
+        if (test.type === 'Identifier' && test.name === requiredIdentifierName) {
+            return true;
+        }
+
+        if (test.type === 'LogicalExpression') {
+            logicalExpressions.push(test);
+        }
+    }
+
+    return validateLogicalExpressions(logicalExpressions);
+};
+
+/**
  * @type {import('eslint').Rule.RuleModule}
  */
 module.exports = {
@@ -90,78 +163,4 @@ module.exports = {
             },
         };
     },
-};
-
-/**
- * Filters the provided ancestors by a LogicalExpression type.
- * @param ancestors {import('@types/estree').Node[]}
- * @returns {import('@types/estree').LogicalExpression[]}
- */
-const getLogicalExpressions = ancestors => {
-    return ancestors.filter(({type}) => type === 'LogicalExpression');
-};
-
-/**
- * Validates that a required identifier is presented in the provided expressions.
- * Handles `required && callee.assert()` expression.
- * @param expressions {import('@types/estree').LogicalExpression[]}
- * @returns {boolean}
- */
-const validateLogicalExpressions = expressions =>
-    expressions.some(expression =>
-        Boolean(getNodeByNameFromLogicalExpression(expression, requiredIdentifierName)),
-    );
-
-/**
- * Validates that a required identifier is presented in the provided ancestors.
- * Handles `if (required && isUser) { callee.assert() }` expression.
- * @param ancestors {import('@types/estree').Node[]}
- * @returns {boolean}
- */
-const validateIfExpressions = ancestors => {
-    /**
-     * @param statement {import('@types/estree').IfStatement[]}
-     */
-    const statements = ancestors.filter(({type}) => type === 'IfStatement');
-
-    const logicalExpressions = [];
-
-    for (const {test} of statements) {
-        if (test.type === 'Identifier' && test.name === requiredIdentifierName) {
-            return true;
-        }
-
-        if (test.type === 'LogicalExpression') {
-            logicalExpressions.push(test);
-        }
-    }
-
-    return validateLogicalExpressions(logicalExpressions);
-};
-
-/**
- * Validates that a required identifier is presented in the provided ancestors.
- * Handles `required ? callee.assert() : null` expression.
- * @param ancestors {import('@types/estree').Node[]}
- * @returns {boolean}
- */
-const validateConditionalExpressions = ancestors => {
-    /**
-     * @param statement {import('@types/estree').ConditionalExpression[]}
-     */
-    const statements = ancestors.filter(({type}) => type === 'ConditionalExpression');
-
-    const logicalExpressions = [];
-
-    for (const {test} of statements) {
-        if (test.type === 'Identifier' && test.name === requiredIdentifierName) {
-            return true;
-        }
-
-        if (test.type === 'LogicalExpression') {
-            logicalExpressions.push(test);
-        }
-    }
-
-    return validateLogicalExpressions(logicalExpressions);
 };

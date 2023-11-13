@@ -27,9 +27,9 @@ module.exports = {
 
                     if (decoratorName in (ORDER || {})) {
                         const orderList = ORDER[decoratorName];
-                        const arguments = Array.from(expression.arguments ?? []);
+                        const args = Array.from(expression.arguments ?? []);
 
-                        for (const argument of arguments) {
+                        for (const argument of args) {
                             const properties = Array.from(argument.properties ?? []);
                             const current = properties.map(prop => prop.key.name);
                             const correct = getCorrectOrderRelative(orderList, current);
@@ -51,9 +51,10 @@ module.exports = {
 };
 
 function isCorrectSortedAccording(correctOrder, currentOrder) {
-    let excludeUnknown = currentOrder.filter(item => correctOrder.includes(item));
-
-    return JSON.stringify(correctOrder) === JSON.stringify(excludeUnknown);
+    return (
+        JSON.stringify(correctOrder) ===
+        JSON.stringify(currentOrder.filter(item => correctOrder.includes(item)))
+    );
 }
 
 function getCorrectOrderRelative(correctOrder, currentOrder) {

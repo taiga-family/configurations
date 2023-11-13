@@ -22,7 +22,7 @@ module.exports = {
 
                 if (isSimpleForOf) {
                     context.report({
-                        node: node,
+                        node,
                         message: `Don't use simple "for-of" instead of "forEach"`,
                     });
                 }
@@ -38,7 +38,9 @@ function findExpressions(node, keys) {
 
     if (Array.isArray(node?.body)) {
         return node?.body?.some?.(item => findExpressions(item, keys));
-    } else if (!!node?.body) {
+    }
+
+    if (node?.body) {
         return findExpressions(node?.body, keys);
     }
 

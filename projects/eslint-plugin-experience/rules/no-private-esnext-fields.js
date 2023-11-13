@@ -14,7 +14,7 @@ module.exports = {
                 members.forEach(member => {
                     if (member?.key?.type === `PrivateIdentifier`) {
                         context.report({
-                            node: node,
+                            node,
                             message: `Please don't use "#${member?.key?.name}" instead of "private ${member?.key?.name}"`,
                         });
                     }

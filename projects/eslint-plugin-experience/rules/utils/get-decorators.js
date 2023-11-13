@@ -13,12 +13,12 @@ module.exports = function getDecorators(node, filterFn) {
 
     return decorators.map(({expression}) => {
         const name = expression.callee?.name ?? '';
-        const arguments = expression.callee?.parent?.arguments ?? [];
+        const topArgs = expression.callee?.parent?.arguments ?? [];
 
         const args = [];
         const rawArgs = [];
 
-        for (const arg of arguments) {
+        for (const arg of topArgs) {
             if (Array.isArray(arg.elements)) {
                 const rawArray = arg.elements.map(item => item.raw);
                 const valueArray = arg.elements.map(item => item.value);

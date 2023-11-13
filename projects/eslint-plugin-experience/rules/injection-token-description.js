@@ -15,7 +15,7 @@ module.exports = {
     },
     create(context) {
         return {
-            'NewExpression[callee.name="InjectionToken"]'(node) {
+            'NewExpression[callee.name="InjectionToken"]': node => {
                 const [tokenDescriptionNode] = node.arguments || [];
                 const tokenDescription =
                     tokenDescriptionNode.value || // simple string

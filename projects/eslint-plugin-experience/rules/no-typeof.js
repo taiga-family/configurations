@@ -12,7 +12,7 @@ module.exports = {
              * @type {import('eslint').Rule.Node}
              * @return {*}
              */
-            "BinaryExpression[operator='==='][left.operator='typeof']"(node) {
+            "BinaryExpression[operator='==='][left.operator='typeof']": node => {
                 markTypeOfString(context, node);
                 markTypeOfNumber(context, node);
                 markTypeOfObject(context, node);

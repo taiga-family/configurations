@@ -62,9 +62,8 @@ module.exports = {
             ...(context.options[0] || {}),
         };
 
-        const isDeepImport = source => {
-            return !!source.match(new RegExp(deepImport, 'g'))?.length;
-        };
+        const isDeepImport = source =>
+            !!source.match(new RegExp(deepImport, 'g'))?.length;
 
         const isInsideTheSameEntryPoint = source => {
             const filePath = path
@@ -84,9 +83,8 @@ module.exports = {
             );
         };
 
-        const shouldIgnore = source => {
-            return ignoreImports.some(p => source.match(new RegExp(p, 'g')));
-        };
+        const shouldIgnore = source =>
+            ignoreImports.some(p => source.match(new RegExp(p, 'g')));
 
         return {
             [`ImportDeclaration[source.value=/${importDeclaration}/]`]({

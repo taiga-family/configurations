@@ -50,7 +50,7 @@ module.exports = {
              * It would be better to support any object expression, not only within a class,
              * but it`s pretty complicated to extract the object type since all parents have different interfaces.
              */
-            'PropertyDefinition[value.type="ObjectExpression"]'(node) {
+            'PropertyDefinition[value.type="ObjectExpression"]': node => {
                 if (getTypeName(node) !== DOC_EXAMPLE_INTERFACE_NAME) {
                     return;
                 }
@@ -107,6 +107,8 @@ module.exports = {
                                 if (expectedExtension && actualPathGroups.length) {
                                     // It`s safer to use groups instead of finding and replacing.
                                     const fixedValue = `'${beforeExtensionPart}${expectedExtension}${afterExtensionPart}'`;
+
+                                    // eslint-disable-next-line consistent-return
                                     return fixer.replaceText(source, fixedValue);
                                 }
                             },
