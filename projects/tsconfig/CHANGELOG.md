@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.4.1 (2023-11-14)
+
+**Note:** Version bump only for package @taiga-ui/tsconfig
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.4.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.3.1...@taiga-ui/tsconfig@0.4.0) (2023-11-10)
 
 ### Features
