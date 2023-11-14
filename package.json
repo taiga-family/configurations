@@ -4,15 +4,20 @@
     "description": "",
     "license": "Apache-2.0",
     "workspaces": [
-        "projects/*"
+        "projects/*",
+        "taiga-ui",
+        "taiga-ui/projects/*"
     ],
     "scripts": {
-        "lint": "eslint . --no-error-on-unmatched-pattern",
+        "postinstall": "ngcc --async",
+        "lint": "eslint . --no-error-on-unmatched-pattern --config package.json",
         "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
         "format": "npm run prettier -- --write",
         "commitlint": "npx commitlint --from=HEAD~1",
         "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json",
-        "version": "npm run format"
+        "version": "npm run format",
+        "submodule:update": "git submodule update --rebase --remote",
+        "submodule:reset": "git submodule | awk '{ git restore --staged $2 }' && git submodule update --init --recursive"
     },
     "commitlint": {
         "extends": [
@@ -59,7 +64,6 @@
         "eslint-plugin-perfectionist": "2.3.0",
         "lerna": "7.4.2",
         "nx": "17.1.2",
-        "nx-cloud": "16.5.2",
         "prettier": "3.1.0",
         "stylelint": "15.11.0"
     }
