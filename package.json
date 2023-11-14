@@ -4,7 +4,6 @@
     "description": "",
     "license": "Apache-2.0",
     "workspaces": [
-        "projects/*",
         "taiga-ui",
         "taiga-ui/projects/*"
     ],
@@ -58,12 +57,17 @@
         "@nx/jest": "17.1.2",
         "@nx/node": "17.1.2",
         "@nx/workspace": "17.1.2",
+        "@taiga-ui/eslint-plugin-experience": "file:./projects/eslint-plugin-experience",
         "eslint": "8.53.0",
         "eslint-plugin-perfectionist": "2.3.0",
         "lerna": "7.4.2",
         "nx": "17.1.2",
         "prettier": "3.1.0",
-        "stylelint": "15.11.0",
-        "@taiga-ui/eslint-plugin-experience": "file:./projects/eslint-plugin-experience"
+        "stylelint": "15.11.0"
+    },
+    "overrides": {
+        "@taiga-ui/eslint-plugin-experience": {
+            ".": "file:./projects/eslint-plugin-experience"
+        }
     }
 }
