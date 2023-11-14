@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.5.0 (2023-11-14)
+
+### Features
+
+- **eslint-plugin-experience:** use single config
+  ([e06d134](https://github.com/taiga-family/linters/commit/e06d134e3ae2e4d88dcdfbedb488a8e19336d953))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## 0.4.3 (2023-11-14)
 
 **Note:** Version bump only for package @taiga-ui/prettier-config
