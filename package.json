@@ -11,6 +11,7 @@
     "scripts": {
         "postinstall": "ngcc --async",
         "lint": "eslint . --no-error-on-unmatched-pattern --config package.json",
+        "lint:local": "eslint projects/** --no-error-on-unmatched-pattern --config package.json",
         "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
         "format": "npm run prettier -- --write",
         "commitlint": "npx commitlint --from=HEAD~1",
@@ -28,10 +29,7 @@
     "eslintConfig": {
         "extends": [
             "plugin:@taiga-ui/experience/all",
-            "plugin:@taiga-ui/experience/taiga-naming-convention",
-            "plugin:@taiga-ui/experience/jest",
-            "plugin:@taiga-ui/experience/cypress",
-            "plugin:@taiga-ui/experience/playwright"
+            "plugin:@taiga-ui/experience/taiga-naming"
         ],
         "overrides": [
             {
@@ -65,6 +63,7 @@
         "lerna": "7.4.2",
         "nx": "17.1.2",
         "prettier": "3.1.0",
-        "stylelint": "15.11.0"
+        "stylelint": "15.11.0",
+        "@taiga-ui/eslint-plugin-experience": "file:./projects/eslint-plugin-experience"
     }
 }

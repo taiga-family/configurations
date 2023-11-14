@@ -1,5 +1,3 @@
-const IGNORE = 'CVC|axisX|axisY|API|HTML|DOM|URI|URL|JSON|CSS|HTML';
-
 module.exports = {
     overrides: [
         {
@@ -83,7 +81,7 @@ module.exports = {
                         selector: 'classMethod',
                     },
                     {
-                        filter: IGNORE,
+                        filter: 'CVC|axisX|axisY|API|HTML|DOM|URI|URL|JSON|CSS|HTML',
                         format: null,
                         selector: 'classMethod',
                     },
@@ -92,7 +90,7 @@ module.exports = {
                         selector: 'classProperty',
                     },
                     {
-                        filter: IGNORE,
+                        filter: 'CVC|axisX|axisY|API|HTML|DOM|URI|URL|JSON|CSS|HTML',
                         format: null,
                         selector: 'classProperty',
                     },
@@ -131,6 +129,11 @@ module.exports = {
                         selector: 'function',
                     },
                     {
+                        filter: 'updateTo',
+                        format: null,
+                        selector: 'function',
+                    },
+                    {
                         format: ['PascalCase'],
                         modifiers: ['exported'],
                         selector: 'interface',
@@ -141,7 +144,7 @@ module.exports = {
                         selector: 'variable',
                     },
                     {
-                        format: ['camelCase'],
+                        format: ['camelCase', 'UPPER_CASE'],
                         selector: 'variable',
                     },
                     {

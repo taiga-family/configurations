@@ -1,10 +1,21 @@
 {
+    "extends": "./taiga-ui/tsconfig.json",
     "compilerOptions": {
-        "rootDir": "taiga-ui",
-        "baseUrl": "taiga-ui",
+        "rootDir": ".",
+        "baseUrl": ".",
         "strict": true,
-        "incremental": true
+        "module": "ESNext",
+        "target": "ESNext",
+        "incremental": true,
+        "esModuleInterop": true,
+        "typeRoots": [
+            "./node_modules",
+            "node_modules/@types",
+            "taiga-ui/node_modules/@types",
+            "./taiga-ui/scripts/types"
+        ],
+        "types": ["ng-dev-mode", "node"]
     },
-    "include": ["taiga-ui/**/*.ts"],
-    "exclude": ["**/node_modules", "*.js"]
+    "include": ["taiga-ui/**/*.ts", "projects/**/*.ts", "projects/**/*.js"],
+    "exclude": ["**/node_modules"]
 }
