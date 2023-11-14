@@ -13,6 +13,8 @@ jobs:
       - uses: taiga-family/ci/actions/setup/checkout@v1.42.0
         with:
           fetch-depth: 0
+          submodules: true
+      - uses: taiga-family/ci/actions/setup/variables@v1.42.0
       - uses: taiga-family/ci/actions/setup/node@v1.42.0
       - run: |
           npm run commitlint
