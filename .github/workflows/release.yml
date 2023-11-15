@@ -31,7 +31,6 @@ jobs:
       - uses: taiga-family/ci/actions/setup/checkout@v1.43.0
         with:
           fetch-depth: 0
-          submodules: true
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
       - uses: taiga-family/ci/actions/setup/node@v1.43.0
       - uses: taiga-family/ci/actions/setup/config/git@v1.43.0

@@ -15,6 +15,8 @@ module.exports = {
         jquery: true,
         node: true,
     },
+    parser: '@typescript-eslint/parser',
+    plugins: ['file-progress'],
     ignorePatterns: [
         '*/icons/all.ts',
         '**/tests-report/**',
@@ -37,8 +39,10 @@ module.exports = {
         '*.xml',
         '*.md',
         'LICENSE',
-        'dist',
+        'jest.preset.js',
+        '*.config.js',
         'node_modules',
+        'dist',
         '**/node_modules/**',
         '**/*@dasherize__/**',
         '**/coverage/**',
@@ -51,8 +55,36 @@ module.exports = {
         '.git/**',
         '.idea/**',
     ],
+    parserOptions: {
+        ecmaFeatures: {
+            legacyDecorators: true,
+        },
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+    },
+    settings: {
+        progress: {
+            hide: false,
+            successMessage: 'Lint done...',
+        },
+    },
+    rules: {
+        'file-progress/activate': 1,
+    },
     overrides: [
         {
+            files: ['*.ts'],
+            parser: '@typescript-eslint/parser',
+            plugins: [
+                '@babel',
+                '@typescript-eslint',
+                'rxjs',
+                'import',
+                'simple-import-sort',
+                'unicorn',
+                'decorator-position',
+                'functional',
+            ],
             extends: [
                 'eslint-config-airbnb-base',
                 'plugin:eslint-comments/recommended',
@@ -63,8 +95,6 @@ module.exports = {
                 'plugin:sonarjs/recommended',
                 'plugin:sonar/recommended',
             ],
-            files: ['*.ts'],
-            parser: '@typescript-eslint/parser',
             parserOptions: {
                 ecmaVersion: 'latest',
                 errorOnTypeScriptSyntacticAndSemanticIssues: true,
@@ -73,17 +103,6 @@ module.exports = {
                 sourceType: 'module',
                 warnOnUnsupportedTypeScriptVersion: false,
             },
-            plugins: [
-                '@babel',
-                '@typescript-eslint',
-                '@taiga-ui/experience',
-                'rxjs',
-                'import',
-                'simple-import-sort',
-                'unicorn',
-                'decorator-position',
-                'functional',
-            ],
             rules: {
                 '@angular-eslint/sort-lifecycle-methods': 'error',
                 '@taiga-ui/experience/decorator-key-sort': [
@@ -318,6 +337,11 @@ module.exports = {
                         selector: 'variable',
                     },
                     {
+                        filter: '__non_webpack_require__',
+                        format: null,
+                        selector: 'variable',
+                    },
+                    {
                         format: ['camelCase', 'UPPER_CASE'],
                         selector: 'variable',
                     },
@@ -451,7 +475,6 @@ module.exports = {
                 '@typescript-eslint/quotes': ['error', 'backtick'],
                 '@typescript-eslint/require-array-sort-compare': 'error',
                 '@typescript-eslint/require-await': 'error',
-                '@typescript-eslint/restrict-plus-operands': 'error',
                 '@typescript-eslint/restrict-plus-operands': 'error',
                 '@typescript-eslint/sort-type-constituents': 'error',
                 '@typescript-eslint/switch-exhaustiveness-check': 'error',
@@ -681,7 +704,7 @@ module.exports = {
                 '*.module.ts',
             ],
             parser: '@typescript-eslint/parser',
-            plugins: ['@angular-eslint/eslint-plugin', '@taiga-ui/experience'],
+            plugins: ['@angular-eslint/eslint-plugin'],
             rules: {
                 '@angular-eslint/component-class-suffix': 'error',
                 '@angular-eslint/contextual-decorator': 'error',
@@ -713,7 +736,7 @@ module.exports = {
                 '*.fixture.ts',
             ],
             parser: '@typescript-eslint/parser',
-            plugins: ['@typescript-eslint', '@taiga-ui/experience'],
+            plugins: ['@typescript-eslint'],
             rules: {
                 '@taiga-ui/experience/no-deep-imports': 'off',
                 '@typescript-eslint/no-empty-function': 'off',
@@ -728,10 +751,10 @@ module.exports = {
             },
         },
         {
-            extends: ['plugin:cypress/recommended'],
             files: ['**/*.cy.ts'],
             parser: '@typescript-eslint/parser',
             plugins: ['@typescript-eslint', 'cypress'],
+            extends: ['plugin:cypress/recommended'],
             rules: {
                 'cypress/no-unnecessary-waiting': 'off',
                 'cypress/unsafe-to-chain-command': 'off',
@@ -739,9 +762,9 @@ module.exports = {
             },
         },
         {
-            extends: ['plugin:jest/all'],
             files: ['**/*.spec.ts'],
             parser: '@typescript-eslint/parser',
+            extends: ['plugin:jest/all'],
             rules: {
                 'jest/expect-expect': 'off',
                 'jest/max-expects': 'off',
@@ -773,9 +796,9 @@ module.exports = {
             },
         },
         {
-            extends: ['plugin:playwright/recommended'],
             files: ['**/*playwright*/*.spec.ts'],
             parser: '@typescript-eslint/parser',
+            extends: ['plugin:playwright/recommended'],
         },
         {
             files: ['*.html'],
@@ -829,8 +852,8 @@ module.exports = {
             },
         },
         {
-            extends: ['prettier'],
             files: ['*'],
+            extends: ['prettier'],
             rules: {
                 '@angular-eslint/component-max-inline-declarations': 'off',
                 '@angular-eslint/component-selector': 'off',
@@ -881,24 +904,6 @@ module.exports = {
             },
         },
     ],
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        ecmaFeatures: {
-            legacyDecorators: true,
-        },
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-    },
-    plugins: ['file-progress'],
-    rules: {
-        'file-progress/activate': 1,
-    },
-    settings: {
-        progress: {
-            hide: false,
-            successMessage: 'Lint done...',
-        },
-    },
 };
 
 function projectJsonExist(filename) {

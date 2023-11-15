@@ -1,7 +1,7 @@
 // cspell:disable
 module.exports = {
-    customSyntax: 'postcss-less', // support less parser out-of-the-box
     extends: ['./stylelint.config.js'],
+    customSyntax: 'postcss-less', // support less parser out-of-the-box
     rules: {
         'function-no-unknown': [
             true,

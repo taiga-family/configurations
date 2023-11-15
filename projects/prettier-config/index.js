@@ -16,10 +16,19 @@ const attributeOptions = {
 
 module.exports = {
     $schema: 'https://json.schemastore.org/prettierrc',
+    plugins: [require.resolve('prettier-plugin-organize-attributes')],
     arrowParens: 'avoid',
     bracketSpacing: false,
     endOfLine: 'lf',
     htmlWhitespaceSensitivity: 'ignore',
+    printWidth: 120,
+    proseWrap: 'always',
+    semi: true,
+    singleAttributePerLine: true,
+    singleQuote: true,
+    tabWidth: 4,
+    trailingComma: 'all',
+    useTabs: false,
     overrides: [
         {
             files: ['*.json', '.prettierrc', '.stylelintrc'],
@@ -86,13 +95,4 @@ module.exports = {
             options: require(require('path').resolve(__dirname, 'options', 'svg.js')),
         },
     ],
-    plugins: [require.resolve('prettier-plugin-organize-attributes')],
-    printWidth: 120,
-    proseWrap: 'always',
-    semi: true,
-    singleAttributePerLine: true,
-    singleQuote: true,
-    tabWidth: 4,
-    trailingComma: 'all',
-    useTabs: false,
 };

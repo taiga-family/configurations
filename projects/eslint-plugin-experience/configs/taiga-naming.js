@@ -139,6 +139,11 @@ module.exports = {
                         selector: 'interface',
                     },
                     {
+                        filter: '__non_webpack_require__',
+                        format: null,
+                        selector: 'variable',
+                    },
+                    {
                         format: null,
                         modifiers: ['destructured'],
                         selector: 'variable',

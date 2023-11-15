@@ -38,7 +38,40 @@
                 ],
                 "extends": [
                     "plugin:perfectionist/recommended-natural"
-                ]
+                ],
+                "rules": {
+                    "perfectionist/sort-objects": [
+                        "error",
+                        {
+                            "type": "natural",
+                            "order": "asc",
+                            "partition-by-comment": "Part:**",
+                            "groups": [
+                                "$schema",
+                                "id",
+                                "env",
+                                "files",
+                                "parser",
+                                "plugins",
+                                "extends",
+                                "unknown",
+                                "rules",
+                                "overrides"
+                            ],
+                            "custom-groups": {
+                                "$schema": "$schema",
+                                "id": "id",
+                                "env": "env",
+                                "files": "files",
+                                "parser": "parser",
+                                "plugins": "plugins",
+                                "extends": "extends",
+                                "rules": "rules",
+                                "overrides": "overrides"
+                            }
+                        }
+                    ]
+                }
             }
         ]
     },
