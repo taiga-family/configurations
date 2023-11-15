@@ -84,6 +84,7 @@ module.exports = {
                 'unicorn',
                 'decorator-position',
                 'functional',
+                '@taiga-ui/experience',
             ],
             extends: [
                 'eslint-config-airbnb-base',

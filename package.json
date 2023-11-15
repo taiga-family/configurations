@@ -4,7 +4,6 @@
     "description": "",
     "license": "Apache-2.0",
     "workspaces": [
-        "projects/*",
         "taiga-ui",
         "taiga-ui/projects/*"
     ],
@@ -91,11 +90,41 @@
         "@nx/jest": "17.1.2",
         "@nx/node": "17.1.2",
         "@nx/workspace": "17.1.2",
+        "@taiga-ui/browserslist-config": "file:./projects/browserslist-config",
+        "@taiga-ui/commitlint-config": "file:./projects/commitlint-config",
+        "@taiga-ui/cspell-config": "file:./projects/cspell-config",
+        "@taiga-ui/eslint-plugin-experience": "file:./projects/eslint-plugin-experience",
+        "@taiga-ui/prettier-config": "file:./projects/prettier-config",
+        "@taiga-ui/stylelint-config": "file:./projects/stylelint-config",
+        "@taiga-ui/tsconfig": "file:./projects/tsconfig",
         "eslint": "8.53.0",
         "eslint-plugin-perfectionist": "2.3.0",
         "lerna": "7.4.2",
         "nx": "17.1.2",
         "prettier": "3.1.0",
         "stylelint": "15.11.0"
+    },
+    "overrides": {
+        "@taiga-ui/browserslist-config": {
+            ".": "$@taiga-ui/browserslist-config"
+        },
+        "@taiga-ui/commitlint-config": {
+            ".": "$@taiga-ui/commitlint-config"
+        },
+        "@taiga-ui/cspell-config": {
+            ".": "$@taiga-ui/cspell-config"
+        },
+        "@taiga-ui/eslint-plugin-experience": {
+            ".": "$@taiga-ui/eslint-plugin-experience"
+        },
+        "@taiga-ui/prettier-config": {
+            ".": "$@taiga-ui/prettier-config"
+        },
+        "@taiga-ui/stylelint-config": {
+            ".": "$@taiga-ui/stylelint-config"
+        },
+        "@taiga-ui/tsconfig": {
+            ".": "$@taiga-ui/tsconfig"
+        }
     }
 }
