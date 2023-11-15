@@ -16,7 +16,7 @@ module.exports = {
         node: true,
     },
     parser: '@typescript-eslint/parser',
-    plugins: ['file-progress'],
+    plugins: ['file-progress', '@taiga-ui/experience'],
     ignorePatterns: [
         '*/icons/all.ts',
         '**/tests-report/**',
@@ -62,6 +62,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
+    root: true,
     settings: {
         progress: {
             hide: false,
@@ -84,7 +85,6 @@ module.exports = {
                 'unicorn',
                 'decorator-position',
                 'functional',
-                '@taiga-ui/experience',
             ],
             extends: [
                 'eslint-config-airbnb-base',
