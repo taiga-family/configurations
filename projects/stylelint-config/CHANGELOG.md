@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.8.0...@taiga-ui/stylelint-config@0.9.0) (2023-11-15)
+
+### Features
+
+- **eslint-plugin-experience:** upgrade some rules
+  ([f12c1b2](https://github.com/taiga-family/linters/commit/f12c1b2b5f1ed83d6f21f861a29c73804ef8740f))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # 0.8.0 (2023-11-14)
 
 ### Features
