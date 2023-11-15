@@ -736,17 +736,6 @@ module.exports = {
                 'cypress/no-unnecessary-waiting': 'off',
                 'cypress/unsafe-to-chain-command': 'off',
                 'no-implicit-globals': 'error',
-                'no-restricted-properties': [
-                    'error',
-                    {
-                        message: 'Please use matchImageSnapshot instead.',
-                        property: 'screenshot',
-                    },
-                    {
-                        message: 'Please use tuiVisit instead.',
-                        property: 'visit',
-                    },
-                ],
             },
         },
         {
