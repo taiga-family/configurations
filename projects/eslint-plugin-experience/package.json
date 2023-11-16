@@ -4,9 +4,9 @@
     "description": "An ESLint plugin to enforce a consistent code styles across taiga-ui projects",
     "main": "index.js",
     "dependencies": {
-        "@angular-eslint/eslint-plugin": "17.0.1",
-        "@angular-eslint/eslint-plugin-template": "17.0.1",
-        "@angular-eslint/template-parser": "17.0.1",
+        "@angular-eslint/eslint-plugin": "17.1.0",
+        "@angular-eslint/eslint-plugin-template": "17.1.0",
+        "@angular-eslint/template-parser": "17.1.0",
         "@babel/eslint-parser": "7.23.3",
         "@babel/eslint-plugin": "7.22.10",
         "@html-eslint/eslint-plugin": "0.20.0",
