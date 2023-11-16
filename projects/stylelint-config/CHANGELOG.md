@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.9.0...@taiga-ui/stylelint-config@0.10.0) (2023-11-16)
+
+### Features
+
+- **stylelint-config:** remove no-invalid-position-at-import-rule
+  ([68b48bf](https://github.com/taiga-family/linters/commit/68b48bfa848bdbf2b7f4d9b5fdc8d7680ea0ee85))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.9.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.8.0...@taiga-ui/stylelint-config@0.9.0) (2023-11-15)
 
 ### Features
