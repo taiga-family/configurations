@@ -7,5 +7,6 @@ module.exports = {
     rules: {
         ...angularConfig.rules,
         ...lessConfig.rules,
+        'no-invalid-position-at-import-rule': null,
     },
 };
