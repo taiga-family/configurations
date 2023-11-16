@@ -218,7 +218,6 @@ module.exports = {
                         },
                     },
                 ],
-                '@typescript-eslint/camelcase': 'off',
                 '@typescript-eslint/consistent-generic-constructors': 'error',
                 '@typescript-eslint/consistent-type-assertions': [
                     'error',
