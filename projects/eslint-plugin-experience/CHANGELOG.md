@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.4](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.28.3...@taiga-ui/eslint-plugin-experience@0.28.4) (2023-11-16)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** small refactor
+  ([b69eca1](https://github.com/taiga-family/linters/commit/b69eca1a895440373e624947fc78cdab01212a5d))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.28.3](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.28.2...@taiga-ui/eslint-plugin-experience@0.28.3) (2023-11-16)
 
 ### Bug Fixes
