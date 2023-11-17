@@ -379,7 +379,19 @@ module.exports = {
                 '@typescript-eslint/no-base-to-string': 'error',
                 '@typescript-eslint/no-confusing-non-null-assertion': 'error',
                 '@typescript-eslint/no-duplicate-enum-values': 'error',
-                '@typescript-eslint/no-empty-function': 'error',
+                '@typescript-eslint/no-empty-function': [
+                    'error',
+                    {
+                        allow: [
+                            'methods',
+                            'arrowFunctions',
+                            'private-constructors',
+                            'protected-constructors',
+                            'overrideMethods',
+                            'decoratedFunctions',
+                        ],
+                    },
+                ],
                 '@typescript-eslint/no-extra-non-null-assertion': 'error',
                 '@typescript-eslint/no-extraneous-class': [
                     'error',
@@ -682,7 +694,6 @@ module.exports = {
             plugins: ['@typescript-eslint'],
             rules: {
                 '@taiga-ui/experience/no-deep-imports': 'off',
-                '@typescript-eslint/no-empty-function': 'off',
                 '@typescript-eslint/no-extraneous-class': 'off',
                 '@typescript-eslint/no-shadow': 'off',
                 'import/extensions': 'off',
@@ -814,7 +825,6 @@ module.exports = {
                 '@typescript-eslint/ban-ts-comment': 'off',
                 '@typescript-eslint/consistent-type-imports': 'off',
                 '@typescript-eslint/explicit-module-boundary-types': 'off',
-                '@typescript-eslint/no-empty-function': 'off',
                 '@typescript-eslint/no-explicit-any': 'off',
                 '@typescript-eslint/no-namespace': ['error', {allowDeclarations: true}],
                 '@typescript-eslint/no-non-null-assertion': 'off',
@@ -822,7 +832,6 @@ module.exports = {
                 '@typescript-eslint/no-unnecessary-condition': 'off',
                 '@typescript-eslint/no-unsafe-member-access': 'off',
                 '@typescript-eslint/no-unsafe-return': 'off',
-                '@typescript-eslint/no-useless-constructor': 'off',
                 '@typescript-eslint/no-var-requires': 'off',
                 '@typescript-eslint/prefer-nullish-coalescing': 'off',
                 '@typescript-eslint/prefer-readonly-parameter-types': 'off',
