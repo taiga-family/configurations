@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.29.0...@taiga-ui/eslint-plugin-experience@0.30.0) (2023-11-17)
+
+### Features
+
+- **eslint-plugin-experience:** add no-empty-function
+  ([9fb2e56](https://github.com/taiga-family/linters/commit/9fb2e5606aed82a158efc79cfc9fa5c02a571c95))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.29.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.28.4...@taiga-ui/eslint-plugin-experience@0.29.0) (2023-11-17)
 
 ### Features
