@@ -85,6 +85,7 @@ module.exports = {
                 'unicorn',
                 'decorator-position',
                 'functional',
+                'prettier',
             ],
             extends: [
                 'eslint-config-airbnb-base',
@@ -95,6 +96,7 @@ module.exports = {
                 'plugin:rxjs/recommended',
                 'plugin:sonarjs/recommended',
                 'plugin:sonar/recommended',
+                'prettier',
             ],
             parserOptions: {
                 ecmaVersion: 'latest',
@@ -615,6 +617,7 @@ module.exports = {
                 'no-var': 'error',
                 'no-void': ['error', {allowAsStatement: true}],
                 'prefer-template': 'error',
+                'prettier/prettier': 'error',
                 'promise/catch-or-return': 'error',
                 'promise/param-names': 'error',
                 'rxjs/no-compat': 'error',
@@ -628,6 +631,7 @@ module.exports = {
                 'rxjs/throw-error': 'error',
                 'simple-import-sort/exports': 'error',
                 'simple-import-sort/imports': 'error',
+                'sonar/for-in': 'error',
                 'sonarjs/no-identical-functions': 'error',
                 'sonarjs/no-inverted-boolean-check': 'error',
                 'spaced-comment': ['error', 'always', {exceptions: ['*']}],
@@ -815,7 +819,6 @@ module.exports = {
         },
         {
             files: ['*'],
-            extends: ['prettier'],
             rules: {
                 '@angular-eslint/component-max-inline-declarations': 'off',
                 '@angular-eslint/component-selector': 'off',
@@ -893,7 +896,6 @@ module.exports = {
                 'no-useless-constructor': 'off',
                 'padding-line-between-statements': 'off',
                 'prefer-destructuring': 'off',
-                'prettier/prettier': 'off',
                 'promise/always-return': 'off',
                 'promise/catch-or-return': 'off',
                 'promise/no-callback-in-promise': 'off',
@@ -901,7 +903,6 @@ module.exports = {
                 quotes: 'off',
                 'require-await': 'off',
                 'rxjs/no-ignored-takewhile-value': 'off',
-                'sonar/for-in': 'off',
                 'sonar/function-name': 'off',
                 'sonar/max-union-size': 'off',
                 'sonar/prefer-default-last': 'off',
