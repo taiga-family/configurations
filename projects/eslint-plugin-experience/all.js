@@ -531,6 +531,7 @@ module.exports = {
                 'functional/readonly-type': 'off',
                 'functional/type-declaration-immutability': 'off',
                 'import/newline-after-import': ['error', {count: 1}],
+                'import/no-duplicates': 'error',
                 'lines-around-comment': [
                     'error',
                     {
@@ -856,7 +857,6 @@ module.exports = {
                 'import/no-cycle': 'off',
                 'import/no-default-export': 'off',
                 'import/no-deprecated': 'off',
-                'import/no-duplicates': 'off',
                 'import/no-dynamic-require': 'off',
                 'import/no-extraneous-dependencies': 'off',
                 'import/no-relative-packages': 'off',
