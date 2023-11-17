@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.30.0...@taiga-ui/eslint-plugin-experience@0.31.0) (2023-11-17)
+
+### Features
+
+- **eslint-plugin-experience:** add `import/no-duplicates`
+  ([8409d82](https://github.com/taiga-family/linters/commit/8409d8249dd573ec26ccc045331a83cc135173e4))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.30.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.29.0...@taiga-ui/eslint-plugin-experience@0.30.0) (2023-11-17)
 
 ### Features
