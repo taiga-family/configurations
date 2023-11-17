@@ -530,7 +530,9 @@ module.exports = {
                 'functional/prefer-tacit': 'error',
                 'functional/readonly-type': 'off',
                 'functional/type-declaration-immutability': 'off',
+                'import/first': 'error',
                 'import/newline-after-import': ['error', {count: 1}],
+                'import/no-cycle': 'error',
                 'import/no-duplicates': 'error',
                 'lines-around-comment': [
                     'error',
@@ -853,8 +855,6 @@ module.exports = {
                 'guard-for-in': 'off',
                 'import/exports-last': 'off',
                 'import/extensions': 'off',
-                'import/first': 'error',
-                'import/no-cycle': 'off',
                 'import/no-default-export': 'off',
                 'import/no-deprecated': 'off',
                 'import/no-dynamic-require': 'off',
