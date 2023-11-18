@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.33.1...@taiga-ui/eslint-plugin-experience@0.34.0) (2023-11-18)
+
+### Features
+
+- **eslint-plugin-experience:** add `spaced-comment`
+  ([11b5574](https://github.com/taiga-family/linters/commit/11b557444775c095c9a7242d2b2a3b36d8e6b776))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.33.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.33.0...@taiga-ui/eslint-plugin-experience@0.33.1) (2023-11-17)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
