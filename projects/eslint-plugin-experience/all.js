@@ -634,7 +634,13 @@ module.exports = {
                 'sonar/for-in': 'error',
                 'sonarjs/no-identical-functions': 'error',
                 'sonarjs/no-inverted-boolean-check': 'error',
-                'spaced-comment': ['error', 'always', {exceptions: ['*']}],
+                'spaced-comment': [
+                    'error',
+                    'always',
+                    {
+                        markers: ['/'],
+                    },
+                ],
                 'unicorn/escape-case': 'error',
                 'unicorn/filename-case': [
                     'error',
@@ -814,7 +820,6 @@ module.exports = {
                 '@html-eslint/require-meta-viewport': 'error',
                 '@html-eslint/require-title': 'error',
                 'eslint-comments/disable-enable-pair': 'off',
-                'spaced-comment': 'off',
             },
         },
         {
@@ -910,7 +915,6 @@ module.exports = {
                 'sonarjs/max-switch-cases': 'off',
                 'sonarjs/no-duplicate-string': 'off',
                 'sonarjs/no-nested-template-literals': 'off',
-                'spaced-comment': 'off',
             },
         },
     ],
