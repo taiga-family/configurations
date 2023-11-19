@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.20.0...@taiga-ui/cspell-config@0.21.0) (2023-11-19)
+
+### Features
+
+- **cspell-config:** add `macrotask` word
+  ([065f5bf](https://github.com/taiga-family/linters/commit/065f5bfb318c2afaaa6ee7b4382ea6a092324179))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # 0.20.0 (2023-11-14)
 
 ### Features
