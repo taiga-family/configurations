@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.36.0...@taiga-ui/eslint-plugin-experience@0.37.0) (2023-11-19)
+
+### Features
+
+- **eslint-plugin-experience:** add `guard-for-in`
+  ([767515a](https://github.com/taiga-family/linters/commit/767515ad7f8d759635a32b840a5e4a465fa03b84))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.36.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.35.0...@taiga-ui/eslint-plugin-experience@0.36.0) (2023-11-19)
 
 ### Features
