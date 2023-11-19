@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.34.0...@taiga-ui/eslint-plugin-experience@0.35.0) (2023-11-19)
+
+### Features
+
+- **eslint-plugin-experience:** add `prefer-default-last`
+  ([6e5585c](https://github.com/taiga-family/linters/commit/6e5585ca7e2aee441f086e81fef3d17725da3943))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.34.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.33.1...@taiga-ui/eslint-plugin-experience@0.34.0) (2023-11-18)
 
 ### Features
