@@ -109,6 +109,8 @@
         "selectednode",
         "networkidle",
         "retarget",
-        "retargeted"
+        "retargeted",
+        "macrotask",
+        "microtask"
     ]
 }
