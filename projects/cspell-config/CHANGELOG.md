@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.21.0...@taiga-ui/cspell-config@0.22.0) (2023-11-21)
+
+### Features
+
+- **cspell-config:** add `hitbox` word
+  ([fa3552b](https://github.com/taiga-family/linters/commit/fa3552b794beb667818c41a5e8b9b8d776344b1b))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.21.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.20.0...@taiga-ui/cspell-config@0.21.0) (2023-11-19)
 
 ### Features
