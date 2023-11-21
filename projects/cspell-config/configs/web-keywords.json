@@ -111,6 +111,7 @@
         "retarget",
         "retargeted",
         "macrotask",
-        "microtask"
+        "microtask",
+        "hitbox"
     ]
 }
