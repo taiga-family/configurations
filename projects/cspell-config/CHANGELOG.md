@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.22.0...@taiga-ui/cspell-config@0.23.0) (2023-11-22)
+
+### Features
+
+- **cspell-config:** refactor config
+  ([d482487](https://github.com/taiga-family/linters/commit/d48248710d00e83ccc2e93f9b4a92df1166e4d49))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.22.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.21.0...@taiga-ui/cspell-config@0.22.0) (2023-11-21)
 
 ### Features
