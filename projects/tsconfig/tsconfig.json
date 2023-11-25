@@ -29,7 +29,7 @@
         "target": "es2015",
         "module": "es2020",
         "lib": ["es2017", "es2018.asynciterable", "dom"],
-        "typeRoots": ["node_modules/@types", "scripts/types"],
+        "typeRoots": ["node_modules/@types", "node_modules/@taiga-ui/tsconfig/@types"],
         "types": ["ng-dev-mode", "node"],
         "skipLibCheck": true,
         "downlevelIteration": true,
