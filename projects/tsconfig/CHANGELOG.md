@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.5.0...@taiga-ui/tsconfig@0.6.0) (2023-11-25)
+
+### Features
+
+- **tsconfig:** add `ngDevMode` type
+  ([e32cabe](https://github.com/taiga-family/linters/commit/e32cabe575ee3c5921faa71200e4ffe397ef4ba8))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # 0.5.0 (2023-11-14)
 
 ### Features
