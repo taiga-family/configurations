@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.38.1...@taiga-ui/eslint-plugin-experience@0.39.0) (2023-11-27)
+
+### Features
+
+- **eslint-plugin-experience:** require initial value for .reduce()
+  ([b2075b3](https://github.com/taiga-family/linters/commit/b2075b3695e3ebeb9eeb9a185545be2b21fd555d))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.38.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.38.0...@taiga-ui/eslint-plugin-experience@0.38.1) (2023-11-25)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
