@@ -607,6 +607,12 @@ module.exports = {
                             "Use `map(x => x?.foo?.bar)` instead of `pluck('foo', 'bar')`",
                         selector: "CallExpression[callee.name='pluck']",
                     },
+                    {
+                        message:
+                            'Provide initial value to .reduce() method. Possible runtime error: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reduce_of_empty_array_with_no_initial_value',
+                        selector:
+                            "CallExpression[arguments.length=1] > MemberExpression.callee > Identifier.property[name='reduce']",
+                    },
                 ],
                 'no-return-assign': ['error', 'always'],
                 'no-useless-concat': 'error',
