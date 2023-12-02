@@ -18,6 +18,7 @@ jobs:
       - run: |
           npm run commitlint
           npm run prettier -- --check
+          npm run cspell -- --no-progress
           npm run stylelint
           npm run lint
 

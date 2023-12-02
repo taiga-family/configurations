@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
+    "import": ["@taiga-ui/cspell-config/cspell.config.js"],
+    "files": ["*/*.*"],
+    "ignorePaths": [
+        ".git",
+        "CHANGELOG.md",
+        ".cspell.json",
+        "**/dist/**",
+        "**/cspell/**",
+        "**/assets/**",
+        "**/node_modules/**",
+        "*.{log,svg,snap,png,ogv,yml}",
+        "**/projects/i18n/languages/**",
+        "**/addon-commerce/enums/currency-code.ts",
+        "**/addon-commerce/utils/get-currency-symbol.ts"
+    ],
+    "ignoreWords": ["meowtec"]
+}

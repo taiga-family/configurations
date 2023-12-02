@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
-    "import": ["node_modules/@cspell/dict-ar/cspell-ext.json"],
+    "import": ["@cspell/dict-ar/cspell-ext.json"],
     "caseSensitive": false,
     "words": [
         "کلیز",
