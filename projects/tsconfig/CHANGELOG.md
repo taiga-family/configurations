@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.8.0...@taiga-ui/tsconfig@0.9.0) (2023-12-04)
+
+### Features
+
+- **tsconfig:** revert
+  ([23c5edf](https://github.com/taiga-family/linters/commit/23c5edf4fc0de9673598ae787a48796368f7d7dd))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.8.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.7.0...@taiga-ui/tsconfig@0.8.0) (2023-12-04)
 
 ### Features
