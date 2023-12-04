@@ -13,7 +13,7 @@
     "license": "Apache-2.0",
     "main": "stylelint.config.js",
     "dependencies": {
-        "postcss": "8.4.31",
+        "postcss": "8.4.32",
         "postcss-less": "6.0.0",
         "stylelint-config-prettier": "9.0.5",
         "stylelint-config-standard": "34.0.0",
