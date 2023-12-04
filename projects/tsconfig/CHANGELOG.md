@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.6.0...@taiga-ui/tsconfig@0.7.0) (2023-12-04)
+
+### Features
+
+- **tsconfig:** enable isolatedModules
+  ([1f0c456](https://github.com/taiga-family/linters/commit/1f0c4564039986745b54e82602c0c39a1a05de31))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.6.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.5.0...@taiga-ui/tsconfig@0.6.0) (2023-11-25)
 
 ### Features
