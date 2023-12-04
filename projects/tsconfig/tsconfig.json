@@ -55,7 +55,7 @@
         "useDefineForClassFields": false,
         "forceConsistentCasingInFileNames": true,
         "noImplicitOverride": true,
-        "isolatedModules": true,
+        "isolatedModules": false,
         "noEmitHelpers": true,
         "pretty": true,
         "stripInternal": false,
