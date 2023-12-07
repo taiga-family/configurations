@@ -16,7 +16,8 @@
         "@commitlint/config-conventional": "18.4.3"
     },
     "peerDependencies": {
-        "@commitlint/cli": "*"
+        "@commitlint/cli": "*",
+        "@commitlint/config-conventional": "18.4.3"
     },
     "publishConfig": {
         "access": "public"

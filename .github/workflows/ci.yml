@@ -20,7 +20,8 @@ jobs:
           npm run prettier -- --check
           npm run cspell -- --no-progress
           npm run stylelint
-          npm run lint
+          npm run lint:local
+          npm run lint:taiga-ui
 
       - run: |
           npx nx run-many --target build --all
