@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.9.0...@taiga-ui/tsconfig@0.10.0) (2023-12-07)
+
+### Features
+
+- **tsconfig:** remove redundant fields
+  ([9247018](https://github.com/taiga-family/linters/commit/924701882e738555241709ff93dbf5d80534a108))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.9.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.8.0...@taiga-ui/tsconfig@0.9.0) (2023-12-04)
 
 ### Features
