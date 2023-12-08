@@ -131,6 +131,7 @@ module.exports = {
                             'interpolation',
                         ],
                         Directive: [
+                            'standalone',
                             'selector',
                             'inputs',
                             'outputs',
