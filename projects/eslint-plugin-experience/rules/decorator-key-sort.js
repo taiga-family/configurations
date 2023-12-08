@@ -16,15 +16,38 @@ module.exports = {
 
                     if (decoratorName in (ORDER || {})) {
                         const orderList = ORDER[decoratorName];
-                        const args = Array.from(expression.arguments ?? []);
+                        const decoratorArguments = Array.from(expression.arguments ?? []);
 
-                        for (const argument of args) {
+                        for (const argument of decoratorArguments) {
                             const properties = Array.from(argument.properties ?? []);
                             const current = properties.map(prop => prop.key.name);
                             const correct = getCorrectOrderRelative(orderList, current);
 
                             if (!isCorrectSortedAccording(correct, current)) {
                                 context.report({
+                                    fix: fixer => {
+                                        const fileContent = context.sourceCode.text;
+                                        const forgottenProps = current.filter(
+                                            key => !orderList.includes(key),
+                                        );
+
+                                        const sortedDecoratorProperties = [
+                                            ...correct,
+                                            ...forgottenProps,
+                                        ].map(key =>
+                                            properties.find(
+                                                prop => prop.key.name === key,
+                                            ),
+                                        );
+                                        const newDecoratorArgument = `{${sortedDecoratorProperties.map(
+                                            ({range}) => fileContent.slice(...range),
+                                        )}}`;
+
+                                        return fixer.replaceTextRange(
+                                            argument.range,
+                                            newDecoratorArgument,
+                                        );
+                                    },
                                     message: `Incorrect order keys in @${decoratorName} decorator, please sort by [${correct.join(
                                         ' -> ',
                                     )}]`,
