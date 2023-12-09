@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.12.0...@taiga-ui/stylelint-config@0.12.1) (2023-12-09)
+
+### Bug Fixes
+
+- taiga.js ([fb25bbf](https://github.com/taiga-family/linters/commit/fb25bbf5f939b6b87fb45ac372af59d059365937))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.12.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.11.0...@taiga-ui/stylelint-config@0.12.0) (2023-12-09)
 
 ### Bug Fixes
