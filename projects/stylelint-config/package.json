@@ -11,7 +11,7 @@
         "url": "https://github.com/taiga-family/linters.git"
     },
     "license": "Apache-2.0",
-    "main": "taiga.js",
+    "main": "index.json",
     "dependencies": {
         "postcss": "8.4.32",
         "postcss-less": "6.0.0",
