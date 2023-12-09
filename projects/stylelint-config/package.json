@@ -11,21 +11,20 @@
         "url": "https://github.com/taiga-family/linters.git"
     },
     "license": "Apache-2.0",
-    "main": "stylelint.config.js",
+    "main": "taiga.js",
     "dependencies": {
         "postcss": "8.4.32",
         "postcss-less": "6.0.0",
-        "stylelint-config-standard": "34.0.0",
+        "stylelint-config-standard": "35.0.0",
         "stylelint-no-px": "1.0.1",
-        "stylelint-order": "6.0.3"
+        "stylelint-order": "6.0.4"
     },
     "peerDependencies": {
         "postcss": "8.4.32",
         "postcss-less": "6.0.0",
-        "stylelint": "*",
-        "stylelint-config-standard": "34.0.0",
+        "stylelint-config-standard": "35.0.0",
         "stylelint-no-px": "1.0.1",
-        "stylelint-order": "6.0.3"
+        "stylelint-order": "6.0.4"
     },
     "publishConfig": {
         "access": "public"
