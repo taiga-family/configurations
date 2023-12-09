@@ -1,4 +1,5 @@
 module.exports = {
+    allowEmptyInput: true,
     plugins: ['stylelint-order', 'stylelint-no-px'],
     customSyntax: 'postcss-less', // support less parser out-of-the-box
     rules: {
