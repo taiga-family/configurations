@@ -77,7 +77,7 @@
     },
     "stylelint": {
         "extends": [
-            "@taiga-ui/stylelint-config/taiga"
+            "@taiga-ui/stylelint-config"
         ],
         "ignoreFiles": [
             "**/demo/**",
