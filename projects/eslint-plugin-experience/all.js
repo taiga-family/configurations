@@ -482,7 +482,13 @@ module.exports = {
                         checkMethodDeclarations: true,
                     },
                 ],
-                '@typescript-eslint/quotes': ['error', 'backtick'],
+                '@typescript-eslint/quotes': [
+                    'error',
+                    'single',
+                    {
+                        avoidEscape: true,
+                    },
+                ],
                 '@typescript-eslint/require-array-sort-compare': 'error',
                 '@typescript-eslint/require-await': 'error',
                 '@typescript-eslint/restrict-plus-operands': 'error',
@@ -687,7 +693,6 @@ module.exports = {
             parser: '@typescript-eslint/parser',
             plugins: ['@typescript-eslint'],
             rules: {
-                '@typescript-eslint/quotes': ['error', 'single'],
                 'import/extensions': 'off',
             },
         },
