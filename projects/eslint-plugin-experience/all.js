@@ -567,6 +567,17 @@ module.exports = {
                 'no-implicit-coercion': ['error', {allow: ['!!']}],
                 'no-irregular-whitespace': 'error',
                 'no-loop-func': 'error',
+                'no-restricted-imports': [
+                    'error',
+                    {
+                        patterns: [
+                            {
+                                group: ['rxjs/operators'],
+                                message: "Don't use 'rxjs/operators' instead of 'rxjs'",
+                            },
+                        ],
+                    },
+                ],
                 'no-restricted-syntax': [
                     'error',
                     {
