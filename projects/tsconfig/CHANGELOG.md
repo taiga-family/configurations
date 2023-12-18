@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.11.0...@taiga-ui/tsconfig@0.12.0) (2023-12-18)
+
+### Features
+
+- **tsconfig:** support extendedDiagnostics
+  ([059a350](https://github.com/taiga-family/linters/commit/059a350d15aeb5b719ad7bdc2f5c00524cc6dfae))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.11.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.10.0...@taiga-ui/tsconfig@0.11.0) (2023-12-07)
 
 ### Features
