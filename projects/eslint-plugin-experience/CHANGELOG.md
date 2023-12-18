@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.43.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.42.2...@taiga-ui/eslint-plugin-experience@0.43.0) (2023-12-18)
+
+### Features
+
+- **eslint-plugin-experience:** add no-restricted-imports
+  ([c6c64f5](https://github.com/taiga-family/linters/commit/c6c64f56a1226d7815771102177429172c211615))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.42.2](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.42.1...@taiga-ui/eslint-plugin-experience@0.42.2) (2023-12-15)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
