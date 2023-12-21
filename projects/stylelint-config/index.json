@@ -35,17 +35,6 @@
                 ]
             }
         ],
-        "order/order": [
-            {
-                "type": "at-rule",
-                "name": "import"
-            },
-            "custom-properties",
-            "dollar-variables",
-            "declarations",
-            "rules",
-            "at-rules"
-        ],
         "order/properties-order": [
             [
                 "all",
