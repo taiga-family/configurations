@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.3](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.12.2...@taiga-ui/stylelint-config@0.12.3) (2023-12-21)
+
+### Bug Fixes
+
+- **stylelint-config:** remove redundant order/order
+  ([326d018](https://github.com/taiga-family/linters/commit/326d018f456d7fbebc4762e80d84224309a900b1))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.12.2](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.12.1...@taiga-ui/stylelint-config@0.12.2) (2023-12-09)
 
 ### Bug Fixes
