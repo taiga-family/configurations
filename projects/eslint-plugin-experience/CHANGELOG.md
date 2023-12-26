@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.45.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.44.4...@taiga-ui/eslint-plugin-experience@0.45.0) (2023-12-26)
+
+### Features
+
+- **eslint-plugin-experience:** remove redundant rule
+  ([d725d99](https://github.com/taiga-family/linters/commit/d725d99a9cfeef9d3eb853773052fef090d72e25))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.44.4](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.44.3...@taiga-ui/eslint-plugin-experience@0.44.4) (2023-12-25)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
