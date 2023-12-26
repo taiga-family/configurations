@@ -689,14 +689,6 @@ module.exports = {
             },
         },
         {
-            files: ['*.component.ts', '*.directive.ts', '**/examples/**/index.ts'],
-            parser: '@typescript-eslint/parser',
-            plugins: ['@typescript-eslint'],
-            rules: {
-                'import/extensions': 'off',
-            },
-        },
-        {
             files: [
                 '*.component.ts',
                 '*.service.ts',
