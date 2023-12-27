@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.25.0...@taiga-ui/cspell-config@0.26.0) (2023-12-27)
+
+### Features
+
+- **cspell-config:** add `domcontentloaded`
+  ([f4d4d6e](https://github.com/taiga-family/linters/commit/f4d4d6e8c4674f0d754a48ba3877aa191e4134b3))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.25.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.24.0...@taiga-ui/cspell-config@0.25.0) (2023-12-07)
 
 ### Features
