@@ -426,6 +426,7 @@
         "macrotask",
         "microtask",
         "hitbox",
-        "tuiIconButton"
+        "tuiIconButton",
+        "domcontentloaded"
     ]
 }
