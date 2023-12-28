@@ -923,6 +923,7 @@ module.exports = {
                 'promise/no-nesting': 'off',
                 quotes: 'off',
                 'require-await': 'off',
+                'sonar/deprecation': 'off',
                 'sonar/function-name': 'off',
                 'sonar/max-union-size': 'off',
                 'sonarjs/cognitive-complexity': 'off',
