@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.46.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.45.1...@taiga-ui/eslint-plugin-experience@0.46.0) (2023-12-28)
+
+### Features
+
+- **eslint-plugin-experience:** disable `sonar/deprecation`
+  ([453ba74](https://github.com/taiga-family/linters/commit/453ba74049d4993a507743d1a9d6c840bc8f6f25))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.45.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.45.0...@taiga-ui/eslint-plugin-experience@0.45.1) (2023-12-27)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
