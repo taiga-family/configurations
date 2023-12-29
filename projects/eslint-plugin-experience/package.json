@@ -34,7 +34,7 @@
         "eslint-plugin-rxjs": "5.0.3",
         "eslint-plugin-rxjs-angular": "2.0.1",
         "eslint-plugin-simple-import-sort": "10.0.0",
-        "eslint-plugin-sonar": "0.13.0",
+        "eslint-plugin-sonar": "0.13.1",
         "eslint-plugin-sonarjs": "0.23.0",
         "eslint-plugin-unicorn": "50.0.1"
     },
