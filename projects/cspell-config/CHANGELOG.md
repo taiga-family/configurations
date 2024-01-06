@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.26.0...@taiga-ui/cspell-config@0.27.0) (2024-01-06)
+
+### Features
+
+- **cspell-config:** add `halfwidth`
+  ([d2ebf53](https://github.com/taiga-family/linters/commit/d2ebf531b37070203d31fe2df1766b9211c42e89))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.26.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.25.0...@taiga-ui/cspell-config@0.26.0) (2023-12-27)
 
 ### Features
