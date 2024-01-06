@@ -427,6 +427,7 @@
         "microtask",
         "hitbox",
         "tuiIconButton",
-        "domcontentloaded"
+        "domcontentloaded",
+        "halfwidth"
     ]
 }
