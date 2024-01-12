@@ -428,6 +428,7 @@
         "hitbox",
         "tuiIconButton",
         "domcontentloaded",
-        "halfwidth"
+        "halfwidth",
+        "filechooser"
     ]
 }
