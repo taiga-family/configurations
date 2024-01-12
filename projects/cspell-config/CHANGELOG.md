@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.27.0...@taiga-ui/cspell-config@0.28.0) (2024-01-12)
+
+### Features
+
+- **cspell-config:** add `filechooser`
+  ([ac5b437](https://github.com/taiga-family/linters/commit/ac5b437b5f7511bb858d718e47f2aea3501d464f))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.27.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.26.0...@taiga-ui/cspell-config@0.27.0) (2024-01-06)
 
 ### Features
