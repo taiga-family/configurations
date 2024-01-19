@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.12.0...@taiga-ui/tsconfig@0.13.0) (2024-01-19)
+
+### Features
+
+- **tsconfig:** move ng-dev-mode
+  ([8f972bc](https://github.com/taiga-family/linters/commit/8f972bccccef7bca6d89ce484120144ffbd31903))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.12.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.11.0...@taiga-ui/tsconfig@0.12.0) (2023-12-18)
 
 ### Features
