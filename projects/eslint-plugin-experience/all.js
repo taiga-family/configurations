@@ -157,7 +157,6 @@ module.exports = {
                     },
                 ],
                 '@taiga-ui/experience/injection-token-description': 'error',
-                '@taiga-ui/experience/no-assert-without-ng-dev-mode': 'error',
                 '@taiga-ui/experience/no-deep-imports': [
                     'error',
                     {
@@ -858,6 +857,7 @@ module.exports = {
                 '@angular-eslint/use-component-selector': 'off',
                 '@angular-eslint/use-component-view-encapsulation': 'off',
                 '@angular-eslint/use-injectable-provided-in': 'off',
+                '@taiga-ui/experience/no-assert-without-ng-dev-mode': 'off',
                 '@taiga-ui/experience/no-typeof': 'off',
                 '@typescript-eslint/ban-ts-comment': 'off',
                 '@typescript-eslint/consistent-type-imports': 'off',
