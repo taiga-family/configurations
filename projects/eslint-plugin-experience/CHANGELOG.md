@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.47.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.46.7...@taiga-ui/eslint-plugin-experience@0.47.0) (2024-01-19)
+
+### Features
+
+- **eslint-plugin-experience:** disable ngDevMode rule
+  ([3047a38](https://github.com/taiga-family/linters/commit/3047a3813e70e89c2551dbda80c3b6a7ee7f7467))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.46.7](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.46.6...@taiga-ui/eslint-plugin-experience@0.46.7) (2024-01-18)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
