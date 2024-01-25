@@ -452,6 +452,7 @@
         "contenttop",
         "contentbottom",
         "requestfailed",
-        "requestfinished"
+        "requestfinished",
+        "prerendered"
     ]
 }
