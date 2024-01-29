@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.48.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.47.4...@taiga-ui/eslint-plugin-experience@0.48.0) (2024-01-29)
+
+### Features
+
+- **eslint-plugin-experience:** disable `errorOnTypeScriptSyntacticAndSemanticIssues`
+  ([155daaa](https://github.com/taiga-family/linters/commit/155daaa8e7435be8284a6c9131596404f3656351))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.47.4](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.47.3...@taiga-ui/eslint-plugin-experience@0.47.4) (2024-01-29)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
