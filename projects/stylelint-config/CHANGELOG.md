@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.12.5...@taiga-ui/stylelint-config@0.13.0) (2024-01-29)
+
+### Features
+
+- **stylelint-config:** update rules
+  ([e8e536d](https://github.com/taiga-family/linters/commit/e8e536d40fae56caaf45d7b5fe91afc5c9d14047))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.12.5](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.12.4...@taiga-ui/stylelint-config@0.12.5) (2024-01-04)
 
 **Note:** Version bump only for package @taiga-ui/stylelint-config
