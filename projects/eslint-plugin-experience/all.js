@@ -100,7 +100,7 @@ module.exports = {
             ],
             parserOptions: {
                 ecmaVersion: 'latest',
-                errorOnTypeScriptSyntacticAndSemanticIssues: true,
+                errorOnTypeScriptSyntacticAndSemanticIssues: false,
                 errorOnUnknownASTType: true,
                 project: base ? [base] : [],
                 sourceType: 'module',
