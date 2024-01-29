@@ -6,6 +6,23 @@
     "customSyntax": "postcss-less",
     "rules": {
         "selector-max-specificity": null,
+        "function-no-unknown": null,
+        "no-duplicate-selectors": null,
+        "no-descending-specificity": null,
+        "no-invalid-position-at-import-rule": null,
+        "property-no-vendor-prefix": null,
+        "declaration-no-important": null,
+        "no-unknown-animations": null,
+        "time-min-milliseconds": null,
+        "selector-max-type": null,
+        "selector-max-id": null,
+        "declaration-block-no-redundant-longhand-properties": null,
+        "selector-no-qualifying-type": null,
+        "media-feature-name-no-vendor-prefix": null,
+        "declaration-property-value-disallowed-list": null,
+        "custom-property-empty-line-before": null,
+        "declaration-empty-line-before": null,
+        "font-family-name-quotes": null,
         "alpha-value-notation": "number",
         "color-function-notation": "legacy",
         "meowtec/no-px": [
@@ -64,6 +81,65 @@
                 "ignoreTypes": ["/^/deep/"]
             }
         ],
-        "unit-allowed-list": ["px", "rem", "em", "deg", "s", "ms", "dpcm", "turn", "ch", "%"]
+        "unit-allowed-list": ["px", "rem", "em", "deg", "s", "ms", "dpcm", "turn", "ch", "%"],
+        "color-no-invalid-hex": [true, {"severity": "error"}],
+        "function-calc-no-unspaced-operator": [true, {"severity": "error"}],
+        "function-linear-gradient-no-nonstandard-direction": [true, {"severity": "error"}],
+        "string-no-newline": [true, {"severity": "error"}],
+        "unit-no-unknown": [true, {"severity": "error"}],
+        "keyframe-declaration-no-important": [true, {"severity": "error"}],
+        "declaration-block-no-duplicate-properties": [
+            true,
+            {
+                "ignore": ["consecutive-duplicates"],
+                "severity": "error"
+            }
+        ],
+        "declaration-block-no-shorthand-property-overrides": [true, {"severity": "error"}],
+        "selector-pseudo-class-no-unknown": [true, {"severity": "error"}],
+        "keyframe-block-no-duplicate-selectors": [true, {"severity": "error"}],
+        "font-family-no-duplicate-names": [true, {"severity": "error"}],
+        "font-family-no-missing-generic-family-keyword": [true, {"severity": "error"}],
+        "property-no-unknown": [true, {"severity": "error"}],
+        "block-no-empty": [true, {"severity": "error"}],
+        "media-feature-name-no-unknown": [true, {"severity": "error"}],
+        "at-rule-no-unknown": [true, {"severity": "error"}],
+        "comment-no-empty": [true, {"severity": "error"}],
+        "no-duplicate-at-import-rules": [true, {"severity": "error"}],
+        "no-empty-source": [true, {"severity": "error"}],
+        "declaration-block-no-duplicate-custom-properties": [true, {"severity": "error"}],
+        "named-grid-areas-no-invalid": [true, {"severity": "error"}],
+        "custom-property-no-missing-var-function": [true, {"severity": "error"}],
+        "annotation-no-unknown": [true, {"severity": "error"}],
+        "at-rule-empty-line-before": [
+            "always",
+            {
+                "except": ["first-nested"],
+                "ignore": ["after-comment", "blockless-after-same-name-blockless"],
+                "severity": "error"
+            }
+        ],
+        "color-hex-length": ["short", {"severity": "error"}],
+        "comment-whitespace-inside": ["always", {"severity": "error"}],
+        "function-name-case": ["lower", {"severity": "error"}],
+        "function-url-quotes": ["always", {"severity": "error"}],
+        "length-zero-no-unit": [true, {"ignore": ["custom-properties"], "severity": "error"}],
+        "no-irregular-whitespace": [true, {"severity": "error"}],
+        "rule-empty-line-before": [
+            "always",
+            {"except": ["first-nested"], "ignore": ["after-comment"], "severity": "error"}
+        ],
+        "selector-attribute-quotes": ["always", {"severity": "error"}],
+        "selector-pseudo-element-colon-notation": ["single", {"severity": "error"}],
+        "selector-type-case": ["lower", {"severity": "error"}],
+        "value-keyword-case": [
+            "lower",
+            {"severity": "error", "ignoreKeywords": ["currentColor", "backgroundColor", "optimizeLegibility"]}
+        ],
+        "function-url-no-scheme-relative": [true, {"severity": "warning"}],
+        "shorthand-property-no-redundant-values": [true, {"severity": "warning"}],
+        "value-no-vendor-prefix": [true, {"severity": "warning"}],
+        "selector-no-vendor-prefix": [true, {"severity": "warning"}],
+        "at-rule-no-vendor-prefix": [true, {"severity": "warning"}]
     }
 }
