@@ -456,6 +456,8 @@
         "prerendered",
         "unspaced",
         "blockless",
-        "viewports"
+        "viewports",
+        "brotli",
+        "gzip"
     ]
 }
