@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.32.0...@taiga-ui/cspell-config@0.33.0) (2024-01-30)
+
+### Features
+
+- **cspell-config:** add `brotli`
+  ([eb681ef](https://github.com/taiga-family/linters/commit/eb681ef401d96a75de3539fd5dd4be5cf386bf85))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.32.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.31.0...@taiga-ui/cspell-config@0.32.0) (2024-01-30)
 
 ### Features
