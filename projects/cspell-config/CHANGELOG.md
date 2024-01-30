@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.32.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.31.0...@taiga-ui/cspell-config@0.32.0) (2024-01-30)
+
+### Features
+
+- **cspell-config:** add `viewports`
+  ([f03af4b](https://github.com/taiga-family/linters/commit/f03af4bacf66dbd5ed2b8fd7f0c3f35835f82a98))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.31.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.30.0...@taiga-ui/cspell-config@0.31.0) (2024-01-30)
 
 ### Features
