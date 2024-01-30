@@ -455,6 +455,7 @@
         "requestfinished",
         "prerendered",
         "unspaced",
-        "blockless"
+        "blockless",
+        "viewports"
     ]
 }
