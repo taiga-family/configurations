@@ -453,6 +453,8 @@
         "contentbottom",
         "requestfailed",
         "requestfinished",
-        "prerendered"
+        "prerendered",
+        "unspaced",
+        "blockless"
     ]
 }
