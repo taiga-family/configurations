@@ -7,7 +7,7 @@
         "@angular-eslint/eslint-plugin": "17.2.1",
         "@angular-eslint/eslint-plugin-template": "17.2.1",
         "@angular-eslint/template-parser": "17.2.1",
-        "@babel/eslint-parser": "7.23.9",
+        "@babel/eslint-parser": "7.23.10",
         "@babel/eslint-plugin": "7.23.5",
         "@html-eslint/eslint-plugin": "0.23.1",
         "@html-eslint/parser": "0.23.0",
