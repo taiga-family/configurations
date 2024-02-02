@@ -20,7 +20,7 @@ module.exports = {
                     {
                         format: ['PascalCase'],
                         modifiers: ['exported', 'abstract'],
-                        prefix: ['Tui'],
+                        prefix: ['AbstractTui', 'Tui'],
                         selector: 'class',
                     },
                     {
@@ -63,7 +63,7 @@ module.exports = {
                     {
                         format: ['PascalCase'],
                         modifiers: ['abstract'],
-                        prefix: ['Tui'],
+                        prefix: ['AbstractTui', 'Tui'],
                         selector: 'class',
                     },
                     {
