@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.50.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.49.0...@taiga-ui/eslint-plugin-experience@0.50.0) (2024-02-02)
+
+### Features
+
+- **eslint-plugin-experience:** support `AbstractTui` or `Tui`
+  ([b129e79](https://github.com/taiga-family/linters/commit/b129e79d820be1f3b475dd70dd143551a7c2073b))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.49.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.48.0...@taiga-ui/eslint-plugin-experience@0.49.0) (2024-02-01)
 
 ### Features
