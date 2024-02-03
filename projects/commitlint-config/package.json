@@ -16,7 +16,7 @@
         "@commitlint/config-conventional": "18.6.0"
     },
     "peerDependencies": {
-        "@commitlint/cli": "*",
+        "@commitlint/cli": "18.6.0",
         "@commitlint/config-conventional": "18.4.3"
     },
     "publishConfig": {

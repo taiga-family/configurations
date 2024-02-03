@@ -51,7 +51,7 @@
         "@typescript-eslint/types": "6.20.0",
         "@typescript-eslint/typescript-estree": "6.20.0",
         "@typescript-eslint/utils": "6.20.0",
-        "eslint": "*",
+        "eslint": "8.56.0",
         "eslint-config-airbnb-base": "15.0.0",
         "eslint-config-prettier": "9.1.0",
         "eslint-import-resolver-typescript": "3.6.1",
