@@ -20,8 +20,6 @@
         "selector-no-qualifying-type": null,
         "media-feature-name-no-vendor-prefix": null,
         "declaration-property-value-disallowed-list": null,
-        "custom-property-empty-line-before": null,
-        "declaration-empty-line-before": null,
         "font-family-name-quotes": null,
         "alpha-value-notation": "number",
         "color-function-notation": "legacy",
@@ -140,6 +138,22 @@
         "shorthand-property-no-redundant-values": [true, {"severity": "warning"}],
         "value-no-vendor-prefix": [true, {"severity": "warning"}],
         "selector-no-vendor-prefix": [true, {"severity": "warning"}],
-        "at-rule-no-vendor-prefix": [true, {"severity": "warning"}]
+        "at-rule-no-vendor-prefix": [true, {"severity": "warning"}],
+        "custom-property-empty-line-before": [
+            "always",
+            {
+                "except": ["after-custom-property", "first-nested"],
+                "ignore": ["after-comment"],
+                "severity": "error"
+            }
+        ],
+        "declaration-empty-line-before": [
+            "always",
+            {
+                "except": ["first-nested", "after-declaration"],
+                "ignore": ["after-comment"],
+                "severity": "error"
+            }
+        ]
     }
 }
