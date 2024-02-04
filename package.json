@@ -96,7 +96,7 @@
         "lerna": "8.0.2",
         "ng-morph": "4.0.6",
         "nx": "18.0.0",
-        "prettier": "3.2.4",
+        "prettier": "3.2.5",
         "stylelint": "16.2.1"
     },
     "engines": {
