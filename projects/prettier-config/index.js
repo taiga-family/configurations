@@ -94,5 +94,11 @@ module.exports = {
             files: '*.svg',
             options: require(require('path').resolve(__dirname, 'options', 'svg.js')),
         },
+        {
+            files: ['tsconfig*.json'],
+            options: {
+                parser: 'jsonc',
+            },
+        },
     ],
 };
