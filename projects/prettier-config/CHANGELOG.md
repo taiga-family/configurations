@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.7.3...@taiga-ui/prettier-config@0.8.0) (2024-02-04)
+
+### Features
+
+- **prettier-config:** add `jsonc`
+  ([61b0e01](https://github.com/taiga-family/linters/commit/61b0e010da584e952350db60bd1abaf1e82d5b3e))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.7.3](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.7.2...@taiga-ui/prettier-config@0.7.3) (2024-02-03)
 
 **Note:** Version bump only for package @taiga-ui/prettier-config
