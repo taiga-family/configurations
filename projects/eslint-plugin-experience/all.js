@@ -465,6 +465,7 @@ module.exports = {
                     {blankLine: 'any', next: 'directive', prev: 'directive'},
                 ],
                 '@typescript-eslint/prefer-as-const': 'error',
+                '@typescript-eslint/prefer-find': 'error',
                 '@typescript-eslint/prefer-for-of': 'error',
                 '@typescript-eslint/prefer-includes': 'error',
                 '@typescript-eslint/prefer-nullish-coalescing': 'error',
