@@ -4,11 +4,6 @@
     "packageRules": [
         {
             "enabled": true,
-            "matchManagers": ["npm"],
-            "matchUpdateTypes": ["major"]
-        },
-        {
-            "enabled": false,
             "rangeStrategy": "widen",
             "matchDepTypes": ["engines", "peerDependencies"]
         }
