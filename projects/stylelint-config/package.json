@@ -13,14 +13,14 @@
     "license": "Apache-2.0",
     "main": "index.json",
     "dependencies": {
-        "postcss": "8.4.34",
+        "postcss": "8.4.35",
         "postcss-less": "6.0.0",
         "stylelint-config-standard": "36.0.0",
         "stylelint-no-px": "1.0.1",
         "stylelint-order": "6.0.4"
     },
     "peerDependencies": {
-        "postcss": "8.4.34",
+        "postcss": "8.4.35",
         "postcss-less": "6.0.0",
         "stylelint-config-standard": "36.0.0",
         "stylelint-no-px": "1.0.1",
