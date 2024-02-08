@@ -220,6 +220,7 @@ module.exports = {
                     },
                 ],
                 '@typescript-eslint/consistent-generic-constructors': 'error',
+                '@typescript-eslint/consistent-indexed-object-style': 'error',
                 '@typescript-eslint/consistent-type-assertions': [
                     'error',
                     {
@@ -379,6 +380,7 @@ module.exports = {
                 ],
                 '@typescript-eslint/no-confusing-non-null-assertion': 'error',
                 '@typescript-eslint/no-duplicate-enum-values': 'error',
+                '@typescript-eslint/no-duplicate-type-constituents': 'error',
                 '@typescript-eslint/no-empty-function': [
                     'error',
                     {
@@ -408,10 +410,7 @@ module.exports = {
                 ],
                 '@typescript-eslint/no-for-in-array': 'error',
                 '@typescript-eslint/no-implied-eval': 'error',
-                '@typescript-eslint/no-inferrable-types': [
-                    'error',
-                    {ignoreParameters: true},
-                ],
+                '@typescript-eslint/no-inferrable-types': 'error',
                 '@typescript-eslint/no-namespace': ['error', {allowDeclarations: true}],
                 '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
                 '@typescript-eslint/no-shadow': 'error',
