@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.14.0...@taiga-ui/tsconfig@0.15.0) (2024-02-13)
+
+### Features
+
+- **tsconfig:** es2018.promise
+  ([a5bf33c](https://github.com/taiga-family/linters/commit/a5bf33ca5f4c5c069500db864bc47ac98bfc07a5))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.14.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.13.0...@taiga-ui/tsconfig@0.14.0) (2024-01-19)
 
 ### Features
