@@ -77,21 +77,11 @@ module.exports = {
                         selector: 'enumMember',
                     },
                     {
-                        format: ['strictCamelCase'],
+                        format: ['camelCase'],
                         selector: 'classMethod',
                     },
                     {
-                        filter: 'CVC|axisX|axisY|API|HTML|DOM|URI|URL|JSON|CSS|HTML',
-                        format: null,
-                        selector: 'classMethod',
-                    },
-                    {
-                        format: ['strictCamelCase'],
-                        selector: 'classProperty',
-                    },
-                    {
-                        filter: 'CVC|axisX|axisY|API|HTML|DOM|URI|URL|JSON|CSS|HTML',
-                        format: null,
+                        format: ['camelCase'],
                         selector: 'classProperty',
                     },
                 ],
