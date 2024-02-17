@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.54.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.53.11...@taiga-ui/eslint-plugin-experience@0.54.0) (2024-02-17)
+
+### Features
+
+- **eslint-plugin-experience:** no strict for class property
+  ([1f14f78](https://github.com/taiga-family/linters/commit/1f14f7849cfe8a7eba90bd5bacabbbc966961140))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.53.11](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.53.10...@taiga-ui/eslint-plugin-experience@0.53.11) (2024-02-16)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
