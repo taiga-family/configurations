@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/taiga-family/linters/compare/@taiga-ui/browserslist-config@0.4.0...@taiga-ui/browserslist-config@0.5.0) (2024-02-19)
+
+### Features
+
+- **browserslist-config:** upgrade config ([#319](https://github.com/taiga-family/linters/issues/319))
+  ([669549e](https://github.com/taiga-family/linters/commit/669549e026526cf760c555703456061c2c2962c1))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # 0.4.0 (2023-11-14)
 
 ### Features
