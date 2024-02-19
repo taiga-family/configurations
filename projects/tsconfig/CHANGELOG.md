@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.15.0...@taiga-ui/tsconfig@0.16.0) (2024-02-19)
+
+### Features
+
+- **tsconfig:** add `es2021.string` to `lib` (`replaceAll` support)
+  ([#321](https://github.com/taiga-family/linters/issues/321))
+  ([6608b3f](https://github.com/taiga-family/linters/commit/6608b3f6225ae6cffd32ff59bdc7557f65f34939))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.15.0](https://github.com/taiga-family/linters/compare/@taiga-ui/tsconfig@0.14.0...@taiga-ui/tsconfig@0.15.0) (2024-02-13)
 
 ### Features
