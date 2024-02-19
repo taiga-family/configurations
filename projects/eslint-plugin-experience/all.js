@@ -682,6 +682,7 @@ module.exports = {
                 'unicorn/no-unsafe-regex': 'error',
                 'unicorn/no-useless-spread': 'error',
                 'unicorn/prefer-logical-operator-over-ternary': 'error',
+                'unicorn/prefer-string-replace-all': 'error',
                 'unicorn/prefer-string-slice': 'error',
                 'unicorn/require-number-to-fixed-digits-argument': 'error',
                 'vars-on-top': 'error',
