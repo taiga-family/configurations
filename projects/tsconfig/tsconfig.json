@@ -40,7 +40,15 @@
         "outDir": "./dist",
         "target": "ES2017",
         "module": "ES2020",
-        "lib": ["es2017", "es2018.asynciterable", "es2018.promise", "es2019.object", "es2019.string", "dom"],
+        "lib": [
+            "es2017",
+            "es2018.asynciterable",
+            "es2018.promise",
+            "es2019.object",
+            "es2019.string",
+            "es2021.string",
+            "dom"
+        ],
         "typeRoots": ["node_modules/@types"],
         "types": ["node"],
         "skipLibCheck": true,
