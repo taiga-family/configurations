@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.55.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.54.1...@taiga-ui/eslint-plugin-experience@0.55.0) (2024-02-19)
+
+### Features
+
+- **eslint-plugin-experience:** add `unicorn/prefer-string-replace-all` rule
+  ([#323](https://github.com/taiga-family/linters/issues/323))
+  ([f7848fc](https://github.com/taiga-family/linters/commit/f7848fc155794f55d8c32dc3bc99f8f0b0079a96))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.54.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.54.0...@taiga-ui/eslint-plugin-experience@0.54.1) (2024-02-18)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
