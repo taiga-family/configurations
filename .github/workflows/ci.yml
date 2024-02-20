@@ -10,11 +10,11 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: taiga-family/ci/actions/setup/checkout@v1.51.8
+      - uses: taiga-family/ci/actions/setup/checkout@v1.51.9
         with:
           fetch-depth: 0
-      - uses: taiga-family/ci/actions/setup/variables@v1.51.8
-      - uses: taiga-family/ci/actions/setup/node@v1.51.8
+      - uses: taiga-family/ci/actions/setup/variables@v1.51.9
+      - uses: taiga-family/ci/actions/setup/node@v1.51.9
       - run: |
           npm run commitlint
           npm run prettier -- --check
