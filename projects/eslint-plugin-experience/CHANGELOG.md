@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.57.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.56.1...@taiga-ui/eslint-plugin-experience@0.57.0) (2024-02-22)
+
+### Features
+
+- **eslint-plugin-experience:** no `inject(Injector)`
+  ([305638f](https://github.com/taiga-family/linters/commit/305638f334af43e9f48d3e05823005564c8e5851))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.56.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.56.0...@taiga-ui/eslint-plugin-experience@0.56.1) (2024-02-22)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
