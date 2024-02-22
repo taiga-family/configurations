@@ -14,7 +14,6 @@ module.exports = {
         'no-private-esnext-fields': require('./rules/no-private-esnext-fields'),
         'no-simple-for-of': require('./rules/no-simple-for-of'),
         'no-typeof': require('./rules/no-typeof'),
-        'prefer-inject-decorator': require('./rules/prefer-inject-decorator'),
         'prefer-self-destroy-service': require('./rules/prefer-self-destroy-service'),
         'strict-tui-doc-example': require('./rules/strict-tui-doc-example'),
     },

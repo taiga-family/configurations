@@ -170,7 +170,6 @@ module.exports = {
                 ],
                 '@taiga-ui/experience/no-private-esnext-fields': 'error',
                 '@taiga-ui/experience/no-simple-for-of': 'error',
-                '@taiga-ui/experience/prefer-inject-decorator': 'error',
                 '@taiga-ui/experience/prefer-self-destroy-service': 'error',
                 '@taiga-ui/experience/strict-tui-doc-example': 'error',
                 '@typescript-eslint/array-type': [
@@ -580,6 +579,35 @@ module.exports = {
                                 group: ['rxjs/operators'],
                                 message: "Don't use 'rxjs/operators' instead of 'rxjs'",
                             },
+                            {
+                                group: ['@angular/**'],
+                                importNames: ['Inject'],
+                                message: 'Please use `inject(Type)` function instead.',
+                            },
+                            {
+                                group: ['@angular/**'],
+                                importNames: ['Self'],
+                                message:
+                                    'Please use `inject(Type, { self: true })` function instead.',
+                            },
+                            {
+                                group: ['@angular/**'],
+                                importNames: ['SkipSelf'],
+                                message:
+                                    'Please use `inject(Type, { skipSelf: true })` function instead.',
+                            },
+                            {
+                                group: ['@angular/**'],
+                                importNames: ['Optional'],
+                                message:
+                                    'Please use `inject(Type, { optional: true })` function instead.',
+                            },
+                            {
+                                group: ['@angular/**'],
+                                importNames: ['Host'],
+                                message:
+                                    'Please use `inject(Type, { host: true })` function instead.',
+                            },
                         ],
                     },
                 ],
@@ -628,6 +656,30 @@ module.exports = {
                         selector:
                             "CallExpression[arguments.length=1] > MemberExpression.callee > Identifier.property[name='reduce']",
                     },
+                    {
+                        message: 'Please use `inject(Type)` function instead.',
+                        selector: "Decorator[expression.callee.name='Inject']",
+                    },
+                    {
+                        message:
+                            'Please use `inject(Type, { self: true })` function instead.',
+                        selector: "Decorator[expression.callee.name='Self']",
+                    },
+                    {
+                        message:
+                            'Please use `inject(Type, { skipSelf: true })` function instead.',
+                        selector: "Decorator[expression.callee.name='SkipSelf']",
+                    },
+                    {
+                        message:
+                            'Please use `inject(Type, { optional: true })` function instead.',
+                        selector: "Decorator[expression.callee.name='Optional']",
+                    },
+                    {
+                        message:
+                            'Please use `inject(Type, { host: true })` function instead.',
+                        selector: "Decorator[expression.callee.name='Host']",
+                    },
                 ],
                 'no-return-assign': ['error', 'always'],
                 'no-useless-concat': 'error',
@@ -650,7 +702,6 @@ module.exports = {
                 'rxjs/no-connectable': 'error',
                 'rxjs/no-cyclic-action': 'error',
                 'rxjs/no-ignored-observable': 'error',
-                'rxjs/no-ignored-takewhile-value': 'error',
                 'rxjs/no-topromise': 'error',
                 'rxjs/no-unsafe-catch': 'error',
                 'rxjs/no-unsafe-first': 'error',
@@ -924,6 +975,7 @@ module.exports = {
                 'promise/no-nesting': 'off',
                 quotes: 'off',
                 'require-await': 'off',
+                'rxjs/no-ignored-takewhile-value': 'off',
                 'sonar/deprecation': 'off',
                 'sonar/function-name': 'off',
                 'sonar/max-union-size': 'off',
