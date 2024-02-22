@@ -584,30 +584,6 @@ module.exports = {
                                 importNames: ['Inject'],
                                 message: 'Please use `inject(Type)` function instead.',
                             },
-                            {
-                                group: ['@angular/**'],
-                                importNames: ['Self'],
-                                message:
-                                    'Please use `inject(Type, { self: true })` function instead.',
-                            },
-                            {
-                                group: ['@angular/**'],
-                                importNames: ['SkipSelf'],
-                                message:
-                                    'Please use `inject(Type, { skipSelf: true })` function instead.',
-                            },
-                            {
-                                group: ['@angular/**'],
-                                importNames: ['Optional'],
-                                message:
-                                    'Please use `inject(Type, { optional: true })` function instead.',
-                            },
-                            {
-                                group: ['@angular/**'],
-                                importNames: ['Host'],
-                                message:
-                                    'Please use `inject(Type, { host: true })` function instead.',
-                            },
                         ],
                     },
                 ],
