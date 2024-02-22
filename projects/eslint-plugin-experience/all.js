@@ -656,6 +656,11 @@ module.exports = {
                             'Please use `inject(Type, { host: true })` function instead.',
                         selector: "Decorator[expression.callee.name='Host']",
                     },
+                    {
+                        message: 'Please use `inject(INJECTOR)` instead',
+                        selector:
+                            "CallExpression[callee.name='inject'][arguments.0.name='Injector']",
+                    },
                 ],
                 'no-return-assign': ['error', 'always'],
                 'no-useless-concat': 'error',
