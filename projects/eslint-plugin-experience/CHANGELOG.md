@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.58.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.57.0...@taiga-ui/eslint-plugin-experience@0.58.0) (2024-02-26)
+
+### Features
+
+- **eslint-plugin-experience:** disable `no-output-native`
+  ([ae6b1a0](https://github.com/taiga-family/linters/commit/ae6b1a0bb30e79bab0a1552b599402b7743cc9ba))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.57.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.56.1...@taiga-ui/eslint-plugin-experience@0.57.0) (2024-02-22)
 
 ### Features
