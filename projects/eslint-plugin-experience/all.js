@@ -168,9 +168,9 @@ module.exports = {
                         ],
                     },
                 ],
+                '@taiga-ui/experience/no-implicit-public': 'error',
                 '@taiga-ui/experience/no-private-esnext-fields': 'error',
                 '@taiga-ui/experience/no-simple-for-of': 'error',
-                '@taiga-ui/experience/prefer-self-destroy-service': 'error',
                 '@taiga-ui/experience/strict-tui-doc-example': 'error',
                 '@typescript-eslint/array-type': [
                     'error',
@@ -248,7 +248,16 @@ module.exports = {
                 ],
                 '@typescript-eslint/explicit-member-accessibility': [
                     'error',
-                    {accessibility: 'no-public'},
+                    {
+                        accessibility: 'explicit',
+                        overrides: {
+                            accessors: 'explicit',
+                            constructors: 'no-public',
+                            methods: 'explicit',
+                            properties: 'explicit',
+                            parameterProperties: 'explicit',
+                        },
+                    },
                 ],
                 '@typescript-eslint/func-call-spacing': 'error',
                 '@typescript-eslint/lines-between-class-members': [
@@ -890,8 +899,6 @@ module.exports = {
                 '@angular-eslint/use-component-selector': 'off',
                 '@angular-eslint/use-component-view-encapsulation': 'off',
                 '@angular-eslint/use-injectable-provided-in': 'off',
-                '@taiga-ui/experience/no-assert-without-ng-dev-mode': 'off',
-                '@taiga-ui/experience/no-typeof': 'off',
                 '@typescript-eslint/ban-ts-comment': 'off',
                 '@typescript-eslint/consistent-type-imports': 'off',
                 '@typescript-eslint/explicit-module-boundary-types': 'off',
