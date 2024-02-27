@@ -296,7 +296,7 @@
             {
                 "severity": "error",
                 "ignoreKeywords": ["currentColor", "backgroundColor", "optimizeLegibility"],
-                "ignoreProperties": ["/^--/"]
+                "ignoreProperties": ["/^--/", "/^\\$/"]
             }
         ],
         "function-url-no-scheme-relative": [
