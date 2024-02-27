@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.17.0...@taiga-ui/stylelint-config@0.18.0) (2024-02-27)
+
+### Features
+
+- **stylelint-config:** ignore less variables keyword case
+  ([b6a8c56](https://github.com/taiga-family/linters/commit/b6a8c56e7050169b23220412595b9ed811558bff))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.17.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.16.0...@taiga-ui/stylelint-config@0.17.0) (2024-02-27)
 
 ### Features
