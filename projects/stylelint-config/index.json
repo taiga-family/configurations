@@ -295,7 +295,8 @@
             "lower",
             {
                 "severity": "error",
-                "ignoreKeywords": ["currentColor", "backgroundColor", "optimizeLegibility"]
+                "ignoreKeywords": ["currentColor", "backgroundColor", "optimizeLegibility"],
+                "ignoreProperties": ["/^--/"]
             }
         ],
         "function-url-no-scheme-relative": [
