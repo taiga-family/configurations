@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.59.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.58.0...@taiga-ui/eslint-plugin-experience@0.59.0) (2024-02-27)
+
+### Features
+
+- **eslint-plugin-experience:** add `no-implicit-public`
+  ([96afa80](https://github.com/taiga-family/linters/commit/96afa80d55a4d225c78bc09062baf099d805454e))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.58.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.57.0...@taiga-ui/eslint-plugin-experience@0.58.0) (2024-02-26)
 
 ### Features
