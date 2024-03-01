@@ -34,20 +34,20 @@ function checkImplicitPublic(context, node) {
     const superClass = classRef?.superClass ?? null;
     const implements = classRef?.implements ?? [];
 
-    let keyInheretedClass = false;
-    let keyImplementedInsideOtherInterface = false;
+    let hasFieldInParentClass = false;
+    let hasFieldInInterfaces = false;
 
     if (superClass) {
         const type = services.getTypeAtLocation(superClass);
 
-        keyInheretedClass = type.symbol?.members.has(name) ?? false;
+        hasFieldInParentClass = type.symbol?.members.has(name) ?? false;
     }
 
     for (const implement of implements) {
         const type = services.getTypeAtLocation(implement);
 
         if (type.symbol?.members.has(name)) {
-            keyImplementedInsideOtherInterface = true;
+            hasFieldInInterfaces = true;
             break;
         }
     }
@@ -75,7 +75,7 @@ function checkImplicitPublic(context, node) {
     }
 
     const marked =
-        hasPublicDecorators || keyImplementedInsideOtherInterface || keyInheretedClass
+        hasPublicDecorators || hasFieldInInterfaces || hasFieldInParentClass
             ? ` public `
             : ` protected `;
 
