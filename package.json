@@ -90,7 +90,7 @@
         "@nx/jest": "18.0.6",
         "@nx/node": "18.0.6",
         "@nx/workspace": "18.0.6",
-        "cspell": "8.4.1",
+        "cspell": "8.5.0",
         "eslint": "8.57.0",
         "eslint-plugin-perfectionist": "2.5.0",
         "lerna": "8.1.2",

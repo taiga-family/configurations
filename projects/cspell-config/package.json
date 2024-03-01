@@ -22,7 +22,7 @@
         "@cspell/dict-lorem-ipsum": "4.0.0",
         "@cspell/dict-ru_ru": "2.2.0",
         "@cspell/dict-scientific-terms-us": "3.0.1",
-        "cspell": "8.4.1"
+        "cspell": "8.5.0"
     },
     "publishConfig": {
         "access": "public"
