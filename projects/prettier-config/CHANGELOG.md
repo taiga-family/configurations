@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.9.0...@taiga-ui/prettier-config@0.10.0) (2024-03-03)
+
+### Features
+
+- use peer deps ([208e07e](https://github.com/taiga-family/linters/commit/208e07e8de9928ae231317097157a3f1bebcab46))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.9.0](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.8.4...@taiga-ui/prettier-config@0.9.0) (2024-03-01)
 
 **Note:** Version bump only for package @taiga-ui/prettier-config

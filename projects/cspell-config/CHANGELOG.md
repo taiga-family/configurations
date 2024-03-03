@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.35.1...@taiga-ui/cspell-config@0.36.0) (2024-03-03)
+
+### Features
+
+- use peer deps ([208e07e](https://github.com/taiga-family/linters/commit/208e07e8de9928ae231317097157a3f1bebcab46))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.35.1](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.35.0...@taiga-ui/cspell-config@0.35.1) (2024-03-01)
 
 **Note:** Version bump only for package @taiga-ui/cspell-config

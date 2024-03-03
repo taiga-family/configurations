@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/taiga-family/linters/compare/@taiga-ui/commitlint-config@0.6.0...@taiga-ui/commitlint-config@0.7.0) (2024-03-03)
+
+### Features
+
+- **commitlint-config:** pure ESM package
+  ([aa92b97](https://github.com/taiga-family/linters/commit/aa92b970e590158b423ca5563b709dd157f64e2b))
+- use peer deps ([208e07e](https://github.com/taiga-family/linters/commit/208e07e8de9928ae231317097157a3f1bebcab46))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.6.0](https://github.com/taiga-family/linters/compare/@taiga-ui/commitlint-config@0.5.6...@taiga-ui/commitlint-config@0.6.0) (2024-03-01)
 
 **Note:** Version bump only for package @taiga-ui/commitlint-config
