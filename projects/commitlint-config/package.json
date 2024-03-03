@@ -10,8 +10,9 @@
         "type": "git",
         "url": "https://github.com/taiga-family/linters.git"
     },
+    "type": "module",
     "license": "Apache-2.0",
-    "main": "commitlint.config.js",
+    "exports": "./commitlint.config.js",
     "peerDependencies": {
         "@commitlint/cli": "^19.0.3",
         "@commitlint/config-conventional": "^19.0.3"

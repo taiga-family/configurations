@@ -1,10 +1,13 @@
-module.exports = {
+import conventional from '@commitlint/config-conventional';
+import fs from 'node:fs';
+
+export default {
     extends: ['@commitlint/config-conventional'],
     rules: {
         'scope-enum': () => {
             function getTypes(dir) {
                 try {
-                    const {readdirSync, statSync} = require('fs');
+                    const {readdirSync, statSync} = fs;
                     return readdirSync(dir).filter(entity =>
                         statSync(`${dir}/${entity}`).isDirectory(),
                     );
@@ -30,8 +33,7 @@ module.exports = {
             ];
         },
         'type-enum': () => {
-            const [level, applicable, types] = require('@commitlint/config-conventional')
-                .rules['type-enum'];
+            const [level, applicable, types] = conventional.rules['type-enum'];
 
             return [level, applicable, [...types, 'deprecate']];
         },
