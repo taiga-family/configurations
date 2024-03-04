@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.64.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.63.0...@taiga-ui/eslint-plugin-experience@0.64.0) (2024-03-04)
+
+### Features
+
+- **eslint-plugin-experience:** add `consistent-type-imports`
+  ([f9deb20](https://github.com/taiga-family/linters/commit/f9deb20f93665320e481c1b8cfa01859c24a74d6))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.63.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.62.0...@taiga-ui/eslint-plugin-experience@0.63.0) (2024-03-03)
 
 ### Features
