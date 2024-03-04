@@ -228,6 +228,14 @@ module.exports = {
                     },
                 ],
                 '@typescript-eslint/consistent-type-definitions': 'error',
+                '@typescript-eslint/consistent-type-imports': [
+                    'error',
+                    {
+                        disallowTypeAnnotations: false,
+                        fixStyle: 'inline-type-imports',
+                        prefer: 'type-imports',
+                    },
+                ],
                 '@typescript-eslint/dot-notation': [
                     'error',
                     {
