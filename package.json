@@ -84,11 +84,11 @@
         ]
     },
     "devDependencies": {
-        "@nx/jest": "18.0.6",
-        "@nx/node": "18.0.6",
-        "@nx/workspace": "18.0.6",
+        "@nx/jest": "18.0.7",
+        "@nx/node": "18.0.7",
+        "@nx/workspace": "18.0.7",
         "lerna": "8.1.2",
-        "nx": "18.0.6"
+        "nx": "18.0.7"
     },
     "engines": {
         "node": ">= 16.14",
