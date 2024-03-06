@@ -232,7 +232,7 @@ module.exports = {
                     'error',
                     {
                         disallowTypeAnnotations: false,
-                        fixStyle: 'inline-type-imports',
+                        fixStyle: 'separate-type-imports',
                         prefer: 'type-imports',
                     },
                 ],
@@ -914,7 +914,6 @@ module.exports = {
                 '@angular-eslint/use-component-view-encapsulation': 'off',
                 '@angular-eslint/use-injectable-provided-in': 'off',
                 '@typescript-eslint/ban-ts-comment': 'off',
-                '@typescript-eslint/consistent-type-imports': 'off',
                 '@typescript-eslint/explicit-module-boundary-types': 'off',
                 '@typescript-eslint/no-base-to-string': 'off',
                 '@typescript-eslint/no-explicit-any': 'off',
