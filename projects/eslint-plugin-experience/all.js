@@ -851,10 +851,10 @@ module.exports = {
             parser: '@angular-eslint/template-parser',
             extends: ['plugin:@angular-eslint/template/process-inline-templates'],
             rules: {
-                '@angular-eslint/template/prefer-self-closing-tags': 'error',
                 '@angular-eslint/template/banana-in-box': 'error',
                 '@angular-eslint/template/no-distracting-elements': 'error',
                 '@angular-eslint/template/no-duplicate-attributes': 'error',
+                '@angular-eslint/template/prefer-self-closing-tags': 'error',
                 '@angular-eslint/template/table-scope': 'error',
             },
         },
