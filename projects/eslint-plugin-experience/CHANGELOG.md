@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.66.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.65.0...@taiga-ui/eslint-plugin-experience@0.66.0) (2024-03-14)
+
+### Features
+
+- **eslint-plugin-experience:** remove redundant package
+  ([4184a2b](https://github.com/taiga-family/linters/commit/4184a2b768db19f6397c032c79bd1f0220278071))
+- **eslint-plugin-experience:** use angular eslint html parser
+  ([53b1a9b](https://github.com/taiga-family/linters/commit/53b1a9ba7de1d848c7e208bb25cea075d6748f33))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.65.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.64.0...@taiga-ui/eslint-plugin-experience@0.65.0) (2024-03-06)
 
 ### Features
