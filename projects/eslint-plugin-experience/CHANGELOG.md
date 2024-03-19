@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.0...@taiga-ui/eslint-plugin-experience@0.67.1) (2024-03-19)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** revert peer deps
+  ([5bcce19](https://github.com/taiga-family/linters/commit/5bcce19152b3df447e25c28e16a3efa8ebe7e915))
+- **eslint-plugin-experience:** update eslint typescript plugin
+  ([f68cc9b](https://github.com/taiga-family/linters/commit/f68cc9b476a5a652f6f731d8a20d302d18f61994))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.67.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.66.1...@taiga-ui/eslint-plugin-experience@0.67.0) (2024-03-19)
 
 ### Features
