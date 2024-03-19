@@ -16,6 +16,7 @@ jobs:
       - uses: taiga-family/ci/actions/setup/variables@v1.54.0
       - uses: taiga-family/ci/actions/setup/node@v1.54.0
       - run: |
+          npx check-peer-dependencies --npm
           npm run commitlint
           npm run prettier -- --check
           npm run cspell -- --no-progress
