@@ -14,6 +14,7 @@
         "@typescript-eslint/types": "^6.21.0",
         "@typescript-eslint/typescript-estree": "^6.21.0",
         "@typescript-eslint/utils": "^6.21.0",
+        "babel-plugin-macros": "^3.1.0",
         "eslint": "^8.57.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^9.1.0",
@@ -35,7 +36,8 @@
         "eslint-plugin-simple-import-sort": "^12.0.0",
         "eslint-plugin-sonar": "^0.13.2",
         "eslint-plugin-sonarjs": "^0.24.0",
-        "eslint-plugin-unicorn": "^51.0.1"
+        "eslint-plugin-unicorn": "^51.0.1",
+        "js-yaml": "^4.1.0"
     },
     "publishConfig": {
         "access": "public"
