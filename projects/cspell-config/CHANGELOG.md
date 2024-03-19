@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.3](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.36.2...@taiga-ui/cspell-config@0.36.3) (2024-03-19)
+
+### Bug Fixes
+
+- **cspell-config:** add `iisnode`
+  ([4475eb9](https://github.com/taiga-family/linters/commit/4475eb919bcda68137d663d960dafad7287bd4ff))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.36.2](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.36.1...@taiga-ui/cspell-config@0.36.2) (2024-03-14)
 
 **Note:** Version bump only for package @taiga-ui/cspell-config

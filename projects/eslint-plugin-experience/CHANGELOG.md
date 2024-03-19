@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.67.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.66.1...@taiga-ui/eslint-plugin-experience@0.67.0) (2024-03-19)
+
+### Features
+
+- **eslint-plugin-experience:** add node-import plugin
+  ([781b5a7](https://github.com/taiga-family/linters/commit/781b5a7d795b1864fcd097740989ca41ed1761d5))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.66.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.66.0...@taiga-ui/eslint-plugin-experience@0.66.1) (2024-03-15)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
