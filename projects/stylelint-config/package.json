@@ -13,7 +13,7 @@
     "license": "Apache-2.0",
     "main": "index.json",
     "peerDependencies": {
-        "postcss": "^8.4.35",
+        "postcss": "^8.4.37",
         "postcss-less": "^6.0.0",
         "stylelint": "^16.2.1",
         "stylelint-config-standard": "^36.0.0",
