@@ -86,6 +86,7 @@ module.exports = {
                 'decorator-position',
                 'functional',
                 'prettier',
+                'node-import',
             ],
             extends: [
                 'eslint-config-airbnb-base',
@@ -698,6 +699,7 @@ module.exports = {
                 ],
                 'no-var': 'error',
                 'no-void': ['error', {allowAsStatement: true}],
+                'node-import/prefer-node-protocol': 'error',
                 'prefer-template': 'error',
                 'prettier/prettier': 'error',
                 'promise/catch-or-return': 'error',
