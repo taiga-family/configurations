@@ -90,15 +90,6 @@
         "lerna": "8.1.2",
         "nx": "18.0.8"
     },
-    "overrides": {
-        "eslint-plugin-sonar": {
-            "@typescript-eslint/eslint-plugin": "^7.2.0",
-            "@typescript-eslint/parser": "^7.2.0",
-            "@typescript-eslint/types": "^7.2.0",
-            "@typescript-eslint/typescript-estree": "^7.2.0",
-            "@typescript-eslint/utils": "^7.2.0"
-        }
-    },
     "engines": {
         "node": ">= 16.14",
         "npm": ">= 8.3",
