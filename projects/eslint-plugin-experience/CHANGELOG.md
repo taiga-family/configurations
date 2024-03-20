@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.2](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.1...@taiga-ui/eslint-plugin-experience@0.67.2) (2024-03-20)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** add alias `takeUntilDestroyed` to `rxjs/no-unsafe-takeuntil` rule
+  ([#358](https://github.com/taiga-family/linters/issues/358))
+  ([658ba18](https://github.com/taiga-family/linters/commit/658ba1805eeb45728d0a65bd1fdb0b15cd130889))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.67.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.0...@taiga-ui/eslint-plugin-experience@0.67.1) (2024-03-19)
 
 ### Bug Fixes
