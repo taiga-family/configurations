@@ -712,11 +712,11 @@ module.exports = {
                 'rxjs/no-unsafe-catch': 'error',
                 'rxjs/no-unsafe-first': 'error',
                 'rxjs/no-unsafe-switchmap': 'error',
-                "rxjs/no-unsafe-takeuntil": [
-                    "error",
+                'rxjs/no-unsafe-takeuntil': [
+                    'error',
                     {
-                        "alias": ["takeUntilDestroyed"]
-                    }
+                        alias: ['takeUntilDestroyed'],
+                    },
                 ],
                 'rxjs/throw-error': 'error',
                 'simple-import-sort/exports': 'error',
