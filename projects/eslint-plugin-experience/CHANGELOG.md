@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.4](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.3...@taiga-ui/eslint-plugin-experience@0.67.4) (2024-03-22)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** ALWAYS_FALSE/TRUE_HANDLER
+  ([4e928e1](https://github.com/taiga-family/linters/commit/4e928e1baabce4fff0e5e2c69579fe5284e6c9cf))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.67.3](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.2...@taiga-ui/eslint-plugin-experience@0.67.3) (2024-03-20)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
