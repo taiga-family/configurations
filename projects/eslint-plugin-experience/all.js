@@ -624,14 +624,12 @@ module.exports = {
                         selector: "CallExpression[callee.name='mapTo']",
                     },
                     {
-                        message:
-                            'Use `ALWAYS_FALSE_HANDLER` please instead of `() => false`',
+                        message: 'Use `FALSE_HANDLER` please instead of `() => false`',
                         selector:
                             "ArrowFunctionExpression[params.length=0][body.raw='false'][body.value='false']",
                     },
                     {
-                        message:
-                            'Use `ALWAYS_TRUE_HANDLER` please instead of `() => true`',
+                        message: 'Use `TRUE_HANDLER` please instead of `() => true`',
                         selector:
                             "ArrowFunctionExpression[params.length=0][body.raw='true'][body.value='true']",
                     },
