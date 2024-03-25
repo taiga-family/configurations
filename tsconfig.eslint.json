@@ -1,5 +1,5 @@
 {
-    "extends": "./taiga-ui/tsconfig.json",
+    "extends": "./projects/tsconfig/tsconfig.json",
     "compilerOptions": {
         "rootDir": ".",
         "baseUrl": ".",
@@ -16,6 +16,6 @@
         ],
         "types": ["ng-dev-mode", "node"]
     },
-    "include": ["taiga-ui/**/*.ts", "projects/**/*.ts", "projects/**/*.js"],
+    "include": ["**/*.ts", "projects/**/*.js"],
     "exclude": ["**/node_modules"]
 }

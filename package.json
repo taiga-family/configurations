@@ -88,7 +88,8 @@
         "@nx/node": "18.1.2",
         "@nx/workspace": "18.1.2",
         "lerna": "8.1.2",
-        "nx": "18.1.2"
+        "nx": "18.1.2",
+        "typescript": "5.3.3"
     },
     "engines": {
         "node": ">= 16.14",

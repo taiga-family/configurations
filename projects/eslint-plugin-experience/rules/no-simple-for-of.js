@@ -11,6 +11,7 @@ module.exports = {
             ForOfStatement(node) {
                 const isSimpleForOf = !findExpressions(node, [
                     'AwaitExpression',
+                    'YieldExpression',
                     'BreakStatement',
                     'ContinueStatement',
                     'ReturnStatement',
