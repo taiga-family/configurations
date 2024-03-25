@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.7](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.6...@taiga-ui/eslint-plugin-experience@0.67.7) (2024-03-25)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** use `Set` for optimize search expression
+  ([a545426](https://github.com/taiga-family/linters/commit/a545426aeaa18975c880f477a386aeda3007adc4))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.67.6](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.5...@taiga-ui/eslint-plugin-experience@0.67.6) (2024-03-25)
 
 ### Bug Fixes
