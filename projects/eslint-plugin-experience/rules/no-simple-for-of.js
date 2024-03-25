@@ -1,3 +1,5 @@
+const ESLintUtils = require('@typescript-eslint/utils').ESLintUtils;
+
 /**
  * @type {import('eslint').Rule.RuleModule}
  */
@@ -9,16 +11,20 @@ module.exports = {
              * @return {*}
              */
             ForOfStatement(node) {
-                const isSimpleForOf = !findExpressions(
-                    node,
-                    new Set([
-                        'AwaitExpression',
-                        'YieldExpression',
-                        'BreakStatement',
-                        'ContinueStatement',
-                        'ReturnStatement',
-                    ]),
-                );
+                console.log(isStaticGenerator(context, node));
+
+                const isSimpleForOf =
+                    !node?.await &&
+                    !findExpressions(
+                        node,
+                        new Set([
+                            'AwaitExpression',
+                            'YieldExpression',
+                            'BreakStatement',
+                            'ContinueStatement',
+                            'ReturnStatement',
+                        ]),
+                    );
 
                 if (isSimpleForOf) {
                     context.report({
@@ -55,5 +61,18 @@ function findExpressions(node, keys) {
         (node?.left && findExpressions(node?.left, keys)) ||
         (node?.right && findExpressions(node?.right, keys)) ||
         false
+    );
+}
+
+function isStaticGenerator(context, node) {
+    const right = ESLintUtils.getParserServices(context)?.getTypeAtLocation(node.right);
+    const declaredProperties = right?.declaredProperties ?? [];
+    const hasNextAndIterator =
+        !!declaredProperties.find(member => member.escapedName === 'next') &&
+        !!declaredProperties.find(member => member.escapedName.startsWith('__@iterator'));
+
+    return (
+        hasNextAndIterator ||
+        right?.members?.keys()?.[Symbol.toStringTag] === 'Map Iterator'
     );
 }
