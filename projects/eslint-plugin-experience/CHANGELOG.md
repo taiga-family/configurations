@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.9](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.8...@taiga-ui/eslint-plugin-experience@0.67.9) (2024-03-25)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** support static generator
+  ([c0f7db8](https://github.com/taiga-family/linters/commit/c0f7db8fa8af8e535a4dcd4536cc0debc9b67097))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.67.8](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.7...@taiga-ui/eslint-plugin-experience@0.67.8) (2024-03-25)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
