@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.6](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.5...@taiga-ui/eslint-plugin-experience@0.67.6) (2024-03-25)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** exclude yield expression
+  ([9ac4489](https://github.com/taiga-family/linters/commit/9ac448904f916b54c199979c714ca8f504c2f551))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.67.5](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.4...@taiga-ui/eslint-plugin-experience@0.67.5) (2024-03-22)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
