@@ -11,10 +11,9 @@ module.exports = {
              * @return {*}
              */
             ForOfStatement(node) {
-                console.log(isStaticGenerator(context, node));
-
                 const isSimpleForOf =
                     !node?.await &&
+                    !isGenerator(context, node) &&
                     !findExpressions(
                         node,
                         new Set([
@@ -64,15 +63,17 @@ function findExpressions(node, keys) {
     );
 }
 
-function isStaticGenerator(context, node) {
+function isGenerator(context, node) {
     const right = ESLintUtils.getParserServices(context)?.getTypeAtLocation(node.right);
     const declaredProperties = right?.declaredProperties ?? [];
-    const hasNextAndIterator =
+    const customClassWithNextAndIterator =
         !!declaredProperties.find(member => member.escapedName === 'next') &&
         !!declaredProperties.find(member => member.escapedName.startsWith('__@iterator'));
 
     return (
-        hasNextAndIterator ||
+        right?.symbol?.escapedName === 'Generator' ||
+        right?.symbol?.escapedName === 'AsyncGenerator' ||
+        customClassWithNextAndIterator ||
         right?.members?.keys()?.[Symbol.toStringTag] === 'Map Iterator'
     );
 }
