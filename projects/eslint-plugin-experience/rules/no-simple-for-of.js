@@ -9,13 +9,16 @@ module.exports = {
              * @return {*}
              */
             ForOfStatement(node) {
-                const isSimpleForOf = !findExpressions(node, [
-                    'AwaitExpression',
-                    'YieldExpression',
-                    'BreakStatement',
-                    'ContinueStatement',
-                    'ReturnStatement',
-                ]);
+                const isSimpleForOf = !findExpressions(
+                    node,
+                    new Set([
+                        'AwaitExpression',
+                        'YieldExpression',
+                        'BreakStatement',
+                        'ContinueStatement',
+                        'ReturnStatement',
+                    ]),
+                );
 
                 if (isSimpleForOf) {
                     context.report({
@@ -33,7 +36,7 @@ module.exports = {
 };
 
 function findExpressions(node, keys) {
-    if (keys.includes(node?.type) || keys.includes(node?.expression?.type)) {
+    if (keys.has(node?.type) || keys.has(node?.expression?.type)) {
         return true;
     }
 

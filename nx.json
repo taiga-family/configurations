@@ -1,16 +1,4 @@
 {
-    "tasksRunnerOptions": {
-        "default": {
-            "runner": "nx-cloud",
-            "options": {
-                "cacheableOperations": ["test", "build"],
-                "parallel": 1
-            }
-        }
-    },
-    "affected": {
-        "defaultBase": "origin/main"
-    },
     "workspaceLayout": {
         "libsDir": "projects",
         "appsDir": "projects"
@@ -28,6 +16,14 @@
         ],
         "production": ["default"]
     },
-    "targetDefaults": {},
-    "nxCloudAccessToken": "ZmQxN2Q4MmQtNzQ3OC00MDQ0LTg2MTYtNGE3OGU5NDQwNTk3fHJlYWQtd3JpdGU="
+    "targetDefaults": {
+        "test": {
+            "cache": true
+        },
+        "build": {
+            "cache": true
+        }
+    },
+    "defaultBase": "origin/main",
+    "parallel": 1
 }
