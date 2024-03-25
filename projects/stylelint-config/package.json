@@ -15,7 +15,7 @@
     "peerDependencies": {
         "postcss": "^8.4.38",
         "postcss-less": "^6.0.0",
-        "stylelint": "^16.2.1",
+        "stylelint": "^16.3.0",
         "stylelint-config-standard": "^36.0.0",
         "stylelint-no-px": "^1.0.1",
         "stylelint-order": "^6.0.4"
