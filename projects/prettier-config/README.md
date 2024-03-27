@@ -30,4 +30,4 @@ More information about available at
 }
 ```
 
-Part of Taiga UI family.
+
