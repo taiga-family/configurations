@@ -13,3 +13,7 @@ Monorepo for all the tooling which enables ESLint, Prettier, Stylelint to suppor
 | [@taiga-ui/commitlint-config](https://npmjs.com/package/@taiga-ui/commitlint-config)               | ![](https://img.shields.io/npm/v/%40taiga-ui%2Fcommitlint-config/latest.svg)        | [![](https://img.shields.io/badge/README--green.svg)](projects/commitlint-config/README.md)        | [![](https://img.shields.io/npm/dw/@taiga-ui/commitlint-config)](https://npmjs.com/package/@taiga-ui/commitlint-config)               |
 | [@taiga-ui/browserslist-config](https://npmjs.com/package/@taiga-ui/browserslist-config)           | ![](https://img.shields.io/npm/v/%40taiga-ui%2Fbrowserslist-config/latest.svg)      | [![](https://img.shields.io/badge/README--green.svg)](projects/browserslist-config/README.md)      | [![](https://img.shields.io/npm/dw/@taiga-ui/browserslist-config)](https://npmjs.com/package/@taiga-ui/browserslist-config)           |
 | [@taiga-ui/tsconfig](https://npmjs.com/package/@taiga-ui/tsconfig)                                 | ![](https://img.shields.io/npm/v/%40taiga-ui%2Ftsconfig/latest.svg)                 | [![](https://img.shields.io/badge/README--green.svg)](projects/tsconfig/README.md)                 | [![](https://img.shields.io/npm/dw/@taiga-ui/tsconfig)](https://npmjs.com/package/@taiga-ui/tsconfig)                                 |
+
+## Part of Taiga UI Family
+
+All configurations and tools in this repository are part of the Taiga UI family, aimed at enhancing development experience with Taiga UI projects.
