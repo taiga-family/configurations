@@ -11,3 +11,5 @@ Spell Checks Code – Able to spell check code by parsing it into words before c
   "files": ["*/*.*"]
 }
 ```
+
+Part of Taiga UI family.
