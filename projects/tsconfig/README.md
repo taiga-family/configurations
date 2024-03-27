@@ -29,7 +29,6 @@ Add to your `tsconfig.json`:
   },
 }
 ```
-
 or:
 
 ```ts
