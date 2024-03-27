@@ -8,3 +8,5 @@ module.exports = {
   extends: ['plugin:@taiga-ui/experience/all'],
 };
 ```
+
+Part of Taiga UI family.
