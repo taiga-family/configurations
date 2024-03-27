@@ -29,3 +29,5 @@ More information about available at
   prettier: '@taiga-ui/prettier-config/angular',
 }
 ```
+
+Part of Taiga UI family.
