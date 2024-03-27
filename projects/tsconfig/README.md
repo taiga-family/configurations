@@ -34,7 +34,6 @@ or:
 
 ```ts
 
-Part of Taiga UI family.
 /// <reference types="@taiga-ui/tsconfig/ng-dev-mode" />
 
 ngDevMode && console.log('My log');
