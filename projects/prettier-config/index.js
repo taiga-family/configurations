@@ -16,8 +16,12 @@ const attributeOptions = {
 
 module.exports = {
     $schema: 'https://json.schemastore.org/prettierrc',
-    plugins: [require.resolve('prettier-plugin-organize-attributes')],
+    plugins: [
+        require.resolve('prettier-plugin-organize-attributes'),
+        require.resolve('prettier-plugin-multiline-arrays'),
+    ],
     arrowParens: 'avoid',
+    multilineArraysWrapThreshold: 1,
     bracketSpacing: false,
     endOfLine: 'lf',
     htmlWhitespaceSensitivity: 'ignore',
