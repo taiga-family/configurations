@@ -21,7 +21,6 @@ module.exports = {
         require.resolve('prettier-plugin-multiline-arrays'),
     ],
     arrowParens: 'avoid',
-    multilineArraysWrapThreshold: 1,
     bracketSpacing: false,
     endOfLine: 'lf',
     htmlWhitespaceSensitivity: 'ignore',
@@ -35,11 +34,19 @@ module.exports = {
     useTabs: false,
     overrides: [
         {
-            files: ['*.json', '.prettierrc', '.stylelintrc'],
-            options: {parser: 'json'},
+            files: [
+                '*.json',
+            ],
+            options: {
+                multilineArraysWrapThreshold: 1,
+                parser: 'json',
+            },
         },
         {
-            files: ['package.json', 'ng-package.json'],
+            files: [
+                'package.json',
+                'ng-package.json',
+            ],
             options: {
                 parser: 'json-stringify',
                 plugins: [
@@ -50,6 +57,7 @@ module.exports = {
                             'prettier-plugin-sort-package.js',
                         ),
                     ),
+                    require.resolve('prettier-plugin-multiline-arrays'),
                 ],
             },
         },
@@ -69,16 +77,15 @@ module.exports = {
             },
         },
         {
-            files: ['*.yml', '*.yaml'],
+            files: [
+                '*.yml',
+                '*.yaml',
+            ],
             options: {parser: 'yaml', tabWidth: 2},
         },
         {
             files: ['*.md'],
             options: {parser: 'markdown', tabWidth: 2},
-        },
-        {
-            files: ['*.js', '*.ts'],
-            options: {parser: 'typescript', printWidth: 90},
         },
         {
             files: ['*.html'],
@@ -89,9 +96,15 @@ module.exports = {
             },
         },
         {
-            files: ['*.ts'],
+            files: [
+                '*.js',
+                '*.ts',
+            ],
             options: {
                 ...attributeOptions,
+                parser: 'typescript',
+                printWidth: 90,
+                multilineArraysWrapThreshold: 1,
             },
         },
         {
