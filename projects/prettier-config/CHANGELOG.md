@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.10.0...@taiga-ui/prettier-config@0.11.0) (2024-04-09)
+
+### Features
+
+- **prettier-config:** add `prettier-plugin-multiline-arrays` plugin
+  ([b7371d4](https://github.com/taiga-family/linters/commit/b7371d461bde169b26ce6b03e02f7b1652b844e3))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.10.0](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.9.0...@taiga-ui/prettier-config@0.10.0) (2024-03-03)
 
 ### Features
