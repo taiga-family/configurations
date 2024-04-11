@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.13](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.12...@taiga-ui/eslint-plugin-experience@0.67.13) (2024-04-11)
+
+### Bug Fixes
+
+- **prettier-config:** revert plugin
+  ([b1ef0c9](https://github.com/taiga-family/linters/commit/b1ef0c9ba82200d7ac99cac5161cb8138c5ec128))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.67.12](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.67.11...@taiga-ui/eslint-plugin-experience@0.67.12) (2024-04-11)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
