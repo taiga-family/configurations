@@ -15,5 +15,5 @@
         "**/addon-commerce/enums/currency-code.ts",
         "**/addon-commerce/utils/get-currency-symbol.ts"
     ],
-    "ignoreWords": ["meowtec"]
+    "ignoreWords": ["meowtec", "Acpekt"]
 }
