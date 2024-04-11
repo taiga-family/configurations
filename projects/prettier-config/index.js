@@ -39,8 +39,8 @@ module.exports = {
                 '*.json',
             ],
             options: {
-                multilineArraysWrapThreshold,
                 parser: 'json',
+                multilineArraysWrapThreshold,
             },
         },
         {
@@ -104,8 +104,8 @@ module.exports = {
             options: {
                 ...attributeOptions,
                 parser: 'typescript',
-                printWidth: 90,
                 multilineArraysWrapThreshold,
+                printWidth: 90,
             },
         },
         {
