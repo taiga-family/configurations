@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.11.1...@taiga-ui/prettier-config@0.11.2) (2024-04-11)
+
+### Bug Fixes
+
+- **prettier-config:** set multiline arrays wrap threshold
+  ([ed8e00c](https://github.com/taiga-family/linters/commit/ed8e00cede2776cb02149c3528d53468cea051b5))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.11.1](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.11.0...@taiga-ui/prettier-config@0.11.1) (2024-04-09)
 
 ### Bug Fixes
