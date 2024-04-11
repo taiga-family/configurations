@@ -1,3 +1,4 @@
+const multilineArraysWrapThreshold = 3;
 const attributeOptions = {
     attributeGroups: [
         '$ANGULAR_STRUCTURAL_DIRECTIVE',
@@ -38,7 +39,7 @@ module.exports = {
                 '*.json',
             ],
             options: {
-                multilineArraysWrapThreshold: 1,
+                multilineArraysWrapThreshold,
                 parser: 'json',
             },
         },
@@ -104,7 +105,7 @@ module.exports = {
                 ...attributeOptions,
                 parser: 'typescript',
                 printWidth: 90,
-                multilineArraysWrapThreshold: 1,
+                multilineArraysWrapThreshold,
             },
         },
         {
