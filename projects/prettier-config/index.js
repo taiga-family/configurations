@@ -1,4 +1,3 @@
-const multilineArraysWrapThreshold = 3;
 const attributeOptions = {
     attributeGroups: [
         '$ANGULAR_STRUCTURAL_DIRECTIVE',
@@ -17,10 +16,7 @@ const attributeOptions = {
 
 module.exports = {
     $schema: 'https://json.schemastore.org/prettierrc',
-    plugins: [
-        require.resolve('prettier-plugin-organize-attributes'),
-        require.resolve('prettier-plugin-multiline-arrays'),
-    ],
+    plugins: [require.resolve('prettier-plugin-organize-attributes')],
     arrowParens: 'avoid',
     bracketSpacing: false,
     endOfLine: 'lf',
@@ -35,19 +31,13 @@ module.exports = {
     useTabs: false,
     overrides: [
         {
-            files: [
-                '*.json',
-            ],
+            files: ['*.json'],
             options: {
                 parser: 'json',
-                multilineArraysWrapThreshold,
             },
         },
         {
-            files: [
-                'package.json',
-                'ng-package.json',
-            ],
+            files: ['package.json', 'ng-package.json'],
             options: {
                 parser: 'json-stringify',
                 plugins: [
@@ -58,7 +48,6 @@ module.exports = {
                             'prettier-plugin-sort-package.js',
                         ),
                     ),
-                    require.resolve('prettier-plugin-multiline-arrays'),
                 ],
             },
         },
@@ -78,10 +67,7 @@ module.exports = {
             },
         },
         {
-            files: [
-                '*.yml',
-                '*.yaml',
-            ],
+            files: ['*.yml', '*.yaml'],
             options: {parser: 'yaml', tabWidth: 2},
         },
         {
@@ -97,14 +83,10 @@ module.exports = {
             },
         },
         {
-            files: [
-                '*.js',
-                '*.ts',
-            ],
+            files: ['*.js', '*.ts'],
             options: {
                 ...attributeOptions,
                 parser: 'typescript',
-                multilineArraysWrapThreshold,
                 printWidth: 90,
             },
         },

@@ -479,18 +479,8 @@ module.exports = {
                     {blankLine: 'always', next: '*', prev: 'class'},
                     {
                         blankLine: 'any',
-                        next: [
-                            'const',
-                            'let',
-                            'var',
-                            'export',
-                        ],
-                        prev: [
-                            'const',
-                            'let',
-                            'var',
-                            'export',
-                        ],
+                        next: ['const', 'let', 'var', 'export'],
+                        prev: ['const', 'let', 'var', 'export'],
                     },
                     {blankLine: 'any', next: ['case', 'default'], prev: '*'},
                     {blankLine: 'any', next: '*', prev: ['case', 'default']},
@@ -603,12 +593,7 @@ module.exports = {
                 'no-console': [
                     'error',
                     {
-                        allow: [
-                            'info',
-                            'assert',
-                            'warn',
-                            'error',
-                        ],
+                        allow: ['info', 'assert', 'warn', 'error'],
                     },
                 ],
                 'no-empty': ['error', {allowEmptyCatch: true}],
