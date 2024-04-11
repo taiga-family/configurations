@@ -71,8 +71,12 @@ module.exports = {
                      */
                     const actualPathGroups = getPathGroups(source.value) ?? [];
 
-                    const [, beforeExtensionPart, actualExtension, afterExtensionPart] =
-                        actualPathGroups;
+                    const [
+                        ,
+                        beforeExtensionPart,
+                        actualExtension,
+                        afterExtensionPart,
+                    ] = actualPathGroups;
 
                     /**
                      * Both paths must be parsed.

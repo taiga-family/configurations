@@ -58,10 +58,16 @@
                 "position",
                 {
                     "order": "flexible",
-                    "properties": ["top", "left", "right", "bottom"]
+                    "properties": [
+                        "top",
+                        "left",
+                        "right",
+                        "bottom"
+                    ]
                 },
                 "z-index",
                 "display"
+
             ],
             {
                 "unspecified": "bottom"
@@ -80,7 +86,20 @@
                 "ignoreTypes": ["/^/deep/"]
             }
         ],
-        "unit-allowed-list": ["px", "rem", "em", "deg", "s", "ms", "dpcm", "turn", "ch", "%", "vh", "vw"],
+        "unit-allowed-list": [
+            "px",
+            "rem",
+            "em",
+            "deg",
+            "s",
+            "ms",
+            "dpcm",
+            "turn",
+            "ch",
+            "%",
+            "vh",
+            "vw"
+        ],
         "color-no-invalid-hex": [
             true,
             {

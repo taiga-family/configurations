@@ -479,8 +479,18 @@ module.exports = {
                     {blankLine: 'always', next: '*', prev: 'class'},
                     {
                         blankLine: 'any',
-                        next: ['const', 'let', 'var', 'export'],
-                        prev: ['const', 'let', 'var', 'export'],
+                        next: [
+                            'const',
+                            'let',
+                            'var',
+                            'export',
+                        ],
+                        prev: [
+                            'const',
+                            'let',
+                            'var',
+                            'export',
+                        ],
                     },
                     {blankLine: 'any', next: ['case', 'default'], prev: '*'},
                     {blankLine: 'any', next: '*', prev: ['case', 'default']},
@@ -590,7 +600,17 @@ module.exports = {
                 'max-nested-callbacks': ['error', 4],
                 'no-bitwise': 'error',
                 'no-case-declarations': 'error',
-                'no-console': ['error', {allow: ['info', 'assert', 'warn', 'error']}],
+                'no-console': [
+                    'error',
+                    {
+                        allow: [
+                            'info',
+                            'assert',
+                            'warn',
+                            'error',
+                        ],
+                    },
+                ],
                 'no-empty': ['error', {allowEmptyCatch: true}],
                 'no-implicit-coercion': ['error', {allow: ['!!']}],
                 'no-irregular-whitespace': 'error',
