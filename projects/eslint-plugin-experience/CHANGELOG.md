@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.70.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.69.0...@taiga-ui/eslint-plugin-experience@0.70.0) (2024-04-24)
+
+### Features
+
+- **eslint-plugin-experience:** add `unused-imports` plugin
+  ([463b6ff](https://github.com/taiga-family/linters/commit/463b6ff8c49a7c8ad3c38f8040c942574d51c472))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.69.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.68.0...@taiga-ui/eslint-plugin-experience@0.69.0) (2024-04-15)
 
 ### Features
