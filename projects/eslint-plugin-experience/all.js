@@ -86,6 +86,7 @@ module.exports = {
                 'decorator-position',
                 'prettier',
                 'node-import',
+                'unused-imports',
             ],
             extends: [
                 'eslint-config-airbnb-base',
@@ -732,6 +733,7 @@ module.exports = {
                 'unicorn/prefer-string-replace-all': 'error',
                 'unicorn/prefer-string-slice': 'error',
                 'unicorn/require-number-to-fixed-digits-argument': 'error',
+                'unused-imports/no-unused-imports': 'error',
                 'vars-on-top': 'error',
             },
         },
