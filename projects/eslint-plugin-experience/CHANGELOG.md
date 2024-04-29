@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.71.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.70.0...@taiga-ui/eslint-plugin-experience@0.71.0) (2024-04-29)
+
+### Features
+
+- **eslint-plugin-experience:** drop legacy plugin
+  ([ed47c06](https://github.com/taiga-family/linters/commit/ed47c06934d3fdb0e47896a217a8a4dabada9366))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.70.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.69.0...@taiga-ui/eslint-plugin-experience@0.70.0) (2024-04-24)
 
 ### Features
