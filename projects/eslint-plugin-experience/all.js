@@ -96,7 +96,6 @@ module.exports = {
                 'eslint:recommended',
                 'plugin:rxjs/recommended',
                 'plugin:sonarjs/recommended',
-                'plugin:sonar/recommended',
                 'prettier',
             ],
             parserOptions: {
@@ -706,8 +705,6 @@ module.exports = {
                 'rxjs/throw-error': 'error',
                 'simple-import-sort/exports': 'error',
                 'simple-import-sort/imports': 'error',
-                'sonar/for-in': 'error',
-                'sonar/prefer-default-last': 'error',
                 'sonarjs/no-identical-functions': 'error',
                 'sonarjs/no-inverted-boolean-check': 'error',
                 'spaced-comment': [
@@ -934,9 +931,6 @@ module.exports = {
                 quotes: 'off',
                 'require-await': 'off',
                 'rxjs/no-ignored-takewhile-value': 'off',
-                'sonar/deprecation': 'off',
-                'sonar/function-name': 'off',
-                'sonar/max-union-size': 'off',
                 'sonarjs/cognitive-complexity': 'off',
                 'sonarjs/max-switch-cases': 'off',
                 'sonarjs/no-duplicate-string': 'off',
