@@ -594,6 +594,12 @@ module.exports = {
                                 importNames: ['Inject'],
                                 message: 'Please use `inject(Type)` function instead.',
                             },
+                            {
+                                group: ['@taiga-ui/cdk'],
+                                importNames: ['TuiDestroyService'],
+                                message:
+                                    'Please use `takeUntilDestroyed()` function instead.',
+                            },
                         ],
                     },
                 ],
