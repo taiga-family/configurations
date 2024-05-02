@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.74.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.73.0...@taiga-ui/eslint-plugin-experience@0.74.0) (2024-05-02)
+
+### Features
+
+- **eslint-plugin-experience:** do not use TuiDestroyService
+  ([254b084](https://github.com/taiga-family/linters/commit/254b0847a6cbd17424dbd41333ff65d906e5c6be))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.73.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.72.0...@taiga-ui/eslint-plugin-experience@0.73.0) (2024-04-30)
 
 ### Features
