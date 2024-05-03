@@ -470,6 +470,9 @@
         "Zoya",
         "Kosmodemyanskaya",
         "iisnode",
-        "timecode"
+        "timecode",
+        "cardnumber",
+        "docstrings",
+        "acpekt"
     ]
 }
