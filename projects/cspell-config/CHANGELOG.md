@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.36.6...@taiga-ui/cspell-config@0.37.0) (2024-05-03)
+
+### Features
+
+- **cspell-config:** add `timecode` word
+  ([30753a1](https://github.com/taiga-family/linters/commit/30753a19e3814347a23a580c4bc007a1fddd44fc))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.36.6](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.36.5...@taiga-ui/cspell-config@0.36.6) (2024-04-30)
 
 **Note:** Version bump only for package @taiga-ui/cspell-config
