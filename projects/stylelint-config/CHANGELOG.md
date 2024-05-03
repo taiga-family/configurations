@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.20.6...@taiga-ui/stylelint-config@0.21.0) (2024-05-03)
+
+### Features
+
+- **stylelint-config:** allow fr unit ([#388](https://github.com/taiga-family/linters/issues/388))
+  ([cd686d9](https://github.com/taiga-family/linters/commit/cd686d9566ad63bb095ca5432cbeadf6b0fe47c3))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.20.6](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.20.5...@taiga-ui/stylelint-config@0.20.6) (2024-04-30)
 
 **Note:** Version bump only for package @taiga-ui/stylelint-config
