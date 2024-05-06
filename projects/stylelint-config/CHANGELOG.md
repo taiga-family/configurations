@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.21.0...@taiga-ui/stylelint-config@0.22.0) (2024-05-06)
+
+### Features
+
+- **stylelint-config:** add autofix for no-px rule with remSize=16
+  ([#390](https://github.com/taiga-family/linters/issues/390))
+  ([3ca532d](https://github.com/taiga-family/linters/commit/3ca532d617aacfac74b218aac6f4f47fd6d05b76))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [0.21.0](https://github.com/taiga-family/linters/compare/@taiga-ui/stylelint-config@0.20.6...@taiga-ui/stylelint-config@0.21.0) (2024-05-03)
 
 ### Features
