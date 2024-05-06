@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/stylelintrc.json",
-    "plugins": ["stylelint-order", "stylelint-no-px"],
+    "plugins": ["stylelint-order", "@miller-svt/stylelint-no-px"],
     "allowEmptyInput": true,
     "defaultSeverity": "error",
     "customSyntax": "postcss-less",
@@ -23,7 +23,7 @@
         "font-family-name-quotes": null,
         "alpha-value-notation": "number",
         "color-function-notation": "legacy",
-        "meowtec/no-px": [
+        "MillerSvt/no-px": [
             true,
             {
                 "ignore": [
@@ -48,7 +48,8 @@
                     "0.7px",
                     "0.8px",
                     "0.9px"
-                ]
+                ],
+                "remSize": 16
             }
         ],
         "order/properties-order": [
