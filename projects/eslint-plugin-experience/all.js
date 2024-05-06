@@ -87,6 +87,7 @@ module.exports = {
                 'prettier',
                 'node-import',
                 'unused-imports',
+                'sonarjs',
             ],
             extends: [
                 'eslint-config-airbnb-base',
@@ -95,7 +96,7 @@ module.exports = {
                 'plugin:@typescript-eslint/eslint-recommended',
                 'eslint:recommended',
                 'plugin:rxjs/recommended',
-                'plugin:sonarjs/recommended',
+                'plugin:sonarjs/recommended-legacy',
                 'prettier',
             ],
             parserOptions: {
