@@ -595,12 +595,6 @@ module.exports = {
                                 importNames: ['Inject'],
                                 message: 'Please use `inject(Type)` function instead.',
                             },
-                            {
-                                group: ['@taiga-ui/cdk'],
-                                importNames: ['TuiDestroyService'],
-                                message:
-                                    'Please use `takeUntilDestroyed()` function instead.',
-                            },
                         ],
                     },
                 ],
@@ -610,6 +604,11 @@ module.exports = {
                         message:
                             'Don\'t declare enums, please use "const MyEnumType = { ... } as const;"',
                         selector: 'TSEnumDeclaration',
+                    },
+                    {
+                        message:
+                            "Don't use TuiDestroyService, please use `takeUntilDestroyed()` function instead.",
+                        selector: "Identifier[name='TuiDestroyService']",
                     },
                     {
                         message:
