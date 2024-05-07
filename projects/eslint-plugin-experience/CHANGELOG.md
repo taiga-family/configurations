@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.74.2](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.74.1...@taiga-ui/eslint-plugin-experience@0.74.2) (2024-05-07)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** valid detection TuiDestroyService
+  ([9817fb9](https://github.com/taiga-family/linters/commit/9817fb978ee2ccac71deb2f0fc6219be77a0ca7e))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.74.1](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.74.0...@taiga-ui/eslint-plugin-experience@0.74.1) (2024-05-06)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
