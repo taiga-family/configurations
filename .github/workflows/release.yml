@@ -28,15 +28,15 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
     steps:
-      - uses: taiga-family/ci/actions/setup/checkout@v1.55.18
+      - uses: taiga-family/ci/actions/setup/checkout@v1.56.2
         with:
           fetch-depth: 0
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
-      - uses: taiga-family/ci/actions/setup/node@v1.55.18
-      - uses: taiga-family/ci/actions/setup/config/git@v1.55.18
+      - uses: taiga-family/ci/actions/setup/node@v1.56.2
+      - uses: taiga-family/ci/actions/setup/config/git@v1.56.2
         with:
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
-      - uses: taiga-family/ci/actions/setup/config/npm@v1.55.18
+      - uses: taiga-family/ci/actions/setup/config/npm@v1.56.2
         with:
           token: ${{ secrets.TAIGA_UI_SCOPE_NPM_TOKEN }}
 
