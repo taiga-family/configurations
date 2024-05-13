@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.38.2...@taiga-ui/cspell-config@0.39.0) (2024-05-13)
+
+### Features
+
+- **cspell-config:** add Siteheader word
+  ([6320702](https://github.com/taiga-family/linters/commit/6320702fc5b02b06b1b9091a220f1c3657f387b8))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.38.2](https://github.com/taiga-family/linters/compare/@taiga-ui/cspell-config@0.38.1...@taiga-ui/cspell-config@0.38.2) (2024-05-11)
 
 **Note:** Version bump only for package @taiga-ui/cspell-config
