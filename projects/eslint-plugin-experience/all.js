@@ -154,7 +154,7 @@ module.exports = {
                             'bootstrap',
                             'schemas',
                         ],
-                        Pipe: ['name', 'pure'],
+                        Pipe: ['standalone', 'name', 'pure'],
                     },
                 ],
                 '@taiga-ui/experience/injection-token-description': 'error',
