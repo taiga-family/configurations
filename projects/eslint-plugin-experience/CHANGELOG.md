@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.74.6](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.74.5...@taiga-ui/eslint-plugin-experience@0.74.6) (2024-05-20)
+
+### Bug Fixes
+
+- **eslint-plugin-experience:** add sort for pipe
+  ([76c381d](https://github.com/taiga-family/linters/commit/76c381dc62aa6dfbdd956e2e044af8274e471928))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.74.5](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.74.4...@taiga-ui/eslint-plugin-experience@0.74.5) (2024-05-15)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
