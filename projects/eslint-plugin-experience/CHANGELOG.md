@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.74.12](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.74.11...@taiga-ui/eslint-plugin-experience@0.74.12) (2024-05-31)
+
+### Bug Fixes
+
+- drop floating promises
+  ([b5b0dd1](https://github.com/taiga-family/linters/commit/b5b0dd175c18025326196ee4fb1d70d1094c9d99))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.74.11](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.74.10...@taiga-ui/eslint-plugin-experience@0.74.11) (2024-05-27)
 
 **Note:** Version bump only for package @taiga-ui/eslint-plugin-experience
