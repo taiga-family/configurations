@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.8](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.11.7...@taiga-ui/prettier-config@0.11.8) (2024-06-01)
+
+**Note:** Version bump only for package @taiga-ui/prettier-config
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.11.7](https://github.com/taiga-family/linters/compare/@taiga-ui/prettier-config@0.11.6...@taiga-ui/prettier-config@0.11.7) (2024-04-30)
 
 **Note:** Version bump only for package @taiga-ui/prettier-config

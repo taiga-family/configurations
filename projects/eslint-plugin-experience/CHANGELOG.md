@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.75.0](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.74.12...@taiga-ui/eslint-plugin-experience@0.75.0) (2024-06-01)
+
+### Features
+
+- change default member ordering
+  ([b76b1bf](https://github.com/taiga-family/linters/commit/b76b1bfbc62a902cee883b955ecae8f3511f2e20))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [0.74.12](https://github.com/taiga-family/linters/compare/@taiga-ui/eslint-plugin-experience@0.74.11...@taiga-ui/eslint-plugin-experience@0.74.12) (2024-05-31)
 
 ### Bug Fixes
