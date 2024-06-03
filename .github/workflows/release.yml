@@ -49,6 +49,8 @@ jobs:
               npx lerna version --no-private
           fi
 
+          npm i && git add . && git push
+
       - name: Publish
         if: always()
         run: npx nx run-many --target publish --all --output-style=stream
