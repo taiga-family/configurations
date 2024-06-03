@@ -16,7 +16,10 @@ const attributeOptions = {
 
 module.exports = {
     $schema: 'https://json.schemastore.org/prettierrc',
-    plugins: [require.resolve('prettier-plugin-organize-attributes')],
+    plugins: [
+        require.resolve('stylelint-prettier'),
+        require.resolve('prettier-plugin-organize-attributes'),
+    ],
     arrowParens: 'avoid',
     bracketSpacing: false,
     endOfLine: 'lf',
