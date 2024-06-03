@@ -54,7 +54,7 @@ jobs:
         run: npx nx run-many --target publish --all --output-style=stream
 
       - run: |
-          npm i && git add . && git commit -m 'chore: lock' && git push
+          npm i && git add . && git commit -m "chore: lock" && git push || echo "nothing"
 
 concurrency:
   group: release-${{ github.workflow }}-${{ github.ref }}
