@@ -11,6 +11,10 @@
         "publish": false
     },
     "plugins": {
+        "@release-it-plugins/workspaces": {
+            "skipChecks": true,
+            "publish": false
+        },
         "@release-it/conventional-changelog": {
             "preset": "angular",
             "infile": false
