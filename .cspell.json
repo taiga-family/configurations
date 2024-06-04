@@ -6,6 +6,7 @@
         ".git",
         "CHANGELOG.md",
         ".cspell.json",
+        ".release-it.json",
         "**/dist/**",
         "**/cspell/**",
         "**/assets/**",

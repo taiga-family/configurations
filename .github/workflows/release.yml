@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-
+    paths:
+      - 'projects/**'
 jobs:
   run-release:
     name: Release
