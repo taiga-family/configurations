@@ -1,24 +1,8 @@
 name: ⚠️ Release
 on:
+  workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'projects/**'
-  workflow_dispatch:
-    inputs:
-      forcePush:
-        type: boolean
-        required: false
-        description: --force-publish package
-      mode:
-        type: choice
-        description: force package to be versioned (depend --force-publish)
-        required: false
-        default: minor
-        options:
-          - patch
-          - minor
-          - major
 
 jobs:
   run-release:
@@ -40,21 +24,13 @@ jobs:
         with:
           token: ${{ secrets.TAIGA_UI_SCOPE_NPM_TOKEN }}
 
-      - name: Lerna update version of packages
-        if: always()
-        run: |
-          if [[ "${{ github.event.inputs.forcePush }}" == "true" ]]; then
-              npx lerna version ${{ github.event.inputs.mode }} --no-private --force-publish
-          else
-              npx lerna version --no-private
-          fi
+      - run: npx release-it --increment --ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
 
       - name: Publish
         if: always()
         run: npx nx run-many --target publish --all --output-style=stream
-
-      - run: |
-          npm i && git add . && git commit -m "chore: lock" && git push || echo "nothing"
 
 concurrency:
   group: release-${{ github.workflow }}-${{ github.ref }}

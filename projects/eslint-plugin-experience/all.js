@@ -613,12 +613,12 @@ module.exports = {
                         selector: "CallExpression[callee.name='mapTo']",
                     },
                     {
-                        message: 'Use `FALSE_HANDLER` please instead of `() => false`',
+                        message: 'Use `TUI_FALSE_HANDLER` please instead of `() => false`',
                         selector:
                             "ArrowFunctionExpression[params.length=0][body.raw='false'][body.value='false']",
                     },
                     {
-                        message: 'Use `TRUE_HANDLER` please instead of `() => true`',
+                        message: 'Use `TUI_TRUE_HANDLER` please instead of `() => true`',
                         selector:
                             "ArrowFunctionExpression[params.length=0][body.raw='true'][body.value='true']",
                     },
