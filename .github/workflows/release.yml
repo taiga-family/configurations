@@ -29,7 +29,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
 
       - name: Publish
-        if: always()
         run: npx nx run-many --target publish --all --output-style=stream
 
 concurrency:
