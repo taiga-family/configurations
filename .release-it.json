@@ -9,7 +9,8 @@
     },
     "npm": {
         "publish": false,
-        "skipChecks": true
+        "skipChecks": true,
+        "allowSameVersion": true
     },
     "plugins": {
         "@release-it-plugins/workspaces": {
