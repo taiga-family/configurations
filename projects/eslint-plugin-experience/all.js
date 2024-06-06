@@ -742,7 +742,6 @@ module.exports = {
             parser: '@typescript-eslint/parser',
             plugins: ['@angular-eslint/eslint-plugin'],
             rules: {
-                '@angular-eslint/component-class-suffix': 'error',
                 '@angular-eslint/contextual-decorator': 'error',
                 '@angular-eslint/contextual-lifecycle': 'error',
                 '@angular-eslint/directive-selector': 'error',
@@ -847,6 +846,7 @@ module.exports = {
         {
             files: ['*'],
             rules: {
+                '@angular-eslint/component-class-suffix': 'off',
                 '@angular-eslint/component-max-inline-declarations': 'off',
                 '@angular-eslint/component-selector': 'off',
                 '@angular-eslint/directive-class-suffix': 'off',
