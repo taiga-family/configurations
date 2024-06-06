@@ -88,6 +88,7 @@
                 "severity": "error"
             }
         ],
+        "property-disallowed-list": ["border-inline", "padding-inline", "margin-inline"],
         "function-calc-no-unspaced-operator": [
             true,
             {
