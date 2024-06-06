@@ -74,10 +74,7 @@ function checkImplicitPublic(context, node) {
         range = [end + 1, end + 2];
     }
 
-    const marked =
-        hasPublicDecorators || hasFieldInInterfaces || hasFieldInParentClass
-            ? ` public `
-            : ` protected `;
+    const marked = ` public `;
 
     context.report({
         fix: fixer => fixer.insertTextBeforeRange(range, marked),
