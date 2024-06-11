@@ -492,6 +492,7 @@
         "CSTM",
         "CVCPO",
         "tuipreventdefault",
-        "tbank"
+        "tbank",
+        "multimatch"
     ]
 }
