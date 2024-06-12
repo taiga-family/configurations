@@ -12,7 +12,7 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v4.1.6
+      - uses: actions/checkout@v4.1.7
       - uses: taiga-family/ci/actions/auto/cleanup-cache@v1.61.0
         if: github.event_name == 'push'
         with:
