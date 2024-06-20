@@ -130,6 +130,8 @@ module.exports = {
                             'entryComponents',
                             'preserveWhitespaces',
                             'interpolation',
+                            'hostDirectives',
+                            'host',
                         ],
                         Directive: [
                             'standalone',
@@ -139,6 +141,7 @@ module.exports = {
                             'providers',
                             'exportAs',
                             'queries',
+                            'hostDirectives',
                             'host',
                             'jit',
                         ],
