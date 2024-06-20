@@ -47,7 +47,7 @@ module.exports = {
                                         ? imported.name
                                         : `${imported.name} as ${local.name}`; // import {TUI_TEXTFIELD_OPTIONS as OPTIONS} from '@taiga-ui/core';
 
-                                return `import ${importDeclaration.importKind === 'type' ? 'type' : ''} {${importedEntity}} from '${entryPoints[i]}';`;
+                                return `import ${importDeclaration.importKind === 'type ' ? 'type' : ''}{${importedEntity}} from '${entryPoints[i]}';`;
                             },
                         );
 
