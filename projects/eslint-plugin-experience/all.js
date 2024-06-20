@@ -863,7 +863,6 @@ module.exports = {
                 '@angular-eslint/use-component-selector': 'off',
                 '@angular-eslint/use-component-view-encapsulation': 'off',
                 '@angular-eslint/use-injectable-provided-in': 'off',
-                '@taiga-ui/experience/no-postfix-class': 'off',
                 '@typescript-eslint/ban-ts-comment': 'off',
                 '@typescript-eslint/explicit-module-boundary-types': 'off',
                 '@typescript-eslint/no-base-to-string': 'off',
