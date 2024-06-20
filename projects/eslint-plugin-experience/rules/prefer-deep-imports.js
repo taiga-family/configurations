@@ -22,7 +22,7 @@ module.exports = {
                             `node_modules/${packageName}/**/*.ts`,
                             {
                                 ignore: {
-                                    ignored: p => /\.spec.ts$/.test(p.name),
+                                    ignored: p => /\.(spec|cy).ts$/.test(p.name),
                                 },
                             },
                         );
