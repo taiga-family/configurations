@@ -14,6 +14,7 @@ module.exports = {
         'no-postfix-class': require('./rules/no-postfix-class'),
         'no-private-esnext-fields': require('./rules/no-private-esnext-fields'),
         'no-simple-for-of': require('./rules/no-simple-for-of'),
+        'prefer-deep-imports': require('./rules/prefer-deep-imports'),
         'strict-tui-doc-example': require('./rules/strict-tui-doc-example'),
     },
 };
