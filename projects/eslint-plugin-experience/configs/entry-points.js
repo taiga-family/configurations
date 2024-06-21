@@ -9,7 +9,7 @@ const packageNames = allPackageJSONs.map(path => readJSON(path).name);
 module.exports = {
     overrides: [
         {
-            files: allPackageJSONs.map(path => path.replace('package.json', '**')),
+            files: allPackageJSONs.map(path => path.replace('package.json', '**/*.ts')),
             parser: '@typescript-eslint/parser',
             excludedFiles: ['**/*.spec.ts', '**/*.cy.ts'],
             rules: {
