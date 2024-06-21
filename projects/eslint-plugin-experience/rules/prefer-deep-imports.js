@@ -9,7 +9,7 @@ module.exports = {
         const {importFilter} = context.options[0] || {};
 
         return {
-            [`ImportDeclaration[source.value=${importFilter}]`](
+            [`ImportDeclaration[source.value=${getFilterRegExp(importFilter)}]`](
                 importDeclaration,
                 ...rest
             ) {
@@ -75,7 +75,7 @@ module.exports = {
                     // i.e. "/^@taiga-ui\\u002F(core|cdk|kit)$/"
                     importFilter: {
                         description: `RegExp string to detect import declarations for which this rule should be applied`,
-                        type: `string`,
+                        type: [`string`, `array`],
                     },
                 },
                 type: `object`,
@@ -95,4 +95,16 @@ function findNearestEntryPoint(filePath) {
             return possibleEntryPoint.replace(/^node_modules\//, '');
         }
     }
+}
+
+function getFilterRegExp(filter) {
+    if (typeof filter === 'string' && filter.startsWith('/')) {
+        return filter;
+    }
+
+    const packages = typeof filter === 'string' ? [filter] : filter;
+    const [npmScope] = packages[0].split('/');
+    const packageNames = packages.map(p => p.split('/')[1]).filter(Boolean);
+
+    return `/^${npmScope}\\u002F(${packageNames.join('|')})$/`;
 }

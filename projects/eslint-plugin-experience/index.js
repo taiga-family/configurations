@@ -4,6 +4,7 @@
 module.exports = {
     configs: {
         all: require('./all.js'),
+        'entry-points': require('./configs/entry-points.js'),
         'taiga-naming': require('./configs/taiga-naming.js'),
     },
     rules: {
