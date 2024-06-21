@@ -236,6 +236,12 @@ module.exports = {
                     'error',
                     {
                         disallowTypeAnnotations: false,
+                        /*
+                           One important difference is that import { type x } from 'x'
+                           will be compiled to import 'x', so x will be included in
+                           a bundle and any side effects of the code will run.
+                           Import type { x } from 'x' will not edit any import.
+                         */
                         fixStyle: 'separate-type-imports',
                         prefer: 'type-imports',
                     },
