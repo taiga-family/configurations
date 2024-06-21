@@ -236,7 +236,7 @@ module.exports = {
                     'error',
                     {
                         disallowTypeAnnotations: false,
-                        fixStyle: 'inline-type-imports',
+                        fixStyle: 'separate-type-imports',
                         prefer: 'type-imports',
                     },
                 ],
