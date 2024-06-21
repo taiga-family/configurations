@@ -36,8 +36,8 @@
         "eslint-plugin-sonarjs": "^1.0.3",
         "eslint-plugin-unicorn": "^53.0.0",
         "eslint-plugin-unused-imports": "^3.2.0",
-        "js-yaml": "^4.1.0",
-        "glob": "*"
+        "glob": "*",
+        "js-yaml": "^4.1.0"
     },
     "publishConfig": {
         "access": "public"
