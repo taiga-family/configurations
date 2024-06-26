@@ -1,19 +1,19 @@
-const getTypeName = require(`./utils/get-type-name`);
+const getTypeName = require('./utils/get-type-name');
 
-const INVALID_KEY_MESSAGE_ID = `strict-doc-example-extensions-invalid-key`;
-const INVALID_VALUE_MESSAGE_ID = `strict-doc-example-extensions-invalid-value`;
+const INVALID_KEY_MESSAGE_ID = 'strict-doc-example-extensions-invalid-key';
+const INVALID_VALUE_MESSAGE_ID = 'strict-doc-example-extensions-invalid-value';
 
-const DOC_EXAMPLE_INTERFACE_NAME = `TuiDocExample`;
+const DOC_EXAMPLE_INTERFACE_NAME = 'TuiDocExample';
 
 /**
  * @type {TuiDocExample}
  */
 const fileNameToExtension = {
     CSS: '.css',
-    HTML: `.html`,
+    HTML: '.html',
     JavaScript: '.md',
-    LESS: `.less`,
-    TypeScript: `.ts`,
+    LESS: '.less',
+    TypeScript: '.ts',
 };
 
 /**
@@ -49,7 +49,7 @@ module.exports = {
                     const objKey = prop.key.name || prop.key.value;
                     const objValue = prop.value;
 
-                    if (objValue.type !== `ImportExpression`) {
+                    if (objValue.type !== 'ImportExpression') {
                         return;
                     }
 
@@ -111,11 +111,13 @@ module.exports = {
         docs: {
             description: `Ensures that keys and values are valid in a ${DOC_EXAMPLE_INTERFACE_NAME} interface.`,
         },
-        fixable: `code`,
+        fixable: 'code',
         messages: {
-            [INVALID_KEY_MESSAGE_ID]: `The value must be either a valid path with an extension or an abstract file name.`,
-            [INVALID_VALUE_MESSAGE_ID]: `The import path extension must match the extension from the object key.`,
+            [INVALID_KEY_MESSAGE_ID]:
+                'The value must be either a valid path with an extension or an abstract file name.',
+            [INVALID_VALUE_MESSAGE_ID]:
+                'The import path extension must match the extension from the object key.',
         },
-        type: `problem`,
+        type: 'problem',
     },
 };

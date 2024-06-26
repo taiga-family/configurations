@@ -74,7 +74,7 @@ module.exports = {
     },
     overrides: [
         {
-            files: ['*.ts'],
+            files: ['*.ts', '*.tsx', '*.js'],
             parser: '@typescript-eslint/parser',
             plugins: [
                 '@babel',
@@ -741,6 +741,12 @@ module.exports = {
             },
         },
         {
+            files: ['*.js'],
+            rules: {
+                '@typescript-eslint/explicit-function-return-type': 'off',
+            },
+        },
+        {
             files: [
                 '*.component.ts',
                 '*.service.ts',
@@ -951,8 +957,9 @@ module.exports = {
 
 function projectJsonExist(filename) {
     try {
-        const path = require('path').resolve(filename);
-        return require('fs').existsSync(path) ? filename : undefined;
+        const path = require('node:path').resolve(filename);
+
+        return require('node:fs').existsSync(path) ? filename : undefined;
     } catch {
         return undefined;
     }

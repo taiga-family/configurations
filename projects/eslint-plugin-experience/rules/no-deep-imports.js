@@ -1,14 +1,14 @@
-const path = require('path');
+const path = require('node:path');
 
-const MESSAGE_ID = `no-deep-imports`;
-const ERROR_MESSAGE = `Deep imports of Taiga UI packages are prohibited`;
+const MESSAGE_ID = 'no-deep-imports';
+const ERROR_MESSAGE = 'Deep imports of Taiga UI packages are prohibited';
 
 const DEFAULT_OPTIONS = {
-    currentProject: ``,
-    deepImport: `(?<=^@taiga-ui/[\\w-]+)(/.+)$`,
+    currentProject: '',
+    deepImport: '(?<=^@taiga-ui/[\\w-]+)(/.+)$',
     ignoreImports: [],
-    importDeclaration: `^@taiga-ui*`,
-    projectName: `(?<=^@taiga-ui/)([-\\w]+)`,
+    importDeclaration: '^@taiga-ui*',
+    projectName: '(?<=^@taiga-ui/)([-\\w]+)',
 };
 
 /**
@@ -33,7 +33,7 @@ module.exports = {
         const isInsideTheSameEntryPoint = source => {
             const filePath = path
                 .relative(context.getCwd(), context.getFilename())
-                .replace(/\\+/g, '/');
+                .replaceAll(/\\+/g, '/');
 
             const [currentFileProjectName] =
                 (currentProject && filePath.match(new RegExp(currentProject, 'g'))) || [];
@@ -55,7 +55,7 @@ module.exports = {
             [`ImportDeclaration[source.value=/${importDeclaration}/]`]({
                 source: sourceNode,
             }) {
-                const importSource = sourceNode?.value || ``;
+                const importSource = sourceNode?.value || '';
 
                 if (
                     !isDeepImport(importSource) ||
@@ -71,7 +71,7 @@ module.exports = {
 
                         return fixer.replaceTextRange(
                             [start + 1, end - 1], //  keeps quotes
-                            importSource.replace(new RegExp(deepImport, 'g'), ``),
+                            importSource.replaceAll(new RegExp(deepImport, 'g'), ''),
                         );
                     },
                     messageId: MESSAGE_ID,
@@ -82,7 +82,7 @@ module.exports = {
     },
     meta: {
         docs: {description: ERROR_MESSAGE},
-        fixable: `code`,
+        fixable: 'code',
         messages: {
             [MESSAGE_ID]: ERROR_MESSAGE,
         },
@@ -91,28 +91,31 @@ module.exports = {
                 additionalProperties: false,
                 properties: {
                     currentProject: {
-                        description: `RegExp string to pick out current project name of processed file`,
-                        type: `string`,
+                        description:
+                            'RegExp string to pick out current project name of processed file',
+                        type: 'string',
                     },
                     deepImport: {
-                        description: `RegExp string to pick out deep import part`,
-                        type: `string`,
+                        description: 'RegExp string to pick out deep import part',
+                        type: 'string',
                     },
                     ignoreImports: {
-                        description: `RegExp string to exclude import declarations which is selected by importDeclaration-option`,
+                        description:
+                            'RegExp string to exclude import declarations which is selected by importDeclaration-option',
                         items: {
-                            type: `string`,
+                            type: 'string',
                         },
-                        type: `array`,
+                        type: 'array',
                     },
                     importDeclaration: {
-                        description: `RegExp string to detect import declarations for which this rule should be applied`,
-                        type: `string`,
+                        description:
+                            'RegExp string to detect import declarations for which this rule should be applied',
+                        type: 'string',
                     },
                 },
-                type: `object`,
+                type: 'object',
             },
         ],
-        type: `problem`,
+        type: 'problem',
     },
 };

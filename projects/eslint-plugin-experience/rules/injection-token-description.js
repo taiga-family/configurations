@@ -1,5 +1,5 @@
-const MESSAGE_ID = `invalid-injection-token-description`;
-const ERROR_MESSAGE = `InjectionToken's description should contain token's name`;
+const MESSAGE_ID = 'invalid-injection-token-description';
+const ERROR_MESSAGE = "InjectionToken's description should contain token's name";
 
 /**
  * @type {import('eslint').Rule.RuleModule}

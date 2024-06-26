@@ -27,7 +27,7 @@ module.exports = {
 
                 if (isSimpleForOf) {
                     context.report({
-                        message: `Don't use simple "for-of" instead of "forEach"`,
+                        message: 'Don\'t use simple "for-of" instead of "forEach"',
                         node,
                     });
                 }

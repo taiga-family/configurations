@@ -45,7 +45,7 @@ module.exports = {
                 parser: 'json-stringify',
                 plugins: [
                     require.resolve(
-                        require('path').resolve(
+                        require('node:path').resolve(
                             __dirname,
                             'plugins',
                             'prettier-plugin-sort-package.js',
@@ -95,7 +95,9 @@ module.exports = {
         },
         {
             files: '*.svg',
-            options: require(require('path').resolve(__dirname, 'options', 'svg.js')),
+            options: require(
+                require('node:path').resolve(__dirname, 'options', 'svg.js'),
+            ),
         },
     ],
 };

@@ -1,5 +1,3 @@
-const ESLintUtils = require('@typescript-eslint/utils').ESLintUtils;
-
 /**
  * @type {import('eslint').Rule.RuleModule}
  */
@@ -30,33 +28,8 @@ function checkImplicitPublic(context, node) {
     }
 
     const name = node?.key?.name || node?.parameter?.name;
-    const services = ESLintUtils.getParserServices(context);
-    const superClass = classRef?.superClass ?? null;
-    const implements = classRef?.implements ?? [];
-
-    let hasFieldInParentClass = false;
-    let hasFieldInInterfaces = false;
-
-    if (superClass) {
-        const type = services.getTypeAtLocation(superClass);
-
-        hasFieldInParentClass = type.symbol?.members.has(name) ?? false;
-    }
-
-    for (const implement of implements) {
-        const type = services.getTypeAtLocation(implement);
-
-        if (type.symbol?.members.has(name)) {
-            hasFieldInInterfaces = true;
-            break;
-        }
-    }
 
     let range = node?.parameter?.range ?? node.key.range ?? node.range;
-
-    const hasPublicDecorators = getDecorators(node?.decorators ?? []).find(decorator =>
-        ['Inject', 'Input', 'Output'].includes(decorator),
-    );
 
     if (node.kind === 'set' || node.kind === 'get') {
         const [start, end] = node.key.range;
@@ -65,16 +38,16 @@ function checkImplicitPublic(context, node) {
     } else if (node.kind === 'method' && node.key?.object?.name === 'Symbol') {
         const [start, end] = range;
 
-        range = [range[0] - 1, range[1] - 1];
+        range = [start - 1, end - 1];
     }
 
     if (node.type === 'PropertyDefinition' && node.decorators.length > 0) {
-        const [, end] = node.decorators[node.decorators.length - 1]?.range;
+        const [, end] = node?.decorators?.[node.decorators.length - 1]?.range ?? [];
 
         range = [end + 1, end + 2];
     }
 
-    const marked = ` public `;
+    const marked = ' public ';
 
     context.report({
         fix: fixer => fixer.insertTextBeforeRange(range, marked),
@@ -83,19 +56,15 @@ function checkImplicitPublic(context, node) {
     });
 }
 
-function getDecorators(decorators) {
-    return decorators
-        ?.map(decorator => decorator?.expression?.callee?.name)
-        .filter(Boolean);
-}
-
 /**
  * @param {import('eslint').Rule.Node} node
  */
 function getClass(node) {
     if (!!node.parent && node.parent?.type === 'ClassDeclaration') {
         return node.parent;
-    } else if (!!node.parent) {
+    }
+
+    if (node.parent) {
         return getClass(node.parent);
     }
 

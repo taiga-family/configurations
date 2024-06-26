@@ -9,10 +9,10 @@ module.exports = {
             ClassDeclaration(node) {
                 const decorators = Array.from(node.decorators ?? []);
 
-                for (const decorator of decorators) {
+                decorators.forEach(decorator => {
                     const expression = decorator.expression;
 
-                    const decoratorName = expression.callee?.name ?? ``;
+                    const decoratorName = expression.callee?.name ?? '';
 
                     if (decoratorName in (ORDER || {})) {
                         const orderList = ORDER[decoratorName];
@@ -56,7 +56,7 @@ module.exports = {
                             }
                         }
                     }
-                }
+                });
             },
         };
     },
@@ -65,8 +65,8 @@ module.exports = {
         schema: [
             {
                 additionalProperties: true,
-                description: `Decorators names and their keys order`,
-                type: `object`,
+                description: 'Decorators names and their keys order',
+                type: 'object',
             },
         ],
         type: 'problem',

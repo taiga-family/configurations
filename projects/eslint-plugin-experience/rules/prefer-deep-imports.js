@@ -1,8 +1,8 @@
-const fs = require('fs');
+const fs = require('node:fs');
 const glob = require('glob');
 
-const MESSAGE_ID = `prefer-deep-imports`;
-const ERROR_MESSAGE = `Import via root level entry point are prohibited for this package`;
+const MESSAGE_ID = 'prefer-deep-imports';
+const ERROR_MESSAGE = 'Import via root level entry point are prohibited for this package';
 
 module.exports = {
     create(context) {
@@ -11,7 +11,6 @@ module.exports = {
         return {
             [`ImportDeclaration[source.value=${getFilterRegExp(importFilter)}]`](
                 importDeclaration,
-                ...rest
             ) {
                 const importedEntities = importDeclaration.specifiers;
                 const packageName = importDeclaration.source.value;
@@ -64,7 +63,7 @@ module.exports = {
     },
     meta: {
         docs: {description: ERROR_MESSAGE},
-        fixable: `code`,
+        fixable: 'code',
         messages: {
             [MESSAGE_ID]: ERROR_MESSAGE,
         },
@@ -74,14 +73,15 @@ module.exports = {
                 properties: {
                     // i.e. "/^@taiga-ui\\u002F(core|cdk|kit)$/"
                     importFilter: {
-                        description: `RegExp string to detect import declarations for which this rule should be applied`,
-                        type: [`string`, `array`],
+                        description:
+                            'RegExp string to detect import declarations for which this rule should be applied',
+                        type: ['string', 'array'],
                     },
                 },
-                type: `object`,
+                type: 'object',
             },
         ],
-        type: `problem`,
+        type: 'problem',
     },
 };
 
@@ -91,7 +91,7 @@ function findNearestEntryPoint(filePath) {
     for (let i = pathSegments.length - 1; i >= 0; i--) {
         const possibleEntryPoint = pathSegments.slice(0, i).join('/');
 
-        if (fs.existsSync(possibleEntryPoint + '/ng-package.json')) {
+        if (fs.existsSync(`${possibleEntryPoint}/ng-package.json`)) {
             return possibleEntryPoint.replace(/^node_modules\//, '');
         }
     }

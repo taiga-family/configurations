@@ -18,7 +18,7 @@ module.exports = function getDecorators(node, filterFn) {
         const args = [];
         const rawArgs = [];
 
-        for (const arg of topArgs) {
+        topArgs.forEach(arg => {
             if (Array.isArray(arg.elements)) {
                 const rawArray = arg.elements.map(item => item.raw);
                 const valueArray = arg.elements.map(item => item.value);
@@ -29,12 +29,12 @@ module.exports = function getDecorators(node, filterFn) {
                 rawArgs.push(arg.name ?? arg.raw);
                 args.push(arg.name ?? arg.value);
             }
-        }
+        });
 
         return {
             args,
             name,
-            pretty: `@${name}(${rawArgs.join(`, `)})`,
+            pretty: `@${name}(${rawArgs.join(', ')})`,
             rawArgs,
         };
     });

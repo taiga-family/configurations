@@ -1,7 +1,7 @@
 const {globSync} = require('glob');
-const {readFileSync} = require('fs');
+const {readFileSync} = require('node:fs');
 
-const allPackageJSONs = globSync(`**/package.json`, {
+const allPackageJSONs = globSync('**/package.json', {
     ignore: ['node_modules/**', 'dist/**'],
 }).filter(path => !readJSON(path).private);
 const packageNames = allPackageJSONs.map(path => readJSON(path).name);
