@@ -820,13 +820,23 @@ module.exports = {
                 'jest/no-disabled-tests': 'off',
                 'jest/no-done-callback': 'off',
                 'jest/no-hooks': 'off',
-                'jest/no-test-prefixes': 'off',
+                'jest/no-test-prefixes': 'error',
                 'jest/prefer-called-with': 'off',
                 'jest/prefer-each': 'off',
                 'jest/prefer-expect-assertions': 'off',
                 'jest/prefer-expect-resolves': 'off',
                 'jest/prefer-hooks-on-top': 'off',
-                'jest/prefer-lowercase-title': 'off',
+                /**
+                 * If enabled we have
+                 * Expected to be running in 'ProxyZone', but it was not found
+                 */
+                'jest/prefer-importing-jest-globals': 'off',
+                'jest/prefer-lowercase-title': [
+                    'error',
+                    {
+                        ignoreTopLevelDescribe: true,
+                    },
+                ],
                 'jest/prefer-strict-equal': 'off',
                 'jest/prefer-to-be-null': 'off',
                 'jest/prefer-to-have-length': 'off',
@@ -839,12 +849,16 @@ module.exports = {
                     },
                 ],
                 'jest/unbound-method': 'off',
+                'jest/valid-title': 'error',
             },
         },
         {
             files: ['**/*playwright*/*.spec.ts'],
             parser: '@typescript-eslint/parser',
             extends: ['plugin:playwright/recommended'],
+            rules: {
+                'jest/prefer-importing-jest-globals': 'off',
+            },
         },
         {
             files: ['*.html'],
