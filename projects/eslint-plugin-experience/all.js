@@ -834,7 +834,6 @@ module.exports = {
                 'jest/prefer-lowercase-title': [
                     'error',
                     {
-                        ignore: ['describe', 'test'],
                         allowedPrefixes: [
                             'Tui',
                             'NaN',
@@ -852,6 +851,7 @@ module.exports = {
                             'November',
                             'December',
                         ],
+                        ignore: ['describe', 'test'],
                     },
                 ],
                 'jest/prefer-strict-equal': 'off',
@@ -975,6 +975,7 @@ module.exports = {
                 quotes: 'off',
                 'require-await': 'off',
                 'rxjs/no-ignored-takewhile-value': 'off',
+                'rxjs/no-nested-subscribe': 'off',
                 'rxjs/no-unsafe-takeuntil': 'off',
                 'sonarjs/cognitive-complexity': 'off',
                 'sonarjs/max-switch-cases': 'off',
