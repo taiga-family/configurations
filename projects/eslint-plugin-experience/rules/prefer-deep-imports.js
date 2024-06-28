@@ -27,18 +27,25 @@ module.exports = {
                         );
                         const importedEntitiesSourceFiles = importedEntities.map(
                             ({imported}) =>
-                                allTsFiles.find(path => {
-                                    const fileContent = fs.readFileSync(path, 'utf8');
+                                allTsFiles
+                                    .find(path => {
+                                        const fileContent = fs.readFileSync(path, 'utf8');
 
-                                    return fileContent.match(
-                                        new RegExp(
-                                            `(?<=export\\s(default\\s)?(abstract\\s)?\\w+\\s)\\b${imported.name}\\b`,
-                                        ),
-                                    );
-                                }),
+                                        return fileContent.match(
+                                            new RegExp(
+                                                `(?<=export\\s(default\\s)?(abstract\\s)?\\w+\\s)\\b${imported.name}\\b`,
+                                            ),
+                                        );
+                                    })
+                                    .replace(/\\+/g, '/'), // Windows path to Unix path,
                         );
                         const entryPoints =
                             importedEntitiesSourceFiles.map(findNearestEntryPoint);
+
+                        if (entryPoints.some(e => !e)) {
+                            return; // to prevent `import {A,B,C} from 'undefined';`
+                        }
+
                         const newImports = importedEntities.map(
                             ({imported, local}, i) => {
                                 const importedEntity =
