@@ -37,7 +37,7 @@ module.exports = {
                                             ),
                                         );
                                     })
-                                    .replaceAll(/\\+/g, '/'), // Windows path to Unix path,
+                                    ?.replaceAll(/\\+/g, '/'), // Windows path to Unix path,
                         );
                         const entryPoints =
                             importedEntitiesSourceFiles.map(findNearestEntryPoint);
