@@ -85,12 +85,12 @@
         ]
     },
     "devDependencies": {
-        "@nx/jest": "19.2.0",
-        "@nx/node": "19.2.0",
-        "@nx/workspace": "19.2.0",
+        "@nx/jest": "19.3.2",
+        "@nx/node": "19.3.2",
+        "@nx/workspace": "19.3.2",
         "@release-it-plugins/workspaces": "4.2.0",
         "@release-it/conventional-changelog": "8.0.1",
-        "nx": "19.2.0",
+        "nx": "19.3.2",
         "release-it": "17.4.1",
         "typescript": "5.3.3"
     },
