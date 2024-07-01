@@ -7,7 +7,7 @@ const ERROR_MESSAGE = "InjectionToken's description should contain token's name"
 module.exports = {
     create(context) {
         return {
-            'NewExpression[callee.name="InjectionToken"]': node => {
+            'NewExpression[callee.name="InjectionToken"]': (node) => {
                 const [tokenDescriptionNode] = node.arguments || [];
                 const tokenDescription =
                     tokenDescriptionNode.value || // simple string
@@ -21,7 +21,7 @@ module.exports = {
 
                 if (hasReport) {
                     context.report({
-                        fix: fixer => {
+                        fix: (fixer) => {
                             const [start, end] = tokenDescriptionNode.range;
 
                             return fixer.insertTextBeforeRange(

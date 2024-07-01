@@ -27,7 +27,7 @@ const fileNameToExtension = {
  * @param {string} path
  * @returns {RegExpMatchArray | null}
  */
-const getPathGroups = path => path.match(/(.+)(\.(?:ts|less|scss|js|md|css|html))(.*)/);
+const getPathGroups = (path) => path.match(/(.+)(\.(?:ts|less|scss|js|md|css|html))(.*)/);
 
 /**
  * @type {import(`eslint`).Rule.RuleModule}
@@ -39,12 +39,12 @@ module.exports = {
              * It would be better to support any object expression, not only within a class,
              * but it`s pretty complicated to extract the object type since all parents have different interfaces.
              */
-            'PropertyDefinition[value.type="ObjectExpression"]': node => {
+            'PropertyDefinition[value.type="ObjectExpression"]': (node) => {
                 if (getTypeName(node) !== DOC_EXAMPLE_INTERFACE_NAME) {
                     return;
                 }
 
-                node.value.properties.forEach(prop => {
+                node.value.properties.forEach((prop) => {
                     // It can be either Identifier or Literal.
                     const objKey = prop.key.name || prop.key.value;
                     const objValue = prop.value;
@@ -91,7 +91,7 @@ module.exports = {
 
                         context.report({
                             // eslint-disable-next-line consistent-return
-                            fix: fixer => {
+                            fix: (fixer) => {
                                 if (expectedExtension && actualPathGroups.length) {
                                     // It`s safer to use groups instead of finding and replacing.
                                     const fixedValue = `'${beforeExtensionPart}${expectedExtension}${afterExtensionPart}'`;

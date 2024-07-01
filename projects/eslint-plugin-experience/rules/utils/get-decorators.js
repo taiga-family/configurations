@@ -8,7 +8,7 @@ module.exports = function getDecorators(node, filterFn) {
     let decorators = node.decorators ?? [];
 
     if (filterFn) {
-        decorators = decorators.filter(decorator => filterFn(decorator));
+        decorators = decorators.filter((decorator) => filterFn(decorator));
     }
 
     return decorators.map(({expression}) => {
@@ -18,10 +18,10 @@ module.exports = function getDecorators(node, filterFn) {
         const args = [];
         const rawArgs = [];
 
-        topArgs.forEach(arg => {
+        topArgs.forEach((arg) => {
             if (Array.isArray(arg.elements)) {
-                const rawArray = arg.elements.map(item => item.raw);
-                const valueArray = arg.elements.map(item => item.value);
+                const rawArray = arg.elements.map((item) => item.raw);
+                const valueArray = arg.elements.map((item) => item.value);
 
                 rawArgs.push(`[${rawArray.join(', ')}]`);
                 args.push(valueArray);

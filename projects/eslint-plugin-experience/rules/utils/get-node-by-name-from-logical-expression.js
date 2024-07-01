@@ -9,7 +9,7 @@ const traverseLogicalExpression = require('./traverse-logical-expression');
 module.exports = function getNodeByNameFromLogicalExpression(expression, name) {
     let node = null;
 
-    traverseLogicalExpression(expression, leaf => {
+    traverseLogicalExpression(expression, (leaf) => {
         if (leaf.name === name) {
             node = leaf;
         }

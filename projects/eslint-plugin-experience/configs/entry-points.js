@@ -3,13 +3,13 @@ const {readFileSync} = require('node:fs');
 
 const allPackageJSONs = globSync('**/package.json', {
     ignore: ['node_modules/**', 'dist/**'],
-}).filter(path => !readJSON(path).private);
-const packageNames = allPackageJSONs.map(path => readJSON(path).name);
+}).filter((path) => !readJSON(path).private);
+const packageNames = allPackageJSONs.map((path) => readJSON(path).name);
 
 module.exports = {
     overrides: [
         {
-            files: allPackageJSONs.map(path => path.replace('package.json', '**/*.ts')),
+            files: allPackageJSONs.map((path) => path.replace('package.json', '**/*.ts')),
             parser: '@typescript-eslint/parser',
             excludedFiles: ['**/*.spec.ts', '**/*.cy.ts'],
             rules: {

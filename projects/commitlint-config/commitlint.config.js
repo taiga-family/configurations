@@ -8,7 +8,7 @@ export default {
             function getTypes(dir) {
                 try {
                     const {readdirSync, statSync} = fs;
-                    return readdirSync(dir).filter(entity =>
+                    return readdirSync(dir).filter((entity) =>
                         statSync(`${dir}/${entity}`).isDirectory(),
                     );
                 } catch {

@@ -10,7 +10,7 @@ module.exports = function traverseLogicalExpression(expression, callback) {
      * @param node {import('@types/estree').Node}
      * @returns {void}
      */
-    const traverse = node => {
+    const traverse = (node) => {
         if (!node) {
             return;
         }

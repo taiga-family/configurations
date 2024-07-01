@@ -19,8 +19,8 @@ module.exports = function getConstructorFromClassDeclaration(node) {
     }
 
     const constructorMethodDefinition = classElements
-        .filter(classElement => isMethodDefinition(classElement))
-        .find(methodDefinition => methodDefinition.kind === 'constructor');
+        .filter((classElement) => isMethodDefinition(classElement))
+        .find((methodDefinition) => methodDefinition.kind === 'constructor');
 
     if (
         !constructorMethodDefinition ||

@@ -20,7 +20,7 @@ module.exports = {
         require.resolve('stylelint-prettier'),
         require.resolve('prettier-plugin-organize-attributes'),
     ],
-    arrowParens: 'avoid',
+    arrowParens: 'always',
     bracketSpacing: false,
     endOfLine: 'lf',
     htmlWhitespaceSensitivity: 'ignore',

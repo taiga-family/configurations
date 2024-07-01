@@ -46,7 +46,7 @@ function findExpressions(node, keys) {
     }
 
     if (Array.isArray(node?.body)) {
-        return node?.body?.some?.(item => findExpressions(item, keys));
+        return node?.body?.some?.((item) => findExpressions(item, keys));
     }
 
     if (node?.body) {
@@ -67,8 +67,10 @@ function isGenerator(context, node) {
     const right = ESLintUtils.getParserServices(context)?.getTypeAtLocation(node.right);
     const declaredProperties = right?.declaredProperties ?? [];
     const customClassWithNextAndIterator =
-        !!declaredProperties.find(member => member.escapedName === 'next') &&
-        !!declaredProperties.find(member => member.escapedName.startsWith('__@iterator'));
+        !!declaredProperties.find((member) => member.escapedName === 'next') &&
+        !!declaredProperties.find((member) =>
+            member.escapedName.startsWith('__@iterator'),
+        );
 
     return (
         right?.symbol?.escapedName === 'Generator' ||

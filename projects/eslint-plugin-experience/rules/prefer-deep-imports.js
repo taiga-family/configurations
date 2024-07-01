@@ -16,19 +16,19 @@ module.exports = {
                 const packageName = importDeclaration.source.value;
 
                 context.report({
-                    fix: fixer => {
+                    fix: (fixer) => {
                         const allTsFiles = glob.globSync(
                             `node_modules/${packageName}/**/*.ts`,
                             {
                                 ignore: {
-                                    ignored: p => /\.(spec|cy).ts$/.test(p.name),
+                                    ignored: (p) => /\.(spec|cy).ts$/.test(p.name),
                                 },
                             },
                         );
                         const importedEntitiesSourceFiles = importedEntities.map(
                             ({imported}) =>
                                 allTsFiles
-                                    .find(path => {
+                                    .find((path) => {
                                         const fileContent = fs.readFileSync(path, 'utf8');
 
                                         return fileContent.match(
@@ -42,7 +42,7 @@ module.exports = {
                         const entryPoints =
                             importedEntitiesSourceFiles.map(findNearestEntryPoint);
 
-                        if (entryPoints.some(e => !e)) {
+                        if (entryPoints.some((e) => !e)) {
                             return; // to prevent `import {A,B,C} from 'undefined';`
                         }
 
@@ -111,7 +111,7 @@ function getFilterRegExp(filter) {
 
     const packages = typeof filter === 'string' ? [filter] : filter;
     const [npmScope] = packages[0].split('/');
-    const packageNames = packages.map(p => p.split('/')[1]).filter(Boolean);
+    const packageNames = packages.map((p) => p.split('/')[1]).filter(Boolean);
 
     return `/^${npmScope}\\u002F(${packageNames.join('|')})$/`;
 }

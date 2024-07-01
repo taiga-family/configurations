@@ -7,7 +7,7 @@ module.exports = {
             ClassDeclaration: function reportUnwantedName(node) {
                 const members = Array.from(node?.body?.body ?? []);
 
-                members.forEach(member => {
+                members.forEach((member) => {
                     if (member?.key?.type === 'PrivateIdentifier') {
                         context.report({
                             message: `Please don't use "#${member?.key?.name}" instead of "private ${member?.key?.name}"`,

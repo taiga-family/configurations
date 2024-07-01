@@ -4,9 +4,9 @@
 module.exports = {
     create(context) {
         return {
-            MethodDefinition: node => checkImplicitPublic(context, node),
-            PropertyDefinition: node => checkImplicitPublic(context, node),
-            TSParameterProperty: node => checkImplicitPublic(context, node),
+            MethodDefinition: (node) => checkImplicitPublic(context, node),
+            PropertyDefinition: (node) => checkImplicitPublic(context, node),
+            TSParameterProperty: (node) => checkImplicitPublic(context, node),
         };
     },
     meta: {
@@ -50,7 +50,7 @@ function checkImplicitPublic(context, node) {
     const marked = ' public ';
 
     context.report({
-        fix: fixer => fixer.insertTextBeforeRange(range, marked),
+        fix: (fixer) => fixer.insertTextBeforeRange(range, marked),
         message: `${node.kind || 'property'} ${name} should be marked as ${marked.trim()}`,
         node,
     });
