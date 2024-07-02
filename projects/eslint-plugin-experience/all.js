@@ -744,6 +744,9 @@ module.exports = {
             files: ['*.js'],
             rules: {
                 '@typescript-eslint/explicit-function-return-type': 'off',
+                '@typescript-eslint/no-empty-function': 'off',
+                '@typescript-eslint/no-extraneous-class': 'off',
+                'max-classes-per-file': 'off',
             },
         },
         {
