@@ -743,7 +743,9 @@ module.exports = {
         {
             files: ['*.js'],
             rules: {
+                '@taiga-ui/experience/no-implicit-public': 'off',
                 '@typescript-eslint/explicit-function-return-type': 'off',
+                '@typescript-eslint/explicit-member-accessibility': 'off',
                 '@typescript-eslint/no-empty-function': 'off',
                 '@typescript-eslint/no-extraneous-class': 'off',
                 'max-classes-per-file': 'off',
