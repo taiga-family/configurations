@@ -91,7 +91,7 @@
         "@release-it-plugins/workspaces": "4.2.0",
         "@release-it/conventional-changelog": "8.0.1",
         "nx": "19.4.1",
-        "release-it": "17.4.1",
+        "release-it": "17.4.2",
         "typescript": "5.3.3"
     },
     "engines": {
