@@ -175,6 +175,7 @@ module.exports = {
                 '@taiga-ui/experience/no-implicit-public': 'error',
                 '@taiga-ui/experience/no-private-esnext-fields': 'error',
                 '@taiga-ui/experience/no-simple-for-of': 'error',
+                '@taiga-ui/experience/standalone-imports-sort': 'error',
                 '@taiga-ui/experience/strict-tui-doc-example': 'error',
                 '@typescript-eslint/array-type': [
                     'error',

@@ -15,6 +15,7 @@ module.exports = {
         'no-private-esnext-fields': require('./rules/no-private-esnext-fields'),
         'no-simple-for-of': require('./rules/no-simple-for-of'),
         'prefer-deep-imports': require('./rules/prefer-deep-imports'),
+        'standalone-imports-sort': require('./rules/standalone-imports-sort'),
         'strict-tui-doc-example': require('./rules/strict-tui-doc-example'),
     },
 };
