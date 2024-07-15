@@ -281,7 +281,7 @@
             }
         ],
         "selector-pseudo-element-colon-notation": [
-            "single",
+            "double",
             {
                 "severity": "error"
             }
