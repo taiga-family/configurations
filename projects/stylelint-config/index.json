@@ -5,6 +5,7 @@
     "defaultSeverity": "error",
     "customSyntax": "postcss-less",
     "rules": {
+        "function-url-quotes": null,
         "selector-max-specificity": null,
         "function-no-unknown": null,
         "no-duplicate-selectors": null,
@@ -243,12 +244,6 @@
         ],
         "function-name-case": [
             "lower",
-            {
-                "severity": "error"
-            }
-        ],
-        "function-url-quotes": [
-            "always",
             {
                 "severity": "error"
             }
