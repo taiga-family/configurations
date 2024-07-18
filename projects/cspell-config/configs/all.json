@@ -493,6 +493,7 @@
         "CVCPO",
         "tuipreventdefault",
         "tbank",
-        "multimatch"
+        "multimatch",
+        "textareas"
     ]
 }
