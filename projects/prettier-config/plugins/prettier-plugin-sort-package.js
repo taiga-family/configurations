@@ -8,7 +8,9 @@ exports.parsers = {
     'json-stringify': {
         ...parser,
         async parse(text, options) {
-            const isPackageJson = options.filepath?.endsWith('package.json');
+            if (options.filepath?.endsWith('package-lock.json')) {
+                return parser.parse(text, options);
+            }
 
             // To avoid parsing errors
             text = await (await prettier).format(text, {filepath: options.filepath});
@@ -25,8 +27,11 @@ exports.parsers = {
              * @note: add the scripts field if it's provided
              * the scripts must be unsorted
              */
-            // eslint-disable-next-line no-prototype-builtins
-            if (isPackageJson && json?.hasOwnProperty('scripts')) {
+            if (
+                options.filepath?.endsWith('package.json') &&
+                // eslint-disable-next-line no-prototype-builtins
+                json?.hasOwnProperty('scripts')
+            ) {
                 sorted.scripts = unsortedScripts;
             }
 
