@@ -546,6 +546,7 @@ module.exports = {
                     },
                 ],
                 '@typescript-eslint/type-annotation-spacing': 'error',
+                '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
                 curly: ['error', 'all'],
                 'decorator-position/decorator-position': [
                     'error',
