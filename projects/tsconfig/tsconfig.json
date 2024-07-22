@@ -49,12 +49,8 @@
             "es2021.string",
             "dom"
         ],
-        "typeRoots": [
-            "node_modules/@types"
-        ],
-        "types": [
-            "node"
-        ],
+        "typeRoots": ["node_modules/@types"],
+        "types": ["node"],
         "skipLibCheck": true,
         "downlevelIteration": true,
         "skipDefaultLibCheck": true,
@@ -100,9 +96,7 @@
         "files": true,
         "transpileOnly": true,
         "compilerOptions": {
-            "types": [
-                "node"
-            ],
+            "types": ["node"],
             "module": "commonjs"
         }
     }
