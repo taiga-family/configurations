@@ -36,12 +36,6 @@ module.exports = {
         {
             files: ['*.json'],
             options: {
-                parser: 'json',
-            },
-        },
-        {
-            files: ['package.json', 'ng-package.json'],
-            options: {
                 parser: 'json-stringify',
                 plugins: [
                     require.resolve(

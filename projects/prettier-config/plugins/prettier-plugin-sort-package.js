@@ -8,13 +8,7 @@ exports.parsers = {
     'json-stringify': {
         ...parser,
         async parse(text, options) {
-            const isPackageJson =
-                options.filepath &&
-                /package\.json$|ng-package\.json$/.test(options.filepath);
-
-            if (!isPackageJson) {
-                return parser.parse(text, options);
-            }
+            const isPackageJson = options.filepath?.endsWith('package.json');
 
             // To avoid parsing errors
             text = await (await prettier).format(text, {filepath: options.filepath});
@@ -24,7 +18,7 @@ exports.parsers = {
             }
 
             const json = JSON.parse(text);
-            const unsortedScripts = deepClone(json?.scripts || {});
+            const unsortedScripts = JSON.parse(JSON.stringify(json?.scripts || {}));
             const sorted = (await sortPackageJson).default(json);
 
             /**
@@ -32,7 +26,7 @@ exports.parsers = {
              * the scripts must be unsorted
              */
             // eslint-disable-next-line no-prototype-builtins
-            if (json?.hasOwnProperty('scripts')) {
+            if (isPackageJson && json?.hasOwnProperty('scripts')) {
                 sorted.scripts = unsortedScripts;
             }
 
@@ -42,7 +36,3 @@ exports.parsers = {
         },
     },
 };
-
-function deepClone(value) {
-    return JSON.parse(JSON.stringify(value));
-}
