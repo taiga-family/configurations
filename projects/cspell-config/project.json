@@ -1,9 +1,9 @@
 {
-    "name": "cspell-config",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "projects/cspell-config",
-    "projectType": "library",
+    "name": "cspell-config",
     "prefix": "tui",
+    "projectType": "library",
+    "sourceRoot": "projects/cspell-config",
     "targets": {
         "publish": {
             "executor": "nx:run-commands",

@@ -1,6 +1,5 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig.json",
-    "compileOnSave": false,
     "angularCompilerOptions": {
         "compilationMode": "partial",
         "preserveWhitespaces": false,
@@ -34,6 +33,7 @@
             }
         }
     },
+    "compileOnSave": false,
     "compilerOptions": {
         "strict": true,
         "baseUrl": "./",
@@ -49,8 +49,12 @@
             "es2021.string",
             "dom"
         ],
-        "typeRoots": ["node_modules/@types"],
-        "types": ["node"],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "types": [
+            "node"
+        ],
         "skipLibCheck": true,
         "downlevelIteration": true,
         "skipDefaultLibCheck": true,
@@ -96,7 +100,9 @@
         "files": true,
         "transpileOnly": true,
         "compilerOptions": {
-            "types": ["node"],
+            "types": [
+                "node"
+            ],
             "module": "commonjs"
         }
     }

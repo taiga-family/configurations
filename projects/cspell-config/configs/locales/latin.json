@@ -1,7 +1,9 @@
 {
     "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
     "caseSensitive": false,
-    "import": ["@cspell/dict-lorem-ipsum/cspell-ext.json"],
+    "import": [
+        "@cspell/dict-lorem-ipsum/cspell-ext.json"
+    ],
     "words": [
         "pythonesque",
         "schplenden",

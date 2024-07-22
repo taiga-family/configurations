@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/cspell-config",
-    "version": "0.118.2",
+    "version": "0.119.0",
     "description": "Taiga UI cspell config",
     "keywords": [
         "cspell"

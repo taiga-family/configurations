@@ -1,9 +1,9 @@
 {
-    "name": "browserslist-config",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "projects/browserslist-config",
-    "projectType": "library",
+    "name": "browserslist-config",
     "prefix": "tui",
+    "projectType": "library",
+    "sourceRoot": "projects/browserslist-config",
     "targets": {
         "publish": {
             "executor": "nx:run-commands",

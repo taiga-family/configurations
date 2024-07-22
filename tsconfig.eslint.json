@@ -1,5 +1,4 @@
 {
-    "extends": "./projects/tsconfig/tsconfig.json",
     "compilerOptions": {
         "rootDir": ".",
         "baseUrl": ".",
@@ -14,8 +13,17 @@
             "taiga-ui/node_modules/@types",
             "./taiga-ui/scripts/types"
         ],
-        "types": ["ng-dev-mode", "node"]
+        "types": [
+            "ng-dev-mode",
+            "node"
+        ]
     },
-    "include": ["**/*.ts", "projects/**/*.js"],
-    "exclude": ["**/node_modules"]
+    "exclude": [
+        "**/node_modules"
+    ],
+    "extends": "./projects/tsconfig/tsconfig.json",
+    "include": [
+        "**/*.ts",
+        "projects/**/*.js"
+    ]
 }

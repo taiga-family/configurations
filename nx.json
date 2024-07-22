@@ -1,11 +1,11 @@
 {
-    "workspaceLayout": {
-        "libsDir": "projects",
-        "appsDir": "projects"
-    },
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "defaultBase": "origin/main",
     "namedInputs": {
-        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "default": [
+            "{projectRoot}/**/*",
+            "sharedGlobals"
+        ],
         "sharedGlobals": [
             "{workspaceRoot}/package-lock.json",
             "{workspaceRoot}/nx.json",
@@ -14,8 +14,11 @@
             "{workspaceRoot}/*.yml",
             "{workspaceRoot}/*.md"
         ],
-        "production": ["default"]
+        "production": [
+            "default"
+        ]
     },
+    "parallel": 1,
     "targetDefaults": {
         "test": {
             "cache": true
@@ -24,6 +27,8 @@
             "cache": true
         }
     },
-    "defaultBase": "origin/main",
-    "parallel": 1
+    "workspaceLayout": {
+        "libsDir": "projects",
+        "appsDir": "projects"
+    }
 }

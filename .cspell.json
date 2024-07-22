@@ -1,7 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
-    "import": ["@taiga-ui/cspell-config/cspell.config.js"],
-    "files": ["*/*.*"],
+    "files": [
+        "*/*.*"
+    ],
     "ignorePaths": [
         ".git",
         "CHANGELOG.md",
@@ -16,5 +17,11 @@
         "**/addon-commerce/enums/currency-code.ts",
         "**/addon-commerce/utils/get-currency-symbol.ts"
     ],
-    "ignoreWords": ["meowtec", "Acpekt"]
+    "ignoreWords": [
+        "meowtec",
+        "Acpekt"
+    ],
+    "import": [
+        "@taiga-ui/cspell-config/cspell.config.js"
+    ]
 }

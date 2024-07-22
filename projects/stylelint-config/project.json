@@ -1,9 +1,9 @@
 {
-    "name": "stylelint-config",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "projects/stylelint-config",
-    "projectType": "library",
+    "name": "stylelint-config",
     "prefix": "tui",
+    "projectType": "library",
+    "sourceRoot": "projects/stylelint-config",
     "targets": {
         "publish": {
             "executor": "nx:run-commands",

@@ -1,7 +1,9 @@
 {
     "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
-    "import": ["@cspell/dict-ru_ru/cspell-ext.json"],
     "caseSensitive": false,
+    "import": [
+        "@cspell/dict-ru_ru/cspell-ext.json"
+    ],
     "words": [
         "Инкин",
         "гельветика",

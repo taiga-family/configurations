@@ -1,6 +1,8 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["github>taiga-family/renovate-config"],
+    "extends": [
+        "github>taiga-family/renovate-config"
+    ],
     "postUpgradeTasks": {
         "commands": [
             "echo 'TODO: workaround for https://github.com/npm/cli/issues/7019'",
@@ -11,6 +13,8 @@
             "npm i"
         ],
         "executionMode": "branch",
-        "fileFilters": ["package-lock.json"]
+        "fileFilters": [
+            "package-lock.json"
+        ]
     }
 }

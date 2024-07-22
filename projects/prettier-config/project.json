@@ -1,9 +1,9 @@
 {
-    "name": "prettier-config",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "projects/prettier-config",
-    "projectType": "library",
+    "name": "prettier-config",
     "prefix": "tui",
+    "projectType": "library",
+    "sourceRoot": "projects/prettier-config",
     "targets": {
         "publish": {
             "executor": "nx:run-commands",

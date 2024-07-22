@@ -1,9 +1,9 @@
 {
-    "name": "commitlint-config",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "projects/commitlint-config",
-    "projectType": "library",
+    "name": "commitlint-config",
     "prefix": "tui",
+    "projectType": "library",
+    "sourceRoot": "projects/commitlint-config",
     "targets": {
         "publish": {
             "executor": "nx:run-commands",

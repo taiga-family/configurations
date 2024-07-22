@@ -1,9 +1,12 @@
 {
     "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/stylelintrc.json",
-    "plugins": ["stylelint-order", "stylelint-no-px"],
     "allowEmptyInput": true,
-    "defaultSeverity": "error",
     "customSyntax": "postcss-less",
+    "defaultSeverity": "error",
+    "plugins": [
+        "stylelint-order",
+        "stylelint-no-px"
+    ],
     "rules": {
         "function-url-quotes": null,
         "selector-max-specificity": null,
@@ -59,7 +62,12 @@
                 "position",
                 {
                     "order": "flexible",
-                    "properties": ["top", "left", "right", "bottom"]
+                    "properties": [
+                        "top",
+                        "left",
+                        "right",
+                        "bottom"
+                    ]
                 },
                 "z-index",
                 "display"
@@ -71,24 +79,48 @@
         "selector-pseudo-element-no-unknown": [
             true,
             {
-                "ignorePseudoElements": ["ng-deep"]
+                "ignorePseudoElements": [
+                    "ng-deep"
+                ]
             }
         ],
         "selector-type-no-unknown": [
             true,
             {
-                "ignore": ["custom-elements"],
-                "ignoreTypes": ["/^/deep/"]
+                "ignore": [
+                    "custom-elements"
+                ],
+                "ignoreTypes": [
+                    "/^/deep/"
+                ]
             }
         ],
-        "unit-allowed-list": ["px", "rem", "em", "deg", "s", "ms", "dpcm", "turn", "ch", "%", "vh", "vw", "fr"],
+        "unit-allowed-list": [
+            "px",
+            "rem",
+            "em",
+            "deg",
+            "s",
+            "ms",
+            "dpcm",
+            "turn",
+            "ch",
+            "%",
+            "vh",
+            "vw",
+            "fr"
+        ],
         "color-no-invalid-hex": [
             true,
             {
                 "severity": "error"
             }
         ],
-        "property-disallowed-list": ["border-inline", "padding-inline", "margin-inline"],
+        "property-disallowed-list": [
+            "border-inline",
+            "padding-inline",
+            "margin-inline"
+        ],
         "function-calc-no-unspaced-operator": [
             true,
             {
@@ -122,7 +154,9 @@
         "declaration-block-no-duplicate-properties": [
             true,
             {
-                "ignore": ["consecutive-duplicates"],
+                "ignore": [
+                    "consecutive-duplicates"
+                ],
                 "severity": "error"
             }
         ],
@@ -225,8 +259,13 @@
         "at-rule-empty-line-before": [
             "always",
             {
-                "except": ["first-nested"],
-                "ignore": ["after-comment", "blockless-after-same-name-blockless"],
+                "except": [
+                    "first-nested"
+                ],
+                "ignore": [
+                    "after-comment",
+                    "blockless-after-same-name-blockless"
+                ],
                 "severity": "error"
             }
         ],
@@ -251,7 +290,9 @@
         "length-zero-no-unit": [
             true,
             {
-                "ignore": ["custom-properties"],
+                "ignore": [
+                    "custom-properties"
+                ],
                 "severity": "error"
             }
         ],
@@ -264,8 +305,12 @@
         "rule-empty-line-before": [
             "always",
             {
-                "except": ["first-nested"],
-                "ignore": ["after-comment"],
+                "except": [
+                    "first-nested"
+                ],
+                "ignore": [
+                    "after-comment"
+                ],
                 "severity": "error"
             }
         ],
@@ -291,8 +336,15 @@
             "lower",
             {
                 "severity": "error",
-                "ignoreKeywords": ["currentColor", "backgroundColor", "optimizeLegibility"],
-                "ignoreProperties": ["/^--/", "/^\\$/"]
+                "ignoreKeywords": [
+                    "currentColor",
+                    "backgroundColor",
+                    "optimizeLegibility"
+                ],
+                "ignoreProperties": [
+                    "/^--/",
+                    "/^\\$/"
+                ]
             }
         ],
         "function-url-no-scheme-relative": [
@@ -328,16 +380,26 @@
         "custom-property-empty-line-before": [
             "always",
             {
-                "except": ["after-custom-property", "first-nested"],
-                "ignore": ["after-comment"],
+                "except": [
+                    "after-custom-property",
+                    "first-nested"
+                ],
+                "ignore": [
+                    "after-comment"
+                ],
                 "severity": "error"
             }
         ],
         "declaration-empty-line-before": [
             "always",
             {
-                "except": ["first-nested", "after-declaration"],
-                "ignore": ["after-comment"],
+                "except": [
+                    "first-nested",
+                    "after-declaration"
+                ],
+                "ignore": [
+                    "after-comment"
+                ],
                 "severity": "error"
             }
         ]

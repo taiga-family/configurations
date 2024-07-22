@@ -1,8 +1,8 @@
 {
-    "name": "tsconfig",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "projects/tsconfig",
+    "name": "tsconfig",
     "projectType": "library",
+    "sourceRoot": "projects/tsconfig",
     "targets": {
         "publish": {
             "executor": "nx:run-commands",

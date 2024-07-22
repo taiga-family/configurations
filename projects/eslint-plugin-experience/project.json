@@ -1,9 +1,9 @@
 {
-    "name": "eslint-plugin-experience",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "projects/eslint-plugin",
-    "projectType": "library",
+    "name": "eslint-plugin-experience",
     "prefix": "tui",
+    "projectType": "library",
+    "sourceRoot": "projects/eslint-plugin",
     "targets": {
         "publish": {
             "executor": "nx:run-commands",
