@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/browserslist-config",
-    "version": "0.120.1",
+    "version": "0.121.0",
     "description": "Taiga UI browserslist config",
     "keywords": [
         "browserslist"
