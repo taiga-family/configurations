@@ -456,6 +456,7 @@ module.exports = {
                 '@typescript-eslint/no-implied-eval': 'error',
                 '@typescript-eslint/no-inferrable-types': 'error',
                 '@typescript-eslint/no-namespace': ['error', {allowDeclarations: true}],
+                '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
                 '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
                 '@typescript-eslint/no-shadow': 'error',
                 '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
@@ -486,6 +487,7 @@ module.exports = {
                 ],
                 '@typescript-eslint/no-useless-constructor': 'error',
                 '@typescript-eslint/no-var-requires': 'error',
+                '@typescript-eslint/only-throw-error': 'error',
                 '@typescript-eslint/padding-line-between-statements': [
                     'error',
                     {blankLine: 'always', next: 'block', prev: '*'},
