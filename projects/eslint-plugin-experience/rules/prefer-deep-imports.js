@@ -1,5 +1,5 @@
-const fs = require('node:fs');
 const glob = require('glob');
+const fs = require('node:fs');
 
 const MESSAGE_ID = 'prefer-deep-imports';
 const ERROR_MESSAGE = 'Import via root level entry point are prohibited for this package';

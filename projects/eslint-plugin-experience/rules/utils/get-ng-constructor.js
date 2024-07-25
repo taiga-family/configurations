@@ -1,5 +1,5 @@
-const isSupportedClass = require('./is-decorated-ng-class');
 const getConstructorFromClassDeclaration = require('./get-constructor-from-class-declaration');
+const isSupportedClass = require('./is-decorated-ng-class');
 
 /**
  * @param node {import('eslint').Rule.Node}

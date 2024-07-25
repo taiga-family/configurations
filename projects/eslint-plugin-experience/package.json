@@ -26,7 +26,6 @@
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-jest": "^28.6.0",
         "eslint-plugin-node-import": "^1.0.4",
-        "eslint-plugin-perfectionist": "^2.11.0",
         "eslint-plugin-playwright": "^1.6.2",
         "eslint-plugin-prettier": "^5.2.1",
         "eslint-plugin-promise": "^7.0.0",
