@@ -1,6 +1,6 @@
 {
     "name": "taiga-linters",
-    "version": "0.123.0",
+    "version": "0.124.0",
     "private": true,
     "description": "",
     "license": "Apache-2.0",
@@ -88,9 +88,9 @@
         "@nx/jest": "19.5.3",
         "@nx/node": "19.5.3",
         "@nx/workspace": "19.5.3",
-        "eslint-plugin-perfectionist": "^3.0.0",
         "@release-it-plugins/workspaces": "4.2.0",
         "@release-it/conventional-changelog": "8.0.1",
+        "eslint-plugin-perfectionist": "^3.0.0",
         "nx": "19.5.3",
         "release-it": "17.6.0",
         "typescript": "5.3.3"
