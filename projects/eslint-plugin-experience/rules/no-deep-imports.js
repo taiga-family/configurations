@@ -5,10 +5,10 @@ const ERROR_MESSAGE = 'Deep imports of Taiga UI packages are prohibited';
 
 const DEFAULT_OPTIONS = {
     currentProject: '',
-    deepImport: '(?<=^@taiga-ui/[\\w-]+)(/.+)$',
+    deepImport: String.raw`(?<=^@taiga-ui/[\w-]+)(/.+)$`,
     ignoreImports: [],
     importDeclaration: '^@taiga-ui*',
-    projectName: '(?<=^@taiga-ui/)([-\\w]+)',
+    projectName: String.raw`(?<=^@taiga-ui/)([-\w]+)`,
 };
 
 /**
