@@ -1,5 +1,4 @@
-const base =
-    projectJsonExist('tsconfig.eslint.json') || projectJsonExist('tsconfig.json') || '';
+process.env.TYPESCRIPT_ESLINT_EXPERIMENTAL_TSSERVER = 'true';
 
 /**
  * @type {import('eslint').Linter.Config}
@@ -117,7 +116,12 @@ module.exports = {
                 ecmaVersion: 'latest',
                 errorOnTypeScriptSyntacticAndSemanticIssues: false,
                 errorOnUnknownASTType: true,
-                project: base ? [base] : [],
+                programs: [
+                    require('@typescript-eslint/parser').createProgram(
+                        projectJsonExist('tsconfig.eslint.json') ||
+                            projectJsonExist('tsconfig.json'),
+                    ),
+                ],
                 sourceType: 'module',
                 warnOnUnsupportedTypeScriptVersion: false,
             },
@@ -1025,7 +1029,7 @@ function projectJsonExist(filename) {
     try {
         const path = require('node:path').resolve(filename);
 
-        return require('node:fs').existsSync(path) ? filename : undefined;
+        return require('node:fs').existsSync(path) ? path : undefined;
     } catch {
         return undefined;
     }

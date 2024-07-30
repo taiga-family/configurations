@@ -1,0 +1,16 @@
+{
+    "extends": "./projects/tsconfig/tsconfig.json",
+    "compilerOptions": {
+        "rootDir": ".",
+        "baseUrl": ".",
+        "strict": true,
+        "module": "ESNext",
+        "target": "ESNext",
+        "incremental": true,
+        "esModuleInterop": true,
+        "typeRoots": ["node_modules/@types"],
+        "types": ["node"]
+    },
+    "include": ["**/*.ts", "**/*.js"],
+    "exclude": ["**/node_modules"]
+}
