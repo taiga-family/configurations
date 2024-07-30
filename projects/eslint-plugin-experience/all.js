@@ -1,5 +1,17 @@
 process.env.TYPESCRIPT_ESLINT_EXPERIMENTAL_TSSERVER = 'true';
 
+const tsconfig =
+    projectJsonExist('tsconfig.eslint.json') || projectJsonExist('tsconfig.json');
+const parserOptions = tsconfig
+    ? {
+          programs: [require('@typescript-eslint/parser').createProgram(tsconfig)],
+      }
+    : {
+          EXPERIMENTAL_useProjectService: {
+              maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING: Infinity,
+          },
+      };
+
 /**
  * @type {import('eslint').Linter.Config}
  */
@@ -116,14 +128,9 @@ module.exports = {
                 ecmaVersion: 'latest',
                 errorOnTypeScriptSyntacticAndSemanticIssues: false,
                 errorOnUnknownASTType: true,
-                programs: [
-                    require('@typescript-eslint/parser').createProgram(
-                        projectJsonExist('tsconfig.eslint.json') ||
-                            projectJsonExist('tsconfig.json'),
-                    ),
-                ],
                 sourceType: 'module',
                 warnOnUnsupportedTypeScriptVersion: false,
+                ...parserOptions,
             },
             rules: {
                 '@angular-eslint/sort-lifecycle-methods': 'error',
