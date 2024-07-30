@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/commitlint-config",
-    "version": "0.125.4",
+    "version": "0.125.5",
     "description": "Taiga UI commitlint config",
     "keywords": [
         "commitlint",
