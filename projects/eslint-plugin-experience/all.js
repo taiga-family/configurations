@@ -1,10 +1,8 @@
-process.env.TYPESCRIPT_ESLINT_EXPERIMENTAL_TSSERVER = 'true';
-
 const tsconfig =
     projectJsonExist('tsconfig.eslint.json') || projectJsonExist('tsconfig.json');
 const parserOptions = tsconfig
     ? {
-          programs: [require('@typescript-eslint/parser').createProgram(tsconfig)],
+          project: [tsconfig],
       }
     : {
           EXPERIMENTAL_useProjectService: {
