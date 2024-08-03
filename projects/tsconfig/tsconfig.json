@@ -1,5 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig.json",
+    "compileOnSave": false,
     "angularCompilerOptions": {
         "compilationMode": "partial",
         "preserveWhitespaces": false,
@@ -33,7 +34,6 @@
             }
         }
     },
-    "compileOnSave": false,
     "compilerOptions": {
         "strict": true,
         "baseUrl": "./",
@@ -78,12 +78,14 @@
         "noEmitHelpers": true,
         "pretty": true,
         "stripInternal": false,
-        "noUncheckedIndexedAccess": false,
+        "noUncheckedIndexedAccess": true,
+        "moduleDetection": "force",
         "noPropertyAccessFromIndexSignature": false,
         "removeComments": false,
         "noEmitOnError": true,
         "allowJs": true,
         "checkJs": true,
+        "verbatimModuleSyntax": true,
         "disableSizeLimit": true,
         "strictNullChecks": true,
         "preserveSymlinks": true,
@@ -97,7 +99,8 @@
         "transpileOnly": true,
         "compilerOptions": {
             "types": ["node"],
-            "module": "commonjs"
+            "module": "commonjs",
+            "verbatimModuleSyntax": false
         }
     }
 }
