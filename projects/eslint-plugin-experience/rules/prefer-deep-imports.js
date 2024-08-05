@@ -5,10 +5,16 @@ const MESSAGE_ID = 'prefer-deep-imports';
 const ERROR_MESSAGE = 'Import via root level entry point are prohibited for this package';
 
 module.exports = {
+    /**
+     * @param {any} context
+     */
     create(context) {
         const {importFilter} = context.options[0] || {};
 
         return {
+            /**
+             * @param {{ specifiers: any; source: { value: any; }; importKind: string; range: import("eslint").AST.Range; }} importDeclaration
+             */
             [`ImportDeclaration[source.value=${getFilterRegExp(importFilter)}]`](
                 importDeclaration,
             ) {
@@ -16,6 +22,9 @@ module.exports = {
                 const packageName = importDeclaration.source.value;
 
                 context.report({
+                    /**
+                     * @param {import('eslint').Rule.RuleFixer} fixer
+                     */
                     fix: (fixer) => {
                         const allTsFiles = glob.globSync(
                             `node_modules/${packageName}/**/*.ts`,
@@ -26,6 +35,9 @@ module.exports = {
                             },
                         );
                         const importedEntitiesSourceFiles = importedEntities.map(
+                            /**
+                             * @param {any} entity
+                             */
                             ({imported}) =>
                                 allTsFiles
                                     .find((path) => {
@@ -42,11 +54,22 @@ module.exports = {
                         const entryPoints =
                             importedEntitiesSourceFiles.map(findNearestEntryPoint);
 
-                        if (entryPoints.some((e) => !e)) {
+                        if (
+                            entryPoints.some(
+                                /**
+                                 * @param {any} e
+                                 */
+                                (e) => !e,
+                            )
+                        ) {
                             return; // to prevent `import {A,B,C} from 'undefined';`
                         }
 
                         const newImports = importedEntities.map(
+                            /**
+                             * @param {any} entity
+                             * @param {number} i
+                             */
                             ({imported, local}, i) => {
                                 const importedEntity =
                                     imported.name === local.name
@@ -92,6 +115,10 @@ module.exports = {
     },
 };
 
+/**
+ * @param {string} filePath
+ * @return {any}
+ */
 function findNearestEntryPoint(filePath) {
     const pathSegments = filePath.split('/');
 
@@ -104,13 +131,16 @@ function findNearestEntryPoint(filePath) {
     }
 }
 
+/**
+ * @param {string} filter
+ */
 function getFilterRegExp(filter) {
     if (typeof filter === 'string' && filter.startsWith('/')) {
         return filter;
     }
 
     const packages = typeof filter === 'string' ? [filter] : filter;
-    const [npmScope] = packages[0].split('/');
+    const [npmScope] = packages[0]?.split('/') ?? [];
     const packageNames = packages.map((p) => p.split('/')[1]).filter(Boolean);
 
     return `/^${npmScope}\\u002F(${packageNames.join('|')})$/`;

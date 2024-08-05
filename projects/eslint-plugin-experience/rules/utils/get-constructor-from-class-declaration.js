@@ -2,7 +2,7 @@ const isMethodDefinition = require('./is-method');
 
 /**
  * Returns a constructor from a provided node if it exists.
- * @param node {import('eslint').Rule.Node}
+ * @param node {any}
  * @returns {*}
  */
 module.exports = function getConstructorFromClassDeclaration(node) {
@@ -19,8 +19,13 @@ module.exports = function getConstructorFromClassDeclaration(node) {
     }
 
     const constructorMethodDefinition = classElements
-        .filter((classElement) => isMethodDefinition(classElement))
-        .find((methodDefinition) => methodDefinition.kind === 'constructor');
+        .filter((/** @type {import("eslint").Rule.Node} */ classElement) =>
+            isMethodDefinition(classElement),
+        )
+        .find(
+            (/** @type {{ kind: string; }} */ methodDefinition) =>
+                methodDefinition.kind === 'constructor',
+        );
 
     if (
         !constructorMethodDefinition ||

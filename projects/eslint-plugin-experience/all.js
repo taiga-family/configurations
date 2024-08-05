@@ -248,6 +248,7 @@ module.exports = {
                 ],
                 '@typescript-eslint/consistent-generic-constructors': 'error',
                 '@typescript-eslint/consistent-indexed-object-style': 'error',
+                '@typescript-eslint/consistent-return': 'error',
                 '@typescript-eslint/consistent-type-assertions': [
                     'error',
                     {
@@ -782,6 +783,7 @@ module.exports = {
             files: ['*.js'],
             rules: {
                 '@taiga-ui/experience/no-implicit-public': 'off',
+                '@typescript-eslint/consistent-return': 'off',
                 '@typescript-eslint/explicit-function-return-type': 'off',
                 '@typescript-eslint/explicit-member-accessibility': 'off',
                 '@typescript-eslint/no-empty-function': 'off',
