@@ -463,6 +463,7 @@ module.exports = {
                 ],
                 '@typescript-eslint/no-for-in-array': 'error',
                 '@typescript-eslint/no-implied-eval': 'error',
+                '@typescript-eslint/no-import-type-side-effects': 'error',
                 '@typescript-eslint/no-inferrable-types': 'error',
                 '@typescript-eslint/no-namespace': ['error', {allowDeclarations: true}],
                 '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
@@ -1030,6 +1031,9 @@ module.exports = {
     ],
 };
 
+/**
+ * @param {string} filename
+ */
 function projectJsonExist(filename) {
     try {
         const path = require('node:path').resolve(filename);
