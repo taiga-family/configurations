@@ -78,6 +78,7 @@
         "noEmitHelpers": true,
         "pretty": true,
         "stripInternal": false,
+        "importsNotUsedAsValues": "error",
         "noUncheckedIndexedAccess": true,
         "moduleDetection": "force",
         "noPropertyAccessFromIndexSignature": false,
