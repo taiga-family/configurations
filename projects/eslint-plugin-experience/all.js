@@ -711,6 +711,10 @@ module.exports = {
                         selector:
                             "CallExpression[callee.name='inject'][arguments.0.name='Injector']",
                     },
+                    {
+                        message: 'You must use named tuple members.',
+                        selector: 'TSTupleType > :not(TSNamedTupleMember).elementTypes',
+                    },
                 ],
                 'no-return-assign': ['error', 'always'],
                 'no-useless-concat': 'error',
