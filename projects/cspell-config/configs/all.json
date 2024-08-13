@@ -494,6 +494,12 @@
         "tuipreventdefault",
         "tbank",
         "multimatch",
-        "textareas"
+        "textareas",
+        "fontawesome",
+        "fortawesome",
+        "svgs",
+        "preid",
+        "Quarterpounder",
+        "tuilabel"
     ]
 }
