@@ -561,6 +561,7 @@ module.exports = {
                 ],
                 '@typescript-eslint/type-annotation-spacing': 'error',
                 '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
+                'consistent-return': 'error',
                 curly: ['error', 'all'],
                 'decorator-position/decorator-position': [
                     'error',
@@ -973,7 +974,6 @@ module.exports = {
                 camelcase: 'off',
                 'class-methods-use-this': 'off',
                 complexity: 'off',
-                'consistent-return': 'off',
                 'default-case': 'off',
                 'default-case-last': 'off',
                 'default-param-last': 'off',

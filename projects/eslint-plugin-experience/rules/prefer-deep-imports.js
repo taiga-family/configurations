@@ -62,7 +62,7 @@ module.exports = {
                                 (e) => !e,
                             )
                         ) {
-                            return; // to prevent `import {A,B,C} from 'undefined';`
+                            return ''; // to prevent `import {A,B,C} from 'undefined';`
                         }
 
                         const newImports = importedEntities.map(
@@ -129,6 +129,8 @@ function findNearestEntryPoint(filePath) {
             return possibleEntryPoint.replace(/^node_modules\//, '');
         }
     }
+
+    return '';
 }
 
 /**
