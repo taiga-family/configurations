@@ -650,12 +650,12 @@ module.exports = {
                     },
                     {
                         message:
-                            'Always prefer using the host property over @HostListener. That decorator exists exclusively for backwards compatibility. https://angular.dev/guide/components/host-elements#the-hostbinding-and-hostlistener-decorators',
+                            'Always prefer using the host property over @HostListener. That decorator exists exclusively for backwards compatibility',
                         selector: "Identifier[name='HostListener']",
                     },
                     {
                         message:
-                            'Always prefer using the host property over @HostBinding. That decorator exists exclusively for backwards compatibility. https://angular.dev/guide/components/host-elements#the-hostbinding-and-hostlistener-decorators',
+                            'Always prefer using the host property over @HostBinding. That decorator exists exclusively for backwards compatibility',
                         selector: "Identifier[name='HostBinding']",
                     },
                     {
