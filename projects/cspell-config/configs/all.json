@@ -501,6 +501,8 @@
         "preid",
         "Quarterpounder",
         "tuilabel",
-        "contentalign"
+        "contentalign",
+        "css",
+        "csstools"
     ]
 }
