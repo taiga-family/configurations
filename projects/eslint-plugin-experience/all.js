@@ -650,6 +650,16 @@ module.exports = {
                     },
                     {
                         message:
+                            'Always prefer using the host property over @HostListener. That decorator exists exclusively for backwards compatibility. https://angular.dev/guide/components/host-elements#the-hostbinding-and-hostlistener-decorators',
+                        selector: "Identifier[name='HostListener']",
+                    },
+                    {
+                        message:
+                            'Always prefer using the host property over @HostBinding. That decorator exists exclusively for backwards compatibility. https://angular.dev/guide/components/host-elements#the-hostbinding-and-hostlistener-decorators',
+                        selector: "Identifier[name='HostBinding']",
+                    },
+                    {
+                        message:
                             'Use `map(() => value)` instead of `mapTo(value)`, the operator is deprecated',
                         selector: "CallExpression[callee.name='mapTo']",
                     },
