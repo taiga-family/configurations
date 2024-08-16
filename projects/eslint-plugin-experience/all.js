@@ -740,7 +740,12 @@ module.exports = {
                 'no-void': ['error', {allowAsStatement: true}],
                 'node-import/prefer-node-protocol': 'error',
                 'prefer-template': 'error',
-                'prettier/prettier': 'error',
+                'prettier/prettier': [
+                    'error',
+                    {
+                        endOfLine: 'auto',
+                    },
+                ],
                 'promise/catch-or-return': 'error',
                 'promise/param-names': 'error',
                 'rxjs/no-compat': 'error',
