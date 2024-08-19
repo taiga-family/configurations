@@ -248,7 +248,6 @@ module.exports = {
                 ],
                 '@typescript-eslint/consistent-generic-constructors': 'error',
                 '@typescript-eslint/consistent-indexed-object-style': 'error',
-                '@typescript-eslint/consistent-return': 'error',
                 '@typescript-eslint/consistent-type-assertions': [
                     'error',
                     {
@@ -561,7 +560,6 @@ module.exports = {
                 ],
                 '@typescript-eslint/type-annotation-spacing': 'error',
                 '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
-                'consistent-return': 'error',
                 curly: ['error', 'all'],
                 'decorator-position/decorator-position': [
                     'error',
@@ -973,6 +971,7 @@ module.exports = {
                 '@angular-eslint/use-component-view-encapsulation': 'off',
                 '@angular-eslint/use-injectable-provided-in': 'off',
                 '@typescript-eslint/ban-ts-comment': 'off',
+                '@typescript-eslint/consistent-return': 'off',
                 '@typescript-eslint/explicit-module-boundary-types': 'off',
                 '@typescript-eslint/no-base-to-string': 'off',
                 '@typescript-eslint/no-explicit-any': 'off',
@@ -989,6 +988,7 @@ module.exports = {
                 camelcase: 'off',
                 'class-methods-use-this': 'off',
                 complexity: 'off',
+                'consistent-return': 'off',
                 'default-case': 'off',
                 'default-case-last': 'off',
                 'default-param-last': 'off',
