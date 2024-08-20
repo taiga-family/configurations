@@ -111,6 +111,10 @@ module.exports = {
                 'node-import',
                 'unused-imports',
                 'sonarjs',
+                '@stylistic',
+                '@stylistic/js',
+                '@stylistic/ts',
+                '@stylistic/plus',
             ],
             extends: [
                 'eslint-config-airbnb-base',
@@ -132,6 +136,42 @@ module.exports = {
             },
             rules: {
                 '@angular-eslint/sort-lifecycle-methods': 'error',
+                '@stylistic/padding-line-between-statements': [
+                    'error',
+                    {blankLine: 'always', next: 'block', prev: '*'},
+                    {blankLine: 'always', next: '*', prev: 'block'},
+                    {blankLine: 'always', next: 'block-like', prev: '*'},
+                    {blankLine: 'always', next: '*', prev: 'block-like'},
+                    {blankLine: 'always', next: 'return', prev: '*'},
+                    {blankLine: 'always', next: '*', prev: 'directive'},
+                    {blankLine: 'always', next: ['interface', 'type'], prev: '*'},
+                    {blankLine: 'always', next: '*', prev: ['const', 'let', 'var']},
+                    {blankLine: 'always', next: 'class', prev: '*'},
+                    {blankLine: 'always', next: '*', prev: 'class'},
+                    {
+                        blankLine: 'any',
+                        next: ['const', 'let', 'var', 'export'],
+                        prev: ['const', 'let', 'var', 'export'],
+                    },
+                    {blankLine: 'any', next: ['case', 'default'], prev: '*'},
+                    {blankLine: 'any', next: '*', prev: ['case', 'default']},
+                    {blankLine: 'any', next: 'directive', prev: 'directive'},
+                ],
+                '@stylistic/ts/func-call-spacing': 'error',
+                '@stylistic/ts/lines-between-class-members': [
+                    'error',
+                    'always',
+                    {exceptAfterOverload: true, exceptAfterSingleLine: true},
+                ],
+                '@stylistic/ts/member-delimiter-style': 'error',
+                '@stylistic/ts/quotes': [
+                    'error',
+                    'single',
+                    {
+                        avoidEscape: true,
+                    },
+                ],
+                '@stylistic/ts/type-annotation-spacing': 'error',
                 '@taiga-ui/experience/decorator-key-sort': [
                     'error',
                     {
@@ -206,46 +246,6 @@ module.exports = {
                 ],
                 '@typescript-eslint/await-thenable': 'error',
                 '@typescript-eslint/ban-ts-comment': 'error',
-                '@typescript-eslint/ban-types': [
-                    'error',
-                    {
-                        extendDefaults: true,
-                        types: {
-                            '{}': {
-                                message:
-                                    '`{}` actually means `any non-nullish value`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.\n- If you want a type meaning `empty object`, you probably want `Record<string, never>` instead.',
-                            },
-                            BigInt: {
-                                fixWith: 'bigint',
-                                message: 'Use bigint instead',
-                            },
-                            Boolean: {
-                                fixWith: 'boolean',
-                                message: 'Use boolean instead',
-                            },
-                            Function: {
-                                message:
-                                    'The `Function` type accepts any function-like value.\nIt provides no type safety when calling the function, which can be a common source of bugs.\nIt also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.\nIf you are expecting the function to accept certain arguments, you should explicitly define the function shape.',
-                            },
-                            Number: {
-                                fixWith: 'number',
-                                message: 'Use number instead',
-                            },
-                            Object: {
-                                message:
-                                    'The `Object` type actually means `any non-nullish value`, so it is marginally better than `unknown`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.',
-                            },
-                            String: {
-                                fixWith: 'string',
-                                message: 'Use string instead',
-                            },
-                            Symbol: {
-                                fixWith: 'symbol',
-                                message: 'Use symbol instead',
-                            },
-                        },
-                    },
-                ],
                 '@typescript-eslint/consistent-generic-constructors': 'error',
                 '@typescript-eslint/consistent-indexed-object-style': 'error',
                 '@typescript-eslint/consistent-type-assertions': [
@@ -301,13 +301,6 @@ module.exports = {
                         },
                     },
                 ],
-                '@typescript-eslint/func-call-spacing': 'error',
-                '@typescript-eslint/lines-between-class-members': [
-                    'error',
-                    'always',
-                    {exceptAfterOverload: true, exceptAfterSingleLine: true},
-                ],
-                '@typescript-eslint/member-delimiter-style': 'error',
                 '@typescript-eslint/member-ordering': [
                     'error',
                     {
@@ -468,6 +461,45 @@ module.exports = {
                 '@typescript-eslint/no-namespace': ['error', {allowDeclarations: true}],
                 '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
                 '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+                '@typescript-eslint/no-restricted-types': [
+                    'error',
+                    {
+                        types: {
+                            '{}': {
+                                message:
+                                    '`{}` actually means `any non-nullish value`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.\n- If you want a type meaning `empty object`, you probably want `Record<string, never>` instead.',
+                            },
+                            BigInt: {
+                                fixWith: 'bigint',
+                                message: 'Use bigint instead',
+                            },
+                            Boolean: {
+                                fixWith: 'boolean',
+                                message: 'Use boolean instead',
+                            },
+                            Function: {
+                                message:
+                                    'The `Function` type accepts any function-like value.\nIt provides no type safety when calling the function, which can be a common source of bugs.\nIt also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.\nIf you are expecting the function to accept certain arguments, you should explicitly define the function shape.',
+                            },
+                            Number: {
+                                fixWith: 'number',
+                                message: 'Use number instead',
+                            },
+                            Object: {
+                                message:
+                                    'The `Object` type actually means `any non-nullish value`, so it is marginally better than `unknown`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.',
+                            },
+                            String: {
+                                fixWith: 'string',
+                                message: 'Use string instead',
+                            },
+                            Symbol: {
+                                fixWith: 'symbol',
+                                message: 'Use symbol instead',
+                            },
+                        },
+                    },
+                ],
                 '@typescript-eslint/no-shadow': 'error',
                 '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
                 '@typescript-eslint/no-unnecessary-condition': 'error',
@@ -499,27 +531,6 @@ module.exports = {
                 '@typescript-eslint/no-useless-constructor': 'error',
                 '@typescript-eslint/no-var-requires': 'error',
                 '@typescript-eslint/only-throw-error': 'error',
-                '@typescript-eslint/padding-line-between-statements': [
-                    'error',
-                    {blankLine: 'always', next: 'block', prev: '*'},
-                    {blankLine: 'always', next: '*', prev: 'block'},
-                    {blankLine: 'always', next: 'block-like', prev: '*'},
-                    {blankLine: 'always', next: '*', prev: 'block-like'},
-                    {blankLine: 'always', next: 'return', prev: '*'},
-                    {blankLine: 'always', next: '*', prev: 'directive'},
-                    {blankLine: 'always', next: ['interface', 'type'], prev: '*'},
-                    {blankLine: 'always', next: '*', prev: ['const', 'let', 'var']},
-                    {blankLine: 'always', next: 'class', prev: '*'},
-                    {blankLine: 'always', next: '*', prev: 'class'},
-                    {
-                        blankLine: 'any',
-                        next: ['const', 'let', 'var', 'export'],
-                        prev: ['const', 'let', 'var', 'export'],
-                    },
-                    {blankLine: 'any', next: ['case', 'default'], prev: '*'},
-                    {blankLine: 'any', next: '*', prev: ['case', 'default']},
-                    {blankLine: 'any', next: 'directive', prev: 'directive'},
-                ],
                 '@typescript-eslint/prefer-as-const': 'error',
                 '@typescript-eslint/prefer-find': 'error',
                 '@typescript-eslint/prefer-for-of': 'error',
@@ -538,13 +549,6 @@ module.exports = {
                         checkMethodDeclarations: true,
                     },
                 ],
-                '@typescript-eslint/quotes': [
-                    'error',
-                    'single',
-                    {
-                        avoidEscape: true,
-                    },
-                ],
                 '@typescript-eslint/require-array-sort-compare': 'error',
                 '@typescript-eslint/require-await': 'error',
                 '@typescript-eslint/restrict-plus-operands': 'error',
@@ -558,7 +562,6 @@ module.exports = {
                         types: 'always',
                     },
                 ],
-                '@typescript-eslint/type-annotation-spacing': 'error',
                 '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
                 curly: ['error', 'all'],
                 'decorator-position/decorator-position': [
