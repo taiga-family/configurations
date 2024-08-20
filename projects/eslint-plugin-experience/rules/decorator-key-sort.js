@@ -20,7 +20,11 @@ module.exports = {
 
                         for (const argument of decoratorArguments) {
                             const properties = Array.from(argument.properties ?? []);
-                            const current = properties.map((prop) => prop.key.name);
+                            const current =
+                                properties
+                                    .map((prop) => prop.key?.name)
+                                    .filter(Boolean) || [];
+
                             const correct = getCorrectOrderRelative(orderList, current);
 
                             if (!isCorrectSortedAccording(correct, current)) {
