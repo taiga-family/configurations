@@ -572,7 +572,13 @@ module.exports = {
                         properties: 'above',
                     },
                 ],
-                eqeqeq: ['error', 'always'],
+                eqeqeq: [
+                    'error',
+                    'always',
+                    {
+                        null: 'ignore',
+                    },
+                ],
                 'func-style': [
                     'error',
                     'declaration',
