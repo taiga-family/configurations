@@ -77,6 +77,9 @@ module.exports = {
             hide: false,
             successMessage: 'Lint done...',
         },
+        react: {
+            version: '18',
+        },
     },
     rules: {
         'file-progress/activate':
@@ -104,6 +107,7 @@ module.exports = {
                 '@typescript-eslint',
                 'rxjs',
                 'import',
+                'react',
                 'simple-import-sort',
                 'unicorn',
                 'decorator-position',
@@ -122,6 +126,7 @@ module.exports = {
                 'plugin:promise/recommended',
                 'plugin:@typescript-eslint/eslint-recommended',
                 'eslint:recommended',
+                'plugin:react/recommended',
                 'plugin:rxjs/recommended',
                 'plugin:sonarjs/recommended-legacy',
                 'prettier',
@@ -1049,9 +1054,14 @@ module.exports = {
                 'rxjs/no-nested-subscribe': 'off',
                 'rxjs/no-unsafe-takeuntil': 'off',
                 'sonarjs/cognitive-complexity': 'off',
+                'sonarjs/deprecation': 'off',
+                'sonarjs/different-types-comparison': 'off',
                 'sonarjs/max-switch-cases': 'off',
+                'sonarjs/no-commented-code': 'off',
                 'sonarjs/no-duplicate-string': 'off',
+                'sonarjs/no-nested-functions': 'off',
                 'sonarjs/no-nested-template-literals': 'off',
+                'sonarjs/slow-regex': 'off',
                 'unicorn/no-anonymous-default-export': 'off',
                 'unicorn/no-unsafe-regex': 'off',
             },
@@ -1061,13 +1071,14 @@ module.exports = {
 
 /**
  * @param {string} filename
+ * @return {string}
  */
 function projectJsonExist(filename) {
     try {
         const path = require('node:path').resolve(filename);
 
-        return require('node:fs').existsSync(path) ? path : undefined;
+        return require('node:fs').existsSync(path) ? path : '';
     } catch {
-        return undefined;
+        return '';
     }
 }

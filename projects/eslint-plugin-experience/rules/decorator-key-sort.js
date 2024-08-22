@@ -1,11 +1,14 @@
-/**
- * @type {import(`eslint`).Rule.RuleModule}
- */
 module.exports = {
+    /**
+     * @param {{ options: {}[]; report: (arg0: { fix: (fixer: any) => any; message: string; node: any; }) => void; sourceCode: { text: any; }; }} context
+     */
     create(context) {
         const ORDER = context.options[0] || {};
 
         return {
+            /**
+             * @param {{ decorators: any; }} node
+             */
             ClassDeclaration(node) {
                 const decorators = Array.from(node.decorators ?? []);
 
@@ -15,6 +18,7 @@ module.exports = {
                     const decoratorName = expression.callee?.name ?? '';
 
                     if (decoratorName in (ORDER || {})) {
+                        // @ts-ignore
                         const orderList = ORDER[decoratorName];
                         const decoratorArguments = Array.from(expression.arguments ?? []);
 
@@ -77,6 +81,10 @@ module.exports = {
     },
 };
 
+/**
+ * @param {string | any[]} correctOrder
+ * @param {any[]} currentOrder
+ */
 function isCorrectSortedAccording(correctOrder, currentOrder) {
     return (
         JSON.stringify(correctOrder) ===
@@ -84,6 +92,10 @@ function isCorrectSortedAccording(correctOrder, currentOrder) {
     );
 }
 
+/**
+ * @param {any[]} correctOrder
+ * @param {string | any[]} currentOrder
+ */
 function getCorrectOrderRelative(correctOrder, currentOrder) {
     return correctOrder.filter((item) => currentOrder.includes(item));
 }
