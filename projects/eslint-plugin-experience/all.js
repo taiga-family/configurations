@@ -1064,6 +1064,7 @@ module.exports = {
                 'sonarjs/no-nested-functions': 'off',
                 'sonarjs/no-nested-template-literals': 'off',
                 'sonarjs/os-command': 'off',
+                'sonarjs/prefer-function-type': 'off',
                 'sonarjs/pseudo-random': 'off',
                 'sonarjs/public-static-readonly': 'off',
                 'sonarjs/slow-regex': 'off',
