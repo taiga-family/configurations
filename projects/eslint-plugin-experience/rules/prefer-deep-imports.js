@@ -12,9 +12,6 @@ module.exports = {
         const {importFilter} = context.options[0] || {};
 
         return {
-            /**
-             * @param {{ specifiers: any; source: { value: any; }; importKind: string; range: import("eslint").AST.Range; }} importDeclaration
-             */
             [`ImportDeclaration[source.value=${getFilterRegExp(importFilter)}]`](
                 importDeclaration,
             ) {
@@ -23,7 +20,7 @@ module.exports = {
 
                 context.report({
                     /**
-                     * @param {import('eslint').Rule.RuleFixer} fixer
+                     * @param {import('eslint').Rule.RuleFixer | string} fixer
                      */
                     fix: (fixer) => {
                         const allTsFiles = glob.globSync(
@@ -43,11 +40,9 @@ module.exports = {
                                     .find((path) => {
                                         const fileContent = fs.readFileSync(path, 'utf8');
 
-                                        return fileContent.match(
-                                            new RegExp(
-                                                `(?<=export\\s(default\\s)?(abstract\\s)?\\w+\\s)\\b${imported.name}\\b`,
-                                            ),
-                                        );
+                                        return new RegExp(
+                                            `(?<=export\\s(default\\s)?(abstract\\s)?\\w+\\s)\\b${imported.name}\\b`,
+                                        ).exec(fileContent);
                                     })
                                     ?.replaceAll(/\\+/g, '/'), // Windows path to Unix path,
                         );

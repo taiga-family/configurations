@@ -36,7 +36,7 @@ module.exports = {
                 .replaceAll(/\\+/g, '/');
 
             const [currentFileProjectName] =
-                (currentProject && filePath.match(new RegExp(currentProject, 'g'))) || [];
+                (currentProject && new RegExp(currentProject, 'g').exec(filePath)) || [];
 
             const [importSourceProjectName] =
                 source.match(new RegExp(projectName, 'g')) || [];
