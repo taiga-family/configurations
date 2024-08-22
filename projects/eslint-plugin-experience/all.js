@@ -1056,6 +1056,7 @@ module.exports = {
                 'sonarjs/cognitive-complexity': 'off',
                 'sonarjs/deprecation': 'off',
                 'sonarjs/different-types-comparison': 'off',
+                'sonarjs/function-return-type': 'off',
                 'sonarjs/max-switch-cases': 'off',
                 'sonarjs/no-commented-code': 'off',
                 'sonarjs/no-duplicate-string': 'off',
