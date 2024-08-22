@@ -482,10 +482,6 @@ module.exports = {
                                 fixWith: 'boolean',
                                 message: 'Use boolean instead',
                             },
-                            Function: {
-                                message:
-                                    'The `Function` type accepts any function-like value.\nIt provides no type safety when calling the function, which can be a common source of bugs.\nIt also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.\nIf you are expecting the function to accept certain arguments, you should explicitly define the function shape.',
-                            },
                             Number: {
                                 fixWith: 'number',
                                 message: 'Use number instead',
