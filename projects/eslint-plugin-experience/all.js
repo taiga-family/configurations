@@ -1060,6 +1060,7 @@ module.exports = {
                 'sonarjs/no-commented-code': 'off',
                 'sonarjs/no-duplicate-string': 'off',
                 'sonarjs/no-empty-function': 'off',
+                'sonarjs/no-invalid-await': 'off',
                 'sonarjs/no-misleading-array-reverse': 'off',
                 'sonarjs/no-misused-promises': 'off',
                 'sonarjs/no-nested-functions': 'off',
