@@ -4,7 +4,7 @@ const {readFileSync} = require('node:fs');
 const allPackageJSONs = globSync('**/package.json', {
     ignore: ['node_modules/**', 'dist/**'],
 }).filter((path) => !readJSON(path).private);
-const packageNames = allPackageJSONs.map((path) => readJSON(path).name);
+const packageNames = allPackageJSONs.map((path) => readJSON(path).name).filter(Boolean);
 
 module.exports = {
     overrides: [
@@ -25,6 +25,9 @@ module.exports = {
     ],
 };
 
+/**
+ * @param {import("fs").PathOrFileDescriptor} path
+ */
 function readJSON(path) {
     try {
         return JSON.parse(readFileSync(path, 'utf8'));
