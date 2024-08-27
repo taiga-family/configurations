@@ -7,6 +7,10 @@ const parser = parsers['json-stringify'];
 exports.parsers = {
     'json-stringify': {
         ...parser,
+        /**
+         * @param {string} text
+         * @param {{ filepath: string; }} options
+         */
         async parse(text, options) {
             if (options.filepath?.endsWith('package-lock.json')) {
                 return parser.parse(text, options);
