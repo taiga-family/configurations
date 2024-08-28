@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/stylelint-config",
-    "version": "0.144.18",
+    "version": "0.144.19",
     "description": "Taiga UI stylelint config",
     "keywords": [
         "stylelint",
