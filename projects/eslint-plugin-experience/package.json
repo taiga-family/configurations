@@ -14,7 +14,7 @@
         "@babel/eslint-plugin": "^7.25.1",
         "@stylistic/eslint-plugin": "^2.6.5",
         "@stylistic/eslint-plugin-js": "^2.6.5",
-        "@stylistic/eslint-plugin-plus": "^2.6.4",
+        "@stylistic/eslint-plugin-plus": "^2.6.5",
         "@stylistic/eslint-plugin-ts": "^2.6.4",
         "@typescript-eslint/eslint-plugin": "^8.3.0",
         "@typescript-eslint/parser": "^8.3.0",
