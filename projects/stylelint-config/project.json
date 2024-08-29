@@ -1,6 +1,6 @@
 {
-    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "name": "stylelint-config",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "prefix": "tui",
     "projectType": "library",
     "sourceRoot": "projects/stylelint-config",
