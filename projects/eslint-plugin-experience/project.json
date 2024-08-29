@@ -1,6 +1,6 @@
 {
-    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "name": "eslint-plugin-experience",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "prefix": "tui",
     "projectType": "library",
     "sourceRoot": "projects/eslint-plugin",
