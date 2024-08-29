@@ -1,103 +1,103 @@
 {
-    "name": "taiga-linters",
-    "version": "0.147.3",
-    "private": true,
-    "description": "",
-    "license": "Apache-2.0",
-    "workspaces": [
-        "projects/*"
+  "name": "taiga-linters",
+  "version": "0.147.3",
+  "private": true,
+  "description": "",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "projects/*"
+  ],
+  "scripts": {
+    "lint": "eslint . --config package.json",
+    "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
+    "format": "npm run prettier -- --write",
+    "commitlint": "npx commitlint --from=HEAD~1",
+    "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json",
+    "cspell": "cspell --relative --dot --gitignore .",
+    "version": "npm run format",
+    "submodule:update": "git submodule update --rebase --remote",
+    "submodule:reset": "git submodule | awk '{ git restore --staged $2 }' && git submodule update --init --recursive"
+  },
+  "commitlint": {
+    "extends": [
+      "@taiga-ui/commitlint-config"
+    ]
+  },
+  "prettier": "@taiga-ui/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "plugin:@taiga-ui/experience/all",
+      "plugin:@taiga-ui/experience/taiga-naming"
     ],
-    "scripts": {
-        "lint": "eslint . --config package.json",
-        "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
-        "format": "npm run prettier -- --write",
-        "commitlint": "npx commitlint --from=HEAD~1",
-        "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json",
-        "cspell": "cspell --relative --dot --gitignore .",
-        "version": "npm run format",
-        "submodule:update": "git submodule update --rebase --remote",
-        "submodule:reset": "git submodule | awk '{ git restore --staged $2 }' && git submodule update --init --recursive"
-    },
-    "commitlint": {
-        "extends": [
-            "@taiga-ui/commitlint-config"
-        ]
-    },
-    "prettier": "@taiga-ui/prettier-config",
-    "eslintConfig": {
-        "extends": [
-            "plugin:@taiga-ui/experience/all",
-            "plugin:@taiga-ui/experience/taiga-naming"
+    "overrides": [
+      {
+        "files": [
+          "./projects/**/*.js"
         ],
-        "overrides": [
+        "extends": [
+          "plugin:perfectionist/recommended-natural-legacy"
+        ],
+        "rules": {
+          "perfectionist/sort-objects": [
+            "error",
             {
-                "files": [
-                    "./projects/**/*.js"
-                ],
-                "extends": [
-                    "plugin:perfectionist/recommended-natural-legacy"
-                ],
-                "rules": {
-                    "perfectionist/sort-objects": [
-                        "error",
-                        {
-                            "type": "natural",
-                            "order": "asc",
-                            "partitionByComment": true,
-                            "groups": [
-                                "$schema",
-                                "id",
-                                "env",
-                                "files",
-                                "parser",
-                                "plugins",
-                                "extends",
-                                "unknown",
-                                "rules",
-                                "overrides"
-                            ],
-                            "customGroups": {
-                                "$schema": "$schema",
-                                "id": "id",
-                                "env": "env",
-                                "files": "files",
-                                "parser": "parser",
-                                "plugins": "plugins",
-                                "extends": "extends",
-                                "rules": "rules",
-                                "overrides": "overrides"
-                            }
-                        }
-                    ]
-                }
+              "type": "natural",
+              "order": "asc",
+              "partitionByComment": true,
+              "groups": [
+                "$schema",
+                "id",
+                "env",
+                "files",
+                "parser",
+                "plugins",
+                "extends",
+                "unknown",
+                "rules",
+                "overrides"
+              ],
+              "customGroups": {
+                "$schema": "$schema",
+                "id": "id",
+                "env": "env",
+                "files": "files",
+                "parser": "parser",
+                "plugins": "plugins",
+                "extends": "extends",
+                "rules": "rules",
+                "overrides": "overrides"
+              }
             }
-        ]
-    },
-    "stylelint": {
-        "extends": [
-            "@taiga-ui/stylelint-config"
-        ],
-        "ignoreFiles": [
-            "**/demo/**",
-            "**/dist/**",
-            "**/coverage/**",
-            "**/node_modules/**"
-        ]
-    },
-    "devDependencies": {
-        "@nx/jest": "19.6.3",
-        "@nx/node": "19.6.3",
-        "@nx/workspace": "19.6.3",
-        "@release-it-plugins/workspaces": "4.2.0",
-        "@release-it/conventional-changelog": "8.0.1",
-        "eslint-plugin-perfectionist": "3.3.0",
-        "nx": "19.6.3",
-        "release-it": "17.6.0",
-        "typescript": "5.3.3"
-    },
-    "engines": {
-        "node": ">= 16.14",
-        "npm": ">= 8.3",
-        "yarn": "Please use npm instead of yarn to install dependencies"
-    }
+          ]
+        }
+      }
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "@taiga-ui/stylelint-config"
+    ],
+    "ignoreFiles": [
+      "**/demo/**",
+      "**/dist/**",
+      "**/coverage/**",
+      "**/node_modules/**"
+    ]
+  },
+  "devDependencies": {
+    "@nx/jest": "19.6.4",
+    "@nx/node": "19.6.4",
+    "@nx/workspace": "19.6.4",
+    "@release-it-plugins/workspaces": "4.2.0",
+    "@release-it/conventional-changelog": "8.0.1",
+    "eslint-plugin-perfectionist": "3.3.0",
+    "nx": "19.6.4",
+    "release-it": "17.6.0",
+    "typescript": "5.3.3"
+  },
+  "engines": {
+    "node": ">= 16.14",
+    "npm": ">= 8.3",
+    "yarn": "Please use npm instead of yarn to install dependencies"
+  }
 }

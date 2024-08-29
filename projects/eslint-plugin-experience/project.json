@@ -1,15 +1,15 @@
 {
-    "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "name": "eslint-plugin-experience",
-    "prefix": "tui",
-    "projectType": "library",
-    "sourceRoot": "projects/eslint-plugin",
-    "targets": {
-        "publish": {
-            "executor": "nx:run-commands",
-            "options": {
-                "command": "npm publish ./projects/eslint-plugin-experience --access=public --ignore-scripts || echo \"already published\""
-            }
-        }
+  "name": "eslint-plugin-experience",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "prefix": "tui",
+  "projectType": "library",
+  "sourceRoot": "projects/eslint-plugin",
+  "targets": {
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm publish ./projects/eslint-plugin-experience --access=public --ignore-scripts || echo \"already published\""
+      }
     }
+  }
 }

@@ -1,29 +1,34 @@
 {
-    "$schema": "./node_modules/nx/schemas/nx-schema.json",
-    "defaultBase": "origin/main",
-    "namedInputs": {
-        "default": ["{projectRoot}/**/*", "sharedGlobals"],
-        "sharedGlobals": [
-            "{workspaceRoot}/package-lock.json",
-            "{workspaceRoot}/nx.json",
-            "{workspaceRoot}/tsconfig.*.json",
-            "{workspaceRoot}/tsconfig.json",
-            "{workspaceRoot}/*.yml",
-            "{workspaceRoot}/*.md"
-        ],
-        "production": ["default"]
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "origin/main",
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "sharedGlobals": [
+      "{workspaceRoot}/package-lock.json",
+      "{workspaceRoot}/nx.json",
+      "{workspaceRoot}/tsconfig.*.json",
+      "{workspaceRoot}/tsconfig.json",
+      "{workspaceRoot}/*.yml",
+      "{workspaceRoot}/*.md"
+    ],
+    "production": [
+      "default"
+    ]
+  },
+  "parallel": 1,
+  "targetDefaults": {
+    "test": {
+      "cache": true
     },
-    "parallel": 1,
-    "targetDefaults": {
-        "test": {
-            "cache": true
-        },
-        "build": {
-            "cache": true
-        }
-    },
-    "workspaceLayout": {
-        "libsDir": "projects",
-        "appsDir": "projects"
+    "build": {
+      "cache": true
     }
+  },
+  "workspaceLayout": {
+    "libsDir": "projects",
+    "appsDir": "projects"
+  }
 }

@@ -1,15 +1,15 @@
 {
-    "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "name": "commitlint-config",
-    "prefix": "tui",
-    "projectType": "library",
-    "sourceRoot": "projects/commitlint-config",
-    "targets": {
-        "publish": {
-            "executor": "nx:run-commands",
-            "options": {
-                "command": "npm publish ./projects/commitlint-config --access=public --ignore-scripts || echo \"already published\""
-            }
-        }
+  "name": "commitlint-config",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "prefix": "tui",
+  "projectType": "library",
+  "sourceRoot": "projects/commitlint-config",
+  "targets": {
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm publish ./projects/commitlint-config --access=public --ignore-scripts || echo \"already published\""
+      }
     }
+  }
 }
