@@ -106,8 +106,8 @@
         "typescript": "5.3.3"
     },
     "engines": {
-        "node": ">= 16.14",
-        "npm": ">= 8.3",
+        "node": ">=20",
+        "npm": ">=10",
         "yarn": "Please use npm instead of yarn to install dependencies"
     }
 }
