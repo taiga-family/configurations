@@ -640,7 +640,12 @@ module.exports = {
                             {
                                 group: ['@angular/**'],
                                 importNames: ['Inject'],
-                                message: 'Please use `inject(Type)` function instead.',
+                                message: 'Please use `inject(Type)` function instead',
+                            },
+                            {
+                                group: ['@taiga-ui/polymorpheus'],
+                                importNames: ['POLYMORPHEUS_CONTEXT'],
+                                message: 'Please use `injectContext()` function instead',
                             },
                         ],
                     },
