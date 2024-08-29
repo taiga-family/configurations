@@ -29,6 +29,7 @@
         ],
         "*.{js,ts,html,svg,yml,md,less,json}": [
             "prettier --write",
+            "eslint --fix",
             "cspell"
         ]
     },
