@@ -7,9 +7,9 @@
         "glob": "11.0.0"
     },
     "peerDependencies": {
-        "@angular-eslint/eslint-plugin": "^18.1.0",
-        "@angular-eslint/eslint-plugin-template": "^18.1.0",
-        "@angular-eslint/template-parser": "^18.1.0",
+        "@angular-eslint/eslint-plugin": "^18.3.0",
+        "@angular-eslint/eslint-plugin-template": "^18.3.0",
+        "@angular-eslint/template-parser": "^18.3.0",
         "@babel/eslint-parser": "^7.25.1",
         "@babel/eslint-plugin": "^7.25.1",
         "@stylistic/eslint-plugin": "^2.7.1",
