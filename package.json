@@ -23,6 +23,15 @@
             "@taiga-ui/commitlint-config"
         ]
     },
+    "lint-staged": {
+        "*.less": [
+            "stylelint --fix"
+        ],
+        "*.{js,ts,html,svg,yml,md,less,json}": [
+            "prettier --write",
+            "cspell"
+        ]
+    },
     "prettier": "@taiga-ui/prettier-config",
     "eslintConfig": {
         "extends": [
@@ -91,6 +100,7 @@
         "@release-it-plugins/workspaces": "4.2.0",
         "@release-it/conventional-changelog": "8.0.1",
         "eslint-plugin-perfectionist": "3.3.0",
+        "lint-staged": "15.2.9",
         "nx": "19.6.3",
         "release-it": "17.6.0",
         "typescript": "5.3.3"
