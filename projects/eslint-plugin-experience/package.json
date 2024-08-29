@@ -12,7 +12,7 @@
         "@angular-eslint/template-parser": "^18.1.0",
         "@babel/eslint-parser": "^7.25.1",
         "@babel/eslint-plugin": "^7.25.1",
-        "@stylistic/eslint-plugin": "^2.6.5",
+        "@stylistic/eslint-plugin": "^2.7.1",
         "@stylistic/eslint-plugin-js": "^2.6.5",
         "@stylistic/eslint-plugin-plus": "^2.6.5",
         "@stylistic/eslint-plugin-ts": "^2.6.5",
