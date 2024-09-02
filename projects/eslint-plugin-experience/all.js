@@ -903,6 +903,7 @@ module.exports = {
                 'jest/prefer-expect-assertions': 'off',
                 'jest/prefer-expect-resolves': 'off',
                 'jest/prefer-hooks-on-top': 'off',
+                'sonarjs/no-clear-text-protocols': 'off',
                 /**
                  * If enabled we have
                  * Expected to be running in 'ProxyZone', but it was not found
@@ -1062,6 +1063,7 @@ module.exports = {
                 'sonarjs/function-return-type': 'off',
                 'sonarjs/max-switch-cases': 'off',
                 'sonarjs/new-cap': 'off',
+                'sonarjs/no-angular-bypass-sanitization': 'off',
                 'sonarjs/no-commented-code': 'off',
                 'sonarjs/no-duplicate-string': 'off',
                 'sonarjs/no-empty-function': 'off',
