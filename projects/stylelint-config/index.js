@@ -39,7 +39,12 @@ module.exports = {
                 severity: 'error',
             },
         ],
-        'color-function-notation': 'legacy',
+        'color-function-notation': [
+            'modern',
+            {
+                ignore: ['with-var-inside'],
+            },
+        ],
         'color-hex-length': [
             'short',
             {
