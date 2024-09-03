@@ -327,7 +327,8 @@ module.exports = {
         'selector-type-no-unknown': [
             true,
             {
-                ignore: ['app', 'my-app', 'proprietary-app'],
+                ignore: ['custom-elements', 'default-namespace'],
+                ignoreNamespaces: ['/^my-/', /app/],
                 ignoreTypes: ['/^/deep/'],
             },
         ],
