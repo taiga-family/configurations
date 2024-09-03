@@ -1072,6 +1072,7 @@ module.exports = {
                 'sonarjs/no-misused-promises': 'off',
                 'sonarjs/no-nested-functions': 'off',
                 'sonarjs/no-nested-template-literals': 'off',
+                'sonarjs/no-os-command-from-path': 'off',
                 'sonarjs/os-command': 'off',
                 'sonarjs/prefer-function-type': 'off',
                 'sonarjs/pseudo-random': 'off',
