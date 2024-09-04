@@ -6,10 +6,10 @@ module.exports = {
     customSyntax: 'postcss-less',
     defaultSeverity: 'error',
     ignoreFiles: [
-        '**/dist/**',
-        '**/coverage/**',
-        '**/node_modules/**',
-        '**/tests-report/**',
+        `${process.cwd()}/**/dist/**`,
+        `${process.cwd()}/**/coverage/**`,
+        `${process.cwd()}/**/node_modules/**`,
+        `${process.cwd()}/**/tests-report/**`,
     ],
     rules: {
         'alpha-value-notation': 'number',
