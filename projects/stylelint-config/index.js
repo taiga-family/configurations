@@ -5,6 +5,12 @@ module.exports = {
     allowEmptyInput: true,
     customSyntax: 'postcss-less',
     defaultSeverity: 'error',
+    ignoreFiles: [
+        '**/dist/**',
+        '**/coverage/**',
+        '**/node_modules/**',
+        '**/tests-report/**',
+    ],
     rules: {
         'alpha-value-notation': 'number',
         'annotation-no-unknown': [
