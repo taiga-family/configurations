@@ -12,7 +12,12 @@ module.exports = {
         `${process.cwd()}/**/tests-report/**`,
     ],
     rules: {
-        'alpha-value-notation': 'percentage',
+        'alpha-value-notation': [
+            'percentage',
+            {
+                exceptProperties: ['opacity'],
+            },
+        ],
         'annotation-no-unknown': [
             true,
             {
