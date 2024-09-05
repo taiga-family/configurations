@@ -504,6 +504,8 @@
         "contentalign",
         "css",
         "csstools",
-        "Tramvai"
+        "Tramvai",
+        "inputpassword",
+        "inputcopy"
     ]
 }
