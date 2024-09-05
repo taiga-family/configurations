@@ -11,8 +11,8 @@ module.exports = function isSupportedClass(node) {
         'Component',
         'Directive',
         'Injectable',
-        'Pipe',
         'NgModule',
+        'Pipe',
     ]);
 
     const isAngularEntity = (node.decorators || []).some(({expression}) =>

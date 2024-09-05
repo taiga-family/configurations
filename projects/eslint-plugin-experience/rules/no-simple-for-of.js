@@ -18,10 +18,10 @@ module.exports = {
                         node,
                         new Set([
                             'AwaitExpression',
-                            'YieldExpression',
                             'BreakStatement',
                             'ContinueStatement',
                             'ReturnStatement',
+                            'YieldExpression',
                         ]),
                     );
 
