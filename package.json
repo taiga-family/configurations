@@ -100,7 +100,6 @@
         "@nx/workspace": "19.6.5",
         "@release-it-plugins/workspaces": "4.2.0",
         "@release-it/conventional-changelog": "8.0.1",
-        "eslint-plugin-perfectionist": "3.4.0",
         "lint-staged": "15.2.10",
         "nx": "19.6.5",
         "release-it": "17.6.0",

@@ -10,6 +10,15 @@ const parserOptions = tsconfig
           },
       };
 
+let isModernAngular = false;
+
+try {
+    // @ts-ignore
+    const major = require('@angular/cli').VERSION.major;
+
+    isModernAngular = parseInt(major, 10) >= 17;
+} catch {}
+
 /**
  * @type {import('eslint').Linter.Config}
  */
@@ -115,10 +124,12 @@ module.exports = {
                 'node-import',
                 'unused-imports',
                 'sonarjs',
+                'perfectionist',
                 '@stylistic',
                 '@stylistic/js',
                 '@stylistic/ts',
                 '@stylistic/plus',
+                '@angular-eslint/eslint-plugin',
             ],
             extends: [
                 'eslint-config-airbnb-base',
@@ -140,7 +151,22 @@ module.exports = {
                 ...parserOptions,
             },
             rules: {
+                '@angular-eslint/contextual-decorator': 'error',
+                '@angular-eslint/contextual-lifecycle': 'error',
+                '@angular-eslint/directive-selector': 'error',
+                '@angular-eslint/no-attribute-decorator': 'error',
+                '@angular-eslint/no-conflicting-lifecycle': 'error',
+                '@angular-eslint/no-empty-lifecycle-method': 'error',
+                '@angular-eslint/no-input-prefix': 'error',
+                '@angular-eslint/no-output-on-prefix': 'error',
+                '@angular-eslint/no-queries-metadata-property': 'error',
+                '@angular-eslint/prefer-on-push-component-change-detection': 'error',
+                '@angular-eslint/prefer-output-readonly': 'error',
+                '@angular-eslint/prefer-standalone': 'error',
+                '@angular-eslint/relative-url-prefix': 'error',
                 '@angular-eslint/sort-lifecycle-methods': 'error',
+                '@angular-eslint/use-lifecycle-interface': 'error',
+                '@angular-eslint/use-pipe-transform-interface': 'error',
                 '@stylistic/padding-line-between-statements': [
                     'error',
                     {blankLine: 'always', next: 'block', prev: '*'},
@@ -753,6 +779,48 @@ module.exports = {
                 'no-var': 'error',
                 'no-void': ['error', {allowAsStatement: true}],
                 'node-import/prefer-node-protocol': 'error',
+                'perfectionist/sort-array-includes': [
+                    'error',
+                    {
+                        groupKind: 'literals-first',
+                        ignoreCase: true,
+                        order: 'asc',
+                        type: 'alphabetical',
+                    },
+                ],
+                'perfectionist/sort-maps': [
+                    'error',
+                    {
+                        ignoreCase: true,
+                        order: 'asc',
+                        type: 'alphabetical',
+                    },
+                ],
+                'perfectionist/sort-sets': [
+                    'error',
+                    {
+                        groupKind: 'literals-first',
+                        ignoreCase: true,
+                        order: 'asc',
+                        type: 'alphabetical',
+                    },
+                ],
+                'perfectionist/sort-switch-case': [
+                    'error',
+                    {
+                        ignoreCase: true,
+                        order: 'asc',
+                        type: 'alphabetical',
+                    },
+                ],
+                'perfectionist/sort-variable-declarations': [
+                    'error',
+                    {
+                        ignoreCase: true,
+                        order: 'asc',
+                        type: 'alphabetical',
+                    },
+                ],
                 'prefer-template': 'error',
                 'prettier/prettier': [
                     'error',
@@ -825,33 +893,6 @@ module.exports = {
         },
         {
             files: [
-                '*.component.ts',
-                '*.service.ts',
-                '*.directive.ts',
-                '*.pipe.ts',
-                '*.module.ts',
-            ],
-            parser: '@typescript-eslint/parser',
-            plugins: ['@angular-eslint/eslint-plugin'],
-            rules: {
-                '@angular-eslint/contextual-decorator': 'error',
-                '@angular-eslint/contextual-lifecycle': 'error',
-                '@angular-eslint/directive-selector': 'error',
-                '@angular-eslint/no-attribute-decorator': 'error',
-                '@angular-eslint/no-conflicting-lifecycle': 'error',
-                '@angular-eslint/no-empty-lifecycle-method': 'error',
-                '@angular-eslint/no-input-prefix': 'error',
-                '@angular-eslint/no-output-on-prefix': 'error',
-                '@angular-eslint/no-queries-metadata-property': 'error',
-                '@angular-eslint/prefer-on-push-component-change-detection': 'error',
-                '@angular-eslint/prefer-output-readonly': 'error',
-                '@angular-eslint/relative-url-prefix': 'error',
-                '@angular-eslint/use-lifecycle-interface': 'error',
-                '@angular-eslint/use-pipe-transform-interface': 'error',
-            },
-        },
-        {
-            files: [
                 '*.spec.*',
                 '*.cy.*',
                 '*.test.*',
@@ -889,6 +930,7 @@ module.exports = {
             parser: '@typescript-eslint/parser',
             extends: ['plugin:jest/all'],
             rules: {
+                '@angular-eslint/prefer-on-push-component-change-detection': 'off',
                 'jest/expect-expect': 'off',
                 'jest/max-expects': 'off',
                 'jest/max-nested-describe': 'off',
@@ -960,9 +1002,20 @@ module.exports = {
             parser: '@angular-eslint/template-parser',
             extends: ['plugin:@angular-eslint/template/process-inline-templates'],
             rules: {
+                '@angular-eslint/template/alt-text': 'error',
                 '@angular-eslint/template/banana-in-box': 'error',
+                '@angular-eslint/template/button-has-type': 'error',
+                '@angular-eslint/template/eqeqeq': [
+                    'error',
+                    {
+                        allowNullOrUndefined: true,
+                    },
+                ],
                 '@angular-eslint/template/no-distracting-elements': 'error',
                 '@angular-eslint/template/no-duplicate-attributes': 'error',
+                '@angular-eslint/template/prefer-control-flow': isModernAngular
+                    ? 'error'
+                    : 'off',
                 '@angular-eslint/template/prefer-self-closing-tags': 'error',
                 '@angular-eslint/template/table-scope': 'error',
             },
@@ -984,6 +1037,7 @@ module.exports = {
                 '@angular-eslint/no-outputs-metadata-property': 'off',
                 '@angular-eslint/no-pipe-impure': 'off',
                 '@angular-eslint/sort-ngmodule-metadata-arrays': 'off',
+                '@angular-eslint/template/click-events-have-key-events': 'off',
                 '@angular-eslint/use-component-selector': 'off',
                 '@angular-eslint/use-component-view-encapsulation': 'off',
                 '@angular-eslint/use-injectable-provided-in': 'off',
