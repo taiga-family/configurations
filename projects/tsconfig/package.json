@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/tsconfig",
-    "version": "0.159.1",
+    "version": "0.160.0",
     "description": "Taiga UI tsconfig",
     "keywords": [
         "taiga-ui",

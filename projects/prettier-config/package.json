@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/prettier-config",
-    "version": "0.159.1",
+    "version": "0.160.0",
     "description": "Taiga-ui prettier config",
     "keywords": [
         "prettier",
