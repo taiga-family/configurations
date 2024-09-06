@@ -355,12 +355,7 @@ module.exports = {
                 severity: 'error',
             },
         ],
-        'time-min-milliseconds': [
-            true,
-            {
-                ignore: ['delay'],
-            },
-        ],
+        'time-min-milliseconds': null,
         'unit-allowed-list': [
             'px',
             'rem',
