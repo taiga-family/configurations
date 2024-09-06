@@ -217,7 +217,7 @@ module.exports = {
                 severity: 'error',
             },
         ],
-        'no-duplicate-selectors': null,
+        'no-duplicate-selectors': true,
         'no-empty-source': [
             true,
             {
