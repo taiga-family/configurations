@@ -201,7 +201,7 @@ module.exports = {
         'selector-type-no-unknown': [
             true,
             {
-                ignoreTypes: ['/^tui-/'],
+                ignoreTypes: ['/^tui-/', '/^my-/', '/^app$/'],
             },
         ],
         'shorthand-property-no-redundant-values': true,
