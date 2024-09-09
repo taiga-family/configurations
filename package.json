@@ -95,13 +95,13 @@
         ]
     },
     "devDependencies": {
-        "@nx/jest": "19.6.6",
-        "@nx/node": "19.6.6",
-        "@nx/workspace": "19.6.6",
+        "@nx/jest": "19.7.0",
+        "@nx/node": "19.7.0",
+        "@nx/workspace": "19.7.0",
         "@release-it-plugins/workspaces": "4.2.0",
         "@release-it/conventional-changelog": "8.0.1",
         "lint-staged": "15.2.10",
-        "nx": "19.6.6",
+        "nx": "19.7.0",
         "release-it": "17.6.0",
         "typescript": "5.5.4"
     },
