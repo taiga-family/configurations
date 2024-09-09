@@ -19,7 +19,14 @@ module.exports = {
             },
         ],
         'annotation-no-unknown': true,
-        'at-rule-allowed-list': ['extend', 'keyframes', 'import', 'media', 'supports'],
+        'at-rule-allowed-list': [
+            'extend',
+            'keyframes',
+            'import',
+            'media',
+            'supports',
+            'font-face',
+        ],
         'at-rule-empty-line-before': [
             'always',
             {
@@ -201,7 +208,7 @@ module.exports = {
         'selector-type-no-unknown': [
             true,
             {
-                ignoreTypes: ['/^tui-/', '/^my-/', '/^app$/'],
+                ignoreTypes: ['/^tui-/', '/^my-/', '/^cdk-/', '/^app$/'],
             },
         ],
         'shorthand-property-no-redundant-values': true,
