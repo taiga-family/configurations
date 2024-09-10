@@ -539,7 +539,8 @@ module.exports = {
                     'error',
                     {
                         allowShortCircuit: true,
-                        allowTernary: true,
+                        allowTaggedTemplates: false,
+                        allowTernary: false,
                     },
                 ],
                 '@typescript-eslint/no-unused-vars': ['error', {argsIgnorePattern: '^_'}],
