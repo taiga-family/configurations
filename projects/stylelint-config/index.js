@@ -105,7 +105,7 @@ module.exports = {
         'function-no-unknown': [
             true,
             {
-                ignoreFunctions: ['fade'],
+                ignoreFunctions: ['fade', 'lighten', 'darken'],
             },
         ],
         'function-url-no-scheme-relative': true,
@@ -208,7 +208,7 @@ module.exports = {
         'selector-type-no-unknown': [
             true,
             {
-                ignoreTypes: ['/^tui-/', '/^my-/', '/^cdk-/', '/^app$/'],
+                ignoreTypes: ['/^tui-/', '/^my-/', '/^cdk-/', '/^app$/', /^markdown$/],
             },
         ],
         'shorthand-property-no-redundant-values': true,
