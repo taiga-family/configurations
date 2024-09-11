@@ -208,7 +208,14 @@ module.exports = {
         'selector-type-no-unknown': [
             true,
             {
-                ignoreTypes: ['/^tui-/', '/^my-/', '/^cdk-/', '/^app-/', /^markdown$/],
+                ignoreTypes: [
+                    /^app$/,
+                    /^markdown$/,
+                    '/^my-/',
+                    '/^cdk-/',
+                    '/^app-/',
+                    '/^tui-/',
+                ],
             },
         ],
         'shorthand-property-no-redundant-values': true,
