@@ -1106,6 +1106,7 @@ module.exports = {
                 'sonarjs/no-invalid-await': 'off',
                 'sonarjs/no-misleading-array-reverse': 'off',
                 'sonarjs/no-misused-promises': 'off',
+                'sonarjs/no-nested-conditional': 'off',
                 'sonarjs/no-nested-functions': 'off',
                 'sonarjs/no-nested-template-literals': 'off',
                 'sonarjs/no-os-command-from-path': 'off',
