@@ -38,7 +38,7 @@ module.exports = {
         'at-rule-no-vendor-prefix': true,
         'block-no-empty': true,
         'color-function-notation': [
-            'modern',
+            'legacy',
             {
                 ignore: ['with-var-inside'],
             },
