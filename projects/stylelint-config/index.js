@@ -13,7 +13,7 @@ module.exports = {
     ],
     rules: {
         'alpha-value-notation': [
-            'percentage',
+            'number',
             {
                 exceptProperties: ['opacity'],
             },
