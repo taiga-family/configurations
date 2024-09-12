@@ -1088,6 +1088,7 @@ module.exports = {
                 'promise/no-callback-in-promise': 'off',
                 'promise/no-nesting': 'off',
                 quotes: 'off',
+                'react/no-is-mounted': 'off',
                 'require-await': 'off',
                 'rxjs/no-ignored-takewhile-value': 'off',
                 'rxjs/no-nested-subscribe': 'off',
