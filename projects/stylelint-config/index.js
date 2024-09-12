@@ -12,12 +12,7 @@ module.exports = {
         `${process.cwd()}/**/tests-report/**`,
     ],
     rules: {
-        'alpha-value-notation': [
-            'number',
-            {
-                exceptProperties: ['opacity'],
-            },
-        ],
+        'alpha-value-notation': 'number',
         'annotation-no-unknown': true,
         'at-rule-allowed-list': [
             'extend',
