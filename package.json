@@ -7,7 +7,7 @@
         "projects/*"
     ],
     "scripts": {
-        "postbump": "npx nx run-many --target publish --all --output-style=stream"
+        "postbump": "npx nx run-many --target publish --all --output-style=stream --parallel=false"
     },
     "commitlint": {
         "extends": [

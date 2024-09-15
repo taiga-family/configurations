@@ -1,14 +1,14 @@
 {
-    "name": "stylelint-config",
+    "name": "release-it-config",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "prefix": "tui",
     "projectType": "library",
-    "sourceRoot": "projects/stylelint-config",
+    "sourceRoot": "projects/release-it-config",
     "targets": {
         "publish": {
             "executor": "nx:run-commands",
             "options": {
-                "command": "npm publish ./projects/{projectName} --access=public --ignore-scripts || echo \"already published\""
+                "command": "npm publish ./projects/{projectName} --access=public --ignore-scripts"
             }
         }
     }
