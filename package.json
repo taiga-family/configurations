@@ -7,6 +7,10 @@
         "projects/*"
     ],
     "scripts": {
+        "lint": "eslint . --config package.json",
+        "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
+        "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json",
+        "cspell": "cspell --relative --dot --gitignore .",
         "postbump": "npx nx run-many --target publish --all --output-style=stream --parallel=false"
     },
     "commitlint": {
