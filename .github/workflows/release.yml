@@ -1,10 +1,21 @@
 name: ⚠️ Release
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        description: Bump version as requested
+        required: false
+        default: minor
+        options:
+          - patch
+          - minor
+          - major
   push:
     branches: [main]
     paths:
       - 'projects/**'
+
 jobs:
   run-release:
     name: Release
@@ -25,6 +36,6 @@ jobs:
         with:
           token: ${{ secrets.TAIGA_UI_SCOPE_NPM_TOKEN }}
 
-      - run: npx release-it minor --ci
+      - run: npx release-it ${{ github.event.inputs.mode }} --ci
         env:
           GITHUB_TOKEN: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
