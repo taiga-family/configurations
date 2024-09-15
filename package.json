@@ -1,22 +1,12 @@
 {
     "name": "taiga-linters",
-    "version": "0.174.3",
+    "version": "0.175.0",
     "private": true,
-    "description": "",
     "license": "Apache-2.0",
     "workspaces": [
         "projects/*"
     ],
     "scripts": {
-        "lint": "eslint . --config package.json",
-        "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
-        "format": "npm run prettier -- --write",
-        "commitlint": "npx commitlint --from=HEAD~1",
-        "stylelint": "stylelint '**/*.{less,css}' --allow-empty-input --config package.json",
-        "cspell": "cspell --relative --dot --gitignore .",
-        "version": "npm run format",
-        "submodule:update": "git submodule update --rebase --remote",
-        "submodule:reset": "git submodule | awk '{ git restore --staged $2 }' && git submodule update --init --recursive",
         "postbump": "npx nx run-many --target publish --all --output-style=stream"
     },
     "commitlint": {
@@ -96,17 +86,10 @@
         ]
     },
     "devDependencies": {
-        "@nx/jest": "19.7.3",
-        "@nx/node": "19.7.3",
         "@nx/workspace": "19.7.3",
         "lint-staged": "15.2.10",
         "nx": "19.7.3",
         "typescript": "5.5.4"
-    },
-    "engines": {
-        "node": ">=20",
-        "npm": ">=10",
-        "yarn": "Please use npm instead of yarn to install dependencies"
     },
     "cspell": {
         "import": [
