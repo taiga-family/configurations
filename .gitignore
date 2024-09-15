@@ -1,7 +1,9 @@
-*.log
 **/node_modules/**
-.gitignore
-.idea
+
+# Cache
 **/.angular
 **/.nx
-/taiga-ui/
+
+# IDEA
+.idea
+*.log

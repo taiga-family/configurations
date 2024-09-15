@@ -1,0 +1,20 @@
+{
+    "name": "@taiga-ui/release-it-config",
+    "version": "0.174.3",
+    "description": "Taiga UI release-it config",
+    "keywords": [
+        "release-it"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/taiga-family/linters.git"
+    },
+    "license": "Apache-2.0",
+    "main": "index.js",
+    "peerDependencies": {
+        "release-it": "17.6.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

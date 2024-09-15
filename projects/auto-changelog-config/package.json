@@ -1,0 +1,20 @@
+{
+    "name": "@taiga-ui/auto-changelog-config",
+    "version": "0.174.3",
+    "description": "Taiga UI auto-changelog config",
+    "keywords": [
+        "auto-changelog"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/taiga-family/linters.git"
+    },
+    "license": "Apache-2.0",
+    "main": "index.json",
+    "peerDependencies": {
+        "auto-changelog": "2.5.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

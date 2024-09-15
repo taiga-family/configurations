@@ -15,17 +15,3 @@ npm i --save-dev @taiga-ui/prettier-config
 ```js
 module.exports = require('@taiga-ui/prettier-config');
 ```
-
-More information about available at
-[prettier documentation](https://prettier.io/docs/en/configuration.html#sharing-configurations)
-
-### Available presets
-
-- **angular**
-
-```json5
-{
-  // ...
-  prettier: '@taiga-ui/prettier-config/angular',
-}
-```

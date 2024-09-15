@@ -11,19 +11,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: taiga-family/ci/actions/setup/checkout@v1.73.1
-        with:
-          fetch-depth: 0
       - uses: taiga-family/ci/actions/setup/variables@v1.73.1
       - uses: taiga-family/ci/actions/setup/node@v1.73.1
+      - run: npm run commitlint
+      - run: npm run cspell -- --no-progress
       - run: |
-          npm run commitlint
-          npm run prettier -- --check
-          npm run cspell -- --no-progress
-          npm run stylelint
-          npm run lint
-
-      - run: |
-          npx nx run-many --target build --all
+          if [[ "${{ env.SUPPORT_AUTO_PUSH }}" == "true" ]]; then
+              npm run stylelint -- --fix
+              npm run prettier -- --write
+              npm run lint -- --fix
+          else
+              npm run stylelint
+              npm run prettier -- --check
+              npm run lint
+          fi
+      - uses: taiga-family/ci/actions/auto/push@v1.73.1
+        with:
+          token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}

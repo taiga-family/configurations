@@ -16,7 +16,8 @@
         "cspell": "cspell --relative --dot --gitignore .",
         "version": "npm run format",
         "submodule:update": "git submodule update --rebase --remote",
-        "submodule:reset": "git submodule | awk '{ git restore --staged $2 }' && git submodule update --init --recursive"
+        "submodule:reset": "git submodule | awk '{ git restore --staged $2 }' && git submodule update --init --recursive",
+        "postbump": "npx nx run-many --target publish --all --output-style=stream"
     },
     "commitlint": {
         "extends": [
@@ -98,16 +99,21 @@
         "@nx/jest": "19.7.3",
         "@nx/node": "19.7.3",
         "@nx/workspace": "19.7.3",
-        "@release-it-plugins/workspaces": "4.2.0",
-        "@release-it/conventional-changelog": "8.0.2",
         "lint-staged": "15.2.10",
         "nx": "19.7.3",
-        "release-it": "17.6.0",
         "typescript": "5.5.4"
     },
     "engines": {
         "node": ">=20",
         "npm": ">=10",
         "yarn": "Please use npm instead of yarn to install dependencies"
+    },
+    "cspell": {
+        "import": [
+            "@taiga-ui/cspell-config/cspell.config.js"
+        ],
+        "files": [
+            "*/*.*"
+        ]
     }
 }
