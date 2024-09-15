@@ -15,6 +15,7 @@ module.exports = {
         'after:bump': [
             `npx auto-changelog -c ${changelogConfig} -p`,
             'npx prettier CHANGELOG.md --write',
+            'git add CHANGELOG.md',
             'npm run postbump',
         ],
         'after:release':

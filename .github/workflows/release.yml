@@ -36,6 +36,6 @@ jobs:
         with:
           token: ${{ secrets.TAIGA_UI_SCOPE_NPM_TOKEN }}
 
-      - run: npx release-it ${{ github.event.inputs.mode }} --ci
+      - run: npx release-it ${{ github.event.inputs.mode || 'minor' }} --ci
         env:
           GITHUB_TOKEN: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
