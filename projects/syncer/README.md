@@ -10,7 +10,13 @@
   "syncer": {
     "includePaths": ["./projects", "./package-lock.json"],
     "matchPackageNames": ["@my-scope-ui/*", "root-project"],
-    "ignorePackageNames": []
+    "ignorePackageNames": ["@my-scope-ui/ignore-my-package"]
   }
 }
+```
+
+Then try update
+
+```bash
+$ npx syncer
 ```
