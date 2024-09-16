@@ -507,6 +507,8 @@
         "Tramvai",
         "inputpassword",
         "inputcopy",
-        "sber"
+        "sber",
+        "syncer",
+        "prebump"
     ]
 }
