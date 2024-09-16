@@ -1,0 +1,26 @@
+{
+    "name": "@taiga-ui/syncer",
+    "version": "0.177.0",
+    "description": "Taiga UI CLI tool for sync version in npm workspaces",
+    "keywords": [
+        "sync version"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/taiga-family/linters.git"
+    },
+    "license": "Apache-2.0",
+    "main": "./bin/src/index.js",
+    "bin": {
+        "syncer": "./bin/src/index.js"
+    },
+    "dependencies": {
+        "glob": "11.0.0"
+    },
+    "peerDependencies": {
+        "glob": "*"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

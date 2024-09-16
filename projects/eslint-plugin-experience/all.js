@@ -19,9 +19,6 @@ try {
     isModernAngular = parseInt(major, 10) >= 17;
 } catch {}
 
-/**
- * @type {import('eslint').Linter.Config}
- */
 module.exports = {
     env: {
         browser: true,
@@ -69,6 +66,7 @@ module.exports = {
         '**/*.d.ts',
         '**/dist/**',
         '**/docs/**',
+        '**/bin/**',
         '.cache/**',
         '.git/**',
         '.idea/**',

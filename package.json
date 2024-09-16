@@ -1,6 +1,6 @@
 {
     "name": "taiga-linters",
-    "version": "0.175.1",
+    "version": "0.177.0",
     "private": true,
     "license": "Apache-2.0",
     "workspaces": [
@@ -11,7 +11,8 @@
         "prettier": "prettier !package-lock.json . --ignore-path .gitignore",
         "cspell": "cspell --relative --dot --gitignore .",
         "lint": "eslint . --config package.json",
-        "postbump": "npx nx run-many --target publish --all"
+        "prebump": "npx nx build syncer && node projects/syncer/bin/src/index.js",
+        "bump": "npx nx run-many --target publish --all"
     },
     "commitlint": {
         "extends": [
@@ -102,5 +103,16 @@
         "files": [
             "*/*.*"
         ]
+    },
+    "syncer": {
+        "includePaths": [
+            "./projects",
+            "./package-lock.json"
+        ],
+        "matchPackageNames": [
+            "@taiga-ui/*",
+            "taiga-linters"
+        ],
+        "ignorePackageNames": []
     }
 }
