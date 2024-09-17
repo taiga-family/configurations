@@ -849,7 +849,6 @@ module.exports = {
                         markers: ['/'],
                     },
                 ],
-                'unicorn/consistent-destructuring': 'error',
                 'unicorn/consistent-empty-array-spread': 'error',
                 'unicorn/escape-case': 'error',
                 'unicorn/filename-case': [
