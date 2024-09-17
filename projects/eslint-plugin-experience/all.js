@@ -1119,6 +1119,7 @@ module.exports = {
                 'sonarjs/todo-tag': 'off',
                 'sonarjs/use-type-alias': 'off',
                 'sonarjs/x-powered-by': 'off',
+                'unicorn/consistent-destructuring': 'off',
                 'unicorn/no-anonymous-default-export': 'off',
                 'unicorn/no-unsafe-regex': 'off',
             },
