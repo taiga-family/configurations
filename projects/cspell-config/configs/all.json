@@ -483,7 +483,6 @@
         "docstrings",
         "sweepai",
         "cardnumber",
-        "Acpekt",
         "timecode",
         "johndoe",
         "dadata",
@@ -509,6 +508,9 @@
         "inputcopy",
         "sber",
         "syncer",
-        "prebump"
+        "prebump",
+        "WHATWG",
+        "docsearch",
+        "algolia"
     ]
 }
