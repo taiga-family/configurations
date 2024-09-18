@@ -10,12 +10,12 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: taiga-family/ci/actions/setup/checkout@v1.76.0
+      - uses: taiga-family/ci/actions/setup/checkout@v1.77.0
         with:
           fetch-depth: 0
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
-      - uses: taiga-family/ci/actions/setup/variables@v1.76.0
-      - uses: taiga-family/ci/actions/setup/node@v1.76.0
+      - uses: taiga-family/ci/actions/setup/variables@v1.77.0
+      - uses: taiga-family/ci/actions/setup/node@v1.77.0
       - run: npm run cspell -- --no-progress
       - run: |
           if [[ "${{ env.SUPPORT_AUTO_PUSH }}" == "true" ]]; then
@@ -27,7 +27,7 @@ jobs:
               npm run prettier -- --check
               npm run lint
           fi
-      - uses: taiga-family/ci/actions/auto/push@v1.76.0
+      - uses: taiga-family/ci/actions/auto/push@v1.77.0
         with:
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
 
