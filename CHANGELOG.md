@@ -1,5 +1,12 @@
 ### 🚀 Features
 
+- add new word
+  [(f29d86d)](https://github.com/taiga-family/configurations/commit/f29d86df25740de34dd27aadfc300d120125741d)
+
+### [0.192.0](https://github.com/taiga-family/configurations/compare/v0.191.0...v0.192.0) (2024-09-18)
+
+### 🚀 Features
+
 - use header for CHANGELOG file
   [(602f931)](https://github.com/taiga-family/configurations/commit/602f931ac457ba733ace442753cba6cac7a1a69b)
 
