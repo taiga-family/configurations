@@ -9,7 +9,6 @@ const changelog = `npx auto-changelog -c ${path}/index.json --handlebars-setup $
 module.exports = {
     git: {
         addUntrackedFiles: true,
-        commitArgs: ['-S'],
         commitMessage: 'chore(release): v${version}',
         pushArgs: ['--follow-tags'],
         requireBranch: 'main',
@@ -29,7 +28,7 @@ module.exports = {
         'after:bump': [
             'git tag v${version}',
             'echo "new version is v${version}"',
-            `${changelog} --template ${path}/templates/changelog.hbs -p`,
+            `${changelog} --template ${path}/templates/changelog.hbs -p > /dev/null`,
             'npx prettier CHANGELOG.md --write || echo "Missing prettier step"',
             'git add CHANGELOG.md',
             'npm run bump || echo "Missing bump step"',
