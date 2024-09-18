@@ -1,4 +1,6 @@
-const changelogConfig = require.resolve('@taiga-ui/auto-changelog-config');
+const path = require('node:path').resolve('@taiga-ui/auto-changelog-config');
+
+const changelog = `npx auto-changelog -c ${path}/index.json --template ${path}/changelog-template.hbs --handlebars-setup ${path}/setup.js`;
 
 /* eslint-disable no-template-curly-in-string */
 module.exports = {
@@ -9,11 +11,11 @@ module.exports = {
     },
     github: {
         release: true,
-        releaseNotes: `npx auto-changelog -c ${changelogConfig} --unreleased-only --stdout`,
+        releaseNotes: `${changelog} --unreleased-only --stdout`,
     },
     hooks: {
         'after:bump': [
-            `npx auto-changelog -c ${changelogConfig} -p`,
+            `${changelog} -p`,
             'npx prettier CHANGELOG.md --write',
             'git add CHANGELOG.md',
             'npm run bump || echo "Missing script"',

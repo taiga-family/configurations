@@ -3,6 +3,7 @@
 # Cache
 **/.angular
 **/.nx
+**/bin
 
 # IDEA
 .idea

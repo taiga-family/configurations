@@ -1,0 +1,28 @@
+{{! prettier-ignore }}
+# Changelog
+{{! prettier-ignore }}
+All notable changes to this project will be documented in this file. See
+[standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+{{! prettier-ignore }}
+{{#each releases}}
+    ##{{#unless major}}#{{/unless}} [{{#replaceTitle}}{{title}}{{/replaceTitle}}]({{href}}) ({{isoDate}})
+
+  {{#if summary}}
+    {{summary}}
+  {{/if}}
+
+  {{#commit-list commits heading='### ⚠ BREAKING CHANGES' message='[bB]reaking [cC]hange:|[bB]reaking:' }}
+    - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
+  {{/commit-list}}
+
+      {{#commit-list commits heading='### 🚀 Features' message='^[fF]eat:|[fF]eat\(|^[rR]efactor:|^[rR]efactor\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
+       {{! prettier-ignore }}
+        - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
+      {{/commit-list}}
+
+      {{#commit-list commits heading='### 🐞 Bug Fixes' message='^[fF]ix:|^[fF]ix\(|^[pP]erf:|^[pP]erf\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
+        - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
+      {{/commit-list}}
+
+{{/each}}
