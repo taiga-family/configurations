@@ -212,6 +212,7 @@ module.exports = {
                             'imports',
                             'template',
                             'templateUrl',
+                            'styleUrl',
                             'styleUrls',
                             'styles',
                             'encapsulation',
