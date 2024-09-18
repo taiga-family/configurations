@@ -1,3 +1,15 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See
+[standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 🚀 Features
+
+- decompose templates
+  [(17c1fba)](https://github.com/taiga-family/configurations/commit/17c1fba96f961b9dc603035c5ca1aadfcd34a8c2)
+
+### [0.193.0](https://github.com/taiga-family/configurations/compare/v0.192.0...v0.193.0) (2024-09-18)
+
 ### 🚀 Features
 
 - add new word
