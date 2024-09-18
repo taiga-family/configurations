@@ -512,6 +512,7 @@
         "WHATWG",
         "docsearch",
         "algolia",
-        "shorthash"
+        "shorthash",
+        "ifeq"
     ]
 }
