@@ -1,4 +1,7 @@
-const path = require('node:path').resolve('@taiga-ui/auto-changelog-config');
+const path = require('node:path').resolve(
+    process.cwd(),
+    'node_modules/@taiga-ui/auto-changelog-config',
+);
 
 const changelog = `npx auto-changelog -c ${path}/index.json --template ${path}/changelog-template.hbs --handlebars-setup ${path}/setup.js`;
 
