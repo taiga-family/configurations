@@ -8,8 +8,12 @@ const changelog = `npx auto-changelog -c ${path}/index.json --handlebars-setup $
 /* eslint-disable no-template-curly-in-string */
 module.exports = {
     git: {
+        addUntrackedFiles: true,
+        commitArgs: ['-S'],
         commitMessage: 'chore(release): v${version}',
+        pushArgs: ['--follow-tags'],
         requireBranch: 'main',
+        requireCleanWorkingDir: false,
         tagName: 'v${version}',
     },
     github: {
@@ -19,14 +23,16 @@ module.exports = {
             submit: true,
         },
         release: true,
-        releaseNotes: `${changelog} --template ${path}/templates/note.hbs --unreleased-only --stdout --starting-version $\{version}`,
+        releaseNotes: `${changelog} --template ${path}/templates/note.hbs --unreleased-only --stdout`,
     },
     hooks: {
         'after:bump': [
+            'git tag v${version}',
+            'echo "new version is v${version}"',
             `${changelog} --template ${path}/templates/changelog.hbs -p`,
-            'npx prettier CHANGELOG.md --write',
+            'npx prettier CHANGELOG.md --write || echo "Missing prettier step"',
             'git add CHANGELOG.md',
-            'npm run bump || echo "Missing script"',
+            'npm run bump || echo "Missing bump step"',
         ],
         'after:release':
             'echo Successfully released ${name} v${version} to ${repo.repository}.',
