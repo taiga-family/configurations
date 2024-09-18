@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.200.0](https://github.com/taiga-family/configurations/compare/v0.199.0...v0.200.0) (2024-09-18)
+
+### 🚀 Features
+
+- support new styleUrl
+  [(f069aa1)](https://github.com/taiga-family/configurations/commit/f069aa1a7d5a32f2394d2e80b15d7f893e619db9)
+
 ### [0.199.0](https://github.com/taiga-family/configurations/compare/v0.194.0...v0.199.0) (2024-09-18)
 
 ### 🚀 Features
