@@ -1,16 +1,10 @@
+# Changelog
+{{! prettier-ignore }}
+All notable changes to this project will be documented in this file. See
+[standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 {{! prettier-ignore }}
 {{#each releases}}
-    {{#ifeq @index 0}}
-        {{#if tag}}
-
-    # Changelog
-    {{! prettier-ignore }}
-    All notable changes to this project will be documented in this file. See
-    [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-        {{/if}}
-    {{/ifeq}}
-
     {{#if tag}}
      ##{{#unless major}}#{{/unless}} [{{#replaceTitle}}{{title}}{{/replaceTitle}}]({{href}}) ({{isoDate}})
     {{/if}}

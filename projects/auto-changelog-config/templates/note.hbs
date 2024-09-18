@@ -1,0 +1,23 @@
+{{! prettier-ignore }}
+{{#each releases}}
+    {{#if tag}}
+     ##{{#unless major}}#{{/unless}} [{{#replaceTitle}}{{title}}{{/replaceTitle}}]({{href}}) ({{isoDate}})
+    {{/if}}
+
+  {{#if summary}}
+    {{summary}}
+  {{/if}}
+
+  {{#commit-list commits heading='### ⚠ BREAKING CHANGES' message='[bB]reaking [cC]hange:|[bB]reaking:' }}
+    - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
+  {{/commit-list}}
+
+      {{#commit-list commits heading='### 🚀 Features' message='^[fF]eat:|[fF]eat\(|^[rR]efactor:|^[rR]efactor\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
+        - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
+      {{/commit-list}}
+
+      {{#commit-list commits heading='### 🐞 Bug Fixes' message='^[fF]ix:|^[fF]ix\(|^[pP]erf:|^[pP]erf\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
+        - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
+      {{/commit-list}}
+
+{{/each}}

@@ -20,21 +20,4 @@ module.exports = function (
 
         return string.replace('v', '');
     });
-
-    Handlebars.registerHelper(
-        'ifeq',
-        function (
-            /** @type {any} */ a,
-            /** @type {any} */ b,
-            /** @type {{ fn: (arg0: any) => any; inverse: (arg0: any) => any; }} */ options,
-        ) {
-            if (a === b) {
-                // @ts-ignore
-                return options.fn(this);
-            }
-
-            // @ts-ignore
-            return options.inverse(this);
-        },
-    );
 };

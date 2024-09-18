@@ -3,7 +3,7 @@ const path = require('node:path').resolve(
     'node_modules/@taiga-ui/auto-changelog-config',
 );
 
-const changelog = `npx auto-changelog -c ${path}/index.json --template ${path}/changelog-template.hbs --handlebars-setup ${path}/setup.js`;
+const changelog = `npx auto-changelog -c ${path}/index.json --handlebars-setup ${path}/setup.js`;
 
 /* eslint-disable no-template-curly-in-string */
 module.exports = {
@@ -13,12 +13,17 @@ module.exports = {
         tagName: 'v${version}',
     },
     github: {
+        comments: {
+            issue: ':rocket: _This issue has been resolved in v${version}. See [${releaseName}](${releaseUrl}) for release notes._',
+            pr: ':rocket: _This pull request is included in v${version}. See [${releaseName}](${releaseUrl}) for release notes._',
+            submit: true,
+        },
         release: true,
-        releaseNotes: `${changelog} --unreleased-only --stdout`,
+        releaseNotes: `${changelog} --template ${path}/templates/note.hbs --unreleased-only --stdout --starting-version $\{version}`,
     },
     hooks: {
         'after:bump': [
-            `${changelog} -p`,
+            `${changelog} --template ${path}/templates/changelog.hbs -p`,
             'npx prettier CHANGELOG.md --write',
             'git add CHANGELOG.md',
             'npm run bump || echo "Missing script"',
