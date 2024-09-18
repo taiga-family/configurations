@@ -511,6 +511,7 @@
         "prebump",
         "WHATWG",
         "docsearch",
-        "algolia"
+        "algolia",
+        "shorthash"
     ]
 }

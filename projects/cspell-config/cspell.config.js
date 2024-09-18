@@ -13,7 +13,7 @@ module.exports = {
         '**/cspell/**',
         '**/assets/**',
         '**/node_modules/**',
-        '**/*.{log,svg,snap,png,ogv,yml,less}',
+        '**/*.{log,svg,snap,png,ogv,yml,less,hbs}',
     ],
     ignoreRegExpList: [
         '\\(https?://.*?\\)',
