@@ -1,7 +1,9 @@
-# Changelog
+### 🚀 Features
 
-All notable changes to this project will be documented in this file. See
-[standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+- use header for CHANGELOG file
+  [(602f931)](https://github.com/taiga-family/configurations/commit/602f931ac457ba733ace442753cba6cac7a1a69b)
+
+### [0.191.0](https://github.com/taiga-family/configurations/compare/v0.190.0...v0.191.0) (2024-09-18)
 
 ### 🐞 Bug Fixes
 
