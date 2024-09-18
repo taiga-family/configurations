@@ -26,15 +26,17 @@ module.exports = {
     },
     hooks: {
         'after:bump': [
-            'git tag v${version}',
+            'git tag v${version}', // for include last tag inside CHANGELOG
             'echo "new version is v${version}"',
             `${changelog} --template ${path}/templates/changelog.hbs -p > /dev/null`,
             'npx prettier CHANGELOG.md --write || echo "Missing prettier step"',
             'git add CHANGELOG.md',
+            'git fetch --prune --prune-tags origin', // cleanup git workspace
             'npm run bump || echo "Missing bump step"',
         ],
         'after:release':
             'echo Successfully released ${name} v${version} to ${repo.repository}.',
+        'before:init': 'git fetch --prune --prune-tags origin',
     },
     npm: {
         allowSameVersion: true,
