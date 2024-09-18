@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 🐞 Bug Fixes
+
+- drop `Unreleased` word
+  [(7829491)](https://github.com/taiga-family/configurations/commit/782949111870b26350baa00616e92f7be91f1ca7)
+
 ### [0.190.0](https://github.com/taiga-family/configurations/compare/v0.188.0...v0.190.0) (2024-09-18)
 
 ### 🚀 Features
