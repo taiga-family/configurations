@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.199.0](https://github.com/taiga-family/configurations/compare/v0.194.0...v0.199.0) (2024-09-18)
+
+### 🚀 Features
+
+- just bump [(c664e55)](https://github.com/taiga-family/configurations/commit/c664e557220d19fdbdcace47f4384555a0575ef2)
+- force bump version
+  [(6865661)](https://github.com/taiga-family/configurations/commit/6865661b53f60edc410554a077bb57a4932ef1ba)
+- remove commitArgs
+  [(57c9141)](https://github.com/taiga-family/configurations/commit/57c914162d99db999636e7cf796033e818157079)
+
+### [0.194.0](https://github.com/taiga-family/configurations/compare/v0.193.0...v0.194.0) (2024-09-18)
+
 ### 🚀 Features
 
 - decompose templates
