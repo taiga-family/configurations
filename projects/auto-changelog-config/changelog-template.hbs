@@ -1,4 +1,3 @@
-{{! prettier-ignore }}
 # Changelog
 {{! prettier-ignore }}
 All notable changes to this project will be documented in this file. See
@@ -6,7 +5,9 @@ All notable changes to this project will be documented in this file. See
 
 {{! prettier-ignore }}
 {{#each releases}}
-    ##{{#unless major}}#{{/unless}} [{{#replaceTitle}}{{title}}{{/replaceTitle}}]({{href}}) ({{isoDate}})
+    {{#if tag}}
+     ##{{#unless major}}#{{/unless}} [{{#replaceTitle}}{{title}}{{/replaceTitle}}]({{href}}) ({{isoDate}})
+    {{/if}}
 
   {{#if summary}}
     {{summary}}
@@ -17,7 +18,6 @@ All notable changes to this project will be documented in this file. See
   {{/commit-list}}
 
       {{#commit-list commits heading='### 🚀 Features' message='^[fF]eat:|[fF]eat\(|^[rR]efactor:|^[rR]efactor\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
-       {{! prettier-ignore }}
         - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
       {{/commit-list}}
 
