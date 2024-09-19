@@ -639,7 +639,6 @@ module.exports = {
                         beforeLineComment: false,
                     },
                 ],
-                'max-classes-per-file': ['error', 3],
                 'max-depth': 'error',
                 'max-nested-callbacks': ['error', 4],
                 'no-bitwise': 'error',
@@ -887,7 +886,6 @@ module.exports = {
                 '@typescript-eslint/explicit-member-accessibility': 'off',
                 '@typescript-eslint/no-empty-function': 'off',
                 '@typescript-eslint/no-extraneous-class': 'off',
-                'max-classes-per-file': 'off',
             },
         },
         {
@@ -923,7 +921,6 @@ module.exports = {
                 'jest/prefer-expect-assertions': 'off',
                 'jest/prefer-expect-resolves': 'off',
                 'jest/prefer-hooks-on-top': 'off',
-                'max-classes-per-file': 'off',
                 'max-nested-callbacks': 'off',
                 'sonarjs/no-clear-text-protocols': 'off',
                 /**
@@ -1059,6 +1056,7 @@ module.exports = {
                 'import/no-unresolved': 'off',
                 'import/prefer-default-export': 'off',
                 'lines-between-class-members': 'off',
+                'max-classes-per-file': 'off',
                 'max-params': 'off',
                 'max-statements': 'off',
                 'no-await-in-loop': 'off',
