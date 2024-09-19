@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.201.0](https://github.com/taiga-family/configurations/compare/v0.200.0...v0.201.0) (2024-09-19)
+
+### 🚀 Features
+
+- disable max class per file
+  [(1783003)](https://github.com/taiga-family/configurations/commit/1783003ec9cf5ffa65bf0e44c0e16e9fdd6acf18)
+
 ### [0.200.0](https://github.com/taiga-family/configurations/compare/v0.199.0...v0.200.0) (2024-09-18)
 
 ### 🚀 Features
