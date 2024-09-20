@@ -17,25 +17,14 @@ on:
       - 'projects/**'
 
 jobs:
-  run-release:
-    name: Release
-    if: "!contains(github.event.head_commit.message, 'chore(release)')"
+  release:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
+    if: "!contains(github.event.head_commit.message, 'chore(release)')"
     steps:
       - uses: taiga-family/ci/actions/setup/checkout@v1.80.0
+      - uses: taiga-family/ci/actions/run/release-it@v1.80.0
         with:
-          fetch-depth: 0
-          token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
-      - uses: taiga-family/ci/actions/setup/node@v1.80.0
-      - uses: taiga-family/ci/actions/setup/config/git@v1.80.0
-        with:
-          token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
-      - uses: taiga-family/ci/actions/setup/config/npm@v1.80.0
-        with:
-          token: ${{ secrets.TAIGA_UI_SCOPE_NPM_TOKEN }}
-
-      - run: npx release-it ${{ github.event.inputs.mode || 'minor' }} --ci
-        env:
-          GITHUB_TOKEN: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
+          ref: ${{ github.ref }}
+          mode: ${{ github.event.inputs.mode }}
+          npmToken: ${{ secrets.TAIGA_UI_SCOPE_NPM_TOKEN }}
+          githubToken: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}

@@ -12,6 +12,7 @@ module.exports = {
         '**/dist/**',
         '**/cspell/**',
         '**/assets/**',
+        '**/.vscode/**',
         '**/node_modules/**',
         '**/*.{log,svg,snap,png,ogv,yml,less,hbs}',
     ],
