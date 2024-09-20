@@ -1,13 +1,12 @@
 # Changelog
 {{! prettier-ignore }}
-All notable changes to this project will be documented in this file. See
-[standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [`conventional
+commits`](https://www.conventionalcommits.org/) guidelines.
 
-{{! prettier-ignore }}
 {{#each releases}}
-    {{#if tag}}
+  {{#if tag}}
      ##{{#unless major}}#{{/unless}} [{{#replaceTitle}}{{title}}{{/replaceTitle}}]({{href}}) ({{isoDate}})
-    {{/if}}
+  {{/if}}
 
   {{#if summary}}
     {{summary}}
