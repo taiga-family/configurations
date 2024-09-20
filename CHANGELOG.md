@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.202.0](https://github.com/taiga-family/configurations/compare/v0.201.0...v0.202.0) (2024-09-20)
+
+### 🚀 Features
+
+- add `commit-parser` handlebars helper
+  [(1f4d642)](https://github.com/taiga-family/configurations/commit/1f4d642889f0c736a1c3a7440a2b8a2746db0cb5)
+
 ### [0.201.0](https://github.com/taiga-family/configurations/compare/v0.200.0...v0.201.0) (2024-09-19)
 
 ### 🚀 Features
@@ -68,6 +75,11 @@ All notable changes to this project will be documented in this file. See
 
 ### [0.188.0](https://github.com/taiga-family/configurations/compare/v0.187.0...v0.188.0) (2024-09-18)
 
+### 🐞 Bug Fixes
+
+- **deps**: update dependency cspell to ^8.14.4 (#593)
+  [(b12fa1e)](https://github.com/taiga-family/configurations/commit/b12fa1ec3060572ad447a49e8fd3d1759363c1a4)
+
 ### [0.187.0](https://github.com/taiga-family/configurations/compare/v0.186.0...v0.187.0) (2024-09-17)
 
 ### 🚀 Features
@@ -76,6 +88,11 @@ All notable changes to this project will be documented in this file. See
   [(8d93de3)](https://github.com/taiga-family/configurations/commit/8d93de30112a10e8aff004a4f925edf1907f4ebb)
 
 ### [0.186.0](https://github.com/taiga-family/configurations/compare/v0.185.0...v0.186.0) (2024-09-17)
+
+### 🐞 Bug Fixes
+
+- **deps**: update dependency cspell to ^8.14.3 (#592)
+  [(7790161)](https://github.com/taiga-family/configurations/commit/779016166fee71088933bd16c7932b0dccf452b0)
 
 ### [0.185.0](https://github.com/taiga-family/configurations/compare/v0.184.0...v0.185.0) (2024-09-17)
 
@@ -88,7 +105,17 @@ All notable changes to this project will be documented in this file. See
 
 ### [0.184.0](https://github.com/taiga-family/configurations/compare/v0.183.0...v0.184.0) (2024-09-16)
 
+### 🐞 Bug Fixes
+
+- **deps**: update eslint to ^8.6.0 (#591)
+  [(6007c54)](https://github.com/taiga-family/configurations/commit/6007c54e62e7d1d1376e4ef6fa1578d2ed14d3a0)
+
 ### [0.183.0](https://github.com/taiga-family/configurations/compare/v0.182.0...v0.183.0) (2024-09-16)
+
+### 🐞 Bug Fixes
+
+- **deps**: update dependency eslint to ^8.57.1 (#590)
+  [(321e9e2)](https://github.com/taiga-family/configurations/commit/321e9e2dab8a8405d0172d3508cb04e6178c7152)
 
 ### [0.182.0](https://github.com/taiga-family/configurations/compare/v0.181.0...v0.182.0) (2024-09-16)
 
@@ -124,9 +151,24 @@ All notable changes to this project will be documented in this file. See
 
 ### [0.174.3](https://github.com/taiga-family/configurations/compare/v0.174.2...v0.174.3) (2024-09-14)
 
+### 🐞 Bug Fixes
+
+- **deps**: update dependency postcss to ^8.4.47 (#588)
+  [(4b5fd3a)](https://github.com/taiga-family/configurations/commit/4b5fd3a9a65fdf07be98a5c4aec7e2bc282273db)
+
 ### [0.174.2](https://github.com/taiga-family/configurations/compare/v0.174.1...v0.174.2) (2024-09-13)
 
+### 🐞 Bug Fixes
+
+- **deps**: update dependency eslint-plugin-perfectionist to ^3.6.0 (#587)
+  [(68d613b)](https://github.com/taiga-family/configurations/commit/68d613b423047c8afd552b40f129474739a930ef)
+
 ### [0.174.1](https://github.com/taiga-family/configurations/compare/v0.174.0...v0.174.1) (2024-09-13)
+
+### 🐞 Bug Fixes
+
+- **deps**: update dependency eslint-plugin-unused-imports to ^4.1.4 (#585)
+  [(5020fba)](https://github.com/taiga-family/configurations/commit/5020fba3d513a523c143c591fdd0df37ec39c656)
 
 ### [0.174.0](https://github.com/taiga-family/configurations/compare/v0.173.0...v0.174.0) (2024-09-12)
 
@@ -263,6 +305,11 @@ All notable changes to this project will be documented in this file. See
 - licence [(ed2cd6a)](https://github.com/taiga-family/configurations/commit/ed2cd6a2165b448e44b53ac901b129acd5c325f9)
 
 ### [0.157.2](https://github.com/taiga-family/configurations/compare/v0.157.1...v0.157.2) (2024-09-05)
+
+### 🚀 Features
+
+- modern rules (#571)
+  [(a092688)](https://github.com/taiga-family/configurations/commit/a09268805a7eb3438f994d36c9ae5fcd4e3e91f1)
 
 ### [0.157.1](https://github.com/taiga-family/configurations/compare/v0.157.0...v0.157.1) (2024-09-05)
 
@@ -836,6 +883,11 @@ All notable changes to this project will be documented in this file. See
 
 ### [0.108.1](https://github.com/taiga-family/configurations/compare/v0.108.0...v0.108.1) (2024-07-01)
 
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: add Windows OS support for `prefer-deep-imports` rule (#441)
+  [(97021be)](https://github.com/taiga-family/configurations/commit/97021be112434f84150eeab023474bac1a803e3f)
+
 ### [0.108.0](https://github.com/taiga-family/configurations/compare/v0.107.0...v0.108.0) (2024-06-28)
 
 ### 🚀 Features
@@ -873,6 +925,11 @@ All notable changes to this project will be documented in this file. See
 
 ### [0.103.1](https://github.com/taiga-family/configurations/compare/v0.103.0...v0.103.1) (2024-06-21)
 
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: exclude not TS files from `@taiga-ui/experience/entry-points` config (#440)
+  [(3ffa5fc)](https://github.com/taiga-family/configurations/commit/3ffa5fc767db442f4c5a5db5ab3d36e5d7201729)
+
 ### [0.103.0](https://github.com/taiga-family/configurations/compare/v0.102.0...v0.103.0) (2024-06-21)
 
 ### 🚀 Features
@@ -881,6 +938,11 @@ All notable changes to this project will be documented in this file. See
   [(392d111)](https://github.com/taiga-family/configurations/commit/392d111267fc0a1b6c00626ed7462fa8c176564f)
 
 ### [0.102.0](https://github.com/taiga-family/configurations/compare/v0.101.0...v0.102.0) (2024-06-21)
+
+### 🚀 Features
+
+- **eslint-plugin-experience**: new config `@taiga-ui/experience/entry-points` (#439)
+  [(5d5fa15)](https://github.com/taiga-family/configurations/commit/5d5fa15d48374bf36dd035c0f64db690bc9c65c0)
 
 ### [0.101.0](https://github.com/taiga-family/configurations/compare/v0.100.0...v0.101.0) (2024-06-20)
 
@@ -897,6 +959,11 @@ All notable changes to this project will be documented in this file. See
   [(5643e9e)](https://github.com/taiga-family/configurations/commit/5643e9ec8ea49760e4f7987e58fa0843c8556dc5)
 
 ### [0.99.0](https://github.com/taiga-family/configurations/compare/v0.98.1...v0.99.0) (2024-06-20)
+
+### 🚀 Features
+
+- **eslint-plugin-experience**: new custom rule `@taiga-ui/experience/prefer-deep-imports` (#438)
+  [(d7d65a8)](https://github.com/taiga-family/configurations/commit/d7d65a8516d9b1d855d18b18ed017a29df33ed7e)
 
 ### [0.98.1](https://github.com/taiga-family/configurations/compare/v0.98.0...v0.98.1) (2024-06-15)
 
@@ -1246,6 +1313,36 @@ All notable changes to this project will be documented in this file. See
   [(ecaaaf6)](https://github.com/taiga-family/configurations/commit/ecaaaf673a07f35ff69975a6d10af6af319fb451)
 - **stylelint-config**: ignore selector-max-specificity
   [(37a64b5)](https://github.com/taiga-family/configurations/commit/37a64b54bd3c562f2d783adde6b00e4f610a10b4)
+- **stylelint-config**: add autofix for no-px rule with remSize=16 (#390)
+  [(3ca532d)](https://github.com/taiga-family/configurations/commit/3ca532d617aacfac74b218aac6f4f47fd6d05b76)
+- **stylelint-config**: allow fr unit (#388)
+  [(cd686d9)](https://github.com/taiga-family/configurations/commit/cd686d9566ad63bb095ca5432cbeadf6b0fe47c3)
+- **eslint-plugin-experience**: add `unicorn/prefer-string-replace-all` rule (#323)
+  [(f7848fc)](https://github.com/taiga-family/configurations/commit/f7848fc155794f55d8c32dc3bc99f8f0b0079a96)
+- **tsconfig**: add `es2021.string` to `lib` (`replaceAll` support) (#321)
+  [(6608b3f)](https://github.com/taiga-family/configurations/commit/6608b3f6225ae6cffd32ff59bdc7557f65f34939)
+- **browserslist-config**: upgrade config (#319)
+  [(669549e)](https://github.com/taiga-family/configurations/commit/669549e026526cf760c555703456061c2c2962c1)
+- **eslint-plugin-experience**: add autofix for `decorator-key-sort` rule (#193)
+  [(7618822)](https://github.com/taiga-family/configurations/commit/76188224a850793a7c2c6cadfa9a7eaf0af91655)
+- add peer deps (#188)
+  [(ff6d106)](https://github.com/taiga-family/configurations/commit/ff6d106aa19c33cfc12fd04de791f299ee1451d5)
+- **stylelint-config**: extends `ignore` section of `meowtec/no-px` rule (#137)
+  [(af973d1)](https://github.com/taiga-family/configurations/commit/af973d18a8ff19a93f32165c3472f45e134acd64)
+- **stylelint-config**: disable order rules for taiga (#58)
+  [(42c59d8)](https://github.com/taiga-family/configurations/commit/42c59d8aef2cd475e6a636b410be2ece5bd71b72)
+- **eslint-plugin-experience**: remove taiga prefix (#48)
+  [(bab083c)](https://github.com/taiga-family/configurations/commit/bab083c6a4faddbc5b9e0cbbde4c65abbe941b01)
+- **commitlint-config**: add new package (#42)
+  [(8be3abf)](https://github.com/taiga-family/configurations/commit/8be3abf6795282d252280cf6fb2a74acfd19e341)
+- **stylelint-config**: remove prettier deprecated config (#33)
+  [(9247f20)](https://github.com/taiga-family/configurations/commit/9247f201f7c1c0b201fab4e42ae26ae148585867)
+- **cspell-config**: add new words to configs (#26)
+  [(39c65b9)](https://github.com/taiga-family/configurations/commit/39c65b9b81624cb33e93abc2a2c9db46c3b94f24)
+- support prettier 3.x (#2)
+  [(9a0aa41)](https://github.com/taiga-family/configurations/commit/9a0aa41bba5a343d3ca237b6793806aa3f3c9f14)
+- update cspell name config (#1)
+  [(83acbea)](https://github.com/taiga-family/configurations/commit/83acbea23f11c4e4a49aaa059c9ec2b4a0577483)
 
 ### 🐞 Bug Fixes
 
@@ -1363,3 +1460,7 @@ All notable changes to this project will be documented in this file. See
   [(0444d78)](https://github.com/taiga-family/configurations/commit/0444d78b4f5b16642932fdf7a79071bef53e5944)
 - **eslint-plugin-experience**: add `jest/prefer-expect-resolves`
   [(0d763fa)](https://github.com/taiga-family/configurations/commit/0d763faf9fbb6d67921e3be8289c08e82216f82d)
+- **eslint-plugin-experience**: add alias `takeUntilDestroyed` to `rxjs/no-unsafe-takeuntil` rule (#358)
+  [(658ba18)](https://github.com/taiga-family/configurations/commit/658ba1805eeb45728d0a65bd1fdb0b15cd130889)
+- **eslint-plugin-experience**: remove perfectionist config (#27)
+  [(b616c3f)](https://github.com/taiga-family/configurations/commit/b616c3ff52d9a4ea94ecd6f379ca32f9ca7ce575)
