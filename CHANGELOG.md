@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.203.1](https://github.com/taiga-family/configurations/compare/v0.203.0...v0.203.1) (2024-09-20)
+
+### 🚀 Features
+
+- ignore vscode folder
+  [(f99fe86)](https://github.com/taiga-family/configurations/commit/f99fe862605febb80de03d114d08e4821b6f8d98)
+
 ### [0.203.0](https://github.com/taiga-family/configurations/compare/v0.202.0...v0.203.0) (2024-09-20)
 
 ### 🚀 Features
