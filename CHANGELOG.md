@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.203.0](https://github.com/taiga-family/configurations/compare/v0.202.0...v0.203.0) (2024-09-20)
+
+### 🚀 Features
+
+- do not submit comment on pr
+  [(9ff60ab)](https://github.com/taiga-family/configurations/commit/9ff60ab4ac800d218893a0c4a74618dd7720d9fe)
+
 ### [0.202.0](https://github.com/taiga-family/configurations/compare/v0.201.0...v0.202.0) (2024-09-20)
 
 ### 🚀 Features
