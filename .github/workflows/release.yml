@@ -28,3 +28,7 @@ jobs:
           mode: ${{ github.event.inputs.mode || 'minor' }}
           npmToken: ${{ secrets.TAIGA_UI_SCOPE_NPM_TOKEN }}
           githubToken: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
+
+concurrency:
+  group: release-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
