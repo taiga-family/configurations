@@ -1,5 +1,5 @@
 {
-    "ignoreCommitPattern": "^(?!(feat|fix|perf|refactor|revert))(.*)$",
+    "ignoreCommitPattern": "^(?!(feat|fix|perf|deprecate|refactor|revert))(.*)$",
     "commitLimit": false,
     "output": "CHANGELOG.md",
     "template": "compact",

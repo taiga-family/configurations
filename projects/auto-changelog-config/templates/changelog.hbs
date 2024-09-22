@@ -26,6 +26,10 @@ commits`](https://www.conventionalcommits.org/) guidelines.
         - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
       {{/commit-list}}
 
+      {{#commit-list this heading='### ⚠️ Deprecations' message='^deprecate:|^deprecate\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
+        - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
+      {{/commit-list}}
+
   {{/commit-parser}}
 
 {{/each}}
