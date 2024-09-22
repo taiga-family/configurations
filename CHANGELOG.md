@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [`conventional commits`](https://www.conventionalcommits.org/) guidelines.
 
+### [0.205.0](https://github.com/taiga-family/configurations/compare/v0.204.0...v0.205.0) (2024-09-22)
+
+### 🚀 Features
+
+- support deprecate commit prefix
+  [(9ad14ec)](https://github.com/taiga-family/configurations/commit/9ad14ec533deb3df839a3f7cc52ca1cfbdb9b6bd)
+
 ### [0.204.0](https://github.com/taiga-family/configurations/compare/v0.203.1...v0.204.0) (2024-09-20)
 
 ### 🚀 Features
