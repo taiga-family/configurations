@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [`conventional commits`](https://www.conventionalcommits.org/) guidelines.
 
+### [0.218.0](https://github.com/taiga-family/configurations/compare/v0.217.0...v0.218.0) (2024-09-23)
+
+### 🐞 Bug Fixes
+
+- **deps**: update dependency eslint-plugin-perfectionist to ^3.7.0 (#605)
+  [(2286f84)](https://github.com/taiga-family/configurations/commit/2286f84aaea520fa041bf8ce88c09adf99c7c233)
+
 ### [0.217.0](https://github.com/taiga-family/configurations/compare/v0.216.0...v0.217.0) (2024-09-23)
 
 ### 🐞 Bug Fixes
