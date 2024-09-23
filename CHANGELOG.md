@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [`conventional commits`](https://www.conventionalcommits.org/) guidelines.
 
+### [0.209.0](https://github.com/taiga-family/configurations/compare/v0.208.0...v0.209.0) (2024-09-23)
+
+display tagged commit message body as release summary
+
+### 🚀 Features
+
+- add new option
+  [(8043c6e)](https://github.com/taiga-family/configurations/commit/8043c6eef5a06478f8ff97bf2dace42c6743c994)
+
 ### [0.208.0](https://github.com/taiga-family/configurations/compare/v0.207.0...v0.208.0) (2024-09-23)
+
+Update changes inside release-it-config
 
 ### 🐞 Bug Fixes
 
@@ -342,6 +353,14 @@ All notable changes to this project will be documented in this file. See
 - licence [(ed2cd6a)](https://github.com/taiga-family/configurations/commit/ed2cd6a2165b448e44b53ac901b129acd5c325f9)
 
 ### [0.157.2](https://github.com/taiga-family/configurations/compare/v0.157.1...v0.157.2) (2024-09-05)
+
+- chore(deps): update dependency eslint-plugin-perfectionist to v3.4.0
+
+- feat: modern rules
+
+---
+
+Co-authored-by: null &lt;taiga-family-bot@yandex.ru&gt;
 
 ### 🚀 Features
 
@@ -976,6 +995,12 @@ All notable changes to this project will be documented in this file. See
 
 ### [0.102.0](https://github.com/taiga-family/configurations/compare/v0.101.0...v0.102.0) (2024-06-21)
 
+- feat(eslint-plugin-experience): new config `@taiga-ui/experience/entry-points`
+
+- chore(eslint-plugin-experience): add `glob` to `peerDependencies`
+
+- chore: fix prettier error
+
 ### 🚀 Features
 
 - **eslint-plugin-experience**: new config `@taiga-ui/experience/entry-points` (#439)
@@ -996,6 +1021,12 @@ All notable changes to this project will be documented in this file. See
   [(5643e9e)](https://github.com/taiga-family/configurations/commit/5643e9ec8ea49760e4f7987e58fa0843c8556dc5)
 
 ### [0.99.0](https://github.com/taiga-family/configurations/compare/v0.98.1...v0.99.0) (2024-06-20)
+
+- feat(eslint-plugin-experience): new custom rule `@taiga-ui/experience/prefer-deep-imports`
+
+- chore: remove extra space
+
+- refactor(eslint-plugin-experience): `/\.spec.ts$/` =&gt; `/\.(spec|cy).ts$/`
 
 ### 🚀 Features
 
