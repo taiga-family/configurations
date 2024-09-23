@@ -29,10 +29,10 @@ module.exports = {
             'git tag v${version}', // for include last tag inside CHANGELOG
             'echo "new version is v${version}"',
             `${changelog} --template ${path}/templates/changelog.hbs -p > /dev/null`,
-            'npx prettier CHANGELOG.md --write || echo "Missing prettier step"',
-            'git add CHANGELOG.md',
+            'npx prettier CHANGELOG.md --write > /dev/null',
             'git fetch --prune --prune-tags origin', // cleanup git workspace
-            'npm run bump || echo "Missing bump step"',
+            'git add CHANGELOG.md',
+            'npm run release',
         ],
         'after:release':
             'echo Successfully released ${name} v${version} to ${repo.repository}.',
