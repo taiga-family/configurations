@@ -1,4 +1,4 @@
-# Taiga UI configurations
+## Taiga UI development infrastructure
 
 Monorepo for all the tooling which enables ESLint, Prettier, Stylelint to support TypeScript projects.
 
@@ -16,7 +16,7 @@ Monorepo for all the tooling which enables ESLint, Prettier, Stylelint to suppor
 | [@taiga-ui/auto-changelog-config](https://npmjs.com/package/@taiga-ui/auto-changelog-config)       | ![](https://img.shields.io/npm/v/%40taiga-ui%2Fauto-changelog-config/latest.svg)    | [![](https://img.shields.io/badge/README--green.svg)](projects/auto-changelog-config/README.md)    | [![](https://img.shields.io/npm/dw/@taiga-ui/auto-changelog-config)](https://npmjs.com/package/@taiga-ui/auto-changelog-config)       |
 | [@taiga-ui/eslint-plugin-experience](https://npmjs.com/package/@taiga-ui/eslint-plugin-experience) | ![](https://img.shields.io/npm/v/%40taiga-ui%2Feslint-plugin-experience/latest.svg) | [![](https://img.shields.io/badge/README--green.svg)](projects/eslint-plugin-experience/README.md) | [![](https://img.shields.io/npm/dw/@taiga-ui/eslint-plugin-experience)](https://npmjs.com/package/@taiga-ui/eslint-plugin-experience) |
 
-### ♻️ Tools
+### 🏗️ Tools
 
 | **Package**                                                    | **Version**                                                       | **README**                                                                       | **Downloads**                                                                                     |
 | -------------------------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
