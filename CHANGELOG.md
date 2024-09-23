@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [`conventional commits`](https://www.conventionalcommits.org/) guidelines.
 
+### [0.219.0](https://github.com/taiga-family/configurations/compare/v0.218.0...v0.219.0) (2024-09-24)
+
+### 🐞 Bug Fixes
+
+- ignore release script if it doesn't exist
+  [(dab6e30)](https://github.com/taiga-family/configurations/commit/dab6e3078a5c9af03ba44ce9e8cd654ff1388255)
+
 ### [0.218.0](https://github.com/taiga-family/configurations/compare/v0.217.0...v0.218.0) (2024-09-23)
 
 ### 🐞 Bug Fixes
