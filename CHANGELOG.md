@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [`conventional commits`](https://www.conventionalcommits.org/) guidelines.
 
+### [0.215.0](https://github.com/taiga-family/configurations/compare/v0.214.0...v0.215.0) (2024-09-23)
+
+### 🚀 Features
+
+- change hooks again
+  [(701bf95)](https://github.com/taiga-family/configurations/commit/701bf950022842433ddfd9081f2e74a12547c2bd)
+
 ### [0.214.0](https://github.com/taiga-family/configurations/compare/v0.213.0...v0.214.0) (2024-09-23)
 
 ### 🚀 Features
