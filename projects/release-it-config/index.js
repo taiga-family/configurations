@@ -9,6 +9,7 @@ const changelog = `npx auto-changelog -c ${path}/index.json --handlebars-setup $
 module.exports = {
     git: {
         addUntrackedFiles: true,
+        changelog: false,
         commitMessage: 'chore(release): v${version}',
         pushArgs: ['--follow-tags'],
         requireBranch: 'main',
