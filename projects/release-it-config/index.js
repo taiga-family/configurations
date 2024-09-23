@@ -43,7 +43,7 @@ module.exports = {
         'after:release':
             'echo Successfully released ${name} v${version} to ${repo.repository}.',
         'before:init': 'git fetch --prune --prune-tags origin',
-        'before:release': 'npm run release',
+        'before:release': 'npm run release || echo ""',
     },
     npm: {
         allowSameVersion: true,
