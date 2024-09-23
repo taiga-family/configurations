@@ -36,8 +36,10 @@ module.exports = {
             'npx syncer || echo ""',
             'npm run after:bump -s || echo ""',
         ],
-        'after:release': 'npm run release',
+        'after:release':
+            'echo Successfully released ${name} v${version} to ${repo.repository}.',
         'before:init': 'git fetch --prune --prune-tags origin',
+        'before:release': 'npm run release',
     },
     npm: {
         allowSameVersion: true,
