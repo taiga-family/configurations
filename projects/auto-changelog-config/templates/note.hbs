@@ -4,10 +4,6 @@
      ##{{#unless major}}#{{/unless}} [{{#replaceTitle}}{{title}}{{/replaceTitle}}]({{href}}) ({{isoDate}})
     {{/if}}
 
-  {{#if summary}}
-    {{summary}}
-  {{/if}}
-
   {{#commit-parser merges commits}}
 
       {{#commit-list this heading='### ⚠ BREAKING CHANGES' message='[bB]reaking [cC]hange:|[bB]reaking:' }}
@@ -27,5 +23,10 @@
       {{/commit-list}}
 
   {{/commit-parser}}
+
+  {{#if summary}}
+    This release introduces:
+    {{summary}}
+  {{/if}}
 
 {{/each}}
