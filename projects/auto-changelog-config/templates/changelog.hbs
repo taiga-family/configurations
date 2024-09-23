@@ -8,10 +8,6 @@ commits`](https://www.conventionalcommits.org/) guidelines.
      ##{{#unless major}}#{{/unless}} [{{#replaceTitle}}{{title}}{{/replaceTitle}}]({{href}}) ({{isoDate}})
   {{/if}}
 
-  {{#if summary}}
-    {{summary}}
-  {{/if}}
-
   {{#commit-parser merges commits}}
 
       {{#commit-list this heading='### ⚠ BREAKING CHANGES' message='[bB]reaking [cC]hange:|[bB]reaking:' }}
@@ -31,5 +27,10 @@ commits`](https://www.conventionalcommits.org/) guidelines.
       {{/commit-list}}
 
   {{/commit-parser}}
+
+  {{#if summary}}
+    This release introduces:
+    {{summary}}
+  {{/if}}
 
 {{/each}}
