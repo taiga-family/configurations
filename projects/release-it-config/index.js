@@ -26,7 +26,7 @@ module.exports = {
     },
     hooks: {
         'after:bump': [
-            'git tag v${version}', // for include last tag inside CHANGELOG
+            'git tag v${version} > /dev/null', // for include last tag inside CHANGELOG
             'echo "new version is v${version}"',
             `${changelog} --template ${path}/templates/changelog.hbs -p > /dev/null`,
             'npx prettier CHANGELOG.md --write > /dev/null',
