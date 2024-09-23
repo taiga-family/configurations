@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [`conventional commits`](https://www.conventionalcommits.org/) guidelines.
 
+### [0.217.0](https://github.com/taiga-family/configurations/compare/v0.216.0...v0.217.0) (2024-09-23)
+
+### 🐞 Bug Fixes
+
+- **deps**: update eslint to ^8.7.0 (#604)
+  [(f4cbccc)](https://github.com/taiga-family/configurations/commit/f4cbccc4828a831c74c4af3292452d02343a37f6)
+
 ### [0.216.0](https://github.com/taiga-family/configurations/compare/v0.215.0...v0.216.0) (2024-09-23)
 
 ### 🐞 Bug Fixes
