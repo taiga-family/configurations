@@ -3,14 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [`conventional commits`](https://www.conventionalcommits.org/) guidelines.
 
+### [0.211.0](https://github.com/taiga-family/configurations/compare/v0.210.0...v0.211.0) (2024-09-23)
+
+### 🚀 Features
+
+- drop summary
+  [(ed337ce)](https://github.com/taiga-family/configurations/commit/ed337ce593e34f4ef41b2179e506c44483ba10be)
+
 ### [0.210.0](https://github.com/taiga-family/configurations/compare/v0.209.0...v0.210.0) (2024-09-23)
 
 ### 🚀 Features
 
 - change hbs [(b9f7d63)](https://github.com/taiga-family/configurations/commit/b9f7d6328ff24ed6d78b71dfde78b5c40229d458)
 - change hbs [(0510574)](https://github.com/taiga-family/configurations/commit/0510574428de0ab3b7293fad3cf66985e92b985b)
-
-This release introduces: Use correct summary position in note.hbs
 
 ### [0.209.0](https://github.com/taiga-family/configurations/compare/v0.208.0...v0.209.0) (2024-09-23)
 
@@ -19,16 +24,12 @@ This release introduces: Use correct summary position in note.hbs
 - add new option
   [(8043c6e)](https://github.com/taiga-family/configurations/commit/8043c6eef5a06478f8ff97bf2dace42c6743c994)
 
-This release introduces: display tagged commit message body as release summary
-
 ### [0.208.0](https://github.com/taiga-family/configurations/compare/v0.207.0...v0.208.0) (2024-09-23)
 
 ### 🐞 Bug Fixes
 
 - small changes
   [(5705b1d)](https://github.com/taiga-family/configurations/commit/5705b1d9ab5bfaa246926ed80b013d822fd3fa04)
-
-This release introduces: Update changes inside release-it-config
 
 ### [0.207.0](https://github.com/taiga-family/configurations/compare/v0.205.0...v0.207.0) (2024-09-23)
 
@@ -367,16 +368,6 @@ This release introduces: Update changes inside release-it-config
 
 - modern rules (#571)
   [(a092688)](https://github.com/taiga-family/configurations/commit/a09268805a7eb3438f994d36c9ae5fcd4e3e91f1)
-
-This release introduces:
-
-- chore(deps): update dependency eslint-plugin-perfectionist to v3.4.0
-
-- feat: modern rules
-
----
-
-Co-authored-by: null &lt;taiga-family-bot@yandex.ru&gt;
 
 ### [0.157.1](https://github.com/taiga-family/configurations/compare/v0.157.0...v0.157.1) (2024-09-05)
 
@@ -1011,14 +1002,6 @@ Co-authored-by: null &lt;taiga-family-bot@yandex.ru&gt;
 - **eslint-plugin-experience**: new config `@taiga-ui/experience/entry-points` (#439)
   [(5d5fa15)](https://github.com/taiga-family/configurations/commit/5d5fa15d48374bf36dd035c0f64db690bc9c65c0)
 
-This release introduces:
-
-- feat(eslint-plugin-experience): new config `@taiga-ui/experience/entry-points`
-
-- chore(eslint-plugin-experience): add `glob` to `peerDependencies`
-
-- chore: fix prettier error
-
 ### [0.101.0](https://github.com/taiga-family/configurations/compare/v0.100.0...v0.101.0) (2024-06-20)
 
 ### 🚀 Features
@@ -1039,14 +1022,6 @@ This release introduces:
 
 - **eslint-plugin-experience**: new custom rule `@taiga-ui/experience/prefer-deep-imports` (#438)
   [(d7d65a8)](https://github.com/taiga-family/configurations/commit/d7d65a8516d9b1d855d18b18ed017a29df33ed7e)
-
-This release introduces:
-
-- feat(eslint-plugin-experience): new custom rule `@taiga-ui/experience/prefer-deep-imports`
-
-- chore: remove extra space
-
-- refactor(eslint-plugin-experience): `/\.spec.ts$/` =&gt; `/\.(spec|cy).ts$/`
 
 ### [0.98.1](https://github.com/taiga-family/configurations/compare/v0.98.0...v0.98.1) (2024-06-15)
 
