@@ -1,7 +1,7 @@
 {
     "ignoreCommitPattern": "^(?!(feat|fix|perf|deprecate|refactor|revert))(.*)$",
     "commitLimit": false,
-    "releaseSummary": true,
+    "releaseSummary": false,
     "output": "CHANGELOG.md",
     "template": "compact",
     "unreleased": false
