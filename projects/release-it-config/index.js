@@ -33,11 +33,12 @@ module.exports = {
             'npx prettier CHANGELOG.md --write > /dev/null',
             'git fetch --prune --prune-tags origin', // cleanup git workspace
             'git add CHANGELOG.md',
-            'npm run release',
+            'npx syncer > /dev/null || echo "Nothing syncing"',
         ],
         'after:release':
             'echo Successfully released ${name} v${version} to ${repo.repository}.',
         'before:init': 'git fetch --prune --prune-tags origin',
+        release: 'npm run release',
     },
     npm: {
         allowSameVersion: true,
