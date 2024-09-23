@@ -1,11 +1,15 @@
+/* eslint-disable no-template-curly-in-string */
+const rootPackage = require(require('node:path').resolve(process.cwd(), 'package.json'));
 const path = require('node:path').resolve(
     process.cwd(),
     'node_modules/@taiga-ui/auto-changelog-config',
 );
 
 const changelog = `npx auto-changelog -c ${path}/index.json --handlebars-setup ${path}/setup.js`;
+const prependEnabled = rootPackage['auto-changelog']?.prepend ?? false;
+const template = rootPackage['auto-changelog']?.template ?? 'templates/changelog.hbs';
+const prepend = prependEnabled ? '--prepend --starting-version v${version}' : '';
 
-/* eslint-disable no-template-curly-in-string */
 module.exports = {
     git: {
         addUntrackedFiles: true,
@@ -29,7 +33,7 @@ module.exports = {
         'after:bump': [
             'git tag v${version} > /dev/null', // for include last tag inside CHANGELOG
             'echo "new version is v${version}"',
-            `${changelog} --template ${path}/templates/changelog.hbs -p > /dev/null`,
+            `${changelog} ${prepend} --template ${path}/${template} -p > /dev/null`,
             'npx prettier CHANGELOG.md --write > /dev/null',
             'git fetch --prune --prune-tags origin', // cleanup git workspace
             'git add CHANGELOG.md',
