@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [`conventional commits`](https://www.conventionalcommits.org/) guidelines.
 
+### [0.216.0](https://github.com/taiga-family/configurations/compare/v0.215.0...v0.216.0) (2024-09-23)
+
+### 🐞 Bug Fixes
+
+- support prepend changelog
+  [(2fd5e05)](https://github.com/taiga-family/configurations/commit/2fd5e0500b02ae6218c1b24f1218411c918c1cfa)
+
 ### [0.215.0](https://github.com/taiga-family/configurations/compare/v0.214.0...v0.215.0) (2024-09-23)
 
 ### 🚀 Features
