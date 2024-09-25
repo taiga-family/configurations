@@ -1,4 +1,5 @@
 name: ⚠️ Release
+
 on:
   workflow_dispatch:
     inputs:
@@ -11,10 +12,8 @@ on:
           - patch
           - minor
           - major
-  push:
-    branches: [main]
-    paths:
-      - 'projects/**'
+  schedule:
+    - cron: '0 7 * * 1'
 
 jobs:
   release:
