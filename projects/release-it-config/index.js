@@ -1,14 +1,10 @@
 /* eslint-disable no-template-curly-in-string */
-const rootPackage = require(require('node:path').resolve(process.cwd(), 'package.json'));
 const path = require('node:path').resolve(
     process.cwd(),
     'node_modules/@taiga-ui/auto-changelog-config',
 );
 
-const changelog = `npx auto-changelog -c ${path}/index.json --handlebars-setup ${path}/setup.js`;
-const prependEnabled = rootPackage['auto-changelog']?.prepend ?? false;
-const template = rootPackage['auto-changelog']?.template ?? 'templates/changelog.hbs';
-const prepend = prependEnabled ? '--prepend --starting-version v${version}' : '';
+const changelog = `npx auto-changelog -c ${path}/index.json --template ${path}/template.hbs --handlebars-setup ${path}/setup.js`;
 
 module.exports = {
     git: {
@@ -27,13 +23,13 @@ module.exports = {
             submit: false,
         },
         release: true,
-        releaseNotes: `${changelog} --template ${path}/templates/note.hbs --unreleased-only --stdout`,
+        releaseNotes: `${changelog} --unreleased-only --stdout`,
     },
     hooks: {
         'after:bump': [
             'git tag v${version} > /dev/null', // for include last tag inside CHANGELOG
             'echo "new version is v${version}"',
-            `${changelog} ${prepend} --template ${path}/${template} -p > /dev/null`,
+            `${changelog} --prepend --starting-version v$\{version} -p > /dev/null`,
             'npx prettier CHANGELOG.md --write > /dev/null',
             'git fetch --prune --prune-tags origin', // cleanup git workspace
             'git add CHANGELOG.md',
