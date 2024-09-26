@@ -513,6 +513,7 @@
         "docsearch",
         "algolia",
         "shorthash",
-        "ifeq"
+        "ifeq",
+        "rulesets"
     ]
 }
