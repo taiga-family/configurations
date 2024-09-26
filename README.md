@@ -21,3 +21,9 @@ Monorepo for all the tooling which enables ESLint, Prettier, Stylelint to suppor
 | **Package**                                                    | **Version**                                                       | **README**                                                                       | **Downloads**                                                                                     |
 | -------------------------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [@taiga-ui/syncer](https://npmjs.com/package/@taiga-ui/syncer) | ![](https://img.shields.io/npm/v/%40taiga-ui%2Fsyncer/latest.svg) | [![](https://img.shields.io/badge/README--green.svg)](projects/syncer/README.md) | [![](https://img.shields.io/npm/dw/@taiga-ui/syncer)](https://npmjs.com/package/@taiga-ui/syncer) |
+
+### Rulesets templates
+
+- [Pull Request restriction](./rulesets/Pull%20request%20restriction.json)
+
+Read more about: https://github.com/github/ruleset-recipes

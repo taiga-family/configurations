@@ -1,0 +1,68 @@
+{
+    "id": 2007378,
+    "name": "Pull request restriction",
+    "target": "branch",
+    "source_type": "Repository",
+    "source": "taiga-family/editor",
+    "enforcement": "active",
+    "conditions": {
+        "ref_name": {
+            "exclude": [],
+            "include": ["~DEFAULT_BRANCH", "refs/heads/snapshots/**/*", "refs/heads/v*"]
+        }
+    },
+    "rules": [
+        {
+            "type": "pull_request",
+            "parameters": {
+                "required_approving_review_count": 1,
+                "dismiss_stale_reviews_on_push": false,
+                "require_code_owner_review": false,
+                "require_last_push_approval": false,
+                "required_review_thread_resolution": true
+            }
+        },
+        {
+            "type": "required_status_checks",
+            "parameters": {
+                "strict_required_status_checks_policy": false,
+                "do_not_enforce_on_create": false,
+                "required_status_checks": [
+                    {
+                        "context": "Build demo",
+                        "integration_id": 15368
+                    },
+                    {
+                        "context": "Build package",
+                        "integration_id": 15368
+                    },
+                    {
+                        "context": "Lint",
+                        "integration_id": 15368
+                    },
+                    {
+                        "context": "Tests",
+                        "integration_id": 15368
+                    },
+                    {
+                        "context": "E2E",
+                        "integration_id": 15368
+                    }
+                ]
+            }
+        },
+        {
+            "type": "deletion"
+        },
+        {
+            "type": "non_fast_forward"
+        }
+    ],
+    "bypass_actors": [
+        {
+            "actor_id": 11099706,
+            "actor_type": "Team",
+            "bypass_mode": "always"
+        }
+    ]
+}
