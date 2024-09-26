@@ -16,7 +16,7 @@ module.exports = {
         changelog: false,
         commitMessage: 'chore(release): v${version}',
         pushArgs: ['--follow-tags'],
-        requireBranch: 'main',
+        requireBranch: false,
         requireCleanWorkingDir: false,
         tagName: 'v${version}',
     },
@@ -39,6 +39,7 @@ module.exports = {
             'git add CHANGELOG.md',
             'npx syncer || echo ""',
             'npm run after:bump -s || echo ""',
+            'git add .',
         ],
         'after:release':
             'echo Successfully released ${name} v${version} to ${repo.repository}.',
