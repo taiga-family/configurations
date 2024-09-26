@@ -144,7 +144,12 @@ module.exports = {
             },
         ],
         'property-disallowed-list': ['border-inline', 'padding-inline', 'margin-inline'],
-        'property-no-unknown': true,
+        'property-no-unknown': [
+            true,
+            {
+                ignoreProperties: ['interpolate-size'],
+            },
+        ],
         'property-no-vendor-prefix': null,
         'rem-over-px/rem-over-px': [
             true,
