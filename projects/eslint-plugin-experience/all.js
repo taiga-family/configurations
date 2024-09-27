@@ -615,11 +615,21 @@ module.exports = {
                     },
                 ],
                 'guard-for-in': 'error',
+                'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
                 'import/first': 'error',
                 'import/newline-after-import': ['error', {count: 1}],
+                'import/no-absolute-path': 'error',
                 'import/no-cycle': 'error',
                 'import/no-deprecated': 'error',
                 'import/no-duplicates': 'error',
+                'import/no-mutable-exports': 'error',
+                'import/no-self-import': 'error',
+                'import/no-useless-path-segments': [
+                    'error',
+                    {
+                        noUselessIndex: true,
+                    },
+                ],
                 'import/no-webpack-loader-syntax': 'error',
                 'lines-around-comment': [
                     'error',
