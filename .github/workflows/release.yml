@@ -24,7 +24,7 @@ jobs:
       - uses: taiga-family/ci/actions/run/release-it@v1.87.5
         with:
           ref: ${{ github.ref }}
-          mode: ${{ github.event.inputs.mode }}
+          mode: ${{ github.event.inputs.mode || 'minor' }}
           npmToken: ${{ secrets.TAIGA_UI_SCOPE_NPM_TOKEN }}
           githubToken: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
 
