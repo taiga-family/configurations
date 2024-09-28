@@ -474,6 +474,7 @@ module.exports = {
                         ],
                     },
                 ],
+                '@typescript-eslint/no-empty-object-type': 'error',
                 '@typescript-eslint/no-extra-non-null-assertion': 'error',
                 '@typescript-eslint/no-extraneous-class': [
                     'error',
