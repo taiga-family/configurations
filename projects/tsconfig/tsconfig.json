@@ -56,7 +56,7 @@
         "skipDefaultLibCheck": true,
         "declaration": false,
         "declarationMap": false,
-        "moduleResolution": "node",
+        "moduleResolution":"NodeNext",
         "experimentalDecorators": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
