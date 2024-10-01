@@ -1,3 +1,10 @@
+### [0.221.0](https://github.com/taiga-family/configurations/compare/v0.220.0...v0.221.0) (2024-10-01)
+
+### 🚀 Features
+
+- add new words in cspell config
+  [(b7b32af)](https://github.com/taiga-family/configurations/commit/b7b32afbfe02514aca95f42d62e2938596417f6f)
+
 ### [0.220.0](https://github.com/taiga-family/configurations/compare/v0.219.0...v0.220.0) (2024-09-29)
 
 # Changelog
