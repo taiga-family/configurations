@@ -12,8 +12,10 @@ on:
           - patch
           - minor
           - major
-  schedule:
-    - cron: '0 7 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - 'projects/**'
 
 jobs:
   release:
