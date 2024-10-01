@@ -1,3 +1,14 @@
+### [0.222.0](https://github.com/taiga-family/configurations/compare/v0.221.0...v0.222.0) (2024-10-01)
+
+### 🚀 Features
+
+- simplify auto changelog template
+  [(da67831)](https://github.com/taiga-family/configurations/commit/da67831026ca513d7d0823f64b05f1ceee61d154)
+- readme in changelog config
+  [(fb0ed78)](https://github.com/taiga-family/configurations/commit/fb0ed78bf1390044b1ae82afd44eae1eae90e8eb)
+- add require commits for release it
+  [(11385c0)](https://github.com/taiga-family/configurations/commit/11385c0b2114d6649b542029c819bf75f0eaaa10)
+
 ### [0.221.0](https://github.com/taiga-family/configurations/compare/v0.220.0...v0.221.0) (2024-10-01)
 
 ### 🚀 Features

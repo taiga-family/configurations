@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/eslint-plugin-experience",
-    "version": "0.221.0",
+    "version": "0.222.0",
     "description": "An ESLint plugin to enforce a consistent code styles across taiga-ui projects",
     "license": "Apache-2.0",
     "main": "index.js",
