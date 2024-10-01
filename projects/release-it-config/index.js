@@ -7,6 +7,16 @@ const path = require('node:path').resolve(
 const changelog = `npx auto-changelog -c ${path}/index.json --template ${path}/template.hbs --handlebars-setup ${path}/setup.js`;
 
 module.exports = {
+    plugins: {
+        '@release-it/conventional-changelog': {
+            gitRawCommitsOpts: {
+                path: '.',
+            },
+            infile: false,
+            path: '.',
+            preset: 'conventionalcommits',
+        },
+    },
     git: {
         addUntrackedFiles: true,
         changelog: false,
