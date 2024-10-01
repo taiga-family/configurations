@@ -7,11 +7,6 @@
 
 ### [0.220.0](https://github.com/taiga-family/configurations/compare/v0.219.0...v0.220.0) (2024-09-29)
 
-# Changelog
-
-All notable changes to this project will be documented in this file. See
-[`conventional commits`](https://www.conventionalcommits.org/) guidelines.
-
 ### [0.219.0](https://github.com/taiga-family/configurations/compare/v0.218.0...v0.219.0) (2024-09-24)
 
 ### 🐞 Bug Fixes
