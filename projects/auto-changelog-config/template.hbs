@@ -6,19 +6,19 @@
 
   {{#commit-parser merges commits}}
 
-      {{#commit-list this heading='### ⚠ BREAKING CHANGES' message='[bB]reaking [cC]hange:|[bB]reaking:' }}
+      {{#commit-list this heading='### ⚠ BREAKING CHANGES' message='breaking change:|breaking:' }}
         - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
       {{/commit-list}}
 
-      {{#commit-list this heading='### 🚀 Features' message='^[fF]eat:|[fF]eat\(|^[rR]efactor:|^[rR]efactor\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
+      {{#commit-list this heading='### 🚀 Features' message='^feat:|feat\(|^refactor:|^refactor\(' exclude='breaking change:|breaking:'}}
         - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
       {{/commit-list}}
 
-      {{#commit-list this heading='### 🐞 Bug Fixes' message='^[fF]ix:|^[fF]ix\(|^[pP]erf:|^[pP]erf\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
+      {{#commit-list this heading='### 🐞 Bug Fixes' message='^fix:|^fix\(|^perf:|^perf\(' exclude='breaking change:|breaking:'}}
         - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
       {{/commit-list}}
 
-      {{#commit-list this heading='### ⚠️ Deprecations' message='^deprecate:|^deprecate\(' exclude='[bB]reaking [cC]hange:|[bB]reaking:'}}
+      {{#commit-list this heading='### ⚠️ Deprecations' message='^deprecate:|^deprecate\(' exclude='breaking change:|breaking:'}}
         - {{#replaceCommit}}{{subject}}{{/replaceCommit}} [({{shorthash}})]({{href}})
       {{/commit-list}}
 
