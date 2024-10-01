@@ -24,6 +24,7 @@ module.exports = {
         pushArgs: ['--follow-tags'],
         requireBranch: false,
         requireCleanWorkingDir: false,
+        requireCommits: true,
         tagName: 'v${version}',
     },
     github: {
