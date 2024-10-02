@@ -115,7 +115,7 @@ module.exports = {
  * @return {any}
  */
 function findNearestEntryPoint(filePath) {
-    const pathSegments = filePath.split('/');
+    const pathSegments = (filePath ?? '')?.split('/') ?? [];
 
     for (let i = pathSegments.length - 1; i >= 0; i--) {
         const possibleEntryPoint = pathSegments.slice(0, i).join('/');
