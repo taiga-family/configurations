@@ -1,3 +1,10 @@
+### [0.222.1](https://github.com/taiga-family/configurations/compare/v0.222.0...v0.222.1) (2024-10-02)
+
+### 🐞 Bug Fixes
+
+- **deps**: update babel to ^7.25.7 (#626)
+  [(a864c95)](https://github.com/taiga-family/configurations/commit/a864c9512a40ae2e8a5d516c6a96b521410f8717)
+
 ### [0.222.0](https://github.com/taiga-family/configurations/compare/v0.221.0...v0.222.0) (2024-10-01)
 
 ### 🚀 Features
