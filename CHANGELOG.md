@@ -1,3 +1,10 @@
+### [0.222.2](https://github.com/taiga-family/configurations/compare/v0.222.1...v0.222.2) (2024-10-02)
+
+### 🐞 Bug Fixes
+
+- cannot read properties of undefined (reading 'split') (#628)
+  [(1413deb)](https://github.com/taiga-family/configurations/commit/1413deb24d2ec8e9d4c23a28b1b2cb53c383ed31)
+
 ### [0.222.1](https://github.com/taiga-family/configurations/compare/v0.222.0...v0.222.1) (2024-10-02)
 
 ### 🐞 Bug Fixes
