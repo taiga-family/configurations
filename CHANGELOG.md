@@ -1,3 +1,10 @@
+### [0.222.3](https://github.com/taiga-family/configurations/compare/v0.222.2...v0.222.3) (2024-10-03)
+
+### 🐞 Bug Fixes
+
+- **deps**: update dependency eslint-plugin-import to ^2.31.0 (#629)
+  [(ed1d5c4)](https://github.com/taiga-family/configurations/commit/ed1d5c49c584d251cbda0d11721927537e54d6ea)
+
 ### [0.222.2](https://github.com/taiga-family/configurations/compare/v0.222.1...v0.222.2) (2024-10-02)
 
 ### 🐞 Bug Fixes
