@@ -31,7 +31,7 @@
         "eslint-plugin-decorator-position": "^5.0.2",
         "eslint-plugin-eslint-comments": "^3.2.0",
         "eslint-plugin-file-progress": "^1.5.0",
-        "eslint-plugin-import": "^2.30.0",
+        "eslint-plugin-import": "^2.31.0",
         "eslint-plugin-jest": "^28.8.3",
         "eslint-plugin-node-import": "^1.0.4",
         "eslint-plugin-perfectionist": "^3.8.0",
