@@ -1,3 +1,10 @@
+### [0.222.4](https://github.com/taiga-family/configurations/compare/v0.222.3...v0.222.4) (2024-10-04)
+
+### 🐞 Bug Fixes
+
+- **deps**: update dependency eslint-plugin-unicorn to v56 (#631)
+  [(e2f5b25)](https://github.com/taiga-family/configurations/commit/e2f5b2557c56fee1a88b7920321dccfac12304a7)
+
 ### [0.222.3](https://github.com/taiga-family/configurations/compare/v0.222.2...v0.222.3) (2024-10-03)
 
 ### 🐞 Bug Fixes
