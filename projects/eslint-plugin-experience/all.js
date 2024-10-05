@@ -500,6 +500,10 @@ module.exports = {
                                 message:
                                     '`{}` actually means `any non-nullish value`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.\n- If you want a type meaning `empty object`, you probably want `Record<string, never>` instead.',
                             },
+                            Array: {
+                                fixWith: 'ReadonlyArray',
+                                message: 'Use ReadonlyArray instead',
+                            },
                             BigInt: {
                                 fixWith: 'bigint',
                                 message: 'Use bigint instead',
