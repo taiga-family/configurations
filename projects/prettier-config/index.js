@@ -40,6 +40,12 @@ module.exports = {
             },
         },
         {
+            files: ['package-lock.json'],
+            options: {
+                parser: 'json-stringify',
+            },
+        },
+        {
             files: ['package.json', 'ng-package.json'],
             options: {
                 parser: 'json-stringify',
