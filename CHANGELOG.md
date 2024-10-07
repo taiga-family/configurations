@@ -1,3 +1,12 @@
+### [0.222.5](https://github.com/taiga-family/configurations/compare/v0.222.4...v0.222.5) (2024-10-07)
+
+### 🐞 Bug Fixes
+
+- **deps**: update eslint to ^2.9.0 (#635)
+  [(e71eb58)](https://github.com/taiga-family/configurations/commit/e71eb58c6daaeda56886e29fc198a6c3b8ff1af4)
+- **deps**: update dependency release-it to v17.7.0 (#633)
+  [(f6319b4)](https://github.com/taiga-family/configurations/commit/f6319b4c54ece8f3ecdd9598875920308e826f49)
+
 ### [0.222.4](https://github.com/taiga-family/configurations/compare/v0.222.3...v0.222.4) (2024-10-04)
 
 ### 🐞 Bug Fixes
