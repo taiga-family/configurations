@@ -516,6 +516,10 @@
         "ifeq",
         "rulesets",
         "conventionalcommits",
-        "infile"
+        "infile",
+        "hardbreak",
+        "inlines",
+        "softbreak",
+        "textblock"
     ]
 }
