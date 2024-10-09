@@ -143,7 +143,12 @@ module.exports = {
                 unspecified: 'bottom',
             },
         ],
-        'property-disallowed-list': ['border-inline', 'padding-inline', 'margin-inline'],
+        'property-disallowed-list': [
+            'border-inline',
+            'padding-inline',
+            'margin-inline',
+            '/^word-wrap$/', // The word-wrap property was renamed to overflow-wrap in CSS3
+        ],
         'property-no-unknown': [
             true,
             {
