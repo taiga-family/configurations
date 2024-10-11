@@ -993,6 +993,22 @@ module.exports = {
                 '@angular-eslint/template/alt-text': 'error',
                 '@angular-eslint/template/banana-in-box': 'error',
                 '@angular-eslint/template/button-has-type': 'error',
+                '@angular-eslint/template/elements-content': [
+                    'error',
+                    {
+                        allowList: [
+                            'aria-label',
+                            'innerHtml',
+                            'innerHTML',
+                            'innerText',
+                            'textContent',
+                            'outerHTML',
+                            'title',
+                            'tuiHintDescribe',
+                            'tuiFile',
+                        ],
+                    },
+                ],
                 '@angular-eslint/template/eqeqeq': [
                     'error',
                     {
