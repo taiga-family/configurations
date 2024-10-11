@@ -1,3 +1,10 @@
+### [0.223.2](https://github.com/taiga-family/configurations/compare/v0.223.1...v0.223.2) (2024-10-11)
+
+### 🐞 Bug Fixes
+
+- **jest-config**: problem peer dependencies (#654)
+  [(0135f54)](https://github.com/taiga-family/configurations/commit/0135f54e7dc0c3341c56606ee96cbfbdaef6636c)
+
 ### [0.223.1](https://github.com/taiga-family/configurations/compare/v0.223.0...v0.223.1) (2024-10-11)
 
 ### 🐞 Bug Fixes
