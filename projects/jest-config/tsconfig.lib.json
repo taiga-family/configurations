@@ -1,0 +1,15 @@
+{
+    "extends": "../../tsconfig.json",
+    "include": ["./*.ts"],
+    "compilerOptions": {
+        "rootDir": ".",
+        "baseUrl": ".",
+        "outDir": ".",
+        "target": "es6",
+        "module": "commonjs",
+        "declaration": true,
+        "incremental": null,
+        "verbatimModuleSyntax": false,
+        "types": ["node", "jest"]
+    }
+}
