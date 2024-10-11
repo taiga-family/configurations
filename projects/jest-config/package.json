@@ -14,11 +14,10 @@
     "main": "jest.config.js",
     "types": "jest.config.d.ts",
     "peerDependencies": {
-        "@taiga-ui/testing": ">=4.10.0",
-        "@types/jest": ">=29.5.13",
-        "jest": ">=29.7.0",
-        "jest-preset-angular": ">=14.2.4",
-        "ts-jest": ">=29.2.5"
+        "@types/jest": "^29.5.13",
+        "jest": "^29.7.0",
+        "jest-preset-angular": "^14.2.4",
+        "ts-jest": "^29.2.5"
     },
     "publishConfig": {
         "access": "public"
