@@ -1006,6 +1006,7 @@ module.exports = {
                     : 'off',
                 '@angular-eslint/template/prefer-self-closing-tags': 'error',
                 '@angular-eslint/template/table-scope': 'error',
+                '@angular-eslint/template/valid-aria': 'error',
             },
         },
         {
