@@ -1,3 +1,10 @@
+### [0.223.1](https://github.com/taiga-family/configurations/compare/v0.223.0...v0.223.1) (2024-10-11)
+
+### 🐞 Bug Fixes
+
+- **jest-config**: drop peer range (#653)
+  [(0dce67a)](https://github.com/taiga-family/configurations/commit/0dce67a458812fe011d4ccbca2f774cfbd4649cd)
+
 ### [0.223.0](https://github.com/taiga-family/configurations/compare/v0.222.5...v0.223.0) (2024-10-11)
 
 ### 🚀 Features
