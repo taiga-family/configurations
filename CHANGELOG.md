@@ -1,3 +1,33 @@
+### [0.223.0](https://github.com/taiga-family/configurations/compare/v0.222.5...v0.223.0) (2024-10-11)
+
+### 🚀 Features
+
+- **jest-config**: add reusable config (#652)
+  [(f2aaf2f)](https://github.com/taiga-family/configurations/commit/f2aaf2f337cb8b6ed791c5a856ce062725d14999)
+- **eslint-plugin-experience**: enable role-has-required-aria (#647)
+  [(75db29f)](https://github.com/taiga-family/configurations/commit/75db29fa67820811a02193f2df51ec908dd367fc)
+- **eslint-plugin-experience**: enable elements-content (#648)
+  [(1e6a177)](https://github.com/taiga-family/configurations/commit/1e6a177d0791f5ca0b8963d90daa606589881e44)
+- **eslint-plugin-experience**: add i18n plugin (#649)
+  [(65bc5a1)](https://github.com/taiga-family/configurations/commit/65bc5a182674a7059a6d58b3c6b8fd05532443e8)
+- **cspell-config**: add `longtap` (#650)
+  [(c29c871)](https://github.com/taiga-family/configurations/commit/c29c871c37b884e9cf37d30f340849838d90c3db)
+- **eslint-plugin-experience**: enable valid-aria rule (#646)
+  [(adc6c16)](https://github.com/taiga-family/configurations/commit/adc6c16fa1a4a19cd88f753a18474d67dd67c1e1)
+- **cspell-config**: add new words to out cspell database (#645)
+  [(489e24d)](https://github.com/taiga-family/configurations/commit/489e24d3b11f624641f0ae544390d4f46a11e78b)
+- **cspell-config**: add new words (#643)
+  [(635c84a)](https://github.com/taiga-family/configurations/commit/635c84ac61b87a267d3d72b5a4c7ed3f05880342)
+- **stylelint-config**: disallow word-wrap (#642)
+  [(90ab1e9)](https://github.com/taiga-family/configurations/commit/90ab1e9c04ae80c7c6aad53ee187a4abae49f499)
+- **prettier-config**: lock file should be parsed by json-stringify parser (#639)
+  [(004dfc7)](https://github.com/taiga-family/configurations/commit/004dfc79d1804461fc553a0ed5130778ffef87ea)
+
+### 🐞 Bug Fixes
+
+- **deps**: update eslint to ^8.8.1 (#641)
+  [(08b599b)](https://github.com/taiga-family/configurations/commit/08b599b00488253753331f50080222d68e8859fd)
+
 ### [0.222.5](https://github.com/taiga-family/configurations/compare/v0.222.4...v0.222.5) (2024-10-07)
 
 ### 🐞 Bug Fixes
