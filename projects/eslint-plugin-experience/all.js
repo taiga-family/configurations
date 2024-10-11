@@ -128,6 +128,7 @@ module.exports = {
                 '@stylistic/ts',
                 '@stylistic/plus',
                 '@angular-eslint/eslint-plugin',
+                'i18n',
             ],
             extends: [
                 'eslint-config-airbnb-base',
@@ -616,6 +617,12 @@ module.exports = {
                     },
                 ],
                 'guard-for-in': 'error',
+                'i18n/no-chinese-character': 'error',
+                'i18n/no-greek-character': 'error',
+                'i18n/no-japanese-character': 'error',
+                'i18n/no-korean-character': 'error',
+                'i18n/no-russian-character': 'error',
+                'i18n/no-thai-character': 'error',
                 'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
                 'import/first': 'error',
                 'import/newline-after-import': ['error', {count: 1}],
@@ -909,6 +916,17 @@ module.exports = {
                 'cypress/unsafe-to-chain-command': 'off',
                 'max-nested-callbacks': 'off',
                 'no-implicit-globals': 'error',
+            },
+        },
+        {
+            files: ['**/i18n/**/*.*', '*.spec.ts', '*.cy.ts'],
+            rules: {
+                'i18n/no-chinese-character': 'off',
+                'i18n/no-greek-character': 'off',
+                'i18n/no-japanese-character': 'off',
+                'i18n/no-korean-character': 'off',
+                'i18n/no-russian-character': 'off',
+                'i18n/no-thai-character': 'off',
             },
         },
         {
