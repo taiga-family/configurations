@@ -1,6 +1,6 @@
 {
     "id": 2007378,
-    "name": "Pull request restriction",
+    "name": "Pull request restriction template",
     "target": "branch",
     "source_type": "Repository",
     "source": "taiga-family/editor",
@@ -8,7 +8,7 @@
     "conditions": {
         "ref_name": {
             "exclude": [],
-            "include": ["~DEFAULT_BRANCH", "refs/heads/snapshots/**/*", "refs/heads/v*"]
+            "include": ["~DEFAULT_BRANCH", "refs/heads/snapshots/**/*", "refs/heads/v[2;3;4;5;6;7;8;9;10;11].x"]
         }
     },
     "rules": [
@@ -27,28 +27,7 @@
             "parameters": {
                 "strict_required_status_checks_policy": false,
                 "do_not_enforce_on_create": false,
-                "required_status_checks": [
-                    {
-                        "context": "Build demo",
-                        "integration_id": 15368
-                    },
-                    {
-                        "context": "Build package",
-                        "integration_id": 15368
-                    },
-                    {
-                        "context": "Lint",
-                        "integration_id": 15368
-                    },
-                    {
-                        "context": "Tests",
-                        "integration_id": 15368
-                    },
-                    {
-                        "context": "E2E",
-                        "integration_id": 15368
-                    }
-                ]
+                "required_status_checks": []
             }
         },
         {
