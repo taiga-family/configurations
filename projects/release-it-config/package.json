@@ -1,6 +1,6 @@
 {
     "name": "@taiga-ui/release-it-config",
-    "version": "0.223.2",
+    "version": "0.224.0",
     "description": "Taiga UI release-it config",
     "keywords": [
         "release-it"

@@ -1,3 +1,12 @@
+### [0.224.0](https://github.com/taiga-family/configurations/compare/v0.223.2...v0.224.0) (2024-10-14)
+
+### 🚀 Features
+
+- **cspell-config**: add `scrollend` (#657)
+  [(ec8a437)](https://github.com/taiga-family/configurations/commit/ec8a437eabd506f4fb0bcbb380286d0e63bd1d5e)
+- **cspell-config**: add `urlset` (#655)
+  [(d9e19ce)](https://github.com/taiga-family/configurations/commit/d9e19ce1636d32d193548016fdd8ca01defffa6d)
+
 ### [0.223.2](https://github.com/taiga-family/configurations/compare/v0.223.1...v0.223.2) (2024-10-11)
 
 ### 🐞 Bug Fixes
