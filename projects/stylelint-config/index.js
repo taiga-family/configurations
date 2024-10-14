@@ -1,7 +1,13 @@
 module.exports = {
     $schema:
         'https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/stylelintrc.json',
-    plugins: ['stylelint-order', 'stylelint-rem-over-px', 'stylelint-use-logical'],
+    plugins: [
+        'stylelint-order',
+        'stylelint-rem-over-px',
+        'stylelint-use-logical',
+        '@stylistic/stylelint-plugin',
+    ],
+    extends: ['@stylistic/stylelint-config'],
     allowEmptyInput: true,
     customSyntax: 'postcss-less',
     defaultSeverity: 'error',
@@ -12,6 +18,13 @@ module.exports = {
         `${process.cwd()}/**/tests-report/**`,
     ],
     rules: {
+        '@stylistic/declaration-block-trailing-semicolon': null,
+        '@stylistic/declaration-colon-newline-after': null,
+        '@stylistic/indentation': null,
+        '@stylistic/max-line-length': null,
+        '@stylistic/no-extra-semicolons': null,
+        '@stylistic/string-quotes': 'single',
+        '@stylistic/value-list-comma-newline-after': null,
         'alpha-value-notation': 'number',
         'annotation-no-unknown': true,
         'at-rule-allowed-list': [
