@@ -1,3 +1,12 @@
+### [0.225.0](https://github.com/taiga-family/configurations/compare/v0.224.0...v0.225.0) (2024-10-14)
+
+### 🚀 Features
+
+- **eslint-plugin-experience**: add max-param (#659)
+  [(e6bf9b4)](https://github.com/taiga-family/configurations/commit/e6bf9b45b76f4012c4c811f8cc85a99ee0ce396e)
+- **stylelint-config**: add `stylistic` plugin (#656)
+  [(40aebfd)](https://github.com/taiga-family/configurations/commit/40aebfda6567deb1d7921e00ed912b9496f95b71)
+
 ### [0.224.0](https://github.com/taiga-family/configurations/compare/v0.223.2...v0.224.0) (2024-10-14)
 
 ### 🚀 Features
