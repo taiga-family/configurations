@@ -332,6 +332,7 @@ module.exports = {
                         },
                     },
                 ],
+                '@typescript-eslint/max-params': ['error', {countVoidThis: true, max: 3}],
                 '@typescript-eslint/member-ordering': [
                     'error',
                     {
