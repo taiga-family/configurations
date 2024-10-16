@@ -16,7 +16,7 @@
         "@cspell/dict-lorem-ipsum": "^4.0.3",
         "@cspell/dict-ru_ru": "^2.2.4",
         "@cspell/dict-scientific-terms-us": "^3.0.4",
-        "cspell": "^8.15.2"
+        "cspell": "^8.15.3"
     },
     "publishConfig": {
         "access": "public"
