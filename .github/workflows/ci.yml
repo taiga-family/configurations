@@ -29,6 +29,22 @@ jobs:
         with:
           token: ${{ secrets.TAIGA_FAMILY_BOT_PAT }}
 
+  release-it-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.1
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - uses: taiga-family/ci/actions/setup/node@v1.93.3
+      - run: |
+          # prevent fatal: ref HEAD is not a symbolic ref
+          git checkout -f main
+
+          # node_modules is correct
+          # because installed before checkout main
+          npx release-it --dry-run --ci
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
