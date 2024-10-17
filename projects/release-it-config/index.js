@@ -21,6 +21,7 @@ module.exports = {
         addUntrackedFiles: true,
         changelog: false,
         commitMessage: 'chore(release): v${version}',
+        getLatestTagFromAllRefs: true,
         pushArgs: ['--follow-tags'],
         requireBranch: false,
         requireCleanWorkingDir: false,
