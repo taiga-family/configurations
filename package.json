@@ -91,9 +91,9 @@
         ]
     },
     "devDependencies": {
-        "@nx/workspace": "20.0.1",
+        "@nx/workspace": "20.0.2",
         "lint-staged": "15.2.10",
-        "nx": "20.0.1",
+        "nx": "20.0.2",
         "typescript": "5.5.4"
     },
     "cspell": {
