@@ -1,3 +1,12 @@
+### [0.226.0](https://github.com/taiga-family/configurations/compare/v0.225.0...v0.226.0) (2024-10-18)
+
+### 🐞 Bug Fixes
+
+- **release-it-config**: regression (#678)
+  [(d9b4dfa)](https://github.com/taiga-family/configurations/commit/d9b4dfad1ac736775899aab1a50e1c840ff3746e)
+- **eslint-plugin-experience**: forgot ignore `tuiTag` for `elements-content` (#675)
+  [(94e4f4a)](https://github.com/taiga-family/configurations/commit/94e4f4a5e694796122727d012e59884eaad22af6)
+
 ### [0.225.0](https://github.com/taiga-family/configurations/compare/v0.224.0...v0.225.0) (2024-10-14)
 
 ### 🚀 Features
