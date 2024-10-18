@@ -39,11 +39,11 @@ jobs:
       - uses: taiga-family/ci/actions/setup/node@v1.93.3
       - run: |
           # prevent fatal: ref HEAD is not a symbolic ref
-          git checkout -f main
+          git checkout -f main > /dev/null
 
           # node_modules is correct
           # because installed before checkout main
-          npx release-it --dry-run --ci
+          npx release-it --dry-run --ci --no-git.requireCommits
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
