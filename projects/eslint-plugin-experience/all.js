@@ -1138,6 +1138,7 @@ module.exports = {
                 'rxjs/no-ignored-takewhile-value': 'off',
                 'rxjs/no-nested-subscribe': 'off',
                 'rxjs/no-unsafe-takeuntil': 'off',
+                'sonarjs/aws-restricted-ip-admin-access': 'off',
                 'sonarjs/cognitive-complexity': 'off',
                 'sonarjs/deprecation': 'off',
                 'sonarjs/different-types-comparison': 'off',
