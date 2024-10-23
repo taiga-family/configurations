@@ -1,3 +1,10 @@
+### [0.227.0](https://github.com/taiga-family/configurations/compare/v0.226.0...v0.227.0) (2024-10-23)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: disable `aws-restricted-ip-admin-access` (#685)
+  [(dd15ba2)](https://github.com/taiga-family/configurations/commit/dd15ba2d8ab3901da75c4b23a50115cfac0ee27d)
+
 ### [0.226.0](https://github.com/taiga-family/configurations/compare/v0.225.0...v0.226.0) (2024-10-18)
 
 ### 🐞 Bug Fixes
