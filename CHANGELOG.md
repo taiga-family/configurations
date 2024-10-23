@@ -1,3 +1,10 @@
+### [0.228.0](https://github.com/taiga-family/configurations/compare/v0.227.0...v0.228.0) (2024-10-23)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: disable all `aws*` rules (#686)
+  [(2a1b83d)](https://github.com/taiga-family/configurations/commit/2a1b83d27ddf89b1a6914b2707f58c6c55f23077)
+
 ### [0.227.0](https://github.com/taiga-family/configurations/compare/v0.226.0...v0.227.0) (2024-10-23)
 
 ### 🐞 Bug Fixes
