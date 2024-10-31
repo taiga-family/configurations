@@ -53,7 +53,12 @@ module.exports = {
         ],
         'color-hex-alpha': 'never',
         'color-hex-length': 'short',
-        'color-named': 'never',
+        'color-named': [
+            'never',
+            {
+                ignoreProperties: ['mask', 'mask-image'],
+            },
+        ],
         'color-no-invalid-hex': true,
         'comment-no-empty': true,
         'comment-whitespace-inside': 'always',
