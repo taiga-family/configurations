@@ -1,3 +1,10 @@
+### [0.229.0](https://github.com/taiga-family/configurations/compare/v0.228.0...v0.229.0) (2024-11-01)
+
+### 🚀 Features
+
+- **stylelint-config**: exclude `mask` & `mask-image` properties for `color-named` rule (#696)
+  [(c1aed3e)](https://github.com/taiga-family/configurations/commit/c1aed3e3663739db4fe25536f3e2980530e2bd2e)
+
 ### [0.228.0](https://github.com/taiga-family/configurations/compare/v0.227.0...v0.228.0) (2024-10-23)
 
 ### 🐞 Bug Fixes
