@@ -1,3 +1,10 @@
+### [0.231.0](https://github.com/taiga-family/configurations/compare/v0.230.0...v0.231.0) (2024-11-02)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: revert (#702)
+  [(2003943)](https://github.com/taiga-family/configurations/commit/2003943089c0bb74ce6faa8f6ee5fa8000078f72)
+
 ### [0.230.0](https://github.com/taiga-family/configurations/compare/v0.229.0...v0.230.0) (2024-11-02)
 
 ### 🚀 Features
