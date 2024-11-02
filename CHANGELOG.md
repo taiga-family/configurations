@@ -1,3 +1,10 @@
+### [0.230.0](https://github.com/taiga-family/configurations/compare/v0.229.0...v0.230.0) (2024-11-02)
+
+### 🚀 Features
+
+- **eslint-plugin-experience**: use another modification for package prefix (#700)
+  [(06b6e9a)](https://github.com/taiga-family/configurations/commit/06b6e9a91558d9592043079f539559b457108764)
+
 ### [0.229.0](https://github.com/taiga-family/configurations/compare/v0.228.0...v0.229.0) (2024-11-01)
 
 ### 🚀 Features
