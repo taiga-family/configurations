@@ -1004,7 +1004,7 @@ module.exports = {
             },
         },
         {
-            files: ['**/*playwright*/*.spec.ts'],
+            files: ['**/*.pw.spec.ts'],
             parser: '@typescript-eslint/parser',
             extends: ['plugin:playwright/recommended'],
             rules: {
