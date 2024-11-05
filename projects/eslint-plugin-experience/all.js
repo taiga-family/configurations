@@ -584,7 +584,14 @@ module.exports = {
                 '@typescript-eslint/require-await': 'error',
                 '@typescript-eslint/restrict-plus-operands': 'error',
                 '@typescript-eslint/sort-type-constituents': 'error',
-                '@typescript-eslint/switch-exhaustiveness-check': 'error',
+                '@typescript-eslint/switch-exhaustiveness-check': [
+                    'error',
+                    {
+                        allowDefaultCaseForExhaustiveSwitch: true,
+                        considerDefaultExhaustiveForUnions: true,
+                        requireDefaultForNonUnion: false,
+                    },
+                ],
                 '@typescript-eslint/triple-slash-reference': [
                     'error',
                     {
