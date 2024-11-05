@@ -561,6 +561,7 @@
         "longtap",
         "urlset",
         "scrollend",
-        "opensearchservice"
+        "opensearchservice",
+        "antialiasing"
     ]
 }
