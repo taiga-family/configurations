@@ -1009,6 +1009,9 @@ module.exports = {
             extends: ['plugin:playwright/recommended'],
             rules: {
                 'jest/prefer-importing-jest-globals': 'off',
+                'playwright/no-networkidle': 'off',
+                'playwright/no-wait-for-selector': 'off',
+                'playwright/no-wait-for-timeout': 'off',
             },
         },
         {
