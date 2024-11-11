@@ -1,3 +1,17 @@
+### [0.232.0](https://github.com/taiga-family/configurations/compare/v0.231.0...v0.232.0) (2024-11-11)
+
+### 🚀 Features
+
+- **eslint-plugin-experience**: run playwright plugin for `*.pw.spec.ts` pattern (#711)
+  [(90a31dc)](https://github.com/taiga-family/configurations/commit/90a31dc63bc0ebf46158e6305d66bd8061e9f4b5)
+- **cspell-config**: add `antialiasing` (#712)
+  [(bf317ed)](https://github.com/taiga-family/configurations/commit/bf317ed5e1527917b7815229d03d956c83ccca39)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: enable `considerDefaultExhaustiveForUnions` (#703)
+  [(76472a9)](https://github.com/taiga-family/configurations/commit/76472a987e9eb494e10f222cadd3cf740fdff4fb)
+
 ### [0.231.0](https://github.com/taiga-family/configurations/compare/v0.230.0...v0.231.0) (2024-11-02)
 
 ### 🐞 Bug Fixes
