@@ -23,6 +23,7 @@ module.exports = {
         '@stylistic/indentation': null,
         '@stylistic/max-line-length': null,
         '@stylistic/no-extra-semicolons': null,
+        '@stylistic/selector-descendant-combinator-no-non-space': null,
         '@stylistic/string-quotes': 'single',
         '@stylistic/value-list-comma-newline-after': null,
         'alpha-value-notation': 'number',
