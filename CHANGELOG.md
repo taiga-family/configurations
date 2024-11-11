@@ -1,3 +1,10 @@
+### [0.233.0](https://github.com/taiga-family/configurations/compare/v0.232.0...v0.233.0) (2024-11-11)
+
+### 🐞 Bug Fixes
+
+- **stylelint-config**: prettier conflict with descendant combinator (#721)
+  [(d2967fe)](https://github.com/taiga-family/configurations/commit/d2967fe9a18720a27ade08fd36d00f1dd28972bf)
+
 ### [0.232.0](https://github.com/taiga-family/configurations/compare/v0.231.0...v0.232.0) (2024-11-11)
 
 ### 🚀 Features
