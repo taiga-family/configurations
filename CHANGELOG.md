@@ -1,3 +1,10 @@
+### [0.234.0](https://github.com/taiga-family/configurations/compare/v0.233.0...v0.234.0) (2024-11-11)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: disable some pw rules (#722)
+  [(22b6f10)](https://github.com/taiga-family/configurations/commit/22b6f1053f1e73ff29217889a8a08fa04a4e379a)
+
 ### [0.233.0](https://github.com/taiga-family/configurations/compare/v0.232.0...v0.233.0) (2024-11-11)
 
 ### 🐞 Bug Fixes
