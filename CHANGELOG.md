@@ -1,3 +1,5 @@
+### [0.235.0](https://github.com/taiga-family/configurations/compare/v0.234.0...v0.235.0) (2024-11-25)
+
 ### [0.234.0](https://github.com/taiga-family/configurations/compare/v0.233.0...v0.234.0) (2024-11-11)
 
 ### 🐞 Bug Fixes
