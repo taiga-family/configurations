@@ -34,7 +34,12 @@ export default {
         String.raw`node_modules/(?!@angular|rxjs|ngx-highlightjs|@maskito|@ng-web-apis|@taiga-ui\/event-plugins|@taiga-ui\/polymorpheus)`,
     ],
     testMatch: ['<rootDir>/projects/**/*.spec.ts'],
-    testPathIgnorePatterns: ['/cypress/', '/playwright/', '/node_modules/'],
+    testPathIgnorePatterns: [
+        '/cypress/',
+        '/playwright/',
+        '/node_modules/',
+        '.pw.spec.ts',
+    ],
     coverageDirectory: '<rootDir>/coverage',
     collectCoverageFrom: ['<rootDir>/**/*.ts'],
     coveragePathIgnorePatterns: ['node_modules', 'schematics', '.spec.ts', '.cy.ts'],
