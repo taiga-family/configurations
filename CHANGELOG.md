@@ -1,3 +1,28 @@
+### [0.235.1](https://github.com/taiga-family/configurations/compare/v0.235.0...v0.235.1) (2024-11-29)
+
+### 🐞 Bug Fixes
+
+- **jest-config**: ignore `*.pw.spec.ts` (#756)
+  [(81a6d88)](https://github.com/taiga-family/configurations/commit/81a6d8894d9086a25ea90cfed657bfaad9733266)
+- update dependency stylelint to ^16.11.0 (#754)
+  [(b6c7c74)](https://github.com/taiga-family/configurations/commit/b6c7c7435e9fd8ca28af3d3980c5eb37fdbcfdb2)
+- update dependency jest-preset-angular to v14.4.1 (#753)
+  [(e92e2bc)](https://github.com/taiga-family/configurations/commit/e92e2bc3bb6f5e12f144ccdbc87709da69dfb281)
+- update dependency jest-preset-angular to v14.4.0 (#752)
+  [(7761012)](https://github.com/taiga-family/configurations/commit/7761012e8ad80b18f96afb15c2b29ce18028eb0e)
+- update dependency eslint-plugin-promise to ^7.2.1 (#751)
+  [(0d0fade)](https://github.com/taiga-family/configurations/commit/0d0fade7fbbfb78900adad26359fbb7fe7c4703b)
+- update dependency cspell to ^8.16.1 (#750)
+  [(e45cbe3)](https://github.com/taiga-family/configurations/commit/e45cbe3192cc358f499201d84ed15535608a1a20)
+- update dependency prettier to ^3.4.1 (#749)
+  [(61f182c)](https://github.com/taiga-family/configurations/commit/61f182c39c05c77b65118bf3fca3ac389c7e8d22)
+- update dependency prettier to ^3.4.0 (#748)
+  [(4242a05)](https://github.com/taiga-family/configurations/commit/4242a05dca077ed629f83c7b5e6caaf2f15200b7)
+- update @typescript-eslint/\* deps to ^8.16.0 (#747)
+  [(e7417d4)](https://github.com/taiga-family/configurations/commit/e7417d4b55a735a2ce5481890cbc65d297d3e622)
+- update dependency eslint-plugin-promise to ^7.2.0 (#746)
+  [(4a8d980)](https://github.com/taiga-family/configurations/commit/4a8d980dd3a9ead3d06e918acde0d3e097369c9d)
+
 ### [0.235.0](https://github.com/taiga-family/configurations/compare/v0.234.0...v0.235.0) (2024-11-25)
 
 ### [0.234.0](https://github.com/taiga-family/configurations/compare/v0.233.0...v0.234.0) (2024-11-11)
