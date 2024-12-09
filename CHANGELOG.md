@@ -1,3 +1,18 @@
+### [0.235.2](https://github.com/taiga-family/configurations/compare/v0.235.1...v0.235.2) (2024-12-09)
+
+### 🐞 Bug Fixes
+
+- update @stylistic/\* deps to ^2.12.0 (#765)
+  [(a5875f8)](https://github.com/taiga-family/configurations/commit/a5875f8f87b820d4c328c7a344d3f17ac94b7719)
+- update dependency prettier to ^3.4.2 (#762)
+  [(8e7c004)](https://github.com/taiga-family/configurations/commit/8e7c004edd0d70940eac782c7fec1cf717fbe305)
+- update dependency eslint-import-resolver-typescript to ^3.7.0 (#761)
+  [(c7bc5cf)](https://github.com/taiga-family/configurations/commit/c7bc5cfad55d4828c8ec8e9befbf5cc1e2ddc512)
+- update dependency jest-preset-angular to v14.4.2 (#760)
+  [(c0c31b5)](https://github.com/taiga-family/configurations/commit/c0c31b51de392935fb29fb1a7387fc2cb13ec373)
+- update @typescript-eslint/\* deps to ^8.17.0 (#758)
+  [(f4962ef)](https://github.com/taiga-family/configurations/commit/f4962eff4d475706d55f545d974a15860d878214)
+
 ### [0.235.1](https://github.com/taiga-family/configurations/compare/v0.235.0...v0.235.1) (2024-11-29)
 
 ### 🐞 Bug Fixes
