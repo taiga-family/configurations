@@ -1,3 +1,12 @@
+### [0.236.0](https://github.com/taiga-family/configurations/compare/v0.235.3...v0.236.0) (2024-12-17)
+
+### 🐞 Bug Fixes
+
+- update @typescript-eslint/\* deps to ^8.18.1 (#777)
+  [(77d4b36)](https://github.com/taiga-family/configurations/commit/77d4b36363bc3a9b37c74f28fe1e4dad9fbd09da)
+- update dependency cspell to ^8.17.1 (#776)
+  [(111c7e0)](https://github.com/taiga-family/configurations/commit/111c7e079ecb930dfee8498e15aae0bb37a17ec8)
+
 ### [0.235.3](https://github.com/taiga-family/configurations/compare/v0.235.2...v0.235.3) (2024-12-15)
 
 ### 🐞 Bug Fixes
