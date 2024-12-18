@@ -846,6 +846,8 @@ module.exports = {
                         type: 'alphabetical',
                     },
                 ],
+                'playwright/no-force-option': 'error',
+                'playwright/no-skipped-test': 'error',
                 'prefer-template': 'error',
                 'prettier/prettier': [
                     'error',
