@@ -1,3 +1,10 @@
+### [0.237.0](https://github.com/taiga-family/configurations/compare/v0.236.0...v0.237.0) (2024-12-18)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: enable playwright rules (#779)
+  [(e1adbb2)](https://github.com/taiga-family/configurations/commit/e1adbb2dee2bf8d79740ea9acbf540963efd6d4f)
+
 ### [0.236.0](https://github.com/taiga-family/configurations/compare/v0.235.3...v0.236.0) (2024-12-17)
 
 ### 🐞 Bug Fixes
