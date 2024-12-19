@@ -33,7 +33,7 @@
         "eslint-plugin-file-progress": "^1.5.0",
         "eslint-plugin-i18n": "^2.4.0",
         "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-jest": "^28.9.0",
+        "eslint-plugin-jest": "^28.10.0",
         "eslint-plugin-node-import": "^1.0.4",
         "eslint-plugin-perfectionist": "^3.9.1",
         "eslint-plugin-playwright": "^1.8.3",
