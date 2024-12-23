@@ -1,3 +1,10 @@
+### [0.238.0](https://github.com/taiga-family/configurations/compare/v0.237.0...v0.238.0) (2024-12-20)
+
+### 🐞 Bug Fixes
+
+- update dependency eslint-plugin-jest to ^28.10.0 (#780)
+  [(c85a020)](https://github.com/taiga-family/configurations/commit/c85a020f4d25a04835a860aa0b3e375218203888)
+
 ### [0.237.0](https://github.com/taiga-family/configurations/compare/v0.236.0...v0.237.0) (2024-12-18)
 
 ### 🐞 Bug Fixes
