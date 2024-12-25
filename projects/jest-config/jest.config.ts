@@ -31,7 +31,7 @@ export default {
         ],
     },
     transformIgnorePatterns: [
-        String.raw`node_modules/(?!@angular|rxjs|ngx-highlightjs|@maskito|@ng-web-apis|@taiga-ui\/event-plugins|@taiga-ui\/polymorpheus)`,
+        'node_modules/(?!@angular|rxjs|ngx-highlightjs|@maskito|@ng-web-apis|@taiga-ui).+',
     ],
     testMatch: ['<rootDir>/projects/**/*.spec.ts'],
     testPathIgnorePatterns: [
