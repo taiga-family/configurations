@@ -1,3 +1,18 @@
+### [0.239.0](https://github.com/taiga-family/configurations/compare/v0.238.0...v0.239.0) (2024-12-25)
+
+### 🐞 Bug Fixes
+
+- **jest-config**: remove slash in `transformIgnorePatterns` (#788)
+  [(4dda867)](https://github.com/taiga-family/configurations/commit/4dda867a10f34a0af44ee70b9be3595059a7dd7f)
+- update dependency @typescript-eslint/eslint-plugin to ^8.18.2 (#786)
+  [(0ace70d)](https://github.com/taiga-family/configurations/commit/0ace70d2905fad6fe2d93256c84d54ace473f931)
+- update @typescript-eslint/\* deps to ^8.18.2 (#785)
+  [(fa48df0)](https://github.com/taiga-family/configurations/commit/fa48df071f12d4d4a673ddce217385dea1bb5586)
+- update dependency release-it to v17.11.0 (#784)
+  [(1cf9ceb)](https://github.com/taiga-family/configurations/commit/1cf9ceb31cad683caa85045c0ed69a6d19f04de0)
+- update dependency @release-it/conventional-changelog to v9.0.4 (#783)
+  [(ddcb739)](https://github.com/taiga-family/configurations/commit/ddcb739bbafefbc97f2ccd68553e383e1e13ab43)
+
 ### [0.238.0](https://github.com/taiga-family/configurations/compare/v0.237.0...v0.238.0) (2024-12-20)
 
 ### 🐞 Bug Fixes
