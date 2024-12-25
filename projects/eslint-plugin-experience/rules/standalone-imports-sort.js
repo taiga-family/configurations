@@ -3,6 +3,11 @@
  */
 module.exports = {
     create(context) {
+        /**
+         * @type {{defaultStandalone?: boolean}}
+         */
+        const OPTIONS = context.options[0] ?? {};
+
         return {
             ClassDeclaration(node) {
                 const decorators = Array.from(node.decorators ?? []);
@@ -21,7 +26,14 @@ module.exports = {
                             {},
                         );
 
-                        if (properties.standalone && properties.imports) {
+                        if (properties.standalone === false) {
+                            return;
+                        }
+
+                        if (
+                            (properties.standalone || OPTIONS.defaultStandalone) &&
+                            properties.imports
+                        ) {
                             const currentOrder = properties.imports.value.elements.map(
                                 (prop) => prop.name,
                             );
