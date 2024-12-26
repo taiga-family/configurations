@@ -10,13 +10,18 @@ const parserOptions = tsconfig
           },
       };
 
-let isModernAngular = false;
+let angularVersion = 16;
+
+const modernAngularRules = {
+    defaultStandalone: 19,
+    preferControlFlow: 17,
+};
 
 try {
     // @ts-ignore
     const major = require('@angular/cli').VERSION.major;
 
-    isModernAngular = parseInt(major, 10) >= 17;
+    angularVersion = parseInt(major, 10);
 } catch {}
 
 module.exports = {
@@ -161,7 +166,10 @@ module.exports = {
                 '@angular-eslint/no-queries-metadata-property': 'error',
                 '@angular-eslint/prefer-on-push-component-change-detection': 'error',
                 '@angular-eslint/prefer-output-readonly': 'error',
-                '@angular-eslint/prefer-standalone': 'error',
+                '@angular-eslint/prefer-standalone':
+                    angularVersion >= modernAngularRules.defaultStandalone
+                        ? 'off'
+                        : 'error',
                 '@angular-eslint/relative-url-prefix': 'error',
                 '@angular-eslint/sort-lifecycle-methods': 'error',
                 '@angular-eslint/use-lifecycle-interface': 'error',
@@ -269,7 +277,13 @@ module.exports = {
                 '@taiga-ui/experience/no-implicit-public': 'error',
                 '@taiga-ui/experience/no-private-esnext-fields': 'error',
                 '@taiga-ui/experience/no-simple-for-of': 'error',
-                '@taiga-ui/experience/standalone-imports-sort': 'error',
+                '@taiga-ui/experience/standalone-imports-sort': [
+                    'error',
+                    {
+                        defaultStandalone:
+                            angularVersion >= modernAngularRules.defaultStandalone,
+                    },
+                ],
                 '@taiga-ui/experience/strict-tui-doc-example': 'error',
                 '@typescript-eslint/array-type': [
                     'error',
@@ -1049,9 +1063,10 @@ module.exports = {
                 ],
                 '@angular-eslint/template/no-distracting-elements': 'error',
                 '@angular-eslint/template/no-duplicate-attributes': 'error',
-                '@angular-eslint/template/prefer-control-flow': isModernAngular
-                    ? 'error'
-                    : 'off',
+                '@angular-eslint/template/prefer-control-flow':
+                    angularVersion >= modernAngularRules.preferControlFlow
+                        ? 'error'
+                        : 'off',
                 '@angular-eslint/template/prefer-self-closing-tags': 'error',
                 '@angular-eslint/template/role-has-required-aria': 'error',
                 '@angular-eslint/template/table-scope': 'error',
