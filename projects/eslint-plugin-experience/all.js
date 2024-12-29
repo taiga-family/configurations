@@ -1052,6 +1052,7 @@ module.exports = {
                             'tuiHintDescribe',
                             'tuiFile',
                             'tuiTag',
+                            'tuiAccordion',
                         ],
                     },
                 ],
