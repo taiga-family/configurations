@@ -1,3 +1,15 @@
+### [0.240.0](https://github.com/taiga-family/configurations/compare/v0.239.0...v0.240.0) (2024-12-29)
+
+### 🚀 Features
+
+- add `tuiAccordion` in allowList
+  [(c183d40)](https://github.com/taiga-family/configurations/commit/c183d402ad35e7340911be39e2e9115daaaec25f)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience**: disable standalone rules in angular &gt;= 19 (#789)
+  [(9d13bf0)](https://github.com/taiga-family/configurations/commit/9d13bf04b9acf682db0900833ad1ba47ecc12674)
+
 ### [0.239.0](https://github.com/taiga-family/configurations/compare/v0.238.0...v0.239.0) (2024-12-25)
 
 ### 🐞 Bug Fixes
