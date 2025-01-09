@@ -13,7 +13,7 @@
     "main": "index.js",
     "peerDependencies": {
         "@release-it/conventional-changelog": "9.0.4",
-        "release-it": "17.11.0"
+        "release-it": "18.1.1"
     },
     "publishConfig": {
         "access": "public"
