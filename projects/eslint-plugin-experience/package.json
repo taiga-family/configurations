@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "main": "index.js",
     "dependencies": {
-        "glob": "11.0.0"
+        "glob": "11.0.1"
     },
     "peerDependencies": {
         "@angular-eslint/eslint-plugin": "^18.4.0",
