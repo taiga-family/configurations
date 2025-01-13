@@ -1,3 +1,24 @@
+### [0.242.0](https://github.com/taiga-family/configurations/compare/v0.241.0...v0.242.0) (2025-01-13)
+
+### 🐞 Bug Fixes
+
+- update @stylistic/\* deps to ^2.13.0 (#805)
+  [(9a25673)](https://github.com/taiga-family/configurations/commit/9a25673988e7120b9dc32ebec7e8197b62ae332c)
+- update dependency stylelint-config-standard to v37 (#804)
+  [(161d77a)](https://github.com/taiga-family/configurations/commit/161d77a9913286d6d65b64faf18d8a5e4da2d505)
+- update dependency stylelint to ^16.13.0 (#803)
+  [(da61bd7)](https://github.com/taiga-family/configurations/commit/da61bd7287782d8b3b2ccd080603fc48911f6e9f)
+- update dependency @babel/eslint-parser to ^7.26.5 (#802)
+  [(415bd0c)](https://github.com/taiga-family/configurations/commit/415bd0c05c0ff0c91f34ddcde50b35e7d05b2007)
+- update dependency jest-preset-angular to v14.5.0 (#801)
+  [(b123e39)](https://github.com/taiga-family/configurations/commit/b123e39ea8ae9b639307ad536d4f8b17e7267610)
+- update dependency glob to v11.0.1 (#800)
+  [(79f8b3d)](https://github.com/taiga-family/configurations/commit/79f8b3dc6878384b78682c1753d4fa210dcd9a6b)
+- update release-it (#799)
+  [(e952622)](https://github.com/taiga-family/configurations/commit/e952622cda981afd7d516e99d31102aa8280cb10)
+- update @typescript-eslint/\* deps to ^8.19.1 (#798)
+  [(62eac8c)](https://github.com/taiga-family/configurations/commit/62eac8c6c4cb7587c4229551f009215209b824b2)
+
 ### [0.241.0](https://github.com/taiga-family/configurations/compare/v0.240.0...v0.241.0) (2024-12-30)
 
 ### 🐞 Bug Fixes
