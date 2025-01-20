@@ -1,3 +1,32 @@
+### [0.243.0](https://github.com/taiga-family/configurations/compare/v0.242.0...v0.243.0) (2025-01-19)
+
+### 🐞 Bug Fixes
+
+- update dependency eslint-plugin-prettier to ^5.2.3 (#821)
+  [(c728753)](https://github.com/taiga-family/configurations/commit/c7287539450e2587823c2aa7a82a0dcab39ee1a2)
+- update dependency sort-package-json to ^2.14.0 (#817)
+  [(04f30fc)](https://github.com/taiga-family/configurations/commit/04f30fc371bd97ed8e5676be9c3e6b662bf66e66)
+- update dependency eslint-plugin-prettier to ^5.2.2 (#816)
+  [(d1cbd2e)](https://github.com/taiga-family/configurations/commit/d1cbd2ec467fa6e19db17a46a49a59681399ed40)
+- update dependency eslint-plugin-jest to ^28.11.0 (#815)
+  [(04a26eb)](https://github.com/taiga-family/configurations/commit/04a26ebcf8c9d0bed4706084ae85f88e98d01345)
+- update dependency eslint-plugin-jest to ^28.10.1 (#814)
+  [(227a8f4)](https://github.com/taiga-family/configurations/commit/227a8f4e1e39b0031dec265085e6a67a412ab43e)
+- update dependency stylelint to ^16.13.2 (#813)
+  [(83558ca)](https://github.com/taiga-family/configurations/commit/83558caba529040e46c8fd2778df341736585785)
+- update dependency postcss to ^8.5.1 (#812)
+  [(49bb9ed)](https://github.com/taiga-family/configurations/commit/49bb9ed07dad790b02c4bd4b5fe0f50e6a0f86c6)
+- update dependency postcss to ^8.5.0 (#811)
+  [(cf46a07)](https://github.com/taiga-family/configurations/commit/cf46a07bfe0573a53247a39cf803c3e25e19444d)
+- update dependency stylelint to ^16.13.1 (#810)
+  [(6a1df74)](https://github.com/taiga-family/configurations/commit/6a1df74287058f78c293ebf669dcb8f5989d4717)
+- update dependency cspell to ^8.17.2 (#809)
+  [(c711186)](https://github.com/taiga-family/configurations/commit/c711186c2ea21430b767a8fc4443359253b9ea73)
+- update @typescript-eslint/\* deps to ^8.20.0 (#808)
+  [(22a20c9)](https://github.com/taiga-family/configurations/commit/22a20c9ecefff1f06b7b10f5ea05cf832726b476)
+- update dependency sort-package-json to ^2.13.0 (#807)
+  [(044fc67)](https://github.com/taiga-family/configurations/commit/044fc6750d7fd6cc11718d110a59cbe013149efe)
+
 ### [0.242.0](https://github.com/taiga-family/configurations/compare/v0.241.0...v0.242.0) (2025-01-13)
 
 ### 🐞 Bug Fixes
