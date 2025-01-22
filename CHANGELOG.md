@@ -1,3 +1,12 @@
+### [0.244.0](https://github.com/taiga-family/configurations/compare/v0.243.0...v0.244.0) (2025-01-22)
+
+### 🐞 Bug Fixes
+
+- valid position for rules
+  [(21d12f2)](https://github.com/taiga-family/configurations/commit/21d12f2002bc583a36eb94304706fef21eee08e2)
+- update @typescript-eslint/\* deps to ^8.21.0 (#823)
+  [(0cf2666)](https://github.com/taiga-family/configurations/commit/0cf266623043e5160c14b29929502619777b32eb)
+
 ### [0.243.0](https://github.com/taiga-family/configurations/compare/v0.242.0...v0.243.0) (2025-01-19)
 
 ### 🐞 Bug Fixes
