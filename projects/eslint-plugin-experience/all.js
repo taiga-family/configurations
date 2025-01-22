@@ -860,8 +860,6 @@ module.exports = {
                         type: 'alphabetical',
                     },
                 ],
-                'playwright/no-force-option': 'error',
-                'playwright/no-skipped-test': 'error',
                 'prefer-template': 'error',
                 'prettier/prettier': [
                     'error',
@@ -1025,7 +1023,9 @@ module.exports = {
             extends: ['plugin:playwright/recommended'],
             rules: {
                 'jest/prefer-importing-jest-globals': 'off',
+                'playwright/no-force-option': 'error',
                 'playwright/no-networkidle': 'off',
+                'playwright/no-skipped-test': 'error',
                 'playwright/no-wait-for-selector': 'off',
                 'playwright/no-wait-for-timeout': 'off',
             },
