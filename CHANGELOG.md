@@ -1,3 +1,18 @@
+### [0.245.0](https://github.com/taiga-family/configurations/compare/v0.244.0...v0.245.0) (2025-01-27)
+
+### 🐞 Bug Fixes
+
+- update dependency stylelint-prettier to ^5.0.3 (#831)
+  [(8df8a25)](https://github.com/taiga-family/configurations/commit/8df8a2530ce1e51752102cce8a2a17adf71ae721)
+- update dependency stylelint to ^16.14.0 (#829)
+  [(ff07271)](https://github.com/taiga-family/configurations/commit/ff07271583767cd723b404e25d7ca10491758b3c)
+- update dependency jest-preset-angular to v14.5.1 (#828)
+  [(3cf5d91)](https://github.com/taiga-family/configurations/commit/3cf5d917e757283e3cdf76da71756dc6077061bb)
+- update @stylistic/\* deps to v3 (#827)
+  [(d273f80)](https://github.com/taiga-family/configurations/commit/d273f8071c00637115a6e98ba74b685b89b3b7c1)
+- update dependency release-it to v18.1.2 (#826)
+  [(44b6e12)](https://github.com/taiga-family/configurations/commit/44b6e121ead796aa6365708ad82c204c144da59a)
+
 ### [0.244.0](https://github.com/taiga-family/configurations/compare/v0.243.0...v0.244.0) (2025-01-22)
 
 ### 🐞 Bug Fixes
