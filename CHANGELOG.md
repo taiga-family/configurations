@@ -1,3 +1,10 @@
+### [0.246.0](https://github.com/taiga-family/configurations/compare/v0.245.0...v0.246.0) (2025-01-27)
+
+### 🚀 Features
+
+- add eslint9's empty config (#832)
+  [(71969f1)](https://github.com/taiga-family/configurations/commit/71969f14a0856c6047dd8ad6e991be31939cd2eb)
+
 ### [0.245.0](https://github.com/taiga-family/configurations/compare/v0.244.0...v0.245.0) (2025-01-27)
 
 ### 🐞 Bug Fixes
