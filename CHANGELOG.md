@@ -1,3 +1,10 @@
+### [0.247.0](https://github.com/taiga-family/configurations/compare/v0.246.0...v0.247.0) (2025-02-04)
+
+### 🚀 Features
+
+- **jest-config**: support nested jest-preset if you use npm workspaces (#835)
+  [(1b7265e)](https://github.com/taiga-family/configurations/commit/1b7265e826243a7df3658da81ecbdc6211446af3)
+
 ### [0.246.0](https://github.com/taiga-family/configurations/compare/v0.245.0...v0.246.0) (2025-01-27)
 
 ### 🚀 Features
