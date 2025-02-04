@@ -21,7 +21,7 @@ export default {
     extensionsToTreatAsEsm: ['.ts'],
     transform: {
         '^.+\\.(ts|js|mjs|html|svg)$': [
-            'jest-preset-angular',
+            require.resolve('jest-preset-angular'),
             {
                 tsconfig: resolve(process.cwd(), 'tsconfig.spec.json'),
                 stringifyContentPathRegex: String.raw`\.html$`,
