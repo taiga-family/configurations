@@ -14,7 +14,7 @@
     "main": "index.js",
     "peerDependencies": {
         "@stylistic/stylelint-config": "^2.0.0",
-        "@stylistic/stylelint-plugin": "^3.1.1",
+        "@stylistic/stylelint-plugin": "^3.1.2",
         "postcss": "^8.5.1",
         "postcss-less": "^6.0.0",
         "stylelint": "^16.14.1",
