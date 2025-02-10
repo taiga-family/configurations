@@ -1,3 +1,20 @@
+### [0.248.0](https://github.com/taiga-family/configurations/compare/v0.247.0...v0.248.0) (2025-02-05)
+
+### 🐞 Bug Fixes
+
+- update dependency @stylistic/stylelint-plugin to ^3.1.2 (#844)
+  [(21a1ae3)](https://github.com/taiga-family/configurations/commit/21a1ae305f5ecb65de50c0a917bf6ff9152db2b9)
+- update commitlint to ^19.7.1 (#842)
+  [(602ae60)](https://github.com/taiga-family/configurations/commit/602ae60fc3b64f7b194fa21eee9663de641e05b7)
+- update @typescript-eslint/\* deps to ^8.23.0 (#841)
+  [(406a592)](https://github.com/taiga-family/configurations/commit/406a59208e0b87d8965631fb56343ce4f9be0d62)
+- update dependency stylelint to ^16.14.1 (#839)
+  [(815982a)](https://github.com/taiga-family/configurations/commit/815982a7493de579e6746315bdc469814bf87731)
+- update dependency cspell to ^8.17.3 (#838)
+  [(124f4b6)](https://github.com/taiga-family/configurations/commit/124f4b63e1041e6c870112ffac13e9e17b3afe8d)
+- update @stylistic/\* deps to ^3.0.1 (#837)
+  [(33dacfa)](https://github.com/taiga-family/configurations/commit/33dacfa920f608583822cb4e5304009fa66b3d9b)
+
 ### [0.247.0](https://github.com/taiga-family/configurations/compare/v0.246.0...v0.247.0) (2025-02-04)
 
 ### 🚀 Features
