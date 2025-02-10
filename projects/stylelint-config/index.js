@@ -20,6 +20,7 @@ module.exports = {
     rules: {
         '@stylistic/declaration-block-trailing-semicolon': null,
         '@stylistic/declaration-colon-newline-after': null,
+        '@stylistic/declaration-colon-space-after': null,
         '@stylistic/indentation': null,
         '@stylistic/max-line-length': null,
         '@stylistic/no-extra-semicolons': null,
