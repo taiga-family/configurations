@@ -14,13 +14,10 @@ jobs:
           persist-credentials: false
       - uses: taiga-family/ci/actions/setup/variables@v1.111.0
       - uses: taiga-family/ci/actions/setup/node@v1.111.0
-      - run: |
-          # check eslint 9
-          projects/eslint-plugin-experience-next/node_modules/.bin/eslint \
-              --config projects/eslint-plugin-experience-next/eslint.config.ts
-
       - run: npm run cspell -- --no-progress
       - run: |
+          npx nx run-many --target=build
+
           if [[ "${{ env.SUPPORT_AUTO_PUSH }}" == "true" ]]; then
               npm run stylelint -- --fix
               npm run prettier -- --write

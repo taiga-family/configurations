@@ -3,15 +3,10 @@ import rxjs from '@smarttools/eslint-plugin-rxjs';
 import stylistic from '@stylistic/eslint-plugin';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import angular from 'angular-eslint';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import decoratorPosition from 'eslint-plugin-decorator-position';
 import progress from 'eslint-plugin-file-progress';
-import importPlugin from 'eslint-plugin-import';
 import jest from 'eslint-plugin-jest';
-import perfectionist from 'eslint-plugin-perfectionist';
 import playwright from 'eslint-plugin-playwright';
 import prettier from 'eslint-plugin-prettier';
-import pluginPromise from 'eslint-plugin-promise';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import sonarjs from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
@@ -48,8 +43,8 @@ try {
 
 export default tseslint.config(
     progress.configs['recommended-ci'],
-    importPlugin.flatConfigs.recommended,
-    pluginPromise.configs['flat/recommended'],
+    require('eslint-plugin-import').flatConfigs.recommended,
+    require('eslint-plugin-promise').configs['flat/recommended'],
     {
         ignores: [
             '*/icons/all.ts',
@@ -94,7 +89,7 @@ export default tseslint.config(
     },
     eslint.configs.recommended,
     tseslint.configs.recommended,
-    eslintConfigPrettier,
+    require('eslint-config-prettier'),
     {
         files: ['**/*.ts', '**/*.js'],
         rules: {
@@ -127,11 +122,11 @@ export default tseslint.config(
             unicorn,
             sonarjs,
             prettier,
-            perfectionist,
+            perfectionist: require('eslint-plugin-perfectionist'),
             '@stylistic': stylistic,
             '@stylistic/ts': stylisticTs,
             'unused-imports': unusedImports,
-            'decorator-position': decoratorPosition,
+            'decorator-position': require('eslint-plugin-decorator-position'),
             'simple-import-sort': simpleImportSort,
         },
         rules: {
