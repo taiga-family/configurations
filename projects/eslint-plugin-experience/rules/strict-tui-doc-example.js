@@ -90,7 +90,6 @@ module.exports = {
                             : INVALID_KEY_MESSAGE_ID;
 
                         context.report({
-                            // eslint-disable-next-line consistent-return
                             fix: (fixer) => {
                                 if (expectedExtension && actualPathGroups.length) {
                                     // It`s safer to use groups instead of finding and replacing.

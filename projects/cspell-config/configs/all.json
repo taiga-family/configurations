@@ -562,6 +562,7 @@
         "urlset",
         "scrollend",
         "opensearchservice",
-        "antialiasing"
+        "antialiasing",
+        "smarttools"
     ]
 }

@@ -34,6 +34,5 @@ module.exports = function getConstructorFromClassDeclaration(node) {
         return;
     }
 
-    // eslint-disable-next-line consistent-return
     return constructorMethodDefinition;
 };

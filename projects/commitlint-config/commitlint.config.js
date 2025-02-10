@@ -1,5 +1,5 @@
-import fs from 'node:fs';
 import conventional from '@commitlint/config-conventional';
+import fs from 'node:fs';
 
 export default {
     extends: ['@commitlint/config-conventional'],
@@ -8,6 +8,7 @@ export default {
             function getTypes(dir) {
                 try {
                     const {readdirSync, statSync} = fs;
+
                     return readdirSync(dir).filter((entity) =>
                         statSync(`${dir}/${entity}`).isDirectory(),
                     );

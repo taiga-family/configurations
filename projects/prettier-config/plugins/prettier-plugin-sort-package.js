@@ -33,7 +33,6 @@ exports.parsers = {
              */
             if (
                 options.filepath?.endsWith('package.json') &&
-                // eslint-disable-next-line no-prototype-builtins
                 json?.hasOwnProperty('scripts')
             ) {
                 sorted.scripts = unsortedScripts;

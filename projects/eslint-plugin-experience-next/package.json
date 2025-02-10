@@ -5,8 +5,28 @@
     "license": "Apache-2.0",
     "main": "eslint.config.ts",
     "dependencies": {
+        "@eslint/compat": "1.2.6",
+        "@smarttools/eslint-plugin-rxjs": "1.0.18",
+        "@stylistic/eslint-plugin": "3.1.0",
+        "@stylistic/eslint-plugin-ts": "3.1.0",
+        "@typescript-eslint/eslint-plugin": "8.23.0",
+        "angular-eslint": "19.1.0",
         "eslint": "9.20.0",
-        "eslint-plugin-file-progress": "3.0.1"
+        "eslint-config-prettier": "10.0.1",
+        "eslint-plugin-decorator-position": "6.0.0",
+        "eslint-plugin-file-progress": "3.0.1",
+        "eslint-plugin-import": "2.31.0",
+        "eslint-plugin-jest": "28.11.0",
+        "eslint-plugin-perfectionist": "4.8.0",
+        "eslint-plugin-playwright": "2.2.0",
+        "eslint-plugin-prettier": "5.2.3",
+        "eslint-plugin-promise": "7.2.1",
+        "eslint-plugin-simple-import-sort": "12.1.1",
+        "eslint-plugin-sonarjs": "3.0.1",
+        "eslint-plugin-unicorn": "56.0.1",
+        "eslint-plugin-unused-imports": "4.1.4",
+        "globals": "15.14.0",
+        "typescript-eslint": "8.23.0"
     },
     "publishConfig": {
         "access": "public"
