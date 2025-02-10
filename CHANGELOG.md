@@ -1,3 +1,5 @@
+### [0.250.0](https://github.com/taiga-family/configurations/compare/v0.249.0...v0.250.0) (2025-02-10)
+
 ### [0.249.0](https://github.com/taiga-family/configurations/compare/v0.248.0...v0.249.0) (2025-02-10)
 
 ### 🚀 Features
