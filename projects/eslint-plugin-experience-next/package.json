@@ -5,8 +5,8 @@
     "license": "Apache-2.0",
     "main": "eslint.config.ts",
     "dependencies": {
-        "eslint": "^9.0.0",
-        "eslint-plugin-file-progress": "^3.0.1"
+        "eslint": "9.20.0",
+        "eslint-plugin-file-progress": "3.0.1"
     },
     "publishConfig": {
         "access": "public"
