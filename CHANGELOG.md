@@ -1,3 +1,23 @@
+### [0.249.0](https://github.com/taiga-family/configurations/compare/v0.248.0...v0.249.0) (2025-02-10)
+
+### 🚀 Features
+
+- **eslint-plugin-experience-next**: add rules for compatibility eslint9 (#851)
+  [(ffe92cb)](https://github.com/taiga-family/configurations/commit/ffe92cba4f068f59f2e3341cf568c43d6bb20d5d)
+
+### 🐞 Bug Fixes
+
+- **stylelint-config**: disable conflicted rule (#852)
+  [(045aa1c)](https://github.com/taiga-family/configurations/commit/045aa1cdfa18ac831c380fc6eb8c6bc9b4ac0971)
+- update dependency prettier to ^3.5.0 (#849)
+  [(62e6a66)](https://github.com/taiga-family/configurations/commit/62e6a66fe89c216480e4b1935b2afb0f4f88861b)
+- update dependency @babel/eslint-parser to ^7.26.8 (#848)
+  [(7e9450b)](https://github.com/taiga-family/configurations/commit/7e9450b9657931ce2b15dbcc8206d361009c359f)
+- update @stylistic/\* deps to ^3.1.0 (#847)
+  [(a4911cc)](https://github.com/taiga-family/configurations/commit/a4911cc8bf2f8ff7e350aa04ab4604be310ca4c3)
+- pin dependencies (#836)
+  [(a75bbc2)](https://github.com/taiga-family/configurations/commit/a75bbc27e9bda0d9c27d3d57f4c6cd1aa147c486)
+
 ### [0.248.0](https://github.com/taiga-family/configurations/compare/v0.247.0...v0.248.0) (2025-02-05)
 
 ### 🐞 Bug Fixes
