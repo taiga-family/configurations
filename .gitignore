@@ -8,3 +8,8 @@
 # IDEA
 .idea
 *.log
+
+# Custom
+projects/jest-config/*.d.ts
+projects/jest-config/*.js
+projects/eslint-plugin-experience-next/*.js
