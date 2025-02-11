@@ -1,6 +1,4 @@
 module.exports = {
-    $schema:
-        'https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/stylelintrc.json',
     plugins: [
         'stylelint-order',
         'stylelint-rem-over-px',
@@ -8,6 +6,8 @@ module.exports = {
         '@stylistic/stylelint-plugin',
     ],
     extends: ['@stylistic/stylelint-config'],
+    $schema:
+        'https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/stylelintrc.json',
     allowEmptyInput: true,
     customSyntax: 'postcss-less',
     defaultSeverity: 'error',
@@ -18,6 +18,12 @@ module.exports = {
         `${process.cwd()}/**/tests-report/**`,
     ],
     rules: {
+        'color-no-invalid-hex': true,
+        'comment-whitespace-inside': 'always',
+        'named-grid-areas-no-invalid': true,
+        'no-invalid-double-slash-comments': true,
+        'no-invalid-position-at-import-rule': null,
+        'selector-max-id': null,
         '@stylistic/declaration-block-trailing-semicolon': null,
         '@stylistic/declaration-colon-newline-after': null,
         '@stylistic/declaration-colon-space-after': null,
@@ -61,9 +67,7 @@ module.exports = {
                 ignoreProperties: ['mask', 'mask-image'],
             },
         ],
-        'color-no-invalid-hex': true,
         'comment-no-empty': true,
-        'comment-whitespace-inside': 'always',
         'csstools/use-logical': [
             'always',
             {
@@ -100,7 +104,6 @@ module.exports = {
                 ignoreShorthands: ['inset', 'overflow', 'margin-inline', 'inset-block'],
             },
         ],
-        'declaration-block-no-shorthand-property-overrides': true,
         'declaration-empty-line-before': [
             'always',
             {
@@ -137,13 +140,9 @@ module.exports = {
         'media-feature-name-no-unknown': true,
         'media-feature-name-no-vendor-prefix': null,
         'media-feature-name-value-no-unknown': true,
-        'named-grid-areas-no-invalid': true,
         'no-descending-specificity': null,
-        'no-duplicate-at-import-rules': true,
         'no-duplicate-selectors': true,
         'no-empty-source': true,
-        'no-invalid-double-slash-comments': true,
-        'no-invalid-position-at-import-rule': null,
         'no-irregular-whitespace': true,
         'no-unknown-animations': null,
         'no-unknown-custom-media': true,
@@ -216,7 +215,6 @@ module.exports = {
         ],
         'selector-anb-no-unmatchable': true,
         'selector-attribute-quotes': 'always',
-        'selector-max-id': null,
         'selector-max-specificity': null,
         'selector-max-type': null,
         'selector-no-qualifying-type': null,
@@ -270,5 +268,7 @@ module.exports = {
             },
         ],
         'value-no-vendor-prefix': true,
+        'no-duplicate-at-import-rules': true,
+        'declaration-block-no-shorthand-property-overrides': true,
     },
 };

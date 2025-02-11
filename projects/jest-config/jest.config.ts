@@ -12,27 +12,30 @@ const {compilerOptions} = require(resolve(process.cwd(), 'tsconfig.json'));
 const maxParallel = require('node:os').cpus().length / 2;
 
 export default {
-    rootDir: process.cwd(),
+    bail: 1,
+    cacheDirectory: '<rootDir>/node_modules/.cache/jest',
+    collectCoverage: true,
+    collectCoverageFrom: ['<rootDir>/**/*.ts'],
+    coverageDirectory: '<rootDir>/coverage',
+    coveragePathIgnorePatterns: ['node_modules', 'schematics', '.spec.ts', '.cy.ts'],
+    coverageReporters: ['lcov', 'clover'],
+    extensionsToTreatAsEsm: ['.ts'],
+    maxConcurrency: maxParallel,
+    maxWorkers: maxParallel,
+    moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+        prefix: `<rootDir>/${compilerOptions.baseUrl}/`
+            .replaceAll('./', '/')
+            .replaceAll(/\/\/+/g, '/'),
+    }),
+    modulePathIgnorePatterns: ['.cache', 'dist', '<rootDir>/dist/'],
+    passWithNoTests: true,
     preset: 'jest-preset-angular',
-    testEnvironment: 'jsdom',
+    reporters: ['default'],
+    rootDir: process.cwd(),
     setupFilesAfterEnv: [
         resolve(process.cwd(), './node_modules/@taiga-ui/testing/setup-jest/index.ts'),
     ],
-    extensionsToTreatAsEsm: ['.ts'],
-    transform: {
-        '^.+\\.(ts|js|mjs|html|svg)$': [
-            require.resolve('jest-preset-angular'),
-            {
-                tsconfig: resolve(process.cwd(), 'tsconfig.spec.json'),
-                stringifyContentPathRegex: String.raw`\.html$`,
-                isolatedModules: true,
-                diagnostics: true,
-            },
-        ],
-    },
-    transformIgnorePatterns: [
-        'node_modules/(?!@angular|rxjs|ngx-highlightjs|@maskito|@ng-web-apis|@taiga-ui).+',
-    ],
+    testEnvironment: 'jsdom',
     testMatch: ['<rootDir>/projects/**/*.spec.ts'],
     testPathIgnorePatterns: [
         '/cypress/',
@@ -40,22 +43,19 @@ export default {
         '/node_modules/',
         '.pw.spec.ts',
     ],
-    coverageDirectory: '<rootDir>/coverage',
-    collectCoverageFrom: ['<rootDir>/**/*.ts'],
-    coveragePathIgnorePatterns: ['node_modules', 'schematics', '.spec.ts', '.cy.ts'],
-    moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-        prefix: `<rootDir>/${compilerOptions.baseUrl}/`
-            .replaceAll('./', '/')
-            .replaceAll(/\/\/+/g, '/'),
-    }),
-    modulePathIgnorePatterns: ['.cache', 'dist', '<rootDir>/dist/'],
-    coverageReporters: ['lcov', 'clover'],
-    cacheDirectory: '<rootDir>/node_modules/.cache/jest',
-    maxConcurrency: maxParallel,
-    maxWorkers: maxParallel,
+    transform: {
+        '^.+\\.(ts|js|mjs|html|svg)$': [
+            require.resolve('jest-preset-angular'),
+            {
+                diagnostics: true,
+                isolatedModules: true,
+                stringifyContentPathRegex: String.raw`\.html$`,
+                tsconfig: resolve(process.cwd(), 'tsconfig.spec.json'),
+            },
+        ],
+    },
+    transformIgnorePatterns: [
+        'node_modules/(?!@angular|rxjs|ngx-highlightjs|@maskito|@ng-web-apis|@taiga-ui).+',
+    ],
     verbose: !process.env.CI,
-    bail: 1,
-    reporters: ['default'],
-    passWithNoTests: true,
-    collectCoverage: true,
 } satisfies JestConfigWithTsJest;

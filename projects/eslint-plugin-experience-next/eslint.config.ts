@@ -92,13 +92,18 @@ export default tseslint.config(
     require('eslint-config-prettier'),
     {
         files: ['**/*.ts', '**/*.js'],
-        rules: {
-            'no-template-curly-in-string': 'error',
-            'no-empty': ['error', {allowEmptyCatch: true}],
+        plugins: {
+            '@stylistic': stylistic,
+            '@stylistic/ts': stylisticTs,
+            'decorator-position': require('eslint-plugin-decorator-position'),
+            perfectionist: require('eslint-plugin-perfectionist'),
+            prettier,
+            rxjs,
+            'simple-import-sort': simpleImportSort,
+            sonarjs,
+            unicorn,
+            'unused-imports': unusedImports,
         },
-    },
-    {
-        files: ['**/*.ts'],
         extends: [
             eslint.configs.recommended,
             ...tseslint.configs.recommended,
@@ -106,7 +111,6 @@ export default tseslint.config(
             ...angular.configs.tsRecommended,
         ],
         languageOptions: {
-            globals: globals.builtin,
             parserOptions: {
                 ecmaVersion: 'latest',
                 errorOnTypeScriptSyntacticAndSemanticIssues: false,
@@ -115,21 +119,13 @@ export default tseslint.config(
                 warnOnUnsupportedTypeScriptVersion: false,
                 ...parserOptions,
             },
+            globals: globals.builtin,
         },
         processor: angular.processInlineTemplates,
-        plugins: {
-            rxjs,
-            unicorn,
-            sonarjs,
-            prettier,
-            perfectionist: require('eslint-plugin-perfectionist'),
-            '@stylistic': stylistic,
-            '@stylistic/ts': stylisticTs,
-            'unused-imports': unusedImports,
-            'decorator-position': require('eslint-plugin-decorator-position'),
-            'simple-import-sort': simpleImportSort,
-        },
         rules: {
+            '@typescript-eslint/no-import-type-side-effects': 'error',
+            'no-void': ['error', {allowAsStatement: true}],
+            'sonarjs/no-identical-functions': 'error',
             '@angular-eslint/contextual-decorator': 'error',
             '@angular-eslint/contextual-lifecycle': 'error',
             '@angular-eslint/directive-selector': 'error',
@@ -401,7 +397,6 @@ export default tseslint.config(
             ],
             '@typescript-eslint/no-for-in-array': 'error',
             '@typescript-eslint/no-implied-eval': 'error',
-            '@typescript-eslint/no-import-type-side-effects': 'error',
             '@typescript-eslint/no-inferrable-types': 'error',
             '@typescript-eslint/no-namespace': ['error', {allowDeclarations: true}],
             '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
@@ -410,10 +405,6 @@ export default tseslint.config(
                 'error',
                 {
                     types: {
-                        '{}': {
-                            message:
-                                '`{}` actually means `any non-nullish value`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.\n- If you want a type meaning `empty object`, you probably want `Record<string, never>` instead.',
-                        },
                         BigInt: {
                             fixWith: 'bigint',
                             message: 'Use bigint instead',
@@ -437,6 +428,10 @@ export default tseslint.config(
                         Symbol: {
                             fixWith: 'symbol',
                             message: 'Use symbol instead',
+                        },
+                        '{}': {
+                            message:
+                                '`{}` actually means `any non-nullish value`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.\n- If you want a type meaning `empty object`, you probably want `Record<string, never>` instead.',
                         },
                     },
                 },
@@ -499,8 +494,8 @@ export default tseslint.config(
             '@typescript-eslint/switch-exhaustiveness-check': [
                 'error',
                 {
-                    allowDefaultCaseForExhaustiveSwitch: true,
                     considerDefaultExhaustiveForUnions: true,
+                    allowDefaultCaseForExhaustiveSwitch: true,
                     requireDefaultForNonUnion: false,
                 },
             ],
@@ -517,8 +512,8 @@ export default tseslint.config(
             'decorator-position/decorator-position': [
                 'error',
                 {
-                    methods: 'above',
                     printWidth: 120,
+                    methods: 'above',
                     properties: 'above',
                 },
             ],
@@ -582,8 +577,8 @@ export default tseslint.config(
                 },
             ],
             'no-constant-condition': 'error',
+            'no-empty': ['error', {allowEmptyCatch: true}],
             'no-implicit-coercion': ['error', {allow: ['!!']}],
-            'no-irregular-whitespace': 'error',
             'no-loop-func': 'error',
             'no-restricted-imports': [
                 'error',
@@ -706,7 +701,6 @@ export default tseslint.config(
                 },
             ],
             'no-var': 'error',
-            'no-void': ['error', {allowAsStatement: true}],
             'perfectionist/sort-array-includes': [
                 'error',
                 {
@@ -769,7 +763,6 @@ export default tseslint.config(
             'rxjs/throw-error': 'error',
             'simple-import-sort/exports': 'error',
             'simple-import-sort/imports': 'error',
-            'sonarjs/no-identical-functions': 'error',
             'sonarjs/no-inverted-boolean-check': 'error',
             'spaced-comment': [
                 'error',
@@ -813,9 +806,9 @@ export default tseslint.config(
             ...angular.configs.templateAccessibility,
         ],
         rules: {
-            '@angular-eslint/template/no-negated-async': 'off',
-            '@angular-eslint/template/label-has-associated-control': 'off',
             '@angular-eslint/template/interactive-supports-focus': 'off',
+            '@angular-eslint/template/label-has-associated-control': 'off',
+            '@angular-eslint/template/no-negated-async': 'off',
             '@typescript-eslint/ban-ts-comment': 'off',
             'import/namespace': 'off',
         },
@@ -825,9 +818,9 @@ export default tseslint.config(
         ...playwright.configs['flat/recommended'],
         rules: {
             ...playwright.configs['flat/recommended'].rules,
+            'playwright/no-networkidle': 'off',
             'jest/prefer-importing-jest-globals': 'off',
             'playwright/no-force-option': 'error',
-            'playwright/no-networkidle': 'off',
             'playwright/no-skipped-test': 'error',
             'playwright/no-wait-for-selector': 'off',
             'playwright/no-wait-for-timeout': 'off',
@@ -860,6 +853,7 @@ export default tseslint.config(
              * If enabled we have
              * Expected to be running in 'ProxyZone', but it was not found
              */
+            'jest/valid-title': 'error',
             'jest/prefer-importing-jest-globals': 'off',
             'jest/prefer-lowercase-title': [
                 'error',
@@ -896,7 +890,6 @@ export default tseslint.config(
                 },
             ],
             'jest/unbound-method': 'off',
-            'jest/valid-title': 'error',
         },
     },
     {
@@ -909,9 +902,17 @@ export default tseslint.config(
         },
     },
     {
+        files: ['**/*.js'],
+        rules: {
+            '@typescript-eslint/explicit-function-return-type': 'off',
+            'no-template-curly-in-string': 'off',
+        },
+    },
+    {
         files: ['**/*'],
         rules: {
-            'no-constant-binary-expression': 'off',
+            '@angular-eslint/use-injectable-provided-in': 'off',
+            'sonarjs/no-invalid-await': 'off',
             '@angular-eslint/component-class-suffix': 'off',
             '@angular-eslint/component-max-inline-declarations': 'off',
             '@angular-eslint/component-selector': 'off',
@@ -929,17 +930,16 @@ export default tseslint.config(
             '@angular-eslint/template/click-events-have-key-events': 'off',
             '@angular-eslint/use-component-selector': 'off',
             '@angular-eslint/use-component-view-encapsulation': 'off',
-            '@angular-eslint/use-injectable-provided-in': 'off',
             '@typescript-eslint/adjacent-overload-signatures': 'off',
-            '@typescript-eslint/class-literal-property-style': 'off',
-            '@typescript-eslint/no-require-imports': 'off',
             '@typescript-eslint/ban-ts-comment': 'off',
+            '@typescript-eslint/class-literal-property-style': 'off',
             '@typescript-eslint/consistent-return': 'off',
             '@typescript-eslint/explicit-module-boundary-types': 'off',
             '@typescript-eslint/no-base-to-string': 'off',
             '@typescript-eslint/no-explicit-any': 'off',
             '@typescript-eslint/no-floating-promises': 'off',
             '@typescript-eslint/no-non-null-assertion': 'off',
+            '@typescript-eslint/no-require-imports': 'off',
             '@typescript-eslint/no-shadow': 'off',
             '@typescript-eslint/no-unnecessary-condition': 'off',
             '@typescript-eslint/no-unsafe-member-access': 'off',
@@ -976,11 +976,13 @@ export default tseslint.config(
             'max-statements': 'off',
             'no-await-in-loop': 'off',
             'no-bitwise': 'off',
+            'no-constant-binary-expression': 'off',
             'no-constructor-return': 'off',
             'no-continue': 'off',
             'no-dupe-class-members': 'off',
             'no-duplicate-imports': 'off',
             'no-empty-function': 'off',
+            'no-irregular-whitespace': 'off',
             'no-param-reassign': 'off',
             'no-plusplus': 'off',
             'no-prototype-builtins': 'off',
@@ -1035,7 +1037,6 @@ export default tseslint.config(
             'sonarjs/no-commented-code': 'off',
             'sonarjs/no-duplicate-string': 'off',
             'sonarjs/no-empty-function': 'off',
-            'sonarjs/no-invalid-await': 'off',
             'sonarjs/no-misleading-array-reverse': 'off',
             'sonarjs/no-misused-promises': 'off',
             'sonarjs/no-nested-conditional': 'off',

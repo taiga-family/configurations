@@ -15,21 +15,21 @@ const attributeOptions = {
 };
 
 module.exports = {
-    $schema: 'https://json.schemastore.org/prettierrc',
+    printWidth: 120,
+    tabWidth: 4,
     plugins: [
         require.resolve('stylelint-prettier'),
         require.resolve('prettier-plugin-organize-attributes'),
     ],
+    $schema: 'https://json.schemastore.org/prettierrc',
     arrowParens: 'always',
     bracketSpacing: false,
     endOfLine: 'lf',
     htmlWhitespaceSensitivity: 'ignore',
-    printWidth: 120,
     proseWrap: 'always',
     semi: true,
     singleAttributePerLine: true,
     singleQuote: true,
-    tabWidth: 4,
     trailingComma: 'all',
     useTabs: false,
     overrides: [
@@ -77,17 +77,17 @@ module.exports = {
         },
         {
             files: ['*.yml', '*.yaml'],
-            options: {parser: 'yaml', tabWidth: 2},
+            options: {tabWidth: 2, parser: 'yaml'},
         },
         {
             files: ['*.md'],
-            options: {parser: 'markdown', tabWidth: 2},
+            options: {tabWidth: 2, parser: 'markdown'},
         },
         {
             files: ['*.html'],
             options: {
-                parser: 'angular',
                 printWidth: 120,
+                parser: 'angular',
                 ...attributeOptions,
             },
         },
@@ -95,8 +95,8 @@ module.exports = {
             files: ['*.js', '*.ts'],
             options: {
                 ...attributeOptions,
-                parser: 'typescript',
                 printWidth: 90,
+                parser: 'typescript',
             },
         },
         {

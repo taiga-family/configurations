@@ -18,10 +18,10 @@ const syncerOptions: SyncerOptions | null = packageJson?.syncer ?? null;
 
 if (syncerOptions) {
     tuiSyncVersions({
-        newVersion: packageJson.version,
+        ignorePackageNames: syncerOptions.ignorePackageNames,
         includePaths: syncerOptions.includePaths,
         matchPackageNames: syncerOptions.matchPackageNames,
-        ignorePackageNames: syncerOptions.ignorePackageNames,
+        newVersion: packageJson.version,
     });
 } else {
     throw new Error(`Syncer options not found: ${JSON.stringify(packageJson)}`);
