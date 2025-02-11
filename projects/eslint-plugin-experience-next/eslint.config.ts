@@ -568,6 +568,7 @@ export default tseslint.config(
             ],
             'max-depth': 'error',
             'max-nested-callbacks': ['error', 4],
+            'max-params': ['error', 5],
             'no-bitwise': 'error',
             'no-case-declarations': 'error',
             'no-console': [
@@ -580,6 +581,7 @@ export default tseslint.config(
             'no-empty': ['error', {allowEmptyCatch: true}],
             'no-implicit-coercion': ['error', {allow: ['!!']}],
             'no-loop-func': 'error',
+            'no-nested-ternary': 'error',
             'no-restricted-imports': [
                 'error',
                 {
@@ -756,6 +758,7 @@ export default tseslint.config(
             'rxjs/no-connectable': 'error',
             'rxjs/no-cyclic-action': 'error',
             'rxjs/no-ignored-observable': 'error',
+            'rxjs/no-nested-subscribe': 'error',
             'rxjs/no-topromise': 'error',
             'rxjs/no-unsafe-catch': 'error',
             'rxjs/no-unsafe-first': 'error',
@@ -1004,7 +1007,6 @@ export default tseslint.config(
             'react/no-is-mounted': 'off',
             'require-await': 'off',
             'rxjs/no-ignored-takewhile-value': 'off',
-            'rxjs/no-nested-subscribe': 'off',
             'rxjs/no-unsafe-takeuntil': 'off',
             'sonarjs/aws-apigateway-public-api': 'off',
             'sonarjs/aws-ec2-rds-dms-public': 'off',
