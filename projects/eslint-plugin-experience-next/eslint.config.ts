@@ -20,19 +20,14 @@ const tsconfig =
     projectJsonExist('tsconfig.eslint.json') || projectJsonExist('tsconfig.json');
 
 const parserOptions = tsconfig
-    ? {
-          project: [tsconfig],
-      }
+    ? {project: [tsconfig]}
     : {
           EXPERIMENTAL_useProjectService: {
               maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING: Infinity,
           },
       };
 
-const modernAngularRules = {
-    defaultStandalone: 19,
-    preferControlFlow: 17,
-};
+const modernAngularRules = {defaultStandalone: 19, preferControlFlow: 17};
 
 try {
     // @ts-ignore
@@ -171,13 +166,7 @@ export default tseslint.config(
                 {exceptAfterOverload: true, exceptAfterSingleLine: true},
             ],
             '@stylistic/ts/member-delimiter-style': 'error',
-            '@stylistic/ts/quotes': [
-                'error',
-                'single',
-                {
-                    avoidEscape: true,
-                },
-            ],
+            '@stylistic/ts/quotes': ['error', 'single', {avoidEscape: true}],
             '@stylistic/ts/type-annotation-spacing': 'error',
             '@typescript-eslint/array-type': [
                 'error',
@@ -189,10 +178,7 @@ export default tseslint.config(
             '@typescript-eslint/consistent-indexed-object-style': 'error',
             '@typescript-eslint/consistent-type-assertions': [
                 'error',
-                {
-                    assertionStyle: 'as',
-                    objectLiteralTypeAssertions: 'allow-as-parameter',
-                },
+                {assertionStyle: 'as', objectLiteralTypeAssertions: 'allow-as-parameter'},
             ],
             '@typescript-eslint/consistent-type-definitions': 'error',
             '@typescript-eslint/consistent-type-imports': [
@@ -292,49 +278,19 @@ export default tseslint.config(
             ],
             '@typescript-eslint/naming-convention': [
                 'error',
-                {
-                    format: ['PascalCase', 'UPPER_CASE'],
-                    selector: 'typeLike',
-                },
-                {
-                    format: ['PascalCase'],
-                    modifiers: ['exported'],
-                    selector: 'class',
-                },
+                {format: ['PascalCase', 'UPPER_CASE'], selector: 'typeLike'},
+                {format: ['PascalCase'], modifiers: ['exported'], selector: 'class'},
                 {
                     format: ['PascalCase'],
                     modifiers: ['exported', 'abstract'],
                     selector: 'class',
                 },
-                {
-                    format: ['camelCase'],
-                    modifiers: ['exported'],
-                    selector: 'function',
-                },
-                {
-                    format: ['PascalCase'],
-                    modifiers: ['exported'],
-                    selector: 'interface',
-                },
-                {
-                    format: ['PascalCase'],
-                    modifiers: ['exported'],
-                    selector: 'typeAlias',
-                },
-                {
-                    format: null,
-                    modifiers: ['destructured'],
-                    selector: 'variable',
-                },
-                {
-                    filter: '__non_webpack_require__',
-                    format: null,
-                    selector: 'variable',
-                },
-                {
-                    format: ['camelCase', 'UPPER_CASE'],
-                    selector: 'variable',
-                },
+                {format: ['camelCase'], modifiers: ['exported'], selector: 'function'},
+                {format: ['PascalCase'], modifiers: ['exported'], selector: 'interface'},
+                {format: ['PascalCase'], modifiers: ['exported'], selector: 'typeAlias'},
+                {format: null, modifiers: ['destructured'], selector: 'variable'},
+                {filter: '__non_webpack_require__', format: null, selector: 'variable'},
+                {format: ['camelCase', 'UPPER_CASE'], selector: 'variable'},
                 {
                     format: ['UPPER_CASE', 'camelCase', 'PascalCase'],
                     modifiers: ['global'],
@@ -345,28 +301,11 @@ export default tseslint.config(
                     modifiers: ['exported'],
                     selector: 'variable',
                 },
-                {
-                    format: ['PascalCase'],
-                    modifiers: ['abstract'],
-                    selector: 'class',
-                },
-                {
-                    format: ['StrictPascalCase'],
-                    modifiers: ['exported'],
-                    selector: 'enum',
-                },
-                {
-                    format: ['PascalCase'],
-                    selector: 'enumMember',
-                },
-                {
-                    format: ['camelCase'],
-                    selector: 'classMethod',
-                },
-                {
-                    format: ['camelCase', 'UPPER_CASE'],
-                    selector: 'classProperty',
-                },
+                {format: ['PascalCase'], modifiers: ['abstract'], selector: 'class'},
+                {format: ['StrictPascalCase'], modifiers: ['exported'], selector: 'enum'},
+                {format: ['PascalCase'], selector: 'enumMember'},
+                {format: ['camelCase'], selector: 'classMethod'},
+                {format: ['camelCase', 'UPPER_CASE'], selector: 'classProperty'},
             ],
             '@typescript-eslint/no-confusing-non-null-assertion': 'error',
             '@typescript-eslint/no-duplicate-enum-values': 'error',
@@ -405,30 +344,15 @@ export default tseslint.config(
                 'error',
                 {
                     types: {
-                        BigInt: {
-                            fixWith: 'bigint',
-                            message: 'Use bigint instead',
-                        },
-                        Boolean: {
-                            fixWith: 'boolean',
-                            message: 'Use boolean instead',
-                        },
-                        Number: {
-                            fixWith: 'number',
-                            message: 'Use number instead',
-                        },
+                        BigInt: {fixWith: 'bigint', message: 'Use bigint instead'},
+                        Boolean: {fixWith: 'boolean', message: 'Use boolean instead'},
+                        Number: {fixWith: 'number', message: 'Use number instead'},
                         Object: {
                             message:
                                 'The `Object` type actually means `any non-nullish value`, so it is marginally better than `unknown`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.',
                         },
-                        String: {
-                            fixWith: 'string',
-                            message: 'Use string instead',
-                        },
-                        Symbol: {
-                            fixWith: 'symbol',
-                            message: 'Use symbol instead',
-                        },
+                        String: {fixWith: 'string', message: 'Use string instead'},
+                        Symbol: {fixWith: 'symbol', message: 'Use symbol instead'},
                         '{}': {
                             message:
                                 '`{}` actually means `any non-nullish value`.\n- If you want a type meaning `any object`, you probably want `object` instead.\n- If you want a type meaning `any value`, you probably want `unknown` instead.\n- If you want a type meaning `empty object`, you probably want `Record<string, never>` instead.',
@@ -501,36 +425,16 @@ export default tseslint.config(
             ],
             '@typescript-eslint/triple-slash-reference': [
                 'error',
-                {
-                    lib: 'always',
-                    path: 'always',
-                    types: 'always',
-                },
+                {lib: 'always', path: 'always', types: 'always'},
             ],
             '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
             curly: ['error', 'all'],
             'decorator-position/decorator-position': [
                 'error',
-                {
-                    printWidth: 120,
-                    methods: 'above',
-                    properties: 'above',
-                },
+                {printWidth: 120, methods: 'above', properties: 'above'},
             ],
-            eqeqeq: [
-                'error',
-                'always',
-                {
-                    null: 'ignore',
-                },
-            ],
-            'func-style': [
-                'error',
-                'declaration',
-                {
-                    allowArrowFunctions: true,
-                },
-            ],
+            eqeqeq: ['error', 'always', {null: 'ignore'}],
+            'func-style': ['error', 'declaration', {allowArrowFunctions: true}],
             'guard-for-in': 'error',
             'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
             'import/first': 'error',
@@ -541,12 +445,7 @@ export default tseslint.config(
             'import/no-duplicates': 'error',
             'import/no-mutable-exports': 'error',
             'import/no-self-import': 'error',
-            'import/no-useless-path-segments': [
-                'error',
-                {
-                    noUselessIndex: true,
-                },
-            ],
+            'import/no-useless-path-segments': ['error', {noUselessIndex: true}],
             'import/no-webpack-loader-syntax': 'error',
             'lines-around-comment': [
                 'error',
@@ -571,12 +470,7 @@ export default tseslint.config(
             'max-params': ['error', 5],
             'no-bitwise': 'error',
             'no-case-declarations': 'error',
-            'no-console': [
-                'error',
-                {
-                    allow: ['info', 'assert', 'warn', 'error'],
-                },
-            ],
+            'no-console': ['error', {allow: ['info', 'assert', 'warn', 'error']}],
             'no-constant-condition': 'error',
             'no-empty': ['error', {allowEmptyCatch: true}],
             'no-implicit-coercion': ['error', {allow: ['!!']}],
@@ -696,11 +590,7 @@ export default tseslint.config(
             'no-useless-escape': 'error',
             'no-useless-rename': [
                 'error',
-                {
-                    ignoreDestructuring: true,
-                    ignoreExport: false,
-                    ignoreImport: false,
-                },
+                {ignoreDestructuring: true, ignoreExport: false, ignoreImport: false},
             ],
             'no-var': 'error',
             'perfectionist/sort-array-includes': [
@@ -714,11 +604,7 @@ export default tseslint.config(
             ],
             'perfectionist/sort-maps': [
                 'error',
-                {
-                    ignoreCase: true,
-                    order: 'asc',
-                    type: 'alphabetical',
-                },
+                {ignoreCase: true, order: 'asc', type: 'alphabetical'},
             ],
             'perfectionist/sort-sets': [
                 'error',
@@ -731,27 +617,14 @@ export default tseslint.config(
             ],
             'perfectionist/sort-switch-case': [
                 'error',
-                {
-                    ignoreCase: true,
-                    order: 'asc',
-                    type: 'alphabetical',
-                },
+                {ignoreCase: true, order: 'asc', type: 'alphabetical'},
             ],
             'perfectionist/sort-variable-declarations': [
                 'error',
-                {
-                    ignoreCase: true,
-                    order: 'asc',
-                    type: 'alphabetical',
-                },
+                {ignoreCase: true, order: 'asc', type: 'alphabetical'},
             ],
             'prefer-template': 'error',
-            'prettier/prettier': [
-                'error',
-                {
-                    endOfLine: 'auto',
-                },
-            ],
+            'prettier/prettier': ['error', {endOfLine: 'auto'}],
             'promise/catch-or-return': 'error',
             'promise/param-names': 'error',
             'rxjs/no-compat': 'error',
@@ -767,21 +640,10 @@ export default tseslint.config(
             'simple-import-sort/exports': 'error',
             'simple-import-sort/imports': 'error',
             'sonarjs/no-inverted-boolean-check': 'error',
-            'spaced-comment': [
-                'error',
-                'always',
-                {
-                    markers: ['/'],
-                },
-            ],
+            'spaced-comment': ['error', 'always', {markers: ['/']}],
             'unicorn/consistent-empty-array-spread': 'error',
             'unicorn/escape-case': 'error',
-            'unicorn/filename-case': [
-                'error',
-                {
-                    case: 'kebabCase',
-                },
-            ],
+            'unicorn/filename-case': ['error', {case: 'kebabCase'}],
             'unicorn/new-for-builtins': 'error',
             'unicorn/no-array-push-push': 'error',
             'unicorn/no-await-in-promise-methods': 'error',
@@ -888,9 +750,7 @@ export default tseslint.config(
             'jest/require-to-throw-message': 'off',
             'jest/require-top-level-describe': [
                 'error',
-                {
-                    maxNumberOfTopLevelDescribes: 1,
-                },
+                {maxNumberOfTopLevelDescribes: 1},
             ],
             'jest/unbound-method': 'off',
         },

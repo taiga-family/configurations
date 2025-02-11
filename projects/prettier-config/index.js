@@ -25,6 +25,7 @@ module.exports = {
     arrowParens: 'always',
     bracketSpacing: false,
     endOfLine: 'lf',
+    experimentalOperatorPosition: 'start',
     htmlWhitespaceSensitivity: 'ignore',
     proseWrap: 'always',
     semi: true,
@@ -33,18 +34,8 @@ module.exports = {
     trailingComma: 'all',
     useTabs: false,
     overrides: [
-        {
-            files: ['*.json'],
-            options: {
-                parser: 'json',
-            },
-        },
-        {
-            files: ['package-lock.json'],
-            options: {
-                parser: 'json-stringify',
-            },
-        },
+        {files: ['*.json'], options: {parser: 'json'}},
+        {files: ['package-lock.json'], options: {parser: 'json-stringify'}},
         {
             files: ['package.json', 'ng-package.json'],
             options: {
@@ -60,36 +51,17 @@ module.exports = {
                 ],
             },
         },
-        {
-            files: ['*.less'],
-            options: {parser: 'less'},
-        },
-        {
-            files: ['*.scss'],
-            options: {parser: 'scss'},
-        },
+        {files: ['*.less'], options: {parser: 'less'}},
+        {files: ['*.scss'], options: {parser: 'scss'}},
         {
             files: ['*.xml'],
-            options: {
-                parser: 'xml',
-                plugins: [require.resolve('@prettier/plugin-xml')],
-            },
+            options: {parser: 'xml', plugins: [require.resolve('@prettier/plugin-xml')]},
         },
-        {
-            files: ['*.yml', '*.yaml'],
-            options: {tabWidth: 2, parser: 'yaml'},
-        },
-        {
-            files: ['*.md'],
-            options: {tabWidth: 2, parser: 'markdown'},
-        },
+        {files: ['*.yml', '*.yaml'], options: {tabWidth: 2, parser: 'yaml'}},
+        {files: ['*.md'], options: {tabWidth: 2, parser: 'markdown'}},
         {
             files: ['*.html'],
-            options: {
-                printWidth: 120,
-                parser: 'angular',
-                ...attributeOptions,
-            },
+            options: {printWidth: 120, parser: 'angular', ...attributeOptions},
         },
         {
             files: ['*.js', '*.ts'],
@@ -97,6 +69,7 @@ module.exports = {
                 ...attributeOptions,
                 printWidth: 90,
                 parser: 'typescript',
+                objectWrap: 'collapse',
             },
         },
         {

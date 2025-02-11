@@ -53,20 +53,10 @@ module.exports = {
         'at-rule-no-unknown': true,
         'at-rule-no-vendor-prefix': true,
         'block-no-empty': true,
-        'color-function-notation': [
-            'legacy',
-            {
-                ignore: ['with-var-inside'],
-            },
-        ],
+        'color-function-notation': ['legacy', {ignore: ['with-var-inside']}],
         'color-hex-alpha': 'never',
         'color-hex-length': 'short',
-        'color-named': [
-            'never',
-            {
-                ignoreProperties: ['mask', 'mask-image'],
-            },
-        ],
+        'color-named': ['never', {ignoreProperties: ['mask', 'mask-image']}],
         'comment-no-empty': true,
         'csstools/use-logical': [
             'always',
@@ -94,22 +84,15 @@ module.exports = {
         'declaration-block-no-duplicate-custom-properties': true,
         'declaration-block-no-duplicate-properties': [
             true,
-            {
-                ignore: ['consecutive-duplicates'],
-            },
+            {ignore: ['consecutive-duplicates']},
         ],
         'declaration-block-no-redundant-longhand-properties': [
             true,
-            {
-                ignoreShorthands: ['inset', 'overflow', 'margin-inline', 'inset-block'],
-            },
+            {ignoreShorthands: ['inset', 'overflow', 'margin-inline', 'inset-block']},
         ],
         'declaration-empty-line-before': [
             'always',
-            {
-                except: ['first-nested', 'after-declaration'],
-                ignore: ['after-comment'],
-            },
+            {except: ['first-nested', 'after-declaration'], ignore: ['after-comment']},
         ],
         'declaration-no-important': null,
         'declaration-property-value-disallowed-list': null,
@@ -120,22 +103,12 @@ module.exports = {
         'function-calc-no-unspaced-operator': true,
         'function-linear-gradient-no-nonstandard-direction': true,
         'function-name-case': 'lower',
-        'function-no-unknown': [
-            true,
-            {
-                ignoreFunctions: ['fade', 'lighten', 'darken'],
-            },
-        ],
+        'function-no-unknown': [true, {ignoreFunctions: ['fade', 'lighten', 'darken']}],
         'function-url-no-scheme-relative': true,
         'function-url-quotes': 'always',
         'keyframe-block-no-duplicate-selectors': true,
         'keyframe-declaration-no-important': true,
-        'length-zero-no-unit': [
-            true,
-            {
-                ignore: ['custom-properties'],
-            },
-        ],
+        'length-zero-no-unit': [true, {ignore: ['custom-properties']}],
         'lightness-notation': 'percentage',
         'media-feature-name-no-unknown': true,
         'media-feature-name-no-vendor-prefix': null,
@@ -151,16 +124,11 @@ module.exports = {
                 'all',
                 'content',
                 'position',
-                {
-                    order: 'flexible',
-                    properties: ['top', 'left', 'right', 'bottom'],
-                },
+                {order: 'flexible', properties: ['top', 'left', 'right', 'bottom']},
                 'z-index',
                 'display',
             ],
-            {
-                unspecified: 'bottom',
-            },
+            {unspecified: 'bottom'},
         ],
         'property-disallowed-list': [
             'border-inline',
@@ -168,12 +136,7 @@ module.exports = {
             'margin-inline',
             '/^word-wrap$/', // The word-wrap property was renamed to overflow-wrap in CSS3
         ],
-        'property-no-unknown': [
-            true,
-            {
-                ignoreProperties: ['interpolate-size'],
-            },
-        ],
+        'property-no-unknown': [true, {ignoreProperties: ['interpolate-size']}],
         'property-no-vendor-prefix': null,
         'rem-over-px/rem-over-px': [
             true,
@@ -208,10 +171,7 @@ module.exports = {
         ],
         'rule-empty-line-before': [
             'always',
-            {
-                except: ['first-nested'],
-                ignore: ['after-comment'],
-            },
+            {except: ['first-nested'], ignore: ['after-comment']},
         ],
         'selector-anb-no-unmatchable': true,
         'selector-attribute-quotes': 'always',
@@ -221,12 +181,7 @@ module.exports = {
         'selector-no-vendor-prefix': true,
         'selector-pseudo-class-no-unknown': true,
         'selector-pseudo-element-colon-notation': 'double',
-        'selector-pseudo-element-no-unknown': [
-            true,
-            {
-                ignorePseudoElements: ['ng-deep'],
-            },
-        ],
+        'selector-pseudo-element-no-unknown': [true, {ignorePseudoElements: ['ng-deep']}],
         'selector-type-case': 'lower',
         'selector-type-no-unknown': [
             true,

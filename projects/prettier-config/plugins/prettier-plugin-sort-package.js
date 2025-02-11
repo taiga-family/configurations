@@ -32,8 +32,8 @@ exports.parsers = {
              * the scripts must be unsorted
              */
             if (
-                options.filepath?.endsWith('package.json') &&
-                json?.hasOwnProperty('scripts')
+                options.filepath?.endsWith('package.json')
+                && json?.hasOwnProperty('scripts')
             ) {
                 sorted.scripts = unsortedScripts;
             }

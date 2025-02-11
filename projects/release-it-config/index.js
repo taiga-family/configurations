@@ -8,9 +8,7 @@ const changelog = `npx auto-changelog -c ${path}/index.json --template ${path}/t
 module.exports = {
     plugins: {
         '@release-it/conventional-changelog': {
-            gitRawCommitsOpts: {
-                path: '.',
-            },
+            gitRawCommitsOpts: {path: '.'},
             infile: false,
             path: '.',
             preset: 'conventionalcommits',
@@ -53,10 +51,6 @@ module.exports = {
         'before:init': 'git fetch --prune --prune-tags origin',
         'before:release': 'npm run release || echo ""',
     },
-    npm: {
-        allowSameVersion: true,
-        publish: false,
-        skipChecks: true,
-    },
+    npm: {allowSameVersion: true, publish: false, skipChecks: true},
     verbose: true,
 };

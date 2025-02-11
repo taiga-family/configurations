@@ -89,8 +89,8 @@ export function tuiBumpDeps(options: BumpDepsOptions): void {
             } else if (deps[key]?.hasOwnProperty('requires')) {
                 tuiBumpDeps({
                     deps:
-                        (deps[key] as Record<string, Record<string, string>>)?.requires ??
-                        {},
+                        (deps[key] as Record<string, Record<string, string>>)?.requires
+                        ?? {},
                     ignorePackageNames,
                     isPeerDependency,
                     matchPackageNames,
@@ -137,8 +137,8 @@ export function tuiUpdatePackageJsonStructure({
     const {dependencies, devDependencies, name, packages, peerDependencies} = packageJson;
 
     if (
-        typeof name === 'string' &&
-        tuiIsMatchedPackageName({ignorePackageNames, matchPackageNames, name})
+        typeof name === 'string'
+        && tuiIsMatchedPackageName({ignorePackageNames, matchPackageNames, name})
     ) {
         if ('version' in packageJson && typeof packageJson['version'] === 'string') {
             packageJson['version'] = newVersion;
