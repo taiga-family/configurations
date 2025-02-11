@@ -5,11 +5,6 @@
         {
             "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies"],
             "semanticCommitType": "fix"
-        },
-        {
-            "matchUpdateTypes": ["major"],
-            "matchPackageNames": ["/^eslint$/"],
-            "enabled": false
         }
     ]
 }
