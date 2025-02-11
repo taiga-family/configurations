@@ -1,4 +1,3 @@
-/* eslint-disable no-template-curly-in-string */
 const path = require('node:path').resolve(
     process.cwd(),
     'node_modules/@taiga-ui/auto-changelog-config',

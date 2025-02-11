@@ -1,5 +1,6 @@
-import conventional from '@commitlint/config-conventional';
 import fs from 'node:fs';
+
+import conventional from '@commitlint/config-conventional';
 
 export default {
     extends: ['@commitlint/config-conventional'],

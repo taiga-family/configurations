@@ -21,7 +21,7 @@ interface Options {
 }
 
 export function tuiSyncVersions(options: Options): void {
-    const {includePaths, newVersion, ignorePackageNames, matchPackageNames} = options;
+    const {ignorePackageNames, includePaths, matchPackageNames, newVersion} = options;
 
     const patterns = includePaths.map((pattern) =>
         pattern.endsWith('.json')
@@ -48,12 +48,12 @@ export function tuiSyncVersions(options: Options): void {
         }
 
         tuiUpdatePackageJsonStructure({
+            ignorePackageNames,
             isPackageLockFile: file.endsWith('-lock.json'),
+            matchPackageNames,
+            newVersion,
             packageJson,
             prevVersion,
-            newVersion,
-            ignorePackageNames,
-            matchPackageNames,
         });
 
         const updatedJSON = JSON.stringify(packageJson, null, 4);
@@ -70,16 +70,16 @@ export function tuiSyncVersions(options: Options): void {
 export function tuiBumpDeps(options: BumpDepsOptions): void {
     const {
         deps,
-        prevVersion,
-        newVersion,
-        isPeerDependency,
         ignorePackageNames,
+        isPeerDependency,
         matchPackageNames,
+        newVersion,
+        prevVersion,
     } = options;
 
     Object.keys(deps)
         .filter((key) =>
-            tuiIsMatchedPackageName({name: key, ignorePackageNames, matchPackageNames}),
+            tuiIsMatchedPackageName({ignorePackageNames, matchPackageNames, name: key}),
         )
         .forEach((key) => {
             if (typeof deps[key] === 'string') {
@@ -91,11 +91,11 @@ export function tuiBumpDeps(options: BumpDepsOptions): void {
                     deps:
                         (deps[key] as Record<string, Record<string, string>>)?.requires ??
                         {},
-                    isPeerDependency,
                     ignorePackageNames,
-                    prevVersion,
-                    newVersion,
+                    isPeerDependency,
                     matchPackageNames,
+                    newVersion,
+                    prevVersion,
                 });
             }
         });
@@ -108,7 +108,7 @@ interface MatchedOptions {
 }
 
 export function tuiIsMatchedPackageName(options: MatchedOptions): boolean {
-    const {name, ignorePackageNames, matchPackageNames} = options;
+    const {ignorePackageNames, matchPackageNames, name} = options;
 
     if (name && ignorePackageNames.includes(name)) {
         return false;
@@ -127,18 +127,18 @@ interface UpdatePackageJsonOptions {
 }
 
 export function tuiUpdatePackageJsonStructure({
-    packageJson,
-    isPackageLockFile,
     ignorePackageNames,
-    prevVersion,
-    newVersion,
+    isPackageLockFile,
     matchPackageNames,
+    newVersion,
+    packageJson,
+    prevVersion,
 }: UpdatePackageJsonOptions): void {
-    const {name, dependencies, peerDependencies, devDependencies, packages} = packageJson;
+    const {dependencies, devDependencies, name, packages, peerDependencies} = packageJson;
 
     if (
         typeof name === 'string' &&
-        tuiIsMatchedPackageName({name, ignorePackageNames, matchPackageNames})
+        tuiIsMatchedPackageName({ignorePackageNames, matchPackageNames, name})
     ) {
         if ('version' in packageJson && typeof packageJson['version'] === 'string') {
             packageJson['version'] = newVersion;
@@ -148,31 +148,31 @@ export function tuiUpdatePackageJsonStructure({
     if (isObject(dependencies)) {
         tuiBumpDeps({
             deps: dependencies,
-            prevVersion,
-            newVersion,
-            matchPackageNames,
             ignorePackageNames,
+            matchPackageNames,
+            newVersion,
+            prevVersion,
         });
     }
 
     if (isObject(peerDependencies)) {
         tuiBumpDeps({
             deps: peerDependencies,
-            prevVersion,
-            newVersion,
+            ignorePackageNames,
             isPeerDependency: true,
             matchPackageNames,
-            ignorePackageNames,
+            newVersion,
+            prevVersion,
         });
     }
 
     if (isObject(devDependencies)) {
         tuiBumpDeps({
             deps: devDependencies,
-            prevVersion,
-            newVersion,
             ignorePackageNames,
             matchPackageNames,
+            newVersion,
+            prevVersion,
         });
     }
 
@@ -180,21 +180,21 @@ export function tuiUpdatePackageJsonStructure({
         for (const packageLockJson of Object.values(packages)) {
             if (
                 !tuiIsMatchedPackageName({
-                    name: packageLockJson?.name,
                     ignorePackageNames,
                     matchPackageNames,
+                    name: packageLockJson?.name,
                 })
             ) {
                 continue;
             }
 
             tuiUpdatePackageJsonStructure({
+                ignorePackageNames,
+                isPackageLockFile: true,
+                matchPackageNames,
+                newVersion,
                 packageJson: packageLockJson,
                 prevVersion,
-                newVersion,
-                isPackageLockFile: true,
-                ignorePackageNames,
-                matchPackageNames,
             });
         }
     }

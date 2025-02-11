@@ -1,8 +1,8 @@
 module.exports = {
+    files: ['*/*.*'],
     $schema:
         'https://raw.githubusercontent.com/streetsidesoftware/master/cspell.schema.json',
     caseSensitive: false,
-    files: ['*/*.*'],
     ignorePaths: [
         '**/LICENSE',
         '**/.github/CODEOWNERS',
@@ -17,12 +17,12 @@ module.exports = {
         '**/*.{log,svg,snap,png,ogv,yml,less,hbs}',
     ],
     ignoreRegExpList: [
-        '\\(https?://.*?\\)',
-        '\\/{1}.+\\/{1}',
-        '\\%2F.+',
-        '\\%2C.+',
-        '\\ɵ.+',
-        '\\ыва.+',
+        String.raw`\(https?://.*?\)`,
+        String.raw`\/{1}.+\/{1}`,
+        String.raw`\%2F.+`,
+        String.raw`\%2C.+`,
+        String.raw`\ɵ.+`,
+        String.raw`\ыва.+`,
     ],
     import: [
         './configs/locales/latin.json',

@@ -3,14 +3,34 @@ import config from '@taiga-ui/eslint-plugin-experience-next';
 export default [
     ...config,
     {
-        files: ['./projects/**/*.js'],
+        ignores: [
+            // TypeScript will ignore files with duplicate filenames in the same folder
+            // (for example, src/file.ts and src/file.js). TypeScript purposely ignore
+            // all but one of the files, only keeping the one file
+            // with the highest priority extension
+            '**/jest-preset.js',
+            '**/jest.config.js',
+            '**/eslint.config.js',
+            '.release-it.js',
+        ],
+    },
+    {
+        files: ['**/*.js', '**/*.ts'],
         rules: {
             'perfectionist/sort-objects': [
                 'error',
                 {
-                    type: 'natural',
-                    order: 'asc',
-                    partitionByComment: true,
+                    customGroups: {
+                        id: 'id',
+                        env: 'env',
+                        files: 'files',
+                        parser: 'parser',
+                        plugins: 'plugins',
+                        extends: 'extends',
+                        $schema: '$schema',
+                        rules: 'rules',
+                        overrides: 'overrides',
+                    },
                     groups: [
                         '$schema',
                         'id',
@@ -23,17 +43,9 @@ export default [
                         'rules',
                         'overrides',
                     ],
-                    customGroups: {
-                        $schema: '$schema',
-                        id: 'id',
-                        env: 'env',
-                        files: 'files',
-                        parser: 'parser',
-                        plugins: 'plugins',
-                        extends: 'extends',
-                        rules: 'rules',
-                        overrides: 'overrides',
-                    },
+                    order: 'asc',
+                    partitionByComment: true,
+                    type: 'natural',
                 },
             ],
         },
