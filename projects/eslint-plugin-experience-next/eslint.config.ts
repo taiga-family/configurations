@@ -44,6 +44,7 @@ try {
 export default tseslint.config(
     progress.configs['recommended-ci'],
     require('eslint-plugin-import').flatConfigs.recommended,
+    require('eslint-plugin-import').flatConfigs.typescript,
     require('eslint-plugin-promise').configs['flat/recommended'],
     {
         ignores: [
@@ -968,6 +969,7 @@ export default tseslint.config(
             'import/exports-last': 'off',
             'import/extensions': 'off',
             'import/no-default-export': 'off',
+            'import/no-deprecated': 'off',
             'import/no-dynamic-require': 'off',
             'import/no-extraneous-dependencies': 'off',
             'import/no-relative-packages': 'off',
