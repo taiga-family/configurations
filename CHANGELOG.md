@@ -1,3 +1,23 @@
+### [0.251.0](https://github.com/taiga-family/configurations/compare/v0.250.0...v0.251.0) (2025-02-12)
+
+### 🚀 Features
+
+- **eslint-plugin-experience-next**: add typescript parser for import (#862)
+  [(2a2732e)](https://github.com/taiga-family/configurations/commit/2a2732e76324cfaa1a8f29e564800edd9f198fcd)
+- **eslint-plugin-experience-next**: enable some rules (#859)
+  [(0bac197)](https://github.com/taiga-family/configurations/commit/0bac197f94f71cf9b67f6e700278b510d70963e5)
+
+### 🐞 Bug Fixes
+
+- update dependency eslint to v9.20.1 (#861)
+  [(7000af2)](https://github.com/taiga-family/configurations/commit/7000af27c320cb25b2e41806810a4545b4a3fe1b)
+- update dependency postcss to ^8.5.2 (#856)
+  [(a2ab927)](https://github.com/taiga-family/configurations/commit/a2ab9276225559641e81a79487e242da2b794b64)
+- update dependency typescript-eslint to &gt;=8.24.0 (#855)
+  [(ac837c3)](https://github.com/taiga-family/configurations/commit/ac837c36344c4b226bb22a1c0338ac2425f90ec8)
+- update dependency @typescript-eslint/eslint-plugin to &gt;=8.24.0 (#854)
+  [(b136328)](https://github.com/taiga-family/configurations/commit/b136328300721226035a39ac8eb4bdffe0b99ff0)
+
 ### [0.250.0](https://github.com/taiga-family/configurations/compare/v0.249.0...v0.250.0) (2025-02-10)
 
 ### [0.249.0](https://github.com/taiga-family/configurations/compare/v0.248.0...v0.249.0) (2025-02-10)
