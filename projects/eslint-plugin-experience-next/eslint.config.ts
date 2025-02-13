@@ -241,7 +241,7 @@ export default tseslint.config(
                     },
                 },
             ],
-            '@typescript-eslint/max-params': ['error', {countVoidThis: true, max: 3}],
+            '@typescript-eslint/max-params': ['error', {countVoidThis: true, max: 5}],
             '@typescript-eslint/member-ordering': [
                 'error',
                 {
@@ -538,7 +538,6 @@ export default tseslint.config(
             'import/newline-after-import': ['error', {count: 1}],
             'import/no-absolute-path': 'error',
             'import/no-cycle': 'error',
-            'import/no-deprecated': 'error',
             'import/no-duplicates': 'error',
             'import/no-mutable-exports': 'error',
             'import/no-self-import': 'error',
@@ -966,6 +965,7 @@ export default tseslint.config(
             'func-names': 'off',
             'global-require': 'off',
             'grouped-accessor-pairs': 'off',
+            'import/export': 'off',
             'import/exports-last': 'off',
             'import/extensions': 'off',
             'import/no-default-export': 'off',
@@ -977,7 +977,6 @@ export default tseslint.config(
             'import/prefer-default-export': 'off',
             'lines-between-class-members': 'off',
             'max-classes-per-file': 'off',
-            'max-params': 'off',
             'max-statements': 'off',
             'no-await-in-loop': 'off',
             'no-bitwise': 'off',
