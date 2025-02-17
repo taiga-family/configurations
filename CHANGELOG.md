@@ -1,3 +1,18 @@
+### [0.252.0](https://github.com/taiga-family/configurations/compare/v0.251.0...v0.252.0) (2025-02-14)
+
+### 🐞 Bug Fixes
+
+- update dependency eslint-plugin-perfectionist to &gt;=4.9.0 (#868)
+  [(2c80e2d)](https://github.com/taiga-family/configurations/commit/2c80e2d032cdb9a32b97afa385d29d73c444de07)
+- update dependency prettier to ^3.5.1 (#867)
+  [(6b92f31)](https://github.com/taiga-family/configurations/commit/6b92f31083519feaa6801f1138e6b78e49f416f9)
+- update dependency eslint-plugin-sonarjs to &gt;=3.0.2 (#866)
+  [(fccebbb)](https://github.com/taiga-family/configurations/commit/fccebbb600efb899483759f2f177a27b282d1458)
+- update dependency globals to &gt;=15.15.0 (#865)
+  [(1b69730)](https://github.com/taiga-family/configurations/commit/1b69730d0372cc1c2e909e5f05d20e3dea5fc047)
+- **eslint-plugin-experience-next**: cleanup rules (#864)
+  [(a47a0d2)](https://github.com/taiga-family/configurations/commit/a47a0d2152fe5ff5e29bf4510b906eb4b7d6e8e2)
+
 ### [0.251.0](https://github.com/taiga-family/configurations/compare/v0.250.0...v0.251.0) (2025-02-12)
 
 ### 🚀 Features
