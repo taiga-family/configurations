@@ -7,8 +7,8 @@
     "peerDependencies": {
         "@eslint/compat": ">=1.2.6",
         "@smarttools/eslint-plugin-rxjs": ">=1.0.18",
-        "@stylistic/eslint-plugin": ">=3.1.0",
-        "@stylistic/eslint-plugin-ts": ">=3.1.0",
+        "@stylistic/eslint-plugin": ">=4.0.0",
+        "@stylistic/eslint-plugin-ts": ">=4.0.0",
         "@typescript-eslint/eslint-plugin": ">=8.24.1",
         "angular-eslint": ">=19.1.0",
         "eslint": ">=9.20.1",
