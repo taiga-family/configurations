@@ -1,3 +1,29 @@
+### [0.253.0](https://github.com/taiga-family/configurations/compare/v0.252.0...v0.253.0) (2025-02-20)
+
+### 🚀 Features
+
+- **stylelint-config**: add naming convention for css variables (#873)
+  [(8aeed6b)](https://github.com/taiga-family/configurations/commit/8aeed6bb206cf70372d71d800b7af1051b7c9f08)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience-next**: add new eslint plugin (#880)
+  [(d961a20)](https://github.com/taiga-family/configurations/commit/d961a2070100a326c55ea3b47804b47eb5e6f42e)
+- update dependency cspell to ^8.17.4 (#879)
+  [(626543d)](https://github.com/taiga-family/configurations/commit/626543d4b020cf52918933a762e7e10eb6594897)
+- update dependency postcss to ^8.5.3 (#878)
+  [(400378b)](https://github.com/taiga-family/configurations/commit/400378b498810e2852809b252d121d4cf2016a0a)
+- update @stylistic/\* deps to &gt;=4.0.1 (#877)
+  [(b64ec1b)](https://github.com/taiga-family/configurations/commit/b64ec1bb5dd637ce6610186e8dee941f4722d8bc)
+- update @stylistic/\* deps to &gt;=4.0.0 (#875)
+  [(39fdc96)](https://github.com/taiga-family/configurations/commit/39fdc968c4d08293847c54cd20eccb3018755799)
+- update dependency eslint-plugin-unicorn to &gt;=57.0.0 (#876)
+  [(239adf6)](https://github.com/taiga-family/configurations/commit/239adf67f5d153deff1dc3c0a7ceea1009c46bee)
+- update dependency typescript-eslint to &gt;=8.24.1 (#872)
+  [(b71283c)](https://github.com/taiga-family/configurations/commit/b71283caf22ca6c53ec184b8a2257451bb4e0d6e)
+- update dependency @typescript-eslint/eslint-plugin to &gt;=8.24.1 (#871)
+  [(965688a)](https://github.com/taiga-family/configurations/commit/965688a92999bed9c91f8d4cfc5bd4e67bc661f0)
+
 ### [0.252.0](https://github.com/taiga-family/configurations/compare/v0.251.0...v0.252.0) (2025-02-14)
 
 ### 🐞 Bug Fixes
