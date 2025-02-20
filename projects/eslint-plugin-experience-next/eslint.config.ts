@@ -43,6 +43,7 @@ try {
 
 export default tseslint.config(
     progress.configs['recommended-ci'],
+    require('eslint-plugin-de-morgan').configs.recommended,
     require('eslint-plugin-import').flatConfigs.recommended,
     require('eslint-plugin-import').flatConfigs.typescript,
     require('eslint-plugin-promise').configs['flat/recommended'],
