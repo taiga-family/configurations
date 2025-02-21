@@ -11,7 +11,7 @@
         "@stylistic/eslint-plugin-ts": ">=4.0.1",
         "@typescript-eslint/eslint-plugin": ">=8.24.1",
         "angular-eslint": ">=19.1.0",
-        "eslint": ">=9.20.1",
+        "eslint": ">=9.21.0",
         "eslint-config-prettier": ">=10.0.1",
         "eslint-plugin-de-morgan": ">=1.1.0",
         "eslint-plugin-decorator-position": ">=6.0.0",
