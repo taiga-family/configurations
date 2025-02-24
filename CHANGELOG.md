@@ -1,3 +1,12 @@
+### [0.255.0](https://github.com/taiga-family/configurations/compare/v0.254.0...v0.255.0) (2025-02-24)
+
+### 🐞 Bug Fixes
+
+- update dependency jest-preset-angular to v14.5.3 (#892)
+  [(7439633)](https://github.com/taiga-family/configurations/commit/74396336c716d0beb5edfc13364db8584932cdc1)
+- support commonjs (#891)
+  [(ad705b5)](https://github.com/taiga-family/configurations/commit/ad705b5b2cd69cd7820cceeb90c69e505fd51dbb)
+
 ### [0.254.0](https://github.com/taiga-family/configurations/compare/v0.253.0...v0.254.0) (2025-02-24)
 
 ### 🐞 Bug Fixes
