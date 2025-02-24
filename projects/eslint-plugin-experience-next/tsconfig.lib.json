@@ -2,12 +2,9 @@
     "extends": "../../tsconfig.json",
     "include": ["./*.ts"],
     "compilerOptions": {
-        "rootDir": ".",
         "baseUrl": ".",
-        "outDir": ".",
-        "incremental": false,
-        "tsBuildInfoFile": null,
-        "module": "esnext",
-        "verbatimModuleSyntax": false
+        "checkJs": false,
+        "allowJs": false,
+        "module": "esnext"
     }
 }

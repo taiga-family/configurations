@@ -25,6 +25,5 @@
     "workspaceLayout": {
         "libsDir": "projects",
         "appsDir": "projects"
-    },
-    "useLegacyCache": true
+    }
 }

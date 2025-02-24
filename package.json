@@ -42,6 +42,7 @@
         ]
     },
     "devDependencies": {
+        "@nx/rollup": "20.4.6",
         "@nx/workspace": "20.4.6",
         "lint-staged": "15.4.3",
         "nx": "20.4.6",

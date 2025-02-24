@@ -6,16 +6,21 @@
     "sourceRoot": "projects/eslint-plugin-experience-next",
     "targets": {
         "build": {
-            "executor": "nx:run-commands",
-            "outputs": ["{projectRoot}/projects/{projectName}"],
+            "executor": "@nx/rollup:rollup",
+            "outputs": ["{workspaceRoot}/dist/{projectName}"],
             "options": {
-                "command": "tsc --project ./projects/{projectName}/tsconfig.lib.json"
+                "main": "projects/{projectName}/eslint.config.ts",
+                "outputPath": "{workspaceRoot}/dist/{projectName}",
+                "tsConfig": "projects/{projectName}/tsconfig.lib.json",
+                "format": ["esm", "cjs"],
+                "assets": ["projects/{projectName}/README.md"],
+                "generateExportsField": true
             }
         },
         "publish": {
             "executor": "nx:run-commands",
             "options": {
-                "command": "npm publish ./projects/{projectName} --access=public --ignore-scripts"
+                "command": "npm publish ./dist/{projectName} --access=public --ignore-scripts"
             },
             "dependsOn": [
                 {
