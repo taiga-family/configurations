@@ -1,3 +1,22 @@
+### [0.254.0](https://github.com/taiga-family/configurations/compare/v0.253.0...v0.254.0) (2025-02-24)
+
+### 🐞 Bug Fixes
+
+- update dependency globals to &gt;=16.0.0 (#888)
+  [(2043aae)](https://github.com/taiga-family/configurations/commit/2043aaed5cbdaf77564e7eba68907bea5a7f76b9)
+- update dependency ts-jest to v29.2.6 (#887)
+  [(7c2a4ca)](https://github.com/taiga-family/configurations/commit/7c2a4caea23c1be5bf9301aad3140e939a5b5208)
+- update dependency cspell to ^8.17.5 (#886)
+  [(4b418f3)](https://github.com/taiga-family/configurations/commit/4b418f359b48daba38b7b991d6b051a0aa9c25e7)
+- update dependency prettier to ^3.5.2 (#885)
+  [(1d44b5e)](https://github.com/taiga-family/configurations/commit/1d44b5e96d0e0744b762304cf938ff12297a3ef4)
+- update dependency eslint to &gt;=9.21.0 (#884)
+  [(5529b7c)](https://github.com/taiga-family/configurations/commit/5529b7ccbe87e3161198a20b69dd582301ce3df1)
+- update dependency jest-preset-angular to v14.5.2 (#883)
+  [(2d90cef)](https://github.com/taiga-family/configurations/commit/2d90ceffd08a40dbd88eca7a3bb45a8aaede1e6d)
+- update dependency @eslint/compat to &gt;=1.2.7 (#882)
+  [(6244681)](https://github.com/taiga-family/configurations/commit/6244681c91d32fcd57a4b645f9e87fed3ec42de1)
+
 ### [0.253.0](https://github.com/taiga-family/configurations/compare/v0.252.0...v0.253.0) (2025-02-20)
 
 ### 🚀 Features
