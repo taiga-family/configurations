@@ -12,9 +12,10 @@ import sonarjs from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
 import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
+import {createRequire} from 'module';
 import tseslint from 'typescript-eslint';
 
-import taiga from './plugin';
+const require = createRequire(import.meta.url);
 
 let angularVersion = 16;
 
@@ -92,7 +93,6 @@ export default tseslint.config(
         ],
     },
     eslint.configs.recommended,
-    taiga.configs.recommended,
     tseslint.configs.recommended,
     require('eslint-config-prettier'),
     {
@@ -100,7 +100,6 @@ export default tseslint.config(
         plugins: {
             '@stylistic': stylistic,
             '@stylistic/ts': stylisticTs,
-            '@taiga-ui/experience': taiga,
             'decorator-position': require('eslint-plugin-decorator-position'),
             perfectionist: require('eslint-plugin-perfectionist'),
             prettier,
@@ -185,6 +184,17 @@ export default tseslint.config(
                 },
             ],
             '@stylistic/ts/type-annotation-spacing': 'error',
+            '@taiga-ui/experience-next/no-deep-imports': [
+                'error',
+                {
+                    currentProject: String.raw`(?<=projects/)([-\w]+)`,
+                    ignoreImports: [
+                        String.raw`\?raw`,
+                        '@taiga-ui/testing/cypress',
+                        '@taiga-ui/testing/setup-jest',
+                    ],
+                },
+            ],
             '@typescript-eslint/array-type': [
                 'error',
                 {default: 'array-simple', readonly: 'array-simple'},

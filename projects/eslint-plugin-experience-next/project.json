@@ -9,12 +9,12 @@
             "executor": "@nx/rollup:rollup",
             "outputs": ["{workspaceRoot}/dist/{projectName}"],
             "options": {
-                "main": "projects/{projectName}/eslint.config.ts",
+                "main": "projects/{projectName}/index.ts",
                 "outputPath": "{workspaceRoot}/dist/{projectName}",
                 "tsConfig": "projects/{projectName}/tsconfig.lib.json",
-                "format": ["esm", "cjs"],
                 "assets": ["projects/{projectName}/README.md"],
-                "generateExportsField": true
+                "generateExportsField": true,
+                "format": ["esm"]
             }
         },
         "publish": {

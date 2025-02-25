@@ -1,7 +1,7 @@
-import config from '@taiga-ui/eslint-plugin-experience-next';
+import taiga from '@taiga-ui/eslint-plugin-experience-next';
 
 export default [
-    ...config,
+    ...taiga.configs.recommended,
     {
         ignores: [
             // TypeScript will ignore files with duplicate filenames in the same folder
