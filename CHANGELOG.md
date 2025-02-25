@@ -1,3 +1,10 @@
+### [0.257.0](https://github.com/taiga-family/configurations/compare/v0.256.0...v0.257.0) (2025-02-25)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience-next**: add taiga eslint rules (#896)
+  [(174b543)](https://github.com/taiga-family/configurations/commit/174b543cf32b1609478b18417a98d04702ef921f)
+
 ### [0.256.0](https://github.com/taiga-family/configurations/compare/v0.255.0...v0.256.0) (2025-02-25)
 
 ### 🚀 Features
