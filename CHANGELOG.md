@@ -1,3 +1,17 @@
+### [0.256.0](https://github.com/taiga-family/configurations/compare/v0.255.0...v0.256.0) (2025-02-25)
+
+### 🚀 Features
+
+- add eslint 9 custom plugin (#895)
+  [(62d949f)](https://github.com/taiga-family/configurations/commit/62d949fb023d2660c794643fc887189e2f809bb9)
+
+### 🐞 Bug Fixes
+
+- update dependency typescript-eslint to &gt;=8.25.0 (#894)
+  [(9bd11e9)](https://github.com/taiga-family/configurations/commit/9bd11e95acec09861f90966a8a19e2a1776fc7c9)
+- update dependency @typescript-eslint/eslint-plugin to &gt;=8.25.0 (#893)
+  [(8a5e2d1)](https://github.com/taiga-family/configurations/commit/8a5e2d15c1acdaad2467cdb9624f5f9192c7b84e)
+
 ### [0.255.0](https://github.com/taiga-family/configurations/compare/v0.254.0...v0.255.0) (2025-02-24)
 
 ### 🐞 Bug Fixes
