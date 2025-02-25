@@ -3,11 +3,11 @@ import type {Linter} from 'eslint';
 import noDeepImports from './no-deep-imports';
 
 const plugin = {
-    meta: {
-        name: '@taiga-ui/experience',
-    },
     configs: {} as unknown as {
         readonly recommended: {readonly rules: Readonly<Linter.RulesRecord>};
+    },
+    meta: {
+        name: '@taiga-ui/experience',
     },
     rules: {
         'no-deep-imports': noDeepImports,
