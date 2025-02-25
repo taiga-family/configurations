@@ -14,6 +14,8 @@ import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
+import taiga from './plugin';
+
 let angularVersion = 16;
 
 const tsconfig =
@@ -90,6 +92,7 @@ export default tseslint.config(
         ],
     },
     eslint.configs.recommended,
+    taiga.configs.recommended,
     tseslint.configs.recommended,
     require('eslint-config-prettier'),
     {
@@ -97,6 +100,7 @@ export default tseslint.config(
         plugins: {
             '@stylistic': stylistic,
             '@stylistic/ts': stylisticTs,
+            '@taiga-ui/experience': taiga,
             'decorator-position': require('eslint-plugin-decorator-position'),
             perfectionist: require('eslint-plugin-perfectionist'),
             prettier,
