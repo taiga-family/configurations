@@ -3,7 +3,7 @@
     "version": "0.256.0",
     "description": "An ESLint plugin to enforce a consistent code styles across taiga-ui projects",
     "license": "Apache-2.0",
-    "main": "eslint.config.ts",
+    "main": "index.ts",
     "peerDependencies": {
         "@eslint/compat": ">=1.2.7",
         "@smarttools/eslint-plugin-rxjs": ">=1.0.18",

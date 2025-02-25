@@ -7,10 +7,10 @@ npm i -D eslint @taiga-ui/eslint-plugin-experience-next
 `eslint.config.ts`
 
 ```js
-import config from '@taiga-ui/eslint-plugin-experience-next';
+import taiga from 'projects/eslint-plugin-experience-next';
 
 export default [
-  ...config,
+  ...taiga.configs.recommended,
   // custom rules
   {
     files: ['**/legacy/**/*.ts'],
@@ -30,3 +30,5 @@ export default [
   },
 ];
 ```
+
+**Attention**: package does not support commonjs, use `eslint.config.{ts,mjs,js}` instead of `eslint.config.cjs`
