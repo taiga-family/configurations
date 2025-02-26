@@ -1,3 +1,12 @@
+### [0.258.0](https://github.com/taiga-family/configurations/compare/v0.257.0...v0.258.0) (2025-02-26)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience-next**: backport all taiga eslint rules (#897)
+  [(787ea2f)](https://github.com/taiga-family/configurations/commit/787ea2f0119299b66be6137965dfa42bbbf5b16f)
+- update @stylistic/\* deps to &gt;=4.1.0 (#898)
+  [(768a9d1)](https://github.com/taiga-family/configurations/commit/768a9d1e84095bf5b09c0df70f0d9c14d6558c6d)
+
 ### [0.257.0](https://github.com/taiga-family/configurations/compare/v0.256.0...v0.257.0) (2025-02-25)
 
 ### 🐞 Bug Fixes
