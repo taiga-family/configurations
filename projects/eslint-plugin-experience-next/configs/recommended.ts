@@ -38,7 +38,6 @@ const modernAngularRules = {
 };
 
 try {
-    // @ts-ignore
     const major = require('@angular/cli').VERSION.major;
 
     angularVersion = parseInt(major, 10);
@@ -184,6 +183,59 @@ export default tseslint.config(
                 },
             ],
             '@stylistic/ts/type-annotation-spacing': 'error',
+            '@taiga-ui/experience-next/decorator-key-sort': [
+                'error',
+                {
+                    Component: [
+                        'moduleId',
+                        'standalone',
+                        'signal',
+                        'selector',
+                        'imports',
+                        'template',
+                        'templateUrl',
+                        'styleUrl',
+                        'styleUrls',
+                        'styles',
+                        'encapsulation',
+                        'changeDetection',
+                        'providers',
+                        'viewProviders',
+                        'animations',
+                        'entryComponents',
+                        'preserveWhitespaces',
+                        'interpolation',
+                        'hostDirectives',
+                        'host',
+                    ],
+                    Directive: [
+                        'standalone',
+                        'selector',
+                        'inputs',
+                        'outputs',
+                        'providers',
+                        'exportAs',
+                        'queries',
+                        'hostDirectives',
+                        'host',
+                        'jit',
+                    ],
+                    Injectable: ['providedIn'],
+                    NgModule: [
+                        'id',
+                        'jit',
+                        'imports',
+                        'declarations',
+                        'providers',
+                        'exports',
+                        'entryComponents',
+                        'bootstrap',
+                        'schemas',
+                    ],
+                    Pipe: ['standalone', 'name', 'pure'],
+                },
+            ],
+            '@taiga-ui/experience-next/injection-token-description': 'error',
             '@taiga-ui/experience-next/no-deep-imports': [
                 'error',
                 {
@@ -195,6 +247,9 @@ export default tseslint.config(
                     ],
                 },
             ],
+            '@taiga-ui/experience-next/no-implicit-public': 'error',
+            '@taiga-ui/experience-next/no-private-esnext-fields': 'error',
+            '@taiga-ui/experience-next/standalone-imports-sort': 'error',
             '@typescript-eslint/array-type': [
                 'error',
                 {default: 'array-simple', readonly: 'array-simple'},
