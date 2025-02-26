@@ -34,7 +34,9 @@ const parserOptions = tsconfig
 
 const modernAngularRules = {
     defaultStandalone: 19,
+    modernStyles: 17,
     preferControlFlow: 17,
+    preferSignals: 17,
 };
 
 try {
@@ -135,12 +137,15 @@ export default tseslint.config(
             '@angular-eslint/directive-selector': 'error',
             '@angular-eslint/no-attribute-decorator': 'error',
             '@angular-eslint/no-conflicting-lifecycle': 'error',
+            '@angular-eslint/no-duplicates-in-metadata-arrays': 'error',
             '@angular-eslint/no-empty-lifecycle-method': 'error',
             '@angular-eslint/no-input-prefix': 'error',
             '@angular-eslint/no-output-on-prefix': 'error',
             '@angular-eslint/no-queries-metadata-property': 'error',
             '@angular-eslint/prefer-on-push-component-change-detection': 'error',
             '@angular-eslint/prefer-output-readonly': 'error',
+            '@angular-eslint/prefer-signals':
+                angularVersion >= modernAngularRules.preferSignals ? 'error' : 'off',
             '@angular-eslint/prefer-standalone':
                 angularVersion >= modernAngularRules.defaultStandalone ? 'off' : 'error',
             '@angular-eslint/relative-url-prefix': 'error',
@@ -879,9 +884,16 @@ export default tseslint.config(
             ...angular.configs.templateAccessibility,
         ],
         rules: {
+            '@angular-eslint/consistent-component-styles':
+                angularVersion >= modernAngularRules.modernStyles ? 'error' : 'off',
             '@angular-eslint/template/interactive-supports-focus': 'off',
             '@angular-eslint/template/label-has-associated-control': 'off',
+            '@angular-eslint/template/no-distracting-elements': 'error',
+            '@angular-eslint/template/no-duplicate-attributes': 'error',
             '@angular-eslint/template/no-negated-async': 'off',
+            '@angular-eslint/template/prefer-control-flow':
+                angularVersion >= modernAngularRules.preferControlFlow ? 'error' : 'off',
+            '@angular-eslint/template/prefer-self-closing-tags': 'error',
             '@typescript-eslint/ban-ts-comment': 'off',
             'import/namespace': 'off',
         },
