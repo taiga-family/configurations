@@ -1,3 +1,17 @@
+### [0.259.0](https://github.com/taiga-family/configurations/compare/v0.258.0...v0.259.0) (2025-02-27)
+
+### 🚀 Features
+
+- **eslint-plugin-experience-next**: enable new angular rules (#899)
+  [(9e7649e)](https://github.com/taiga-family/configurations/commit/9e7649ef06a10707e9c85fe3616b0aa2f5a98f72)
+
+### 🐞 Bug Fixes
+
+- update dependency sort-package-json to ^2.15.0 (#901)
+  [(69d6140)](https://github.com/taiga-family/configurations/commit/69d61408716bd373011a6eba468536d8ce0d966b)
+- update dependency eslint-config-prettier to &gt;=10.0.2 (#900)
+  [(b80b85f)](https://github.com/taiga-family/configurations/commit/b80b85f5f4eee65f9ab8ad9bf568510c4f56170b)
+
 ### [0.258.0](https://github.com/taiga-family/configurations/compare/v0.257.0...v0.258.0) (2025-02-26)
 
 ### 🐞 Bug Fixes
