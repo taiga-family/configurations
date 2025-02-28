@@ -1,3 +1,10 @@
+### [0.260.0](https://github.com/taiga-family/toolkit/compare/v0.259.0...v0.260.0) (2025-02-28)
+
+### 🐞 Bug Fixes
+
+- **eslint-plugin-experience-next**: that rule should be used for typescript files instead of html (#903)
+  [(ed27ff7)](https://github.com/taiga-family/toolkit/commit/ed27ff7f9dc579630b9052b0eb5086a8e1aec1a7)
+
 ### [0.259.0](https://github.com/taiga-family/configurations/compare/v0.258.0...v0.259.0) (2025-02-27)
 
 ### 🚀 Features
