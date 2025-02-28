@@ -132,6 +132,8 @@ export default tseslint.config(
             '@typescript-eslint/no-import-type-side-effects': 'error',
             'no-void': ['error', {allowAsStatement: true}],
             'sonarjs/no-identical-functions': 'error',
+            '@angular-eslint/consistent-component-styles':
+                angularVersion >= modernAngularRules.modernStyles ? 'error' : 'off',
             '@angular-eslint/contextual-decorator': 'error',
             '@angular-eslint/contextual-lifecycle': 'error',
             '@angular-eslint/directive-selector': 'error',
@@ -884,8 +886,6 @@ export default tseslint.config(
             ...angular.configs.templateAccessibility,
         ],
         rules: {
-            '@angular-eslint/consistent-component-styles':
-                angularVersion >= modernAngularRules.modernStyles ? 'error' : 'off',
             '@angular-eslint/template/interactive-supports-focus': 'off',
             '@angular-eslint/template/label-has-associated-control': 'off',
             '@angular-eslint/template/no-distracting-elements': 'error',

@@ -9,7 +9,7 @@ npm i -D eslint @taiga-ui/eslint-plugin-experience-next
 **Attention**: package does not support commonjs, use `eslint.config.{ts,mjs,js}` instead of `eslint.config.cjs`
 
 ```js
-import taiga from 'projects/eslint-plugin-experience-next';
+import taiga from '@taiga-ui/eslint-plugin-experience-next';
 
 export default [
   ...taiga.configs.recommended,
